@@ -11,29 +11,6 @@ def makeBindings(b):
   return bindings
 
 
-class TestCase(unittest.TestCase):
-    """Version of TestCase that can be easily run independantly of the
-    testing framework."""
-
-    __stopOnError__ = 1
-
-    def __init__(self, *args, **kw):
-        if args: apply(unittest.TestCase.__init__, (self,) + args, kw)
-
-    def throwsException(self, test_function, expected_exc):
-        """True if  'test_function()' throws 'expected_exc'"""
-        try: test_function()
-        except expected_exc: return 1
-
-    def __call__(self, result=None):
-        if self.__stopOnError__:
-            result.startTest(self)
-            self.setUp(); self.__testMethod(); self.tearDown();
-            print
-        else:
-            unittest.TestCase.__call__(self, result)
-            
-
 class KBTest(unittest.TestCase):
 
   def assertBindingsEqual(self, a, b):
