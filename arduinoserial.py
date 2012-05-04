@@ -27,12 +27,15 @@ A port of Tod E. Kurt's arduino-serial.c.
 <http://todbot.com/blog/2006/12/06/arduino-serial-c-code-to-talk-to-arduino/>
 """
 
-import termios
 import fcntl
-import os
-import sys
-import time
 import getopt
+import logging
+import os
+import StringIO
+import string
+import sys
+import termios
+import time
 
 
 # Map from the numbers to the termios constants (which are pretty much
@@ -62,6 +65,15 @@ CC = 6
 def bps_to_termios_sym(bps):
   return BPS_SYMS[bps]
 
+
+g_binary_log = None
+
+def log_data(data):
+  global g_binary_log
+  if not g_binary_log:
+    g_binary_log = open('protocol.dat', 'wb')
+  g_binary_log.write(data)
+  g_binary_log.flush()
   
 class SerialPort:
 
@@ -71,14 +83,18 @@ class SerialPort:
     connects to that port at that speed and 8N1. Opens the port in
     fully raw mode so you can send binary data.
     """
+    logging.info('Opening serial port %s', serialport)
     self.fd = os.open(serialport, os.O_RDWR | os.O_NOCTTY | os.O_NDELAY)
     attrs = termios.tcgetattr(self.fd)
     bps_sym = bps_to_termios_sym(bps)
+
     # Set I/O speed.
+    logging.info('Setting I/O speed.')
     attrs[ISPEED] = bps_sym
     attrs[OSPEED] = bps_sym
 
     # 8N1
+    logging.info('Setting 8N1.')
     attrs[CFLAG] &= ~termios.PARENB
     attrs[CFLAG] &= ~termios.CSTOPB
     attrs[CFLAG] &= ~termios.CSIZE
@@ -100,15 +116,21 @@ class SerialPort:
     attrs[CC][termios.VMIN] = 0;
     attrs[CC][termios.VTIME] = 20;
     termios.tcsetattr(self.fd, termios.TCSANOW, attrs)
+    logging.info('Finished opening serial port %s.', serialport)
 
   def read(self, num_bytes):
-    return os.read(self.fd, num_bytes)
+    data = os.read(self.fd, num_bytes)
+    if len(data) > 0:
+      logging.info('Read %s' % (xsnap(data),))
+      log_data(data)
+    return data
 
   def read_uint8(self):
     d = self.read(1)
     return ord(d)
     
   def read_until(self, until):
+    logging.debug('Reading until %r', until)
     buf = ""
     done = False
     while not done:
@@ -128,6 +150,30 @@ class SerialPort:
   def write_byte(self, byte):
     os.write(self.fd, chr(byte))
 
+
+def xsnap(data_str):
+  s = StringIO.StringIO()
+  s.write('[')
+  for char in data_str:
+    s.write('%02x' % (ord(char),))
+  s.write('/')
+  for char in data_str:
+    if is_printable(char):
+      s.write(char)
+    else:
+      s.write('.')
+  s.write(']')
+  return s.getvalue()
+
+
+def is_printable(char):
+  if (char in string.digits or char in string.letters or
+      char in string.punctuation):
+    return True
+  elif char == ' ':
+    return True
+  else:
+    return False
 
 def main(args):
   port = None

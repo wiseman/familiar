@@ -33,6 +33,7 @@ class TestMessages(unittest.TestCase):
     self.assertEqual(0, message.message_id)
     self.assertEqual(1, message.message_version)
     self.assertEqual([0x1a, 0x2b, 0x3c], map(ord, message.payload))
+    print message
     print message.compute_checksum()
 
 

@@ -12,6 +12,7 @@ def comm(port, bps):
   
 
 def read_until_preamble(port):
+  logging.debug('Reading until preamble')
   port.read_until('4')
   if port.read(1) == 'D':
     return
@@ -41,6 +42,11 @@ class Message(object):
     self.message_id = message_id
     self.message_version = message_version
     self.payload = payload
+
+  def __str__(self):
+    return '<%s id=%s version=%s payload=%s>' % (
+      self.__class__.__name__, self.message_id, self.message_version,
+      map(ord, self.payload))
 
   def compute_checksum(self):
     checksum = Fletcher8Checksum()
