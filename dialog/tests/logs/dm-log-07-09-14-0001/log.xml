@@ -1,0 +1,1046 @@
+<!-- Fri Sep 14 13:10:18 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:10:18 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:10:18 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>go for gunslinger</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>hog zero one, go for gunslinger</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>gunslinger</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>gunslinger has you weak but readable</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>say again last calling station</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:19 2007 -->
+<input>say again hog zero one</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>blah</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>gunslinger i have bravo</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>gunslinger i have charlie</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>gunslinger has you loud and clear, hog</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<input>go ahead</input>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:20 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:50 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:10:50 2007 -->
+<input>continue</input>
+<!-- Fri Sep 14 13:10:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:50 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:50 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:50 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>gunslinger copies 30 mikes playtime</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>go ahead</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>do you have an abort code setup?</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:51 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<input>hog, copy all</input>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<input>copy alpha hotel</input>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<input>copy bravo foxtrot</input>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>Unexpected error: (exceptions.TypeError, sort() takes no keyword arguments)</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 466, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 335, in parse_with_prompt
+    parses = self.parse(input)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 319, in parse
+    results = self.icp_parser.parse(input.text)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 58, in parse
+    results = self.parse_tokens(self.tokenize(string), debug)
+</debug>
+<!-- Fri Sep 14 13:10:52 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/parser.py", line 805, in parse_tokens
+    results.sort(key=lambda x: x.score, reverse=True)
+</debug>

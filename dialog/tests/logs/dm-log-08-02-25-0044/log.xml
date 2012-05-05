@@ -1,0 +1,102 @@
+<!-- Mon Feb 25 20:23:21 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Mon Feb 25 20:23:21 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Mon Feb 25 20:23:21 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Mon Feb 25 20:23:21 2008 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<input>Hog zero one, Jackknife has you loud and clear.</input>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<debug>BaseState received event attack-run-complete, ignoring.</debug>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<debug>[&lt;ICPResult 0.157064444383 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.157064444383 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<output>Jackknife, authenticate Bravo Hotel November.</output>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<input>I authenticate whiskey</input>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<pilotmodel-reply>poseResponse     headingDeg 178.3750043575177 /headingDeg     pose      mn:orien</pilotmodel-reply>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<output>Jackknife, Hog is checking in as-fragged, current position 8.0 clicks north of IP Bravo.</output>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<pilotmodel-query>playtimeQuery     queryId 0 /queryId   /playtimeQuery      /pilotModelQueryConta</pilotmodel-query>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<pilotmodel-reply>playtimeResponse     playtime 10.919366666666669 /playtime     queryId 0 /queryI</pilotmodel-reply>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<output>Jackknife, playtime is 10 mikes.</output>
+<!-- Mon Feb 25 20:23:22 2008 -->
+<input>hog zero one, id, bogey, bullseye one eight zero degrees, two, tracked vehicle, idle</input>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-jstars-id-bogey-call' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-full-callsign' slots: {&lt;Expr: "'callsign'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "0"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'target-status'"&gt;: &lt;Expr: "&lt;Description base: 'c-stationary'&gt;"&gt;, &lt;Expr: "'bearing'"&gt;: &lt;Expr: "&lt;Description base: 'c-heading' slots: {&lt;Expr: "'angle'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "8"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "0"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'target'"&gt;: &lt;Expr: "&lt;Description base: 'c-tank'&gt;"&gt;, &lt;Expr: "'distance'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "2"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<output>Jackknife, wilco.</output>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>Moving from state {Check-In State} to {Bogey ID state}</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<output>Jackknife, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>Unexpected error: (&lt;type 'exceptions.TypeError'&gt;, number_frame_to_value() takes exactly 2 arguments (1 given))</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>  File "../energid/dialogmanager.py", line 477, in run_input_loop
+    self.handle_parse(parse)
+</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>  File "../energid/dialogmanager.py", line 507, in handle_parse
+    self.state_machine.handle_parse(concept_key.op, parse)
+</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>  File "../energid/dialogmanager.py", line 740, in handle_parse
+    self.current_state.handle_parse(concept_key, parse)
+</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>  File "/users/wiseman/Desktop/ENERGID/src/rl1/code/dialogmanager/energid/actions.py", line 1383, in handle_parse
+    self.do_bogey_id(parse)
+</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>  File "/users/wiseman/Desktop/ENERGID/src/rl1/code/dialogmanager/energid/actions.py", line 1399, in do_bogey_id
+    fly_to_bullseye(self.dm, parse)
+</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>  File "/users/wiseman/Desktop/ENERGID/src/rl1/code/dialogmanager/energid/actions.py", line 1725, in fly_to_bullseye
+    pos = bullseye_vector_position(dm, bullseye_pos, bearing, distance)
+</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>  File "/users/wiseman/Desktop/ENERGID/src/rl1/code/dialogmanager/energid/actions.py", line 1704, in bullseye_vector_position
+    bearing_deg = number_frame_to_value(dm.kb, bearing_f)
+</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>  File "/users/wiseman/Desktop/ENERGID/src/rl1/code/dialogmanager/energid/actions.py", line 531, in number_frame_to_value
+    return 10 * numberify(value.op) + number_frame_to_value(kb.slot_value(frame, "rest"))
+</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<input>say when ready for talk on</input>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-say-when-ready-for-talkon'&gt;]</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>Concept key go-talk-on unknown, failing to handle</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<output>Jackknife, you are coming in weak and unreadable, say again.</output>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<input>hog, you should see a ridgeline west of the IP</input>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Ridgeline-West-of-IP' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'ridge'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<action>do_implied_call_contact</action>
+<!-- Mon Feb 25 20:23:23 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Mon Feb 25 20:23:24 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Mon Feb 25 20:23:24 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>

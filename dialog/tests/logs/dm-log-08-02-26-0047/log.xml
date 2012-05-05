@@ -1,0 +1,888 @@
+<!-- Tue Feb 26 00:45:58 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Feb 26 00:45:58 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Feb 26 00:45:58 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:45:58 2008 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Feb 26 00:45:58 2008 -->
+<input>endex</input>
+<!-- Tue Feb 26 00:45:58 2008 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<action>do_endex</action>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<output>Jackknife, copy endex.</output>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<input>Hog zero one, Jackknife has you loud and clear.</input>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<debug>[&lt;ICPResult 0.157064444383 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.157064444383 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<output>Jackknife, authenticate Bravo Hotel November.</output>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<input>I authenticate whiskey</input>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<pilotmodel-reply>poseResponse     headingDeg -171.48011639974118 /headingDeg     pose      mn:ori</pilotmodel-reply>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<output>Jackknife, Hog is checking in as-fragged, current position 2.5 clicks north of IP Bravo.</output>
+<!-- Tue Feb 26 00:45:59 2008 -->
+<pilotmodel-query>playtimeQuery     queryId 0 /queryId   /playtimeQuery      /pilotModelQueryConta</pilotmodel-query>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<pilotmodel-reply>playtimeResponse     playtime -62.530000000000001 /playtime     queryId 0 /query</pilotmodel-reply>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<output>Jackknife, playtime is 0 mikes.</output>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<input>hog zero one, id, bogey, bullseye zero three five degrees, three, tracked vehicle, idle</input>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-jstars-id-bogey-call' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-full-callsign' slots: {&lt;Expr: "'callsign'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "0"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'target-status'"&gt;: &lt;Expr: "&lt;Description base: 'c-stationary'&gt;"&gt;, &lt;Expr: "'bearing'"&gt;: &lt;Expr: "&lt;Description base: 'c-heading' slots: {&lt;Expr: "'angle'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "0"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "3"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "5"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'target'"&gt;: &lt;Expr: "&lt;Description base: 'c-tank'&gt;"&gt;, &lt;Expr: "'distance'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "3"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<output>Jackknife, wilco.</output>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<debug>Moving from state {Check-In State} to {Bogey ID state}</debug>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<pilotmodel-reply>poseResponse     headingDeg -171.48011639949448 /headingDeg     pose      mn:ori</pilotmodel-reply>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:46:00 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:46:03 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:46:03 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:46:03 2008 -->
+<pilotmodel-query>detailEqualityObservationQuery     equalityConditions       mn:integerMap xmlns:</pilotmodel-query>
+<!-- Tue Feb 26 00:46:03 2008 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="0"/     entit</pilotmodel-reply>
+<!-- Tue Feb 26 00:46:03 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:46:03 2008 -->
+<output>Jackknife, tally tank, unable ID, maneuvering for a closer look.</output>
+<!-- Tue Feb 26 00:46:13 2008 -->
+<debug>Got event of type 'bogey-declare', but there is no handler defined.</debug>
+<!-- Tue Feb 26 00:46:13 2008 -->
+<pilotmodel-query>allQuery     queryId 0 /queryId   /allQuery      /pilotModelQueryContainer</pilotmodel-query>
+<!-- Tue Feb 26 00:46:14 2008 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="8"      eleme</pilotmodel-reply>
+<!-- Tue Feb 26 00:46:14 2008 -->
+<input>hog zero one, kill, hostile, bullseye zero three five degrees, three, t-55 tank</input>
+<!-- Tue Feb 26 00:46:14 2008 -->
+<output>Jackknife, bogey is T-55, declare.</output>
+<!-- Tue Feb 26 00:46:14 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-jstars-kill-target-call' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-full-callsign' slots: {&lt;Expr: "'callsign'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "0"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'bearing'"&gt;: &lt;Expr: "&lt;Description base: 'c-heading' slots: {&lt;Expr: "'angle'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "0"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "3"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "5"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'target'"&gt;: &lt;Expr: "&lt;Description base: 'c-t-55'&gt;"&gt;, &lt;Expr: "'distance'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "3"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:46:14 2008 -->
+<output>Jackknife, copy kill.</output>
+<!-- Tue Feb 26 00:46:14 2008 -->
+<pilotmodel-query>detailEqualityObservationQuery     equalityConditions       mn:integerMap xmlns:</pilotmodel-query>
+<!-- Tue Feb 26 00:46:14 2008 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="0"/     entit</pilotmodel-reply>
+<!-- Tue Feb 26 00:46:14 2008 -->
+<pilotmodel-command>attackRunCommand     approachOffsetAngle 80 /approachOffsetAngle     commandId 0</pilotmodel-command>
+<!-- Tue Feb 26 00:46:15 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:46:15 2008 -->
+<debug>Moving from state {Bogey ID state} to {Bullseye Run-In State}</debug>
+<!-- Tue Feb 26 00:46:44 2008 -->
+<debug>Conversation gone idle.</debug>
+<!-- Tue Feb 26 00:47:14 2008 -->
+<debug>Conversation gone idle.</debug>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<output>Jackknife, Hog is 40 seconds out.</output>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<input>Continue</input>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-continue'&gt;]</debug>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<output>Jackknife, say status of None.</output>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<input>Hog, tank is stationary, still western corner of dirtball intersection</input>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-target-status-assertion' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-tank'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'status'"&gt;: &lt;Expr: "&lt;Description base: 'c-stationary'&gt;"&gt;, &lt;Expr: "'location'"&gt;: &lt;Expr: "&lt;Description base: 'c-intersection-corner' slots: {&lt;Expr: "'intersection'"&gt;: &lt;Expr: "&lt;Description base: 'c-dirtball-intersection'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<action>do_target_status_assertion</action>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<output>Jackknife, copy.</output>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<input>say status</input>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-query-status'&gt;]</debug>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<pilotmodel-query>statusQuery     queryId 0 /queryId   /statusQuery      /pilotModelQueryContainer</pilotmodel-query>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<pilotmodel-reply>statusResponse     queryId 0 /queryId     status inbound to target /status    /s</pilotmodel-reply>
+<!-- Tue Feb 26 00:47:34 2008 -->
+<output>Jackknife, I am inbound to target.</output>
+<!-- Tue Feb 26 00:48:05 2008 -->
+<debug>Conversation gone idle.</debug>
+<!-- Tue Feb 26 00:48:15 2008 -->
+<output>Jackknife, Hog 01 is in hot from the east.</output>
+<!-- Tue Feb 26 00:48:15 2008 -->
+<input>Continue</input>
+<!-- Tue Feb 26 00:48:15 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-continue'&gt;]</debug>
+<!-- Tue Feb 26 00:48:15 2008 -->
+<input>Hog 01, you're cleared hot</input>
+<!-- Tue Feb 26 00:48:15 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-cleared-hot' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-full-callsign' slots: {&lt;Expr: "'callsign'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-number' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:15 2008 -->
+<output>Jackknife, copy, cleared hot.</output>
+<!-- Tue Feb 26 00:48:24 2008 -->
+<output>Jackknife, Rifle!</output>
+<!-- Tue Feb 26 00:48:25 2008 -->
+<input>Hog 01, say status</input>
+<!-- Tue Feb 26 00:48:25 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="egressing"     commandId 0 /commandId    </pilotmodel-command>
+<!-- Tue Feb 26 00:48:25 2008 -->
+<debug>Moving from state {Bullseye Run-In State} to {Nine-Line State}</debug>
+<!-- Tue Feb 26 00:48:25 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-query-status' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-full-callsign' slots: {&lt;Expr: "'callsign'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-number' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:25 2008 -->
+<pilotmodel-query>statusQuery     queryId 0 /queryId   /statusQuery      /pilotModelQueryContainer</pilotmodel-query>
+<!-- Tue Feb 26 00:48:26 2008 -->
+<pilotmodel-reply>statusResponse     queryId 0 /queryId     status egressing /status    /statusRes</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:26 2008 -->
+<output>Jackknife, I am egressing.</output>
+<!-- Tue Feb 26 00:48:26 2008 -->
+<input>hog, you should see a ridgeline west of the IP</input>
+<!-- Tue Feb 26 00:48:26 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Ridgeline-West-of-IP' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'ridge'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:26 2008 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Feb 26 00:48:26 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:26 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:26 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:48:26 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:28 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:28 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:28 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:48:28 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:30 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:31 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:31 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:48:31 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:33 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:33 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:33 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:48:33 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:35 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:35 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:35 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:48:35 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:37 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<output>Jackknife, negative, I do not see ridgeline west of ip.</output>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<input>hog, you should see a saucer shaped valley</input>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<output>Jackknife, visual valley.</output>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<input>hog, call contact with saucer shaped valley</input>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:48:38 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:40 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<output>Jackknife, visual valley.</output>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<input>hog, call contact on saucer shaped valley</input>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<output>Jackknife, contact valley.</output>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<input>hog, call contact saucer shaped valley</input>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:41 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<output>Jackknife, visual valley.</output>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<input>hog, call contact with  east-west running valley</input>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<input>hog, call contact with  basin</input>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<output>Jackknife, contact valley.</output>
+<!-- Tue Feb 26 00:48:42 2008 -->
+<input>hog, call contact with  depression</input>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<output>Jackknife, contact valley.</output>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<input>hog, call contact with  valley with dry lake bed</input>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:43 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<output>Jackknife, contact valley.</output>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<input>hog, call contact with  flat area surrounded by mountains</input>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<input>hog, call contact with  flat area surrounded by hills</input>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<input>hog, call contact with  flat area surrounded by mountains north of IP</input>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:44 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<input>hog, call contact with  valley north of the IP</input>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<output>Jackknife, contact valley.</output>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<input>hog, call contact with  valley with Drinkwater Lake</input>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:45 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<input>hog, call contact with  dry lake area surrounded by mountains</input>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<output>Jackknife, contact valley.</output>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<input>hog, call contact with northern mountain range</input>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:48:46 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:48 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<output>Jackknife, contact northern mountains.</output>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<input>hog, call contact with  range to the north of the valley</input>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:48:49 2008 -->
+<input>hog, call contact with  mountain range in the north</input>
+<!-- Tue Feb 26 00:48:50 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:50 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:50 2008 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Feb 26 00:48:50 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:50 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:50 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:50 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:48:50 2008 -->
+<input>hog, call contact with  mountains on the north side of the valley</input>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<input>hog, call contact with  ridge to the north of the valley</input>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<output>Jackknife, contact northern mountains.</output>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<input>hog, call contact with  northern ridge</input>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:51 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<output>Jackknife, contact northern mountains.</output>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<input>hog, call contact with western mountain range</input>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Western-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<debug>Pilot is looking at [2556.0, -8335.0, -1058.0]</debug>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:48:52 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:54 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<input>hog, call contact with  range to the west</input>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Western-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<debug>Pilot is looking at [2556.0, -8335.0, -1058.0]</debug>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<output>Jackknife, visual western mountains.</output>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<input>hog, call contact with  mountain range in the west</input>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Western-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<debug>Pilot is looking at [2556.0, -8335.0, -1058.0]</debug>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:55 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:56 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:56 2008 -->
+<output>Jackknife, contact western mountains.</output>
+<!-- Tue Feb 26 00:48:56 2008 -->
+<input>hog, call contact with  mountains on the west side of the valley</input>
+<!-- Tue Feb 26 00:48:56 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Western-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:56 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:56 2008 -->
+<debug>Pilot is looking at [2556.0, -8335.0, -1058.0]</debug>
+<!-- Tue Feb 26 00:48:56 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:56 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:57 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:57 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:48:57 2008 -->
+<input>hog, call contact with southern mountain range</input>
+<!-- Tue Feb 26 00:48:57 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:48:57 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:48:57 2008 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Feb 26 00:48:57 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:48:57 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:48:58 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:48:58 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:48:58 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:00 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:00 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:00 2008 -->
+<output>Jackknife, visual southern mountains.</output>
+<!-- Tue Feb 26 00:49:00 2008 -->
+<input>hog, call contact with  range to the south of the valley</input>
+<!-- Tue Feb 26 00:49:00 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:00 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:00 2008 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Feb 26 00:49:00 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:00 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<input>hog, call contact with  mountain range in the south of the valley</input>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<output>Jackknife, contact southern mountains.</output>
+<!-- Tue Feb 26 00:49:01 2008 -->
+<input>hog, call contact with  mountains on the south side of the valley</input>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<output>Jackknife, contact southern mountains.</output>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<input>hog, call contact with  southern ridge</input>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Ridge-Line' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<debug>Pilot is looking at [-437.0, -7258.0, -1354.0]</debug>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<output>Jackknife, contact southern ridge line.</output>
+<!-- Tue Feb 26 00:49:02 2008 -->
+<input>hog, call contact with  mountains to the north of the IP</input>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<output>Jackknife, visual southern mountains.</output>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<input>hog, call contact with  mountains north of IP Bravo</input>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<input>hog, call contact with open end of the valley</input>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Open-End-of-Valley' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<debug>Pilot is looking at [3309.0, 5403.0, -1048.0]</debug>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:03 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:04 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:04 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:49:04 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:06 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:06 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:06 2008 -->
+<output>Jackknife, contact open end of valley.</output>
+<!-- Tue Feb 26 00:49:06 2008 -->
+<input>hog, call contact with  thin end of valley</input>
+<!-- Tue Feb 26 00:49:06 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Open-End-of-Valley' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:06 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:06 2008 -->
+<debug>Pilot is looking at [3309.0, 5403.0, -1048.0]</debug>
+<!-- Tue Feb 26 00:49:06 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:06 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<output>Jackknife, contact open end of valley.</output>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<input>hog, call contact with  end of valley nearest dry lake bed</input>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Open-End-of-Valley' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<debug>Pilot is looking at [3309.0, 5403.0, -1048.0]</debug>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<output>Jackknife, contact.</output>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<input>hog, call contact with  north-south running ridgeline west of the IP</input>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Ridgeline-West-of-IP' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'ridge'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<debug>Pilot is looking at [-4905.0, -3175.0, -1285.0]</debug>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:07 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:08 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:08 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:49:08 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:10 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:10 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:10 2008 -->
+<output>Jackknife, visual ridgeline west of ip.</output>
+<!-- Tue Feb 26 00:49:10 2008 -->
+<input>hog, call contact with mountains to the east of the IP</input>
+<!-- Tue Feb 26 00:49:10 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Mountains-East-of-IP' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-east'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;, &lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:10 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:11 2008 -->
+<debug>Pilot is looking at [-6492.0, 4843.0, -979.0]</debug>
+<!-- Tue Feb 26 00:49:11 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:11 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:11 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:11 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:49:11 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:13 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:13 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:13 2008 -->
+<output>Jackknife, contact mountains east of ip.</output>
+<!-- Tue Feb 26 00:49:13 2008 -->
+<input>hog, call contact with hills to the southwest of the IP</input>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Hills-Southwest-of-IP' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-southwest'&gt;"&gt;, &lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<debug>Pilot is looking at [-8745.0, -8052.0, -957.0]</debug>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<output>Jackknife, visual hills southwest of ip.</output>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<input>hog, call contact with dry lake bed</input>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-drinkwater-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<action>do_call_contact</action>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:49:14 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:49:15 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:49:15 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:49:15 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>

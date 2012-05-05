@@ -1,0 +1,8 @@
+<!-- Tue Feb 26 00:40:59 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Feb 26 00:40:59 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Feb 26 00:40:59 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:40:59 2008 -->
+<debug>Initializing to state {Check-In State}</debug>

@@ -1,0 +1,760 @@
+<!-- Wed Sep 19 12:59:25 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:25 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:25 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:25 2007 -->
+<debug>BaseState received event eta, ignoring.</debug>
+<!-- Wed Sep 19 12:59:25 2007 -->
+<debug>BaseState received event eta, ignoring.</debug>
+<!-- Wed Sep 19 12:59:25 2007 -->
+<debug>BaseState received event attack-run-complete, ignoring.</debug>
+<!-- Wed Sep 19 12:59:25 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.156443421044 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>go for gunslinger</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.159276606142 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>hog zero one, go for gunslinger</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.156534054609 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>gunslinger</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.103737760146 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>gunslinger has you weak but readable</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.160063831347 'c-weak-but-readable' {}&gt;, &lt;ICPResult 0.10610703218 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>say again last calling station</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.174810602625 'c-say-again' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.174810602625 target: 'c-say-again' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<action>do_say_again</action>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:26 2007 -->
+<input>say again hog zero one</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[&lt;ICPResult 0.155485465564 'c-say-again' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.155485465564 target: 'c-say-again' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<action>do_say_again</action>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<input>blah</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<input>gunslinger i have bravo</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[&lt;ICPResult 0.15819029441 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;, &lt;ICPResult 0.106298591268 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<input>gunslinger i have charlie</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[&lt;ICPResult 0.15819029441 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.106298591268 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<input>gunslinger has you loud and clear, hog</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[&lt;ICPResult 0.157808089345 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<action>do_authentication_request</action>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<output>Gunslinger, negative.</output>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:27 2007 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<pilotmodel-reply>poseResponse     headingDeg -169.66542409795457 /headingDeg     pose      mn:ori</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 8.0 clicks north of IP Bravo.</output>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<pilotmodel-query>playtimeQuery     queryId 0 /queryId   /playtimeQuery      /pilotModelQueryConta</pilotmodel-query>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<pilotmodel-reply>playtimeResponse     playtime -123.49816666666666 /playtime     queryId 0 /query</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<output>Gunslinger, playtime is 0 mikes.</output>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<input>go ahead</input>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<output>Gunslinger, do you have a nine-line for me?</output>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<pilotmodel-command>nineLineCommand     commandId 0 /commandId    /nineLineCommand      /pilotModelC</pilotmodel-command>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<input>continue</input>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>[&lt;ICPResult 0.16602699979 'c-continue' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>[&lt;Description base: 'c-end-exercise'&gt;]</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>Magic command &lt;Description base: 'c-end-exercise'&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<pilotmodel-reply>poseResponse     headingDeg -170.91132985572906 /headingDeg     pose      mn:ori</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 8.0 clicks north of IP Bravo.</output>
+<!-- Wed Sep 19 12:59:28 2007 -->
+<pilotmodel-query>playtimeQuery     queryId 0 /queryId   /playtimeQuery      /pilotModelQueryConta</pilotmodel-query>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<pilotmodel-reply>playtimeResponse     playtime -123.51201666666665 /playtime     queryId 0 /query</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<output>Gunslinger, playtime is 0 mikes.</output>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<input>gunslinger copies 30 mikes playtime</input>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>[&lt;ICPResult 0.158341106759 'i-playtime-response' {}&gt;, &lt;ICPResult 0.107516311337 'c-copy-ack' {}&gt;, &lt;ICPResult 0.106584246587 'c-loud-and-clear' {}&gt;, &lt;ICPResult 0.100874546448 'i-playtime-query' {}&gt;, &lt;ICPResult 0.096011205739 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-mike'"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<pilotmodel-command>nineLineCommand     commandId 0 /commandId    /nineLineCommand      /pilotModelC</pilotmodel-command>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<input>go ahead</input>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>[&lt;Description base: 'c-end-exercise'&gt;]</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>Magic command &lt;Description base: 'c-end-exercise'&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<action>do_authentication_request</action>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<output>Gunslinger, hog authenticates bravo.</output>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<input>do you have an abort code setup?</input>
+<!-- Wed Sep 19 12:59:29 2007 -->
+<debug>[&lt;ICPResult 0.155087868331 'c-abort-code-request' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<pilotmodel-reply>poseResponse     headingDeg -171.63856561237935 /headingDeg     pose      mn:ori</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 8.0 clicks north of IP Bravo.</output>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<pilotmodel-query>playtimeQuery     queryId 0 /queryId   /playtimeQuery      /pilotModelQueryConta</pilotmodel-query>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<pilotmodel-reply>playtimeResponse     playtime -123.53571666666667 /playtime     queryId 0 /query</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<output>Gunslinger, playtime is 0 mikes.</output>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<action>do_authentication_request</action>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<output>Gunslinger, you have already authenticated.</output>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<input>endex</input>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<action>do_endex</action>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:30 2007 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Wed Sep 19 12:59:31 2007 -->
+<pilotmodel-reply>poseResponse     headingDeg -171.74232354483965 /headingDeg     pose      mn:ori</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:31 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 8.0 clicks north of IP Bravo.</output>
+<!-- Wed Sep 19 12:59:31 2007 -->
+<pilotmodel-query>playtimeQuery     queryId 0 /queryId   /playtimeQuery      /pilotModelQueryConta</pilotmodel-query>
+<!-- Wed Sep 19 12:59:31 2007 -->
+<pilotmodel-reply>playtimeResponse     playtime -123.54906666666665 /playtime     queryId 0 /query</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:31 2007 -->
+<output>Gunslinger, playtime is 0 mikes.</output>
+<!-- Wed Sep 19 12:59:31 2007 -->
+<input>hog, copy all</input>
+<!-- Wed Sep 19 12:59:31 2007 -->
+<debug>[&lt;ICPResult 0.156903388843 'c-copy-ack' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:31 2007 -->
+<input>do you have an abort code setup?</input>
+<!-- Wed Sep 19 12:59:31 2007 -->
+<debug>[&lt;ICPResult 0.155087868331 'c-abort-code-request' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<input>copy alpha hotel</input>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<debug>[&lt;ICPResult 0.15855630718 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-hotel'"&gt;}&gt;, &lt;ICPResult 0.107183364999 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0965354186499 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<action>do_abort_code_ack</action>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<output>Gunslinger, negative alpha hotel.</output>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<input>copy bravo foxtrot</input>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<debug>[&lt;ICPResult 0.15855630718 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-foxtrot'"&gt;}&gt;, &lt;ICPResult 0.107183364999 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0965354186499 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<action>do_abort_code_ack</action>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<input>hog, say status</input>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<debug>[&lt;ICPResult 0.156397113568 'c-query-status' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<pilotmodel-query>statusQuery     queryId 0 /queryId   /statusQuery      /pilotModelQueryContainer</pilotmodel-query>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<pilotmodel-reply>statusResponse     queryId 0 /queryId     status inbound to ip /status    /statu</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<output>Gunslinger, I am inbound to I.P.</output>
+<!-- Wed Sep 19 12:59:32 2007 -->
+<pilotmodel-command>nineLineCommand     commandId 0 /commandId    /nineLineCommand      /pilotModelC</pilotmodel-command>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<input>go with read back</input>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>[&lt;ICPResult 0.162104903423 'i-do-nine-line-readback' {}&gt;, &lt;ICPResult 0.100255400208 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<action>do_nine_line_readback</action>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<input>good copy</input>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>[&lt;Description base: 'c-copy-ack'&gt;]</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<input>say when ready for talk on</input>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>[&lt;Description base: 'c-say-when-ready-for-talkon'&gt;]</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<input>hog, call contact with saucer shaped valley</input>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<output>Gunslinger, contact valley.</output>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<input>hog, call contact with  east-west running valley</input>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Wed Sep 19 12:59:33 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<input>hog, call contact with  basin</input>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<output>Gunslinger, visual valley.</output>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<input>hog, call contact with  depression</input>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<output>Gunslinger, contact valley.</output>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<input>hog, call contact with  valley with dry lake bed</input>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Wed Sep 19 12:59:34 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<input>hog, call contact with  flat area surrounded by mountains</input>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<input>hog, call contact with  flat area surrounded by hills</input>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Wed Sep 19 12:59:35 2007 -->
+<input>hog, call contact with  flat area surrounded by mountains north of IP</input>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<output>Gunslinger, visual valley.</output>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<input>hog, call contact with  valley north of the IP</input>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<output>Gunslinger, contact valley.</output>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<input>hog, call contact with  valley with Drinkwater Lake</input>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:36 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<output>Gunslinger, contact valley.</output>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<input>hog, call contact with  dry lake area surrounded by mountains</input>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<debug>[]</debug>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<output>Gunslinger, Hog did not copy.</output>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<input>hog, call contact with northern mountain range</input>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<debug>[]</debug>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<output>Gunslinger, Hog did not copy.</output>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<input>hog, call contact with  range to the north of the valley</input>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<debug>[]</debug>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<output>Gunslinger, Hog did not copy.</output>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<input>hog, call contact with  mountain range in the north</input>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<debug>[]</debug>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<output>Gunslinger, Hog did not copy.</output>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<input>hog, call contact with  mountains on the north side of the valley</input>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<debug>[]</debug>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<output>Gunslinger, Hog did not copy.</output>
+<!-- Wed Sep 19 12:59:37 2007 -->
+<input>hog, call contact with  north side of valley</input>
+<!-- Wed Sep 19 12:59:38 2007 -->
+<debug>[&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-compound-location' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'point'"&gt;: &lt;Expr: "&lt;Description base: 'c-edge' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Wed Sep 19 12:59:38 2007 -->
+<action>do_call_contact</action>
+<!-- Wed Sep 19 12:59:38 2007 -->
+<output>Gunslinger, sorry, I don't know that.</output>
+<!-- Wed Sep 19 12:59:38 2007 -->
+<input>hog, call contact with  ridge to the north of the valley</input>

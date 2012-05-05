@@ -1,0 +1,120 @@
+<!-- Mon Feb 25 19:09:55 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<input>Hog zero one, Jackknife has you loud and clear.</input>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<debug>[&lt;ICPResult 0.157064444383 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.157064444383 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<output>Jackknife, authenticate Bravo Hotel November.</output>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<input>I authenticate whiskey</input>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<output>Jackknife, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<output>Jackknife, playtime is 30 mikes.</output>
+<!-- Mon Feb 25 19:09:55 2008 -->
+<input>hog zero one, id, bogey, bullseye zero two zero degrees, 6, tracked vehicle, idle</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: []</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, Hog did not copy.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>say when ready for talk on</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[&lt;ICPResult 0.167462335793 'c-say-when-ready-for-talkon' {}&gt;, &lt;ICPResult 0.0941095299496 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.167462335793 target: 'c-say-when-ready-for-talkon' slots: {}&gt;, &lt;ICPResult score: 0.0941095299496 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, negative, give me the nine line first.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>hog, you should see a ridgeline west of the IP</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: []</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, Hog did not copy.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>hog, you should see a saucer shaped valley</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: []</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, Hog did not copy.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>hog, call contact with saucer shaped valley</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: []</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, Hog did not copy.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>hog, call contact on saucer shaped valley</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: []</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, Hog did not copy.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>hog, call contact saucer shaped valley</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: []</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, Hog did not copy.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>hog, call contact with  east-west running valley</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: []</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, Hog did not copy.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>hog, call contact with  basin</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: []</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, Hog did not copy.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>hog, call contact with  depression</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: []</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, Hog did not copy.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>hog, call contact with  valley with dry lake bed</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: []</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<output>Jackknife, Hog did not copy.</output>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<input>hog, call contact with  flat area surrounded by mountains</input>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>[&lt;ICPResult 0.107918321674 'c-standby' {}&gt;]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.107918321674 target: 'c-standby' slots: {}&gt;]</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<debug>Magic command &lt;ICPResult score: 0.107918321674 target: 'c-standby' slots: {}&gt; takes priority.</debug>
+<!-- Mon Feb 25 19:09:56 2008 -->
+<action>do_standby</action>

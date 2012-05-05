@@ -1,0 +1,132 @@
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<input>endex</input>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<action>do_endex</action>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<output>Jackknife, copy endex.</output>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<input>Hog zero one, Jackknife has you loud and clear.</input>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>[&lt;ICPResult 0.157064444383 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.157064444383 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<output>Jackknife, authenticate Bravo Hotel November.</output>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<input>I authenticate whiskey</input>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Tue Feb 26 00:16:44 2008 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<pilotmodel-reply>poseResponse     headingDeg -170.04423824772675 /headingDeg     pose      mn:ori</pilotmodel-reply>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<output>Jackknife, Hog is checking in as-fragged, current position 5.5 clicks north of IP Bravo.</output>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<pilotmodel-query>playtimeQuery     queryId 0 /queryId   /playtimeQuery      /pilotModelQueryConta</pilotmodel-query>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<pilotmodel-reply>playtimeResponse     playtime -33.273850000000003 /playtime     queryId 0 /query</pilotmodel-reply>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<output>Jackknife, playtime is 0 mikes.</output>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<input>hog zero one, id, bogey, bullseye zero three five degrees, three, tracked vehicle, idle</input>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-jstars-id-bogey-call' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-full-callsign' slots: {&lt;Expr: "'callsign'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "0"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'target-status'"&gt;: &lt;Expr: "&lt;Description base: 'c-stationary'&gt;"&gt;, &lt;Expr: "'bearing'"&gt;: &lt;Expr: "&lt;Description base: 'c-heading' slots: {&lt;Expr: "'angle'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "0"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "3"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "5"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'target'"&gt;: &lt;Expr: "&lt;Description base: 'c-tank'&gt;"&gt;, &lt;Expr: "'distance'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "3"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<output>Jackknife, wilco.</output>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<debug>Moving from state {Check-In State} to {Bogey ID state}</debug>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:16:45 2008 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Tue Feb 26 00:16:46 2008 -->
+<pilotmodel-reply>poseResponse     headingDeg -170.04423824772596 /headingDeg     pose      mn:ori</pilotmodel-reply>
+<!-- Tue Feb 26 00:16:46 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:16:46 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:16:46 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:16:46 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:16:48 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:16:48 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:16:48 2008 -->
+<pilotmodel-query>detailEqualityObservationQuery     equalityConditions       mn:integerMap xmlns:</pilotmodel-query>
+<!-- Tue Feb 26 00:16:49 2008 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="0"/     entit</pilotmodel-reply>
+<!-- Tue Feb 26 00:16:49 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Feb 26 00:16:49 2008 -->
+<pilotmodel-query>allQuery     queryId 0 /queryId   /allQuery      /pilotModelQueryContainer</pilotmodel-query>
+<!-- Tue Feb 26 00:16:49 2008 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="9"      eleme</pilotmodel-reply>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<output>Jackknife, bogey is T-55, declare.</output>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<input>hog zero one, kill, hostile, bullseye zero three five degrees, three, t-55 tank</input>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-jstars-kill-target-call' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-full-callsign' slots: {&lt;Expr: "'callsign'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "0"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'bearing'"&gt;: &lt;Expr: "&lt;Description base: 'c-heading' slots: {&lt;Expr: "'angle'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "0"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "3"&gt;}&gt;"&gt;, &lt;Expr: "'rest'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "5"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'target'"&gt;: &lt;Expr: "&lt;Description base: 'c-t-55'&gt;"&gt;, &lt;Expr: "'distance'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "3"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<output>Jackknife, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<debug>Unexpected error: (&lt;type 'exceptions.TypeError'&gt;, handle_parse() takes exactly 1 argument (3 given))</debug>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<debug>  File "../energid/dialogmanager.py", line 477, in run_input_loop
+    self.handle_parse(parse)
+</debug>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<debug>  File "../energid/dialogmanager.py", line 507, in handle_parse
+    self.state_machine.handle_parse(concept_key.op, parse)
+</debug>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<debug>  File "../energid/dialogmanager.py", line 740, in handle_parse
+    self.current_state.handle_parse(concept_key, parse)
+</debug>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<input>hog, you should see a ridgeline west of the IP</input>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Ridgeline-West-of-IP' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'ridge'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Feb 26 00:16:50 2008 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Feb 26 00:16:51 2008 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Feb 26 00:16:51 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:16:51 2008 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>

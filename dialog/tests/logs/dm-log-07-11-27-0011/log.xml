@@ -1,0 +1,1776 @@
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.156443421044 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156443421044 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>go for gunslinger</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.159276606142 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.159276606142 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>hog zero one, go for gunslinger</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.156534054609 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156534054609 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>gunslinger</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.103737760146 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.103737760146 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>gunslinger has you weak but readable</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.160063831347 'c-weak-but-readable' {}&gt;, &lt;ICPResult 0.10610703218 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.160063831347 target: 'c-weak-but-readable' slots: {}&gt;, &lt;ICPResult score: 0.10610703218 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>say again last calling station</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.174810602625 'c-say-again' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.174810602625 target: 'c-say-again' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.174810602625 target: 'c-say-again' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_say_again</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>say again hog zero one</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.155485465564 'c-say-again' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.155485465564 target: 'c-say-again' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.155485465564 target: 'c-say-again' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_say_again</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>blah</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: []</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>gunslinger i have bravo</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.15819029441 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;, &lt;ICPResult 0.106298591268 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15819029441 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;, &lt;ICPResult score: 0.106298591268 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>gunslinger i have charlie</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.15819029441 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.106298591268 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15819029441 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.106298591268 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:26 2007 -->
+<input>gunslinger has you loud and clear, hog</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.157808089345 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.157808089345 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.126359733165 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult score: 0.121467556206 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_authentication_request</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, negative.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>go ahead</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162493841894 target: 'c-ready-to-copy' slots: {}&gt;, &lt;ICPResult score: 0.099597011089 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, do you have a nine-line for me?</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult score: 0.142447213601 target: 'c-t-55' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>continue</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.16602699979 'c-continue' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.16602699979 target: 'c-continue' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-end-exercise'&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Magic command &lt;Description base: 'c-end-exercise'&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>gunslinger copies 30 mikes playtime</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.158341106759 'i-playtime-response' {}&gt;, &lt;ICPResult 0.107516311337 'c-copy-ack' {}&gt;, &lt;ICPResult 0.106584246587 'c-loud-and-clear' {}&gt;, &lt;ICPResult 0.100874546448 'i-playtime-query' {}&gt;, &lt;ICPResult 0.096011205739 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-mike'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158341106759 target: 'i-playtime-response' slots: {}&gt;, &lt;ICPResult score: 0.107516311337 target: 'c-copy-ack' slots: {}&gt;, &lt;ICPResult score: 0.106584246587 target: 'c-loud-and-clear' slots: {}&gt;, &lt;ICPResult score: 0.100874546448 target: 'i-playtime-query' slots: {}&gt;, &lt;ICPResult score: 0.096011205739 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-mike'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult score: 0.142447213601 target: 'c-t-55' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>go ahead</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162493841894 target: 'c-ready-to-copy' slots: {}&gt;, &lt;ICPResult score: 0.099597011089 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-end-exercise'&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Magic command &lt;Description base: 'c-end-exercise'&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.126359733165 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult score: 0.121467556206 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_authentication_request</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, hog authenticates bravo.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>do you have an abort code setup?</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.155087868331 'c-abort-code-request' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.155087868331 target: 'c-abort-code-request' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.126359733165 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult score: 0.121467556206 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_authentication_request</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, you have already authenticated.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>endex</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_endex</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>hog, copy all</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.156903388843 'c-copy-ack' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156903388843 target: 'c-copy-ack' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>do you have an abort code setup?</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.155087868331 'c-abort-code-request' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.155087868331 target: 'c-abort-code-request' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>copy alpha hotel</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.15855630718 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-hotel'"&gt;}&gt;, &lt;ICPResult 0.107183364999 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0965354186499 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15855630718 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-hotel'"&gt;}&gt;, &lt;ICPResult score: 0.107183364999 target: 'c-copy-ack' slots: {}&gt;, &lt;ICPResult score: 0.0965354186499 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_abort_code_ack</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, negative alpha hotel.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>copy bravo foxtrot</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.15855630718 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-foxtrot'"&gt;}&gt;, &lt;ICPResult 0.107183364999 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0965354186499 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15855630718 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-foxtrot'"&gt;}&gt;, &lt;ICPResult score: 0.107183364999 target: 'c-copy-ack' slots: {}&gt;, &lt;ICPResult score: 0.0965354186499 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_abort_code_ack</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>hog, say status</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.156397113568 'c-query-status' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156397113568 target: 'c-query-status' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, I am inbound to I.P.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult score: 0.142447213601 target: 'c-t-55' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>go with read back</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>[&lt;ICPResult 0.162104903423 'i-do-nine-line-readback' {}&gt;, &lt;ICPResult 0.100255400208 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162104903423 target: 'i-do-nine-line-readback' slots: {}&gt;, &lt;ICPResult score: 0.100255400208 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<action>do_nine_line_readback</action>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>good copy</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-copy-ack'&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>say when ready for talk on</input>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-say-when-ready-for-talkon'&gt;]</debug>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Tue Nov 27 22:39:27 2007 -->
+<input>hog, call contact with saucer shaped valley</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  east-west running valley</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  basin</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, visual valley.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  depression</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact valley.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  valley with dry lake bed</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  flat area surrounded by mountains</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, visual valley.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  flat area surrounded by hills</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  flat area surrounded by mountains north of IP</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact valley.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  valley north of the IP</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  valley with Drinkwater Lake</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  dry lake area surrounded by mountains</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact valley.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with northern mountain range</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact northern mountains.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  range to the north of the valley</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  mountain range in the north</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact northern mountains.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  mountains on the north side of the valley</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  ridge to the north of the valley</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with  northern ridge</input>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<output>Gunslinger, contact northern mountains.</output>
+<!-- Tue Nov 27 22:39:28 2007 -->
+<input>hog, call contact with western mountain range</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Western-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [2556.0, -8335.0, -1058.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact western mountains.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  range to the west</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Western-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [2556.0, -8335.0, -1058.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  mountain range in the west</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Western-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [2556.0, -8335.0, -1058.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  mountains on the west side of the valley</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Western-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [2556.0, -8335.0, -1058.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with southern mountain range</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, visual southern mountains.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  range to the south of the valley</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, visual southern mountains.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  mountain range in the south of the valley</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact southern mountains.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  mountains on the south side of the valley</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  southern ridge</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Ridge-Line' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [-437.0, -7258.0, -1354.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  mountains to the north of the IP</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact southern mountains.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  mountains north of IP Bravo</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [-288.0, -5034.0, -1218.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with open end of the valley</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Open-End-of-Valley' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [3309.0, 5403.0, -1048.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  thin end of valley</input>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Open-End-of-Valley' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<debug>Pilot is looking at [3309.0, 5403.0, -1048.0]</debug>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:29 2007 -->
+<input>hog, call contact with  end of valley nearest dry lake bed</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Open-End-of-Valley' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [3309.0, 5403.0, -1048.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with ridgeline west of the IP</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Ridgeline-West-of-IP' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'ridge'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [-4905.0, -3175.0, -1285.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with  north-south running ridgeline west of the IP</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Ridgeline-West-of-IP' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;, &lt;Expr: "'ridge'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [-4905.0, -3175.0, -1285.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, visual ridgeline west of ip.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with mountains to the east of the IP</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Mountains-East-of-IP' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-east'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;, &lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [-6492.0, 4843.0, -979.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, visual mountains east of ip.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with hills to the southwest of the IP</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Hills-Southwest-of-IP' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-southwest'&gt;"&gt;, &lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [-8745.0, -8052.0, -957.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, visual hills southwest of ip.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with dry lake bed</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-drinkwater-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, visual Drinkwater Lake.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with  Drinkwater Lake</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-drinkwater-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with  light sand colored shape</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-drinkwater-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with  lake</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, visual Drinkwater Lake.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with saddle on northern ridge</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Saddle-on-Northern-Ridge' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [6573.0, 263.0, -1305.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, contact saddle on northern ridge.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with spur northeast of the dry lake</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Spur-Northeast-of-Dry-Lake' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-northeast'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [6274.0, 4447.0, -1268.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with large saddle on the northern ridge</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Saddle-on-Northern-Ridge' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [7144.0, 2678.0, -1195.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, contact large saddle on northern ridge.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with  saddle on northern ridge</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Saddle-on-Northern-Ridge' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [6573.0, 263.0, -1305.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, visual saddle on northern ridge.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with large saddle on southern ridge</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Saddle-on-Southern-Ridge' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Ridge-Line' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [-703.0, 193.0, -1224.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with saddle on southern ridge</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Saddle-on-Southern-Ridge' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Ridge-Line' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Pilot is looking at [-703.0, 193.0, -1224.0]</debug>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<output>Gunslinger, contact large saddle on southern ridge.</output>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<input>hog, call contact with southern ridge line</input>
+<!-- Tue Nov 27 22:39:30 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Ridge-Line' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [-437.0, -7258.0, -1354.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact southern ridge line.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with  southern ridge</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Ridge-Line' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [-437.0, -7258.0, -1354.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with  south ridge</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Ridge-Line' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [-437.0, -7258.0, -1354.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact southern ridge line.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with overlook point</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Overlook-Point'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [565.0, -598.0, -1203.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact overlook point.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with  overlook mountain</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Overlook-Point'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [565.0, -598.0, -1203.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with  overlook hill</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Overlook-Point'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [565.0, -598.0, -1203.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with spurs on southern ridge</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Spurs-on-Southern-Ridge' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Ridge-Line' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [-242.0, -7870.0, -1328.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, visual spurs on southern ridge.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with draws on southern ridge</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Draws-on-Southern-Ridge' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Ridge-Line' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [-172.0, -7958.0, -1321.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact draws on southern ridge.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with flat area to the south of the valley</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Flat-South-of-Valley' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction-from-valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [-2348.0, 1632.0, -1158.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact flat south of valley.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with  flat area north of IP</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Flat-South-of-Valley' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [-2348.0, 1632.0, -1158.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with spurs southeast of the valley</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Spurs-Southeast-of-Valley' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction-from-valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-southeast'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [-75.0, 3197.0, -1264.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, visual spurs southeast of valley.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with draw on northern ridge</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Draw-on-Northern-Ridge' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [5118.0, -2934.0, -1113.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with  draw on northern mountain</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Draw-on-Northern-Ridge' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [5118.0, -2934.0, -1113.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with northern ridge line</input>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:31 2007 -->
+<input>hog, call contact with  northern ridge</input>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<input>hog, call contact with  north ridge</input>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Northern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-or-ridge'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Pilot is looking at [6726.0, 1322.0, -1343.0]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<input>hog, call contact with  western valley</input>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-West-End-of-Valley' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Pilot is looking at [2399.0, -4557.0, -1057.0]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<input>hog, call contact with eastern valley</input>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-East-End-of-Valley' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-east'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Pilot is looking at [3147.0, 1571.0, -1025.0]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<output>Gunslinger, contact east end of valley.</output>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<input>hog, call contact with pass</input>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Pass'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Pilot is looking at [510.0, 37.0, -1190.0]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<output>Gunslinger, visual large pass.</output>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<input>hog, call contact with  gap</input>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Pass'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:32 2007 -->
+<debug>Pilot is looking at [510.0, 37.0, -1190.0]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<output>Gunslinger, contact large pass.</output>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<input>hog, call contact with  pass north of IP Bravo</input>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Pass' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Pilot is looking at [510.0, 37.0, -1190.0]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<output>Gunslinger, contact large pass.</output>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<input>hog, call contact with  gap north of IP Bravo</input>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Pass' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Pilot is looking at [510.0, 37.0, -1190.0]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<output>Gunslinger, visual large pass.</output>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<input>hog, call contact with  gap in ridge</input>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Pass' slots: {&lt;Expr: "'ridge'"&gt;: &lt;Expr: "&lt;Description base: 'c-ridgeline'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Pilot is looking at [510.0, 37.0, -1190.0]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<output>Gunslinger, visual large pass.</output>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<input>hog, call contact with  gap in southern mountains</input>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Pass' slots: {&lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'i-Southern-Mountains' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;, &lt;Expr: "'mountain'"&gt;: &lt;Expr: "&lt;Description base: 'c-mountain-range'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Pilot is looking at [510.0, 37.0, -1190.0]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<input>hog, call contact with  pass to valley floor</input>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Pass' slots: {&lt;Expr: "'valley'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Pilot is looking at [510.0, 37.0, -1190.0]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<output>Gunslinger, visual large pass.</output>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<input>hog, call contact with  choke point</input>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Pass'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Pilot is looking at [510.0, 37.0, -1190.0]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<input>hog, call contact with large hill</input>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Hilltop'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<debug>Pilot is looking at [4365.0, 7358.0, -1142.0]</debug>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:33 2007 -->
+<input>hog, call contact with  large hilltop</input>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Large-Hilltop'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Pilot is looking at [4365.0, 7358.0, -1142.0]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<input>hog, call contact with pass next to IP</input>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Pass-at-Bravo' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Pilot is looking at [-4695.0, -675.0, -1168.0]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<output>Gunslinger, visual pass at bravo.</output>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<input>hog, call contact with western avenue of approach</input>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Western-Approach' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Pilot is looking at [3891.0, -8108.0, -962.0]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<input>hog, call contact with tower</input>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Radio-Tower'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Pilot is looking at [-1592.0, -3286.0, -1509.0]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<output>Gunslinger, visual radio tower.</output>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<input>hog, call contact with  radio tower</input>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Radio-Tower'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Pilot is looking at [-1592.0, -3286.0, -1509.0]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<input>hog, call contact with long straight road north east of IP Bravo</input>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Long-Straight-Road' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;, &lt;Expr: "'direction-from-ip'"&gt;: &lt;Expr: "&lt;Description base: 'i-northeast'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Pilot is looking at [-1813.0, 5098.0, -1020.0]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<output>Gunslinger, contact long straight road.</output>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<input>hog, call contact with Drinkwater Lake just to your north</input>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-drinkwater-lake'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<input>hog, call contact with Drinkwater Lake just to your north</input>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-drinkwater-lake'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<output>Gunslinger, contact Drinkwater Lake.</output>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-establish-unit-of-measurement' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'extent'"&gt;: &lt;Expr: "&lt;Description base: 'c-extent' slots: {&lt;Expr: "'axis-origin'"&gt;: &lt;Expr: "&lt;Description base: 'i-east'&gt;"&gt;, &lt;Expr: "'axis-destination'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>do_establish_unit_of_measurement</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>extent slot is eastWestExtent</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>eastWestExtent of drinkwater-lake is 2707.4</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Set unit of measure to 2707.4 meters</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<input>hog, let's also establish the western limit of the lake as our anchor point</input>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-establish-anchor-point' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'point'"&gt;: &lt;Expr: "&lt;Description base: 'c-edge' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>do_establish_anchor_point1</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<action>get_edge_point</action>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>westLimit of drinkwater-lake is 3412,1086</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<debug>Set anchor point to (3412, 1086, 0)</debug>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Tue Nov 27 22:39:34 2007 -->
+<input>Take the unit of measure and go one half units to the west</input>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-look-based-on-unit-of-measure-no-anchor' slots: {&lt;Expr: "'vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-half'&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<debug>vector is [0.0, -1353.7, 0.0] from anchor point</debug>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<debug>target coords are [3412.0, -267.70000000000005, 0.0]</debug>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<input>you should see an intersection where two dirtballs meet</input>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-dirtball-intersection' slots: {&lt;Expr: "'order'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "2"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<output>Gunslinger, contact dirtball intersection.</output>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<input>call contact on intersection</input>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-intersection'&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<input>call contact on dirtball intersection</input>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-dirtball-intersection'&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<input>hog, the t-55 is on the western corner of the intersection</input>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact-with-hint' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;ICPResult score: 0.142447213601 target: 'c-t-55' slots: {}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'location'"&gt;: &lt;Expr: "&lt;Description base: 'c-intersection-corner' slots: {&lt;Expr: "'intersection'"&gt;: &lt;Expr: "&lt;Description base: 'c-intersection'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<output>Gunslinger, tally T-55, departing IP at this time.</output>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<debug>Moving from state {Talk-On State} to {Run-In State}</debug>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<input>hog, copy departing IP</input>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-copy-departing-ip' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:35 2007 -->
+<action>do_nop</action>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<output>Gunslinger, Hog is 60 seconds out.</output>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<input>Continue</input>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-continue'&gt;]</debug>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<output>Gunslinger, say status of T-55.</output>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<input>Hog, tank is stationary, still western corner of dirtball intersection</input>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-target-status-assertion' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-tank'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'status'"&gt;: &lt;Expr: "&lt;Description base: 'c-stationary'&gt;"&gt;, &lt;Expr: "'location'"&gt;: &lt;Expr: "&lt;Description base: 'c-intersection-corner' slots: {&lt;Expr: "'intersection'"&gt;: &lt;Expr: "&lt;Description base: 'c-dirtball-intersection'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<action>do_target_status_assertion</action>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<input>say status</input>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-query-status'&gt;]</debug>
+<!-- Tue Nov 27 22:39:37 2007 -->
+<output>Gunslinger, I am inbound to target.</output>
+<!-- Tue Nov 27 22:39:39 2007 -->
+<output>Gunslinger, Hog 01 is in hot from the southeast.</output>
+<!-- Tue Nov 27 22:39:39 2007 -->
+<input>Hog 01, you're cleared hot</input>
+<!-- Tue Nov 27 22:39:39 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-cleared-hot' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-full-callsign' slots: {&lt;Expr: "'callsign'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-number' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:39 2007 -->
+<output>Gunslinger, copy, cleared hot.</output>
+<!-- Tue Nov 27 22:39:41 2007 -->
+<output>Gunslinger, Rifle!</output>
+<!-- Tue Nov 27 22:39:41 2007 -->
+<debug>Moving from state {Run-In State} to {Nine-Line State}</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<input>Hog 01, say status</input>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-query-status' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-full-callsign' slots: {&lt;Expr: "'callsign'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-number' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<output>Gunslinger, I am egressing.</output>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<input>say when ready for talk on</input>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-say-when-ready-for-talkon'&gt;]</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<input>Hog, let's use the same unit of measure and anchor as last time</input>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-reuse-anchor-and-unit-of-measurement' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<action>do_reuse_anchor_point_and_uom</action>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Set unit of measure to 2707.4 meters</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Set anchor point to (3412, 1086, 0)</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<input>At the southern side of Drinkwater Lake there is a dirtball road running southeast, northwest, call contact</input>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact-with-location-obj' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-dirtball-road' slots: {&lt;Expr: "'axis-origin'"&gt;: &lt;Expr: "&lt;Description base: 'i-southeast'&gt;"&gt;, &lt;Expr: "'axis-destination'"&gt;: &lt;Expr: "&lt;Description base: 'i-northwest'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'location'"&gt;: &lt;Expr: "&lt;Description base: 'c-compound-location' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-drinkwater-lake'&gt;"&gt;, &lt;Expr: "'point'"&gt;: &lt;Expr: "&lt;Description base: 'c-edge' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<action>do_call_contact_location_obj</action>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>&lt;Description base: 'i-drinkwater-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<action>get_edge_point</action>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>southLimit of drinkwater-lake is 2667,3657</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Pilot is looking at (2667, 3657, 0)</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Pilot was able to look at location portion of object</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<input>Take the unit of measure and go two units to the west and one quarter unit north on that dirtball</input>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-look-based-on-unit-of-measure-no-anchor' slots: {&lt;Expr: "'vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'rest-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-one-quarter'&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "2"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'road'"&gt;: &lt;Expr: "&lt;Description base: 'c-dirtball-road'&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>vector is [676.85000000000002, -5414.8000000000002, 0.0] from anchor point</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>target coords are [4088.8499999999999, -4328.8000000000002, 0.0]</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<input>bmp is on the dirtball</input>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact-with-hint' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-bmp-1'&gt;"&gt;, &lt;Expr: "'location'"&gt;: &lt;Expr: "&lt;Description base: 'c-dirtball-road'&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<output>Gunslinger, tally BMP, departing IP at this time.</output>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Moving from state {Talk-On State} to {Run-In State}</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<input>Hog, copy departing IP</input>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-copy-departing-ip' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:42 2007 -->
+<action>do_nop</action>
+<!-- Tue Nov 27 22:39:44 2007 -->
+<output>Gunslinger, Hog is 60 seconds out.</output>
+<!-- Tue Nov 27 22:39:46 2007 -->
+<output>Gunslinger, Hog 01 is in hot from the southeast.</output>
+<!-- Tue Nov 27 22:39:46 2007 -->
+<input>Hog 01, you're cleared hot</input>
+<!-- Tue Nov 27 22:39:46 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-cleared-hot' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-full-callsign' slots: {&lt;Expr: "'callsign'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-number' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:46 2007 -->
+<output>Gunslinger, copy, cleared hot.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, Rifle!</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>say posit</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Moving from state {Run-In State} to {Nine-Line State}</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-query-position'&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, Hog is currently 5.0 clicks north of IP Bravo.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>say playtime</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'i-playtime-query'&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, about 30 mikes.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>what is your fuel state</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'i-fuel-query'&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, fuel is 0 pounds.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>hog, say weapon status</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-query-ammo' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, I have two by maverick, two by mark eighty twos, and gun.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>say heading</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-query-heading'&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, heading is 0 degrees.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>what is your altitude</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-query-altitude'&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, altitude is 0 thousand.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>say when ready for talk on</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-say-when-ready-for-talkon'&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>hog, call contact with Drinkwater Lake just to your north</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-drinkwater-lake'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>look one unit south</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-look-based-on-unit-of-measure-no-anchor' slots: {&lt;Expr: "'vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, you didn't give me a unit of measure.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-establish-unit-of-measurement' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'extent'"&gt;: &lt;Expr: "&lt;Description base: 'c-extent' slots: {&lt;Expr: "'axis-origin'"&gt;: &lt;Expr: "&lt;Description base: 'i-east'&gt;"&gt;, &lt;Expr: "'axis-destination'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<action>do_establish_unit_of_measurement</action>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>extent slot is eastWestExtent</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>eastWestExtent of drinkwater-lake is 2707.4</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Set unit of measure to 2707.4 meters</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>look one unit south</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-look-based-on-unit-of-measure-no-anchor' slots: {&lt;Expr: "'vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, you didn't give me an anchor point.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>hog, let's also establish the southern edge of the lake as our anchor point</input>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-establish-anchor-point' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'point'"&gt;: &lt;Expr: "&lt;Description base: 'c-edge' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<action>do_establish_anchor_point1</action>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<action>get_edge_point</action>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>southLimit of drinkwater-lake is 2667,3657</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<debug>Set anchor point to (2667, 3657, 0)</debug>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Tue Nov 27 22:39:48 2007 -->
+<input>You should see a dirtball road</input>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-dirtball-road'&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<output>Gunslinger, contact dirtball.</output>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<input>look one unit south</input>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-look-based-on-unit-of-measure-no-anchor' slots: {&lt;Expr: "'vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>vector is [-2707.4000000000001, 0.0, 0.0] from anchor point</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>target coords are [-40.400000000000091, 3657.0, 0.0]</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<input>go one unit east, and then one unit north</input>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-look-based-on-unit-of-measure-no-anchor' slots: {&lt;Expr: "'vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'rest-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-east'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>vector is [2707.4000000000001, 2707.4000000000001, 0.0] from current position [-40.400000000000091, 3657.0, 0.0]</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>target coords are [2667.0, 6364.3999999999996, 0.0]</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<input>look one unit west</input>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-look-based-on-unit-of-measure-no-anchor' slots: {&lt;Expr: "'vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "1"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>vector is [0.0, -2707.4000000000001, 0.0] from current position [2667.0, 6364.3999999999996, 0.0]</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>target coords are [2667.0, 3656.9999999999995, 0.0]</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<input>You should see a dirtball road</input>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-dirtball-road'&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Nov 27 22:39:49 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Tue Nov 27 22:39:50 2007 -->
+<input>hog, say status</input>
+<!-- Tue Nov 27 22:39:50 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-query-status' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:50 2007 -->
+<output>Gunslinger, I am egressing.</output>
+<!-- Tue Nov 27 22:39:50 2007 -->
+<input>r t b at this time</input>
+<!-- Tue Nov 27 22:39:50 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-return-to-base'&gt;]</debug>
+<!-- Tue Nov 27 22:39:50 2007 -->
+<output>Gunslinger, roger, I am returning to base.</output>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<input>say status</input>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-query-status'&gt;]</debug>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<output>Gunslinger, I am returning to base.</output>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<input>fly to the radio tower</input>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<debug>Raw parses: [&lt;Description base: 'i-fly-to' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Radio-Tower'&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<action>do_fly_to</action>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<output>Gunslinger, I am going to fly to radio tower.</output>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<input>establish at I.P. Bravo</input>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-return-to-base' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<output>Gunslinger, roger, I am returning to base.</output>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<input>look at the valley</input>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<debug>Raw parses: [&lt;Description base: 'i-look-at' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;}&gt;]</debug>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<action>do_look_at</action>
+<!-- Tue Nov 27 22:39:51 2007 -->
+<output>Gunslinger, I am going to look at valley.</output>

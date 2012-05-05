@@ -1,0 +1,180 @@
+<!-- Tue Sep 18 23:27:49 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Sep 18 23:27:49 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Sep 18 23:27:49 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Sep 18 23:27:50 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Tue Sep 18 23:27:50 2007 -->
+<debug>[&lt;ICPResult 0.156410904905 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Sep 18 23:27:50 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Sep 18 23:27:50 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Tue Sep 18 23:27:50 2007 -->
+<debug>[&lt;ICPResult 0.166083576195 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Sep 18 23:27:50 2007 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<pilotmodel-reply>poseResponse     headingDeg 95.045400891530022 /headingDeg     pose      mn:orie</pilotmodel-reply>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, currently established at IP Bravo.</output>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<pilotmodel-query>playtimeQuery     queryId 0 /queryId   /playtimeQuery      /pilotModelQueryConta</pilotmodel-query>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<pilotmodel-reply>playtimeResponse     playtime -7.1696166666666699 /playtime     queryId 0 /query</pilotmodel-reply>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<output>Gunslinger, playtime is 0 mikes.</output>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>[]</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>Failed to post nine-line data on line 4, text {MANPAD}</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>Nine line handling failure!</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<output>Gunslinger, there was an error handling the nine line, please re-send.</output>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<pilotmodel-command>nineLineCommand     commandId 0 /commandId    /nineLineCommand      /pilotModelC</pilotmodel-command>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>[&lt;ICPResult 0.142482829216 'c-t-55' {}&gt;]</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<input>continue</input>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>[&lt;ICPResult 0.165932947501 'c-continue' {}&gt;]</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<input>say when ready for talk on</input>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<input>hog, call contact with Drinkwater Lake just to your north</input>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Sep 18 23:27:51 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Sep 18 23:27:52 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Sep 18 23:27:52 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Sep 18 23:27:52 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Sep 18 23:27:52 2007 -->
+<output>Gunslinger, visual drinkwater-lake.</output>
+<!-- Tue Sep 18 23:27:52 2007 -->
+<input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<action>do_establish_unit_of_measurement</action>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<debug>extent slot is eastWestExtent</debug>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<pilotmodel-query>detailEqualityObservationQuery     equalityConditions       mn:integerMap xmlns:</pilotmodel-query>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="0"/     entit</pilotmodel-reply>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<debug>eastWestExtent of drinkwater-lake is 2707.36856797639</debug>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<debug>Set unit of measure to 2707.36856798 meters</debug>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<input>hog, let's also establish the western limit of the lake as our anchor point</input>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<action>do_establish_anchor_point1</action>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<action>get_edge_point</action>
+<!-- Tue Sep 18 23:27:53 2007 -->
+<pilotmodel-query>detailEqualityObservationQuery     equalityConditions       mn:integerMap xmlns:</pilotmodel-query>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="0"/     entit</pilotmodel-reply>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<debug>westLimit of drinkwater-lake is 3412,1086,-1030</debug>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<debug>Set anchor point to (3412, 1086, -1030)</debug>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<input>Take the unit of measure and go one half units to the south and one half units to the west</input>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<debug>vector is [-1353.6842839881949, -1353.6842839881949, 0.0] from anchor point</debug>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<debug>target coords are [2058.3157160118053, -267.68428398819492, -1030.0]</debug>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<input>you should see a village</input>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<output>Gunslinger, contact village.</output>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<input>hog, village is seattle</input>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<action>do_assert_urban_layout</action>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<output>Gunslinger, copy, I have the Seattle layout.</output>
+<!-- Tue Sep 18 23:27:54 2007 -->
+<input>hog, copy</input>
+<!-- Tue Sep 18 23:27:55 2007 -->
+<input>hog, call contact building echo four</input>
+<!-- Tue Sep 18 23:27:55 2007 -->
+<action>do_call_contact</action>
+<!-- Tue Sep 18 23:27:55 2007 -->
+<action>resolve_building_reference</action>
+<!-- Tue Sep 18 23:27:55 2007 -->
+<action>resolve_building_reference</action>
+<!-- Tue Sep 18 23:27:55 2007 -->
+<debug>Pilot is looking at [2190.0, -631.0, -1069.0]</debug>
+<!-- Tue Sep 18 23:27:55 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Tue Sep 18 23:27:55 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Sep 18 23:27:56 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Sep 18 23:27:56 2007 -->
+<output>Gunslinger, contact e4.</output>
+<!-- Tue Sep 18 23:27:56 2007 -->
+<input>hog, target is MANPAD on roof of building echo four, call contact</input>
+<!-- Tue Sep 18 23:27:56 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Tue Sep 18 23:27:56 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Tue Sep 18 23:27:56 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Tue Sep 18 23:27:56 2007 -->
+<output>Gunslinger, contact MANPAD.</output>
+<!-- Tue Sep 18 23:28:26 2007 -->
+<debug>Conversation gone idle.</debug>
+<!-- Tue Sep 18 23:28:57 2007 -->
+<debug>Conversation gone idle.</debug>

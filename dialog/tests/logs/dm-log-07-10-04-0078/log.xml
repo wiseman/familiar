@@ -1,0 +1,8 @@
+<!-- Thu Oct  4 15:42:01 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Thu Oct  4 15:42:01 2007 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand xmlns:xsi="http://www.w3</pilotmodel-command>
+<!-- Thu Oct  4 15:42:01 2007 -->
+<pilotmodel-query>allQuery     queryId 0 /queryId   /allQuery      /pilotModelQueryContainer</pilotmodel-query>
+<!-- Thu Oct  4 15:42:02 2007 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="4"      eleme</pilotmodel-reply>

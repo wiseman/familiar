@@ -1,0 +1,166 @@
+<!-- -*- Mode: XML; -*- -->
+<fdl>
+
+<frame id="c-nato-phonetic-word">
+</frame>
+
+<frame id="c-nato-alpha">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>alpha</phrase>
+  <slot name="letter" value="a"/>
+  <generate>alpha</generate>
+</frame>
+  <frame id="c-nato-bravo">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>bravo</phrase>
+  <slot name="letter" value="b"/>
+  <generate>bravo</generate>
+</frame>
+<frame id="c-nato-charlie">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>charlie</phrase>
+  <slot name="letter" value="c"/>
+  <generate>charlie</generate>
+</frame>
+<frame id="c-nato-delta">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>delta</phrase>
+  <slot name="letter" value="d"/>
+  <generate>delta</generate>
+</frame>
+<frame id="c-nato-echo">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>echo</phrase>
+  <slot name="letter" value="e"/>
+  <generate>echo</generate>
+</frame>
+<frame id="c-nato-foxtrot">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>foxtrot</phrase>
+  <slot name="letter" value="f"/>
+  <generate>foxtrot</generate>
+</frame>
+<frame id="c-nato-golf">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>golf</phrase>
+  <slot name="letter" value="g"/>
+  <generate>golf</generate>
+</frame>
+<frame id="c-nato-hotel">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>hotel</phrase>
+  <slot name="letter" value="h"/>
+  <generate>hotel</generate>
+</frame>
+<frame id="c-nato-india">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>india</phrase>
+  <slot name="letter" value="i"/>
+  <generate>india</generate>
+</frame>
+<frame id="c-nato-juliet">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>juliet</phrase>
+  <slot name="letter" value="j"/>
+  <generate>juliet</generate>
+</frame>
+<frame id="c-nato-kilo">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>kilo</phrase>
+  <slot name="letter" value="k"/>
+  <generate>kilo</generate>
+</frame>
+<frame id="c-nato-lima">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>lima</phrase>
+  <slot name="letter" value="l"/>
+  <generate>lima</generate>
+</frame>
+<frame id="c-nato-mike">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>mike</phrase>
+  <slot name="letter" value="m"/>
+  <generate>mike</generate>
+</frame>
+<frame id="c-nato-november">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>november</phrase>
+  <slot name="letter" value="n"/>
+  <generate>november</generate>
+</frame>
+<frame id="c-nato-oscar">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>oscar</phrase>
+  <slot name="letter" value="o"/>
+  <generate>oscar</generate>
+</frame>
+<frame id="c-nato-papa">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>papa</phrase>
+  <slot name="letter" value="p"/>
+  <generate>papa</generate>
+</frame>
+<frame id="c-nato-quebec">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>quebec</phrase>
+  <slot name="letter" value="q"/>
+  <generate>quebec</generate>
+</frame>
+<frame id="c-nato-romeo">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>romeo</phrase>
+  <slot name="letter" value="r"/>
+  <generate>romeo</generate>
+</frame>
+<frame id="c-nato-sierra">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>sierra</phrase>
+  <slot name="letter" value="s"/>
+  <generate>sierra</generate>
+</frame>
+<frame id="c-nato-tango">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>tango</phrase>
+  <slot name="letter" value="t"/>
+  <generate>tango</generate>
+</frame>
+<frame id="c-nato-uniform">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>uniform</phrase>
+  <slot name="letter" value="u"/>
+  <generate>uniform</generate>
+</frame>
+<frame id="c-nato-victor">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>victor</phrase>
+  <slot name="letter" value="v"/>
+  <generate>victor</generate>
+</frame>
+<frame id="c-nato-whiskey">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>whiskey</phrase>
+  <slot name="letter" value="w"/>
+  <generate>whiskey</generate>
+</frame>
+<frame id="c-nato-xray">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>xray</phrase>
+  <slot name="letter" value="x"/>
+  <generate>xray</generate>
+</frame>
+<frame id="c-nato-yankee">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>yankee</phrase>
+  <slot name="letter" value="y"/>
+  <generate>yankee</generate>
+</frame>
+<frame id="c-nato-zulu">
+  <parent id="c-nato-phonetic-word"/>
+  <phrase>zulu</phrase>
+  <slot name="letter" value="z"/>
+  <generate>zulu</generate>
+</frame>
+
+
+
+</fdl>

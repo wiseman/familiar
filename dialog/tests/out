@@ -1,0 +1,1436 @@
+ASSERTING c-nato-alpha is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-alpha'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-alpha'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-alpha'">: [<Expr: "'c-nato-alpha'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-bravo is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-bravo'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-bravo'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-bravo'">: [<Expr: "'c-nato-bravo'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-charlie is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-charlie'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-charlie'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-charlie'">: [<Expr: "'c-nato-charlie'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-delta is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-delta'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-delta'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-delta'">: [<Expr: "'c-nato-delta'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-echo is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-echo'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-echo'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-echo'">: [<Expr: "'c-nato-echo'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-foxtrot is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-foxtrot'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-foxtrot'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-foxtrot'">: [<Expr: "'c-nato-foxtrot'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-golf is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-golf'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-golf'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-golf'">: [<Expr: "'c-nato-golf'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-hotel is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-hotel'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-hotel'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-hotel'">: [<Expr: "'c-nato-hotel'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-india is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-india'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-india'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-india'">: [<Expr: "'c-nato-india'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-juliet is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-juliet'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-juliet'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-juliet'">: [<Expr: "'c-nato-juliet'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-kilo is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-kilo'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-kilo'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-kilo'">: [<Expr: "'c-nato-kilo'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-lima is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-lima'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-lima'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-lima'">: [<Expr: "'c-nato-lima'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-mike is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-mike'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-mike'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-mike'">: [<Expr: "'c-nato-mike'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-november is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-november'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-november'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-november'">: [<Expr: "'c-nato-november'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-oscar is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-oscar'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-oscar'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-oscar'">: [<Expr: "'c-nato-oscar'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-papa is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-papa'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-papa'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-papa'">: [<Expr: "'c-nato-papa'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-quebec is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-quebec'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-quebec'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-quebec'">: [<Expr: "'c-nato-quebec'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-romeo is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-romeo'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-romeo'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-romeo'">: [<Expr: "'c-nato-romeo'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-sierra is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-sierra'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-sierra'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-sierra'">: [<Expr: "'c-nato-sierra'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-tango is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-tango'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-tango'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-tango'">: [<Expr: "'c-nato-tango'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-uniform is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-uniform'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-uniform'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-uniform'">: [<Expr: "'c-nato-uniform'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-victor is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-victor'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-victor'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-victor'">: [<Expr: "'c-nato-victor'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-whiskey is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-whiskey'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-whiskey'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-whiskey'">: [<Expr: "'c-nato-whiskey'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-xray is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-xray'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-xray'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-xray'">: [<Expr: "'c-nato-xray'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-yankee is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-yankee'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-yankee'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-yankee'">: [<Expr: "'c-nato-yankee'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-nato-zulu is a child of c-nato-phonetic-word
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nato-zulu'">}, {<Expr: "'?x'">: <Expr: "'c-nato-phonetic-word'">}]
+C1:  {}
+P:  [<Expr: "'c-nato-zulu'">, <Expr: "'c-nato-phonetic-word'">]
+C2:  {<Expr: "'c-nato-zulu'">: [<Expr: "'c-nato-zulu'">, <Expr: "'c-nato-phonetic-word'">]}
+ASSERTING c-end-exercise is a child of c-magic-command
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-end-exercise'">}, {<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+C1:  {}
+P:  [<Expr: "'c-end-exercise'">, <Expr: "'c-magic-command'">]
+C2:  {<Expr: "'c-end-exercise'">: [<Expr: "'c-end-exercise'">, <Expr: "'c-magic-command'">]}
+ASSERTING c-magic-parser-cp is a child of c-magic-command
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-magic-parser-cp'">}, {<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+C1:  {}
+P:  [<Expr: "'c-magic-parser-cp'">, <Expr: "'c-magic-command'">]
+C2:  {<Expr: "'c-magic-parser-cp'">: [<Expr: "'c-magic-parser-cp'">, <Expr: "'c-magic-command'">]}
+ASSERTING c-magic-parser-icp is a child of c-magic-command
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-magic-parser-icp'">}, {<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+C1:  {}
+P:  [<Expr: "'c-magic-parser-icp'">, <Expr: "'c-magic-command'">]
+C2:  {<Expr: "'c-magic-parser-icp'">: [<Expr: "'c-magic-parser-icp'">, <Expr: "'c-magic-command'">]}
+ASSERTING c-magic-trigger-nineline is a child of c-magic-command
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-magic-trigger-nineline'">}, {<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+C1:  {}
+P:  [<Expr: "'c-magic-trigger-nineline'">, <Expr: "'c-magic-command'">]
+C2:  {<Expr: "'c-magic-trigger-nineline'">: [<Expr: "'c-magic-trigger-nineline'">, <Expr: "'c-magic-command'">]}
+ASSERTING c-basic-callsign is a child of c-callsign
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-callsign'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-basic-callsign'">}, {<Expr: "'?x'">: <Expr: "'c-callsign'">}]
+C1:  {}
+P:  [<Expr: "'c-basic-callsign'">, <Expr: "'c-callsign'">]
+C2:  {<Expr: "'c-basic-callsign'">: [<Expr: "'c-basic-callsign'">, <Expr: "'c-callsign'">]}
+ASSERTING c-integer is a child of c-number
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-number'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-integer'">}, {<Expr: "'?x'">: <Expr: "'c-number'">}]
+C1:  {}
+P:  [<Expr: "'c-integer'">, <Expr: "'c-number'">]
+C2:  {<Expr: "'c-integer'">: [<Expr: "'c-integer'">, <Expr: "'c-number'">]}
+ASSERTING c-fraction is a child of c-number
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-number'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-fraction'">}, {<Expr: "'?x'">: <Expr: "'c-number'">}]
+C1:  {}
+P:  [<Expr: "'c-fraction'">, <Expr: "'c-number'">]
+C2:  {<Expr: "'c-fraction'">: [<Expr: "'c-fraction'">, <Expr: "'c-number'">]}
+ASSERTING c-half is a child of c-fraction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-fraction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-half'">}, {<Expr: "'?x'">: <Expr: "'c-fraction'">}, {<Expr: "'?x'">: <Expr: "'c-number'">}]
+C1:  {}
+P:  [<Expr: "'c-half'">, <Expr: "'c-fraction'">, <Expr: "'c-number'">]
+C2:  {<Expr: "'c-half'">: [<Expr: "'c-half'">, <Expr: "'c-fraction'">, <Expr: "'c-number'">]}
+ASSERTING c-one-quarter is a child of c-fraction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-fraction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-one-quarter'">}, {<Expr: "'?x'">: <Expr: "'c-fraction'">}, {<Expr: "'?x'">: <Expr: "'c-number'">}]
+C1:  {}
+P:  [<Expr: "'c-one-quarter'">, <Expr: "'c-fraction'">, <Expr: "'c-number'">]
+C2:  {<Expr: "'c-one-quarter'">: [<Expr: "'c-one-quarter'">, <Expr: "'c-fraction'">, <Expr: "'c-number'">]}
+ASSERTING c-three-quarter is a child of c-fraction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-fraction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-three-quarter'">}, {<Expr: "'?x'">: <Expr: "'c-fraction'">}, {<Expr: "'?x'">: <Expr: "'c-number'">}]
+C1:  {}
+P:  [<Expr: "'c-three-quarter'">, <Expr: "'c-fraction'">, <Expr: "'c-number'">]
+C2:  {<Expr: "'c-three-quarter'">: [<Expr: "'c-three-quarter'">, <Expr: "'c-fraction'">, <Expr: "'c-number'">]}
+ASSERTING c-one-third is a child of c-fraction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-fraction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-one-third'">}, {<Expr: "'?x'">: <Expr: "'c-fraction'">}, {<Expr: "'?x'">: <Expr: "'c-number'">}]
+C1:  {}
+P:  [<Expr: "'c-one-third'">, <Expr: "'c-fraction'">, <Expr: "'c-number'">]
+C2:  {<Expr: "'c-one-third'">: [<Expr: "'c-one-third'">, <Expr: "'c-fraction'">, <Expr: "'c-number'">]}
+ASSERTING c-two-thirds is a child of c-fraction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-fraction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-two-thirds'">}, {<Expr: "'?x'">: <Expr: "'c-fraction'">}, {<Expr: "'?x'">: <Expr: "'c-number'">}]
+C1:  {}
+P:  [<Expr: "'c-two-thirds'">, <Expr: "'c-fraction'">, <Expr: "'c-number'">]
+C2:  {<Expr: "'c-two-thirds'">: [<Expr: "'c-two-thirds'">, <Expr: "'c-fraction'">, <Expr: "'c-number'">]}
+ASSERTING c-rational is a child of c-number
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-number'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-rational'">}, {<Expr: "'?x'">: <Expr: "'c-number'">}]
+C1:  {}
+P:  [<Expr: "'c-rational'">, <Expr: "'c-number'">]
+C2:  {<Expr: "'c-rational'">: [<Expr: "'c-rational'">, <Expr: "'c-number'">]}
+ASSERTING c-full-callsign is a child of c-callsign
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-callsign'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-full-callsign'">}, {<Expr: "'?x'">: <Expr: "'c-callsign'">}]
+C1:  {}
+P:  [<Expr: "'c-full-callsign'">, <Expr: "'c-callsign'">]
+C2:  {<Expr: "'c-full-callsign'">: [<Expr: "'c-full-callsign'">, <Expr: "'c-callsign'">]}
+ASSERTING c-loud-and-clear is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-loud-and-clear'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-loud-and-clear'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-loud-and-clear'">: [<Expr: "'c-loud-and-clear'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-weak-but-readable is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-weak-but-readable'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-weak-but-readable'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-weak-but-readable'">: [<Expr: "'c-weak-but-readable'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-ready-to-copy is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-ready-to-copy'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-ready-to-copy'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-ready-to-copy'">: [<Expr: "'c-ready-to-copy'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-cleared-hot is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-cleared-hot'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-cleared-hot'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-cleared-hot'">: [<Expr: "'c-cleared-hot'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-say-again is a child of c-magic-command
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-say-again'">}, {<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+C1:  {}
+P:  [<Expr: "'c-say-again'">, <Expr: "'c-magic-command'">]
+C2:  {<Expr: "'c-say-again'">: [<Expr: "'c-say-again'">, <Expr: "'c-magic-command'">]}
+ASSERTING c-standby is a child of c-magic-command
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-standby'">}, {<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+C1:  {}
+P:  [<Expr: "'c-standby'">, <Expr: "'c-magic-command'">]
+C2:  {<Expr: "'c-standby'">: [<Expr: "'c-standby'">, <Expr: "'c-magic-command'">]}
+ASSERTING c-authentication-response is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-authentication-response'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-authentication-response'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-authentication-response'">: [<Expr: "'c-authentication-response'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-copy-ack is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-copy-ack'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-copy-ack'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-copy-ack'">: [<Expr: "'c-copy-ack'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-copy-req is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-copy-req'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-copy-req'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-copy-req'">: [<Expr: "'c-copy-req'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-abort-code-request is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-abort-code-request'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-abort-code-request'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-abort-code-request'">: [<Expr: "'c-abort-code-request'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-abort-code-ack is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-abort-code-ack'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-abort-code-ack'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-abort-code-ack'">: [<Expr: "'c-abort-code-ack'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-authentication-request is a child of c-magic-command
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-authentication-request'">}, {<Expr: "'?x'">: <Expr: "'c-magic-command'">}]
+C1:  {}
+P:  [<Expr: "'c-authentication-request'">, <Expr: "'c-magic-command'">]
+C2:  {<Expr: "'c-authentication-request'">: [<Expr: "'c-authentication-request'">, <Expr: "'c-magic-command'">]}
+ASSERTING c-denver is a child of c-city
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-city'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-denver'">}, {<Expr: "'?x'">: <Expr: "'c-city'">}]
+C1:  {}
+P:  [<Expr: "'c-denver'">, <Expr: "'c-city'">]
+C2:  {<Expr: "'c-denver'">: [<Expr: "'c-denver'">, <Expr: "'c-city'">]}
+ASSERTING c-linear-measurement is a child of c-measurement
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-measurement'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-linear-measurement'">}, {<Expr: "'?x'">: <Expr: "'c-measurement'">}]
+C1:  {}
+P:  [<Expr: "'c-linear-measurement'">, <Expr: "'c-measurement'">]
+C2:  {<Expr: "'c-linear-measurement'">: [<Expr: "'c-linear-measurement'">, <Expr: "'c-measurement'">]}
+ASSERTING c-nautical-mile is a child of c-unit-of-measurement
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-unit-of-measurement'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-nautical-mile'">}, {<Expr: "'?x'">: <Expr: "'c-unit-of-measurement'">}]
+C1:  {}
+P:  [<Expr: "'c-nautical-mile'">, <Expr: "'c-unit-of-measurement'">]
+C2:  {<Expr: "'c-nautical-mile'">: [<Expr: "'c-nautical-mile'">, <Expr: "'c-unit-of-measurement'">]}
+ASSERTING c-foot is a child of c-unit-of-measurement
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-unit-of-measurement'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-foot'">}, {<Expr: "'?x'">: <Expr: "'c-unit-of-measurement'">}]
+C1:  {}
+P:  [<Expr: "'c-foot'">, <Expr: "'c-unit-of-measurement'">]
+C2:  {<Expr: "'c-foot'">: [<Expr: "'c-foot'">, <Expr: "'c-unit-of-measurement'">]}
+ASSERTING c-kilometer is a child of c-unit-of-measurement
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-unit-of-measurement'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-kilometer'">}, {<Expr: "'?x'">: <Expr: "'c-unit-of-measurement'">}]
+C1:  {}
+P:  [<Expr: "'c-kilometer'">, <Expr: "'c-unit-of-measurement'">]
+C2:  {<Expr: "'c-kilometer'">: [<Expr: "'c-kilometer'">, <Expr: "'c-unit-of-measurement'">]}
+ASSERTING c-meter is a child of c-unit-of-measurement
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-unit-of-measurement'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-meter'">}, {<Expr: "'?x'">: <Expr: "'c-unit-of-measurement'">}]
+C1:  {}
+P:  [<Expr: "'c-meter'">, <Expr: "'c-unit-of-measurement'">]
+C2:  {<Expr: "'c-meter'">: [<Expr: "'c-meter'">, <Expr: "'c-unit-of-measurement'">]}
+ASSERTING c-t-55 is a child of c-tank
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-tank'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-t-55'">}, {<Expr: "'?x'">: <Expr: "'c-tank'">}]
+C1:  {}
+P:  [<Expr: "'c-t-55'">, <Expr: "'c-tank'">]
+C2:  {<Expr: "'c-t-55'">: [<Expr: "'c-t-55'">, <Expr: "'c-tank'">]}
+ASSERTING c-t-72 is a child of c-tank
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-tank'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-t-72'">}, {<Expr: "'?x'">: <Expr: "'c-tank'">}]
+C1:  {}
+P:  [<Expr: "'c-t-72'">, <Expr: "'c-tank'">]
+C2:  {<Expr: "'c-t-72'">: [<Expr: "'c-t-72'">, <Expr: "'c-tank'">]}
+ASSERTING c-bmp-1 is a child of c-tank
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-tank'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-bmp-1'">}, {<Expr: "'?x'">: <Expr: "'c-tank'">}]
+C1:  {}
+P:  [<Expr: "'c-bmp-1'">, <Expr: "'c-tank'">]
+C2:  {<Expr: "'c-bmp-1'">: [<Expr: "'c-bmp-1'">, <Expr: "'c-tank'">]}
+ASSERTING c-left is a child of c-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-left'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'c-left'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'c-left'">: [<Expr: "'c-left'">, <Expr: "'c-direction'">]}
+ASSERTING c-right is a child of c-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-right'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'c-right'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'c-right'">: [<Expr: "'c-right'">, <Expr: "'c-direction'">]}
+ASSERTING c-cardinal-direction is a child of c-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'c-cardinal-direction'">: [<Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]}
+ASSERTING i-north is an instance of c-cardinal-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-north'">}, {<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'i-north'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'i-north'">: [<Expr: "'i-north'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]}
+asserted <Expr: "'i-north'"> isa <Expr: "'c-cardinal-direction'">
+ASSERTING i-south is an instance of c-cardinal-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-south'">}, {<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'i-south'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'i-south'">: [<Expr: "'i-south'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]}
+asserted <Expr: "'i-south'"> isa <Expr: "'c-cardinal-direction'">
+ASSERTING i-east is an instance of c-cardinal-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-east'">}, {<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'i-east'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'i-east'">: [<Expr: "'i-east'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]}
+asserted <Expr: "'i-east'"> isa <Expr: "'c-cardinal-direction'">
+ASSERTING i-west is an instance of c-cardinal-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-west'">}, {<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'i-west'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'i-west'">: [<Expr: "'i-west'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]}
+asserted <Expr: "'i-west'"> isa <Expr: "'c-cardinal-direction'">
+ASSERTING i-northwest is an instance of c-cardinal-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-northwest'">}, {<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'i-northwest'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'i-northwest'">: [<Expr: "'i-northwest'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]}
+asserted <Expr: "'i-northwest'"> isa <Expr: "'c-cardinal-direction'">
+ASSERTING i-northeast is an instance of c-cardinal-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-northeast'">}, {<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'i-northeast'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'i-northeast'">: [<Expr: "'i-northeast'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]}
+asserted <Expr: "'i-northeast'"> isa <Expr: "'c-cardinal-direction'">
+ASSERTING i-southwest is an instance of c-cardinal-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-southwest'">}, {<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'i-southwest'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'i-southwest'">: [<Expr: "'i-southwest'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]}
+asserted <Expr: "'i-southwest'"> isa <Expr: "'c-cardinal-direction'">
+ASSERTING i-southeast is an instance of c-cardinal-direction
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-southeast'">}, {<Expr: "'?x'">: <Expr: "'c-cardinal-direction'">}, {<Expr: "'?x'">: <Expr: "'c-direction'">}]
+C1:  {}
+P:  [<Expr: "'i-southeast'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]
+C2:  {<Expr: "'i-southeast'">: [<Expr: "'i-southeast'">, <Expr: "'c-cardinal-direction'">, <Expr: "'c-direction'">]}
+asserted <Expr: "'i-southeast'"> isa <Expr: "'c-cardinal-direction'">
+ASSERTING c-initial-point is an instance of c-thing
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-thing'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-initial-point'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-initial-point'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-initial-point'">: [<Expr: "'c-initial-point'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'c-initial-point'"> isa <Expr: "'c-thing'">
+ASSERTING c-say-when-ready-for-talkon is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-say-when-ready-for-talkon'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-say-when-ready-for-talkon'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-say-when-ready-for-talkon'">: [<Expr: "'c-say-when-ready-for-talkon'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-talk-on is a child of c-procedure
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-procedure'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-talk-on'">}, {<Expr: "'?x'">: <Expr: "'c-procedure'">}]
+C1:  {}
+P:  [<Expr: "'c-talk-on'">, <Expr: "'c-procedure'">]
+C2:  {<Expr: "'c-talk-on'">: [<Expr: "'c-talk-on'">, <Expr: "'c-procedure'">]}
+ASSERTING c-what-do-you-see is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-what-do-you-see'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-what-do-you-see'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-what-do-you-see'">: [<Expr: "'c-what-do-you-see'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-call-contact is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-call-contact'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-call-contact'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-call-contact'">: [<Expr: "'c-call-contact'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-call-contact-with-location-obj is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-call-contact-with-location-obj'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-call-contact-with-location-obj'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-call-contact-with-location-obj'">: [<Expr: "'c-call-contact-with-location-obj'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-location is a child of c-thing
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-thing'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-location'">: [<Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-basic-location is a child of c-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-basic-location'">: [<Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-city is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-city'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-city'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-city'">: [<Expr: "'c-city'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-lake is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-lake'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-lake'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-lake'">: [<Expr: "'c-lake'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-tower is a child of c-thing
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-thing'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-tower'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-tower'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-tower'">: [<Expr: "'c-tower'">, <Expr: "'c-thing'">]}
+ASSERTING c-marker is a child of c-thing
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-thing'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-marker'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-marker'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-marker'">: [<Expr: "'c-marker'">, <Expr: "'c-thing'">]}
+ASSERTING i-signal-mirror is an instance of c-marker
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-marker'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-signal-mirror'">}, {<Expr: "'?x'">: <Expr: "'c-marker'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-signal-mirror'">, <Expr: "'c-marker'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-signal-mirror'">: [<Expr: "'i-signal-mirror'">, <Expr: "'c-marker'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-signal-mirror'"> isa <Expr: "'c-marker'">
+ASSERTING c-valley is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-valley'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-valley'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-valley'">: [<Expr: "'c-valley'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING i-kampton-city is an instance of c-city
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-city'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-kampton-city'">}, {<Expr: "'?x'">: <Expr: "'c-city'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-kampton-city'">, <Expr: "'c-city'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-kampton-city'">: [<Expr: "'i-kampton-city'">, <Expr: "'c-city'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-kampton-city'"> isa <Expr: "'c-city'">
+ASSERTING c-establish-unit-of-measurement is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-establish-unit-of-measurement'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-establish-unit-of-measurement'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-establish-unit-of-measurement'">: [<Expr: "'c-establish-unit-of-measurement'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-establish-anchor-point is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-establish-anchor-point'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-establish-anchor-point'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-establish-anchor-point'">: [<Expr: "'c-establish-anchor-point'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-reuse-anchor-and-unit-of-measurement is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-reuse-anchor-and-unit-of-measurement'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-reuse-anchor-and-unit-of-measurement'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-reuse-anchor-and-unit-of-measurement'">: [<Expr: "'c-reuse-anchor-and-unit-of-measurement'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-reuse-anchor-point is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-reuse-anchor-point'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-reuse-anchor-point'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-reuse-anchor-point'">: [<Expr: "'c-reuse-anchor-point'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-reuse-unit-of-measure is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-reuse-unit-of-measure'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-reuse-unit-of-measure'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-reuse-unit-of-measure'">: [<Expr: "'c-reuse-unit-of-measure'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-edge is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-edge'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-edge'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-edge'">: [<Expr: "'c-edge'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-look-based-on-unit-of-measure-no-anchor is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-look-based-on-unit-of-measure-no-anchor'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-look-based-on-unit-of-measure-no-anchor'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-look-based-on-unit-of-measure-no-anchor'">: [<Expr: "'c-look-based-on-unit-of-measure-no-anchor'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-look-based-on-unit-of-measure-from-anchor is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-look-based-on-unit-of-measure-from-anchor'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-look-based-on-unit-of-measure-from-anchor'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-look-based-on-unit-of-measure-from-anchor'">: [<Expr: "'c-look-based-on-unit-of-measure-from-anchor'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-disregard-unit-of-measure is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-disregard-unit-of-measure'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-disregard-unit-of-measure'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-disregard-unit-of-measure'">: [<Expr: "'c-disregard-unit-of-measure'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-implied-call-contact is a child of c-call-contact
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-call-contact'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-implied-call-contact'">}, {<Expr: "'?x'">: <Expr: "'c-call-contact'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-implied-call-contact'">, <Expr: "'c-call-contact'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-implied-call-contact'">: [<Expr: "'c-implied-call-contact'">, <Expr: "'c-call-contact'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-implied-call-contact-with-hint is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-implied-call-contact-with-hint'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-implied-call-contact-with-hint'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-implied-call-contact-with-hint'">: [<Expr: "'c-implied-call-contact-with-hint'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-target-status-assertion is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-target-status-assertion'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-target-status-assertion'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-target-status-assertion'">: [<Expr: "'c-target-status-assertion'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-stationary is a child of c-target-status
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-target-status'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-stationary'">}, {<Expr: "'?x'">: <Expr: "'c-target-status'">}]
+C1:  {}
+P:  [<Expr: "'c-stationary'">, <Expr: "'c-target-status'">]
+C2:  {<Expr: "'c-stationary'">: [<Expr: "'c-stationary'">, <Expr: "'c-target-status'">]}
+ASSERTING c-moving is a child of c-target-status
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-target-status'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-moving'">}, {<Expr: "'?x'">: <Expr: "'c-target-status'">}]
+C1:  {}
+P:  [<Expr: "'c-moving'">, <Expr: "'c-target-status'">]
+C2:  {<Expr: "'c-moving'">: [<Expr: "'c-moving'">, <Expr: "'c-target-status'">]}
+ASSERTING c-intersection is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-intersection'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-intersection'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-intersection'">: [<Expr: "'c-intersection'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-hardball-intersection is a child of c-intersection
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-intersection'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-hardball-intersection'">}, {<Expr: "'?x'">: <Expr: "'c-intersection'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-hardball-intersection'">, <Expr: "'c-intersection'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-hardball-intersection'">: [<Expr: "'c-hardball-intersection'">, <Expr: "'c-intersection'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-dirtball-intersection is a child of c-intersection
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-intersection'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-dirtball-intersection'">}, {<Expr: "'?x'">: <Expr: "'c-intersection'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-dirtball-intersection'">, <Expr: "'c-intersection'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-dirtball-intersection'">: [<Expr: "'c-dirtball-intersection'">, <Expr: "'c-intersection'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-road is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-road'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-road'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-road'">: [<Expr: "'c-road'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-dirtball-road is a child of c-road
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-road'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-dirtball-road'">}, {<Expr: "'?x'">: <Expr: "'c-road'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-dirtball-road'">, <Expr: "'c-road'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-dirtball-road'">: [<Expr: "'c-dirtball-road'">, <Expr: "'c-road'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-hardball-road is a child of c-road
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-road'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-hardball-road'">}, {<Expr: "'?x'">: <Expr: "'c-road'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-hardball-road'">, <Expr: "'c-road'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-hardball-road'">: [<Expr: "'c-hardball-road'">, <Expr: "'c-road'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-corner is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-corner'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-corner'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-corner'">: [<Expr: "'c-corner'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-intersection-corner is a child of c-corner
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-corner'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-intersection-corner'">}, {<Expr: "'?x'">: <Expr: "'c-corner'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-intersection-corner'">, <Expr: "'c-corner'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-intersection-corner'">: [<Expr: "'c-intersection-corner'">, <Expr: "'c-corner'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-compound-location is a child of c-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-compound-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-compound-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-compound-location'">: [<Expr: "'c-compound-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-copy-departing-ip is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-copy-departing-ip'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-copy-departing-ip'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-copy-departing-ip'">: [<Expr: "'c-copy-departing-ip'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-white-phosphorus-mark is a child of c-target-designation-mark
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-target-designation-mark'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-white-phosphorus-mark'">}, {<Expr: "'?x'">: <Expr: "'c-target-designation-mark'">}]
+C1:  {}
+P:  [<Expr: "'c-white-phosphorus-mark'">, <Expr: "'c-target-designation-mark'">]
+C2:  {<Expr: "'c-white-phosphorus-mark'">: [<Expr: "'c-white-phosphorus-mark'">, <Expr: "'c-target-designation-mark'">]}
+ASSERTING c-laser-mark is a child of c-target-designation-mark
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-target-designation-mark'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-laser-mark'">}, {<Expr: "'?x'">: <Expr: "'c-target-designation-mark'">}]
+C1:  {}
+P:  [<Expr: "'c-laser-mark'">, <Expr: "'c-target-designation-mark'">]
+C2:  {<Expr: "'c-laser-mark'">: [<Expr: "'c-laser-mark'">, <Expr: "'c-target-designation-mark'">]}
+ASSERTING c-infrared-mark is a child of c-target-designation-mark
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-target-designation-mark'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-infrared-mark'">}, {<Expr: "'?x'">: <Expr: "'c-target-designation-mark'">}]
+C1:  {}
+P:  [<Expr: "'c-infrared-mark'">, <Expr: "'c-target-designation-mark'">]
+C2:  {<Expr: "'c-infrared-mark'">: [<Expr: "'c-infrared-mark'">, <Expr: "'c-target-designation-mark'">]}
+ASSERTING c-beacon-mark is a child of c-target-designation-mark
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-target-designation-mark'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-beacon-mark'">}, {<Expr: "'?x'">: <Expr: "'c-target-designation-mark'">}]
+C1:  {}
+P:  [<Expr: "'c-beacon-mark'">, <Expr: "'c-target-designation-mark'">]
+C2:  {<Expr: "'c-beacon-mark'">: [<Expr: "'c-beacon-mark'">, <Expr: "'c-target-designation-mark'">]}
+ASSERTING c-no-mark is a child of c-target-designation-mark
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-target-designation-mark'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-no-mark'">}, {<Expr: "'?x'">: <Expr: "'c-target-designation-mark'">}]
+C1:  {}
+P:  [<Expr: "'c-no-mark'">, <Expr: "'c-target-designation-mark'">]
+C2:  {<Expr: "'c-no-mark'">: [<Expr: "'c-no-mark'">, <Expr: "'c-target-designation-mark'">]}
+ASSERTING c-tank is a child of c-thing
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-thing'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-tank'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-tank'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-tank'">: [<Expr: "'c-tank'">, <Expr: "'c-thing'">]}
+ASSERTING c-building is a child of c-thing
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-thing'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-building'">: [<Expr: "'c-building'">, <Expr: "'c-thing'">]}
+ASSERTING c-farmhouse is a child of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-farmhouse'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-farmhouse'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-farmhouse'">: [<Expr: "'c-farmhouse'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+ASSERTING i-red is an instance of c-color
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-color'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-red'">}, {<Expr: "'?x'">: <Expr: "'c-color'">}]
+C1:  {}
+P:  [<Expr: "'i-red'">, <Expr: "'c-color'">]
+C2:  {<Expr: "'i-red'">: [<Expr: "'i-red'">, <Expr: "'c-color'">]}
+asserted <Expr: "'i-red'"> isa <Expr: "'c-color'">
+ASSERTING i-blue is an instance of c-color
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-color'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-blue'">}, {<Expr: "'?x'">: <Expr: "'c-color'">}]
+C1:  {}
+P:  [<Expr: "'i-blue'">, <Expr: "'c-color'">]
+C2:  {<Expr: "'i-blue'">: [<Expr: "'i-blue'">, <Expr: "'c-color'">]}
+asserted <Expr: "'i-blue'"> isa <Expr: "'c-color'">
+ASSERTING i-red-tank is an instance of c-tank
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-tank'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-red-tank'">}, {<Expr: "'?x'">: <Expr: "'c-tank'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-red-tank'">, <Expr: "'c-tank'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-red-tank'">: [<Expr: "'i-red-tank'">, <Expr: "'c-tank'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-red-tank'"> isa <Expr: "'c-tank'">
+ASSERTING i-blue-farmhouse is an instance of c-farmhouse
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-farmhouse'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-blue-farmhouse'">}, {<Expr: "'?x'">: <Expr: "'c-farmhouse'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-blue-farmhouse'">, <Expr: "'c-farmhouse'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-blue-farmhouse'">: [<Expr: "'i-blue-farmhouse'">, <Expr: "'c-farmhouse'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-blue-farmhouse'"> isa <Expr: "'c-farmhouse'">
+ASSERTING i-look-at is an instance of c-action
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-action'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-look-at'">}, {<Expr: "'?x'">: <Expr: "'c-action'">}]
+C1:  {}
+P:  [<Expr: "'i-look-at'">, <Expr: "'c-action'">]
+C2:  {<Expr: "'i-look-at'">: [<Expr: "'i-look-at'">, <Expr: "'c-action'">]}
+asserted <Expr: "'i-look-at'"> isa <Expr: "'c-action'">
+ASSERTING i-fly-to is an instance of c-action
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-action'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-fly-to'">}, {<Expr: "'?x'">: <Expr: "'c-action'">}]
+C1:  {}
+P:  [<Expr: "'i-fly-to'">, <Expr: "'c-action'">]
+C2:  {<Expr: "'i-fly-to'">: [<Expr: "'i-fly-to'">, <Expr: "'c-action'">]}
+asserted <Expr: "'i-fly-to'"> isa <Expr: "'c-action'">
+ASSERTING i-playtime-query is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-playtime-query'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'i-playtime-query'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'i-playtime-query'">: [<Expr: "'i-playtime-query'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING i-playtime-response is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-playtime-response'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'i-playtime-response'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'i-playtime-response'">: [<Expr: "'i-playtime-response'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING i-fuel-query is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-fuel-query'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'i-fuel-query'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'i-fuel-query'">: [<Expr: "'i-fuel-query'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-continue is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-continue'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-continue'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-continue'">: [<Expr: "'c-continue'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING i-do-nine-line-readback is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-do-nine-line-readback'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'i-do-nine-line-readback'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'i-do-nine-line-readback'">: [<Expr: "'i-do-nine-line-readback'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING i-eta-event-handler is a child of c-event-handler
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-event-handler'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-eta-event-handler'">}, {<Expr: "'?x'">: <Expr: "'c-event-handler'">}]
+C1:  {}
+P:  [<Expr: "'i-eta-event-handler'">, <Expr: "'c-event-handler'">]
+C2:  {<Expr: "'i-eta-event-handler'">: [<Expr: "'i-eta-event-handler'">, <Expr: "'c-event-handler'">]}
+ASSERTING i-attack-run-complete-event-handler is a child of c-event-handler
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-event-handler'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-attack-run-complete-event-handler'">}, {<Expr: "'?x'">: <Expr: "'c-event-handler'">}]
+C1:  {}
+P:  [<Expr: "'i-attack-run-complete-event-handler'">, <Expr: "'c-event-handler'">]
+C2:  {<Expr: "'i-attack-run-complete-event-handler'">: [<Expr: "'i-attack-run-complete-event-handler'">, <Expr: "'c-event-handler'">]}
+ASSERTING i-conversation-idle-event is a child of c-event-handler
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-event-handler'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-conversation-idle-event'">}, {<Expr: "'?x'">: <Expr: "'c-event-handler'">}]
+C1:  {}
+P:  [<Expr: "'i-conversation-idle-event'">, <Expr: "'c-event-handler'">]
+C2:  {<Expr: "'i-conversation-idle-event'">: [<Expr: "'i-conversation-idle-event'">, <Expr: "'c-event-handler'">]}
+ASSERTING i-nine-line-event is a child of c-event-handler
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-event-handler'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-nine-line-event'">}, {<Expr: "'?x'">: <Expr: "'c-event-handler'">}]
+C1:  {}
+P:  [<Expr: "'i-nine-line-event'">, <Expr: "'c-event-handler'">]
+C2:  {<Expr: "'i-nine-line-event'">: [<Expr: "'i-nine-line-event'">, <Expr: "'c-event-handler'">]}
+ASSERTING i-freq-green is an instance of c-frequency
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-frequency'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-freq-green'">}, {<Expr: "'?x'">: <Expr: "'c-frequency'">}]
+C1:  {}
+P:  [<Expr: "'i-freq-green'">, <Expr: "'c-frequency'">]
+C2:  {<Expr: "'i-freq-green'">: [<Expr: "'i-freq-green'">, <Expr: "'c-frequency'">]}
+asserted <Expr: "'i-freq-green'"> isa <Expr: "'c-frequency'">
+ASSERTING i-freq-uniform is an instance of c-frequency
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-frequency'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-freq-uniform'">}, {<Expr: "'?x'">: <Expr: "'c-frequency'">}]
+C1:  {}
+P:  [<Expr: "'i-freq-uniform'">, <Expr: "'c-frequency'">]
+C2:  {<Expr: "'i-freq-uniform'">: [<Expr: "'i-freq-uniform'">, <Expr: "'c-frequency'">]}
+asserted <Expr: "'i-freq-uniform'"> isa <Expr: "'c-frequency'">
+ASSERTING c-request-frequency-change is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-request-frequency-change'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-request-frequency-change'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-request-frequency-change'">: [<Expr: "'c-request-frequency-change'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-frequency-change-ok is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-frequency-change-ok'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-frequency-change-ok'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-frequency-change-ok'">: [<Expr: "'c-frequency-change-ok'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-frequency-change-deny is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-frequency-change-deny'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-frequency-change-deny'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-frequency-change-deny'">: [<Expr: "'c-frequency-change-deny'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-query-position is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-query-position'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-query-position'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-query-position'">: [<Expr: "'c-query-position'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-query-status is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-query-status'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-query-status'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-query-status'">: [<Expr: "'c-query-status'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-query-ammo is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-query-ammo'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-query-ammo'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-query-ammo'">: [<Expr: "'c-query-ammo'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-query-altitude is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-query-altitude'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-query-altitude'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-query-altitude'">: [<Expr: "'c-query-altitude'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-query-heading is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-query-heading'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-query-heading'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-query-heading'">: [<Expr: "'c-query-heading'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-return-to-base is an instance of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-return-to-base'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-return-to-base'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-return-to-base'">: [<Expr: "'c-return-to-base'">, <Expr: "'c-addressed-utterance'">]}
+asserted <Expr: "'c-return-to-base'"> isa <Expr: "'c-addressed-utterance'">
+ASSERTING c-major-geographic-feature is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-major-geographic-feature'">: [<Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-minor-geographic-feature is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-minor-geographic-feature'">: [<Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-distinct-feature is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-distinct-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-distinct-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-distinct-feature'">: [<Expr: "'c-distinct-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING i-drinkwater-lake is a child of c-lake
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-lake'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-drinkwater-lake'">}, {<Expr: "'?x'">: <Expr: "'c-lake'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-drinkwater-lake'">, <Expr: "'c-lake'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-drinkwater-lake'">: [<Expr: "'i-drinkwater-lake'">, <Expr: "'c-lake'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING c-Village is a child of c-city
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-city'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-Village'">}, {<Expr: "'?x'">: <Expr: "'c-city'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-Village'">, <Expr: "'c-city'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-Village'">: [<Expr: "'c-Village'">, <Expr: "'c-city'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING i-seattle-codeword is a child of c-codeword
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-codeword'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-seattle-codeword'">}, {<Expr: "'?x'">: <Expr: "'c-codeword'">}]
+C1:  {}
+P:  [<Expr: "'i-seattle-codeword'">, <Expr: "'c-codeword'">]
+C2:  {<Expr: "'i-seattle-codeword'">: [<Expr: "'i-seattle-codeword'">, <Expr: "'c-codeword'">]}
+ASSERTING c-assert-urban-layout is a child of c-addressed-utterance
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-assert-urban-layout'">}, {<Expr: "'?x'">: <Expr: "'c-addressed-utterance'">}]
+C1:  {}
+P:  [<Expr: "'c-assert-urban-layout'">, <Expr: "'c-addressed-utterance'">]
+C2:  {<Expr: "'c-assert-urban-layout'">: [<Expr: "'c-assert-urban-layout'">, <Expr: "'c-addressed-utterance'">]}
+ASSERTING c-building-reference is a child of c-thing
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-thing'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-building-reference'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-building-reference'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-building-reference'">: [<Expr: "'c-building-reference'">, <Expr: "'c-thing'">]}
+ASSERTING c-manpad is a child of c-thing
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-thing'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-manpad'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-manpad'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-manpad'">: [<Expr: "'c-manpad'">, <Expr: "'c-thing'">]}
+ASSERTING c-rooftop is a child of c-basic-location
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-basic-location'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'c-rooftop'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'c-rooftop'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'c-rooftop'">: [<Expr: "'c-rooftop'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+ASSERTING i-Valley is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Valley'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Valley'">: [<Expr: "'i-Valley'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Valley'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Northern-Mountains is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Northern-Mountains'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Northern-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Northern-Mountains'">: [<Expr: "'i-Northern-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Northern-Mountains'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Western-Mountains is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Western-Mountains'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Western-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Western-Mountains'">: [<Expr: "'i-Western-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Western-Mountains'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Southern-Mountains is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Southern-Mountains'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Southern-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Southern-Mountains'">: [<Expr: "'i-Southern-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Southern-Mountains'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Open-End-of-Valley is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Open-End-of-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Open-End-of-Valley'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Open-End-of-Valley'">: [<Expr: "'i-Open-End-of-Valley'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Open-End-of-Valley'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Ridgeline-West-of-IP is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Ridgeline-West-of-IP'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Ridgeline-West-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Ridgeline-West-of-IP'">: [<Expr: "'i-Ridgeline-West-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Ridgeline-West-of-IP'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Mountains-East-of-IP is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Mountains-East-of-IP'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Mountains-East-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Mountains-East-of-IP'">: [<Expr: "'i-Mountains-East-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Mountains-East-of-IP'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Hills-Southwest-of-IP is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Hills-Southwest-of-IP'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Hills-Southwest-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Hills-Southwest-of-IP'">: [<Expr: "'i-Hills-Southwest-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Hills-Southwest-of-IP'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-drinkwater-lake is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-lake'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-drinkwater-lake'">}, {<Expr: "'?x'">: <Expr: "'c-lake'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-drinkwater-lake'">, <Expr: "'c-lake'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-drinkwater-lake'">: [<Expr: "'i-drinkwater-lake'">, <Expr: "'c-lake'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-drinkwater-lake'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Saddle-on-Northern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Saddle-on-Northern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Saddle-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Saddle-on-Northern-Ridge'">: [<Expr: "'i-Saddle-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Saddle-on-Northern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Spur-Northeast-of-Dry-Lake is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Spur-Northeast-of-Dry-Lake'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Spur-Northeast-of-Dry-Lake'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Spur-Northeast-of-Dry-Lake'">: [<Expr: "'i-Spur-Northeast-of-Dry-Lake'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Spur-Northeast-of-Dry-Lake'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Large-Saddle-on-Northern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Large-Saddle-on-Northern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Large-Saddle-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Large-Saddle-on-Northern-Ridge'">: [<Expr: "'i-Large-Saddle-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Large-Saddle-on-Northern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Large-Saddle-on-Southern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Large-Saddle-on-Southern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Large-Saddle-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Large-Saddle-on-Southern-Ridge'">: [<Expr: "'i-Large-Saddle-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Large-Saddle-on-Southern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Southern-Ridge-Line is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Southern-Ridge-Line'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Southern-Ridge-Line'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Southern-Ridge-Line'">: [<Expr: "'i-Southern-Ridge-Line'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Southern-Ridge-Line'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Overlook-Point is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Overlook-Point'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Overlook-Point'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Overlook-Point'">: [<Expr: "'i-Overlook-Point'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Overlook-Point'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Spurs-on-Southern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Spurs-on-Southern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Spurs-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Spurs-on-Southern-Ridge'">: [<Expr: "'i-Spurs-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Spurs-on-Southern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Draws-on-Southern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Draws-on-Southern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Draws-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Draws-on-Southern-Ridge'">: [<Expr: "'i-Draws-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Draws-on-Southern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Flat-South-of-Valley is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Flat-South-of-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Flat-South-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Flat-South-of-Valley'">: [<Expr: "'i-Flat-South-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Flat-South-of-Valley'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Spurs-Southeast-of-Valley is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Spurs-Southeast-of-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Spurs-Southeast-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Spurs-Southeast-of-Valley'">: [<Expr: "'i-Spurs-Southeast-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Spurs-Southeast-of-Valley'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Draw-on-Northern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Draw-on-Northern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Draw-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Draw-on-Northern-Ridge'">: [<Expr: "'i-Draw-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Draw-on-Northern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Northern-Ridge-Line is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Northern-Ridge-Line'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Northern-Ridge-Line'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Northern-Ridge-Line'">: [<Expr: "'i-Northern-Ridge-Line'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Northern-Ridge-Line'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-West-End-of-Valley is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-West-End-of-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-West-End-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-West-End-of-Valley'">: [<Expr: "'i-West-End-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-West-End-of-Valley'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-East-End-of-Valley is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-East-End-of-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-East-End-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-East-End-of-Valley'">: [<Expr: "'i-East-End-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-East-End-of-Valley'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Large-Pass is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Large-Pass'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Large-Pass'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Large-Pass'">: [<Expr: "'i-Large-Pass'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Large-Pass'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Large-Hilltop is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Large-Hilltop'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Large-Hilltop'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Large-Hilltop'">: [<Expr: "'i-Large-Hilltop'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Large-Hilltop'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Pass-at-Bravo is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Pass-at-Bravo'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Pass-at-Bravo'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Pass-at-Bravo'">: [<Expr: "'i-Pass-at-Bravo'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Pass-at-Bravo'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Western-Approach is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Western-Approach'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Western-Approach'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Western-Approach'">: [<Expr: "'i-Western-Approach'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Western-Approach'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Radio-Tower is an instance of c-distinct-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-distinct-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Radio-Tower'">}, {<Expr: "'?x'">: <Expr: "'c-distinct-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Radio-Tower'">, <Expr: "'c-distinct-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Radio-Tower'">: [<Expr: "'i-Radio-Tower'">, <Expr: "'c-distinct-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Radio-Tower'"> isa <Expr: "'c-distinct-feature'">
+ASSERTING i-Long-Straight-Road is an instance of c-distinct-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-distinct-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Long-Straight-Road'">}, {<Expr: "'?x'">: <Expr: "'c-distinct-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Long-Straight-Road'">, <Expr: "'c-distinct-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Long-Straight-Road'">: [<Expr: "'i-Long-Straight-Road'">, <Expr: "'c-distinct-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Long-Straight-Road'"> isa <Expr: "'c-distinct-feature'">
+ASSERTING i-E1 is an instance of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-E1'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-E1'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-E1'">: [<Expr: "'i-E1'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-E1'"> isa <Expr: "'c-building'">
+ASSERTING i-E2 is an instance of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-E2'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-E2'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-E2'">: [<Expr: "'i-E2'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-E2'"> isa <Expr: "'c-building'">
+ASSERTING i-E3 is an instance of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-E3'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-E3'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-E3'">: [<Expr: "'i-E3'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-E3'"> isa <Expr: "'c-building'">
+ASSERTING i-E6 is an instance of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-E6'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-E6'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-E6'">: [<Expr: "'i-E6'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-E6'"> isa <Expr: "'c-building'">
+ASSERTING i-E4 is an instance of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-E4'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-E4'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-E4'">: [<Expr: "'i-E4'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-E4'"> isa <Expr: "'c-building'">
+ASSERTING i-E5 is an instance of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-E5'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-E5'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-E5'">: [<Expr: "'i-E5'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-E5'"> isa <Expr: "'c-building'">
+ASSERTING i-A3 is an instance of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-A3'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-A3'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-A3'">: [<Expr: "'i-A3'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-A3'"> isa <Expr: "'c-building'">
+ASSERTING i-A2 is an instance of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-A2'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-A2'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-A2'">: [<Expr: "'i-A2'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-A2'"> isa <Expr: "'c-building'">
+ASSERTING i-A4 is an instance of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-A4'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-A4'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-A4'">: [<Expr: "'i-A4'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-A4'"> isa <Expr: "'c-building'">
+ASSERTING i-A1 is an instance of c-building
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-building'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-A1'">}, {<Expr: "'?x'">: <Expr: "'c-building'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-A1'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-A1'">: [<Expr: "'i-A1'">, <Expr: "'c-building'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-A1'"> isa <Expr: "'c-building'">
+ASSERTING i-drinkwater-lake is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-lake'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-drinkwater-lake'">}, {<Expr: "'?x'">: <Expr: "'c-lake'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-drinkwater-lake'">, <Expr: "'c-lake'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-drinkwater-lake'">: [<Expr: "'i-drinkwater-lake'">, <Expr: "'c-lake'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-drinkwater-lake'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Saddle-on-Northern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Saddle-on-Northern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Saddle-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Saddle-on-Northern-Ridge'">: [<Expr: "'i-Saddle-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Saddle-on-Northern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Spur-Northeast-of-Dry-Lake is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Spur-Northeast-of-Dry-Lake'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Spur-Northeast-of-Dry-Lake'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Spur-Northeast-of-Dry-Lake'">: [<Expr: "'i-Spur-Northeast-of-Dry-Lake'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Spur-Northeast-of-Dry-Lake'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Large-Saddle-on-Northern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Large-Saddle-on-Northern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Large-Saddle-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Large-Saddle-on-Northern-Ridge'">: [<Expr: "'i-Large-Saddle-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Large-Saddle-on-Northern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Large-Saddle-on-Southern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Large-Saddle-on-Southern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Large-Saddle-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Large-Saddle-on-Southern-Ridge'">: [<Expr: "'i-Large-Saddle-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Large-Saddle-on-Southern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Southern-Ridge-Line is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Southern-Ridge-Line'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Southern-Ridge-Line'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Southern-Ridge-Line'">: [<Expr: "'i-Southern-Ridge-Line'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Southern-Ridge-Line'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Overlook-Point is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Overlook-Point'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Overlook-Point'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Overlook-Point'">: [<Expr: "'i-Overlook-Point'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Overlook-Point'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Spurs-on-Southern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Spurs-on-Southern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Spurs-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Spurs-on-Southern-Ridge'">: [<Expr: "'i-Spurs-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Spurs-on-Southern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Draws-on-Southern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Draws-on-Southern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Draws-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Draws-on-Southern-Ridge'">: [<Expr: "'i-Draws-on-Southern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Draws-on-Southern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Flat-South-of-Valley is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Flat-South-of-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Flat-South-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Flat-South-of-Valley'">: [<Expr: "'i-Flat-South-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Flat-South-of-Valley'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Spurs-Southeast-of-Valley is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Spurs-Southeast-of-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Spurs-Southeast-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Spurs-Southeast-of-Valley'">: [<Expr: "'i-Spurs-Southeast-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Spurs-Southeast-of-Valley'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Draw-on-Northern-Ridge is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Draw-on-Northern-Ridge'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Draw-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Draw-on-Northern-Ridge'">: [<Expr: "'i-Draw-on-Northern-Ridge'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Draw-on-Northern-Ridge'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Northern-Ridge-Line is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Northern-Ridge-Line'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Northern-Ridge-Line'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Northern-Ridge-Line'">: [<Expr: "'i-Northern-Ridge-Line'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Northern-Ridge-Line'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-West-End-of-Valley is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-West-End-of-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-West-End-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-West-End-of-Valley'">: [<Expr: "'i-West-End-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-West-End-of-Valley'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-East-End-of-Valley is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-East-End-of-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-East-End-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-East-End-of-Valley'">: [<Expr: "'i-East-End-of-Valley'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-East-End-of-Valley'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Valley is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Valley'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Valley'">: [<Expr: "'i-Valley'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Valley'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Northern-Mountains is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Northern-Mountains'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Northern-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Northern-Mountains'">: [<Expr: "'i-Northern-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Northern-Mountains'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Western-Mountains is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Western-Mountains'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Western-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Western-Mountains'">: [<Expr: "'i-Western-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Western-Mountains'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Southern-Mountains is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Southern-Mountains'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Southern-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Southern-Mountains'">: [<Expr: "'i-Southern-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Southern-Mountains'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Open-End-of-Valley is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Open-End-of-Valley'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Open-End-of-Valley'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Open-End-of-Valley'">: [<Expr: "'i-Open-End-of-Valley'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Open-End-of-Valley'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Ridgeline-West-of-IP is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Ridgeline-West-of-IP'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Ridgeline-West-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Ridgeline-West-of-IP'">: [<Expr: "'i-Ridgeline-West-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Ridgeline-West-of-IP'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Mountains-East-of-IP is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Mountains-East-of-IP'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Mountains-East-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Mountains-East-of-IP'">: [<Expr: "'i-Mountains-East-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Mountains-East-of-IP'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Hills-Southwest-of-IP is an instance of c-major-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Hills-Southwest-of-IP'">}, {<Expr: "'?x'">: <Expr: "'c-major-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Hills-Southwest-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Hills-Southwest-of-IP'">: [<Expr: "'i-Hills-Southwest-of-IP'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Hills-Southwest-of-IP'"> isa <Expr: "'c-major-geographic-feature'">
+ASSERTING i-Radio-Tower is an instance of c-distinct-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-distinct-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Radio-Tower'">}, {<Expr: "'?x'">: <Expr: "'c-distinct-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Radio-Tower'">, <Expr: "'c-distinct-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Radio-Tower'">: [<Expr: "'i-Radio-Tower'">, <Expr: "'c-distinct-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Radio-Tower'"> isa <Expr: "'c-distinct-feature'">
+ASSERTING i-Large-Pass is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Large-Pass'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Large-Pass'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Large-Pass'">: [<Expr: "'i-Large-Pass'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Large-Pass'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Long-Straight-Road is an instance of c-distinct-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-distinct-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Long-Straight-Road'">}, {<Expr: "'?x'">: <Expr: "'c-distinct-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Long-Straight-Road'">, <Expr: "'c-distinct-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Long-Straight-Road'">: [<Expr: "'i-Long-Straight-Road'">, <Expr: "'c-distinct-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Long-Straight-Road'"> isa <Expr: "'c-distinct-feature'">
+ASSERTING i-Large-Hilltop is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Large-Hilltop'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Large-Hilltop'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Large-Hilltop'">: [<Expr: "'i-Large-Hilltop'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Large-Hilltop'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Pass-at-Bravo is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Pass-at-Bravo'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Pass-at-Bravo'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Pass-at-Bravo'">: [<Expr: "'i-Pass-at-Bravo'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Pass-at-Bravo'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Western-Approach is an instance of c-minor-geographic-feature
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Western-Approach'">}, {<Expr: "'?x'">: <Expr: "'c-minor-geographic-feature'">}, {<Expr: "'?x'">: <Expr: "'c-basic-location'">}, {<Expr: "'?x'">: <Expr: "'c-location'">}, {<Expr: "'?x'">: <Expr: "'c-thing'">}]
+C1:  {}
+P:  [<Expr: "'i-Western-Approach'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+C2:  {<Expr: "'i-Western-Approach'">: [<Expr: "'i-Western-Approach'">, <Expr: "'c-minor-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]}
+asserted <Expr: "'i-Western-Approach'"> isa <Expr: "'c-minor-geographic-feature'">
+ASSERTING i-Seattle is an instance of c-village
+Q1:  [{<Expr: "'?x'">: <Expr: "'c-village'">}]
+Q2:  [{<Expr: "'?x'">: <Expr: "'i-Seattle'">}, {<Expr: "'?x'">: <Expr: "'c-village'">}]
+C1:  {}
+P:  [<Expr: "'i-Seattle'">, <Expr: "'c-village'">]
+C2:  {<Expr: "'i-Seattle'">: [<Expr: "'i-Seattle'">, <Expr: "'c-village'">]}
+asserted <Expr: "'i-Seattle'"> isa <Expr: "'c-village'">
+True
+[<Expr: "'i-Northern-Mountains'">, <Expr: "'c-major-geographic-feature'">, <Expr: "'c-basic-location'">, <Expr: "'c-location'">, <Expr: "'c-thing'">]
+[{<Expr: "'?x'">: <Expr: "'Northern Mountains'">}]

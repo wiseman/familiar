@@ -1,0 +1,117 @@
+<!-- -*- Mode: XML; -*- -->
+<fdl>
+  <frame id="c-Village">
+    <parent id="c-city"/>
+
+    <phrase>village</phrase>
+
+    <testphrase>village</testphrase>
+
+    <generate>village</generate>
+
+    <slot name="subtype" value="Village"/>
+    <slot name="type" value="Urban"/>
+  </frame>
+
+
+<frame id="c-implied-call-contact">
+  <testphrase>you should see a village</testphrase>
+</frame>
+
+
+<frame id="i-seattle-codeword">
+  <parent id="c-codeword"/>
+
+  <phrase>seattle</phrase>
+
+  <testphrase>seattle</testphrase>
+
+  <generate>Seattle</generate>
+</frame>
+
+<frame id="c-assert-urban-layout">
+  <parent id="c-addressed-utterance"/>
+  
+  <phrase>?:{standard-begin} {city} is {codeword}</phrase>
+
+  <testphrase>hog, village is seattle</testphrase>
+
+  <constraint slot="city" type="c-city"/>
+  <constraint slot="codeword" type="c-codeword"/>
+
+  <slot name="execute-method" value="do_assert_urban_layout"/>
+</frame>
+
+<frame id="c-building-designator">
+  <phrase>{letter} {number}</phrase>
+
+  <testphrase>echo four</testphrase>
+  <testphrase>bravo one</testphrase>
+
+  <constraint slot="letter" type="c-nato-phonetic-word"/>
+  <constraint slot="number" type="c-number"/>
+
+  <generate>{letter} {number}</generate>
+</frame>
+
+
+<frame id="c-building-reference">
+  <parent id="c-thing"/>
+
+  <phrase>building {designator}</phrase>
+
+  <constraint slot="designator" type="c-building-designator"/>
+
+  <testphrase>building echo eight</testphrase>
+  <testphrase>building delta one</testphrase>
+
+  <generate>building {designator}</generate>
+
+  <slot name="custom-resolver" value="resolve_building_reference"/>
+</frame>
+
+<frame id="c-manpad">
+  <parent id="c-thing"/>
+
+  <phrase>manpad</phrase>
+  <phrase>MANPAD</phrase>
+  
+  <testphrase>manpad</testphrase>
+  <testphrase>manpad</testphrase>
+
+  <indexset>manpad</indexset>
+  <testindex>MANPAD</testindex>
+
+  <generate>MANPAD</generate>
+  
+  <slot name="subtype" value="Insurgent"/>
+  <slot name="type" value="Insurgent"/>
+</frame>
+
+
+<frame id="c-call-contact">
+  <testphrase>hog call contact building echo four</testphrase>
+  <testphrase>hog call contact manpad</testphrase>
+</frame>
+
+<frame id="c-rooftop">
+  <parent id="c-basic-location"/>
+
+  <constraint slot="building" type="c-building-reference"/>
+  <phrase>[roof|rooftop|roof top] ?:[?:of {building}]</phrase>
+
+  <testphrase>roof of building echo four</testphrase>
+</frame>
+
+<frame id="c-implied-call-contact">
+  <testphrase>hog, you should see a MANPAD</testphrase>
+  <testphrase>hog, target is MANPAD</testphrase>
+</frame>
+
+<frame id="c-implied-call-contact-with-hint">
+  <testphrase>hog, target is MANPAD on roof of building echo four call contact</testphrase>
+  <testphrase>hog, target is MANPAD on roof of building echo four</testphrase>
+</frame>
+
+
+</fdl>

@@ -1,0 +1,998 @@
+<testsuite name="basic tests">
+
+  <!--
+  
+    Check-in tests
+
+  -->
+
+  <test name="initial utterance">
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="check-in-1">
+    <input>Hog zero one, Gunslinger has you loud and clear.</input>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <test name="endex-1">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="check-in-2">
+    <input>go for gunslinger</input>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <test name="endex-2">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="check-in-3">
+    <input>hog zero one, go for gunslinger</input>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <test name="endex-3">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="check-in-4">
+    <input>gunslinger</input>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <test name="endex-4">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="check-in-5">
+    <input>gunslinger has you weak but readable</input>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <test name="endex-5">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="check-in-6">
+    <input>say again last calling station</input>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="endex-6">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="check-in-7">
+    <input>say again hog zero one</input>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="endex-7">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="check-in-8">
+    <input>blah</input>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <test name="endex-8">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="do-authenticate-badly-1">
+    <input>gunslinger i have bravo</input>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <test name="do-authenticate-badly-2">
+    <input>gunslinger i have charlie</input>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <test name="endex-9">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <!-- Ask pilot to authenticate after he's asked us to authenticate. -->
+
+  <test name="force-pilot-to-ask-us-to-authenticate">
+    <input>gunslinger has you loud and clear, hog</input>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <test name="make-pilot-authenticate">
+    <input>hog, authenticate delta zulu charlie</input>
+    <output>Gunslinger, negative</output>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <!-- "go ahead" and "continue" for readback... -->
+
+  <test name="endex-13">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="readback-1">
+    <input>I authenticate whiskey</input>
+    <output>Gunslinger, Hog is checking in as-fragged, .* IP Bravo</output>
+    <output>Gunslinger, playtime is [-0-9]+ mikes</output>
+  </test>
+
+  <test name="readback-1a">
+    <input>go ahead</input>
+    <output>Gunslinger, do you have a nine-line for me?</output>
+  </test>
+
+  <test name="readback-2">
+    <setup>self.dialog_manager.action_module.magic_trigger_nine_line(self.dialog_manager, None, target="T-55")</setup>
+    <output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+  </test>
+
+  <test name="readback-3">
+    <input>continue</input>
+    <output>gunslinger, affirm.*</output>
+    <output>gunslinger, i have.* degrees.* remarks.*</output>
+  </test>
+
+  <test name="endex-14">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="readback-4">
+    <input>I authenticate whiskey</input>
+    <output>Gunslinger, Hog is checking in as-fragged, .* IP Bravo</output>
+    <output>Gunslinger, playtime is [-0-9]+ mikes</output>
+  </test>
+
+  <test name="readback-4a">
+    <input>gunslinger copies 30 mikes playtime</input>
+  </test>
+
+  <test name="readback-5">
+    <setup>self.dialog_manager.action_module.magic_trigger_nine_line(self.dialog_manager, None, target="T-55")</setup>
+    <output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+  </test>
+
+  <test name="readback-6">
+    <input>go ahead</input>
+    <output>gunslinger, affirm.*</output>
+    <output>gunslinger, i have.* degrees.* remarks.*</output>
+  </test>
+
+  <test name="endex-10">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <!-- Ask pilot to authenticate, make sure he does. -->
+
+  <test name="make-pilot-authenticate">
+    <input>hog, authenticate delta zulu charlie</input>
+    <output>Gunslinger, hog authenticates bravo</output>
+  </test>
+
+  <test name="do-abort-code-check-1">
+    <input>do you have an abort code setup?</input>
+    <output>Gunslinger, abort code is bravo foxtrot</output>
+  </test>
+
+  <test name="endex-11">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <!-- Ask pilot to authenticate after we've already authenticated. -->
+
+  <test name="authenticate-for-pilot">
+    <input>I authenticate whiskey</input>
+    <output>Gunslinger, Hog is checking in as-fragged, .* IP Bravo</output>
+    <output>Gunslinger, playtime is [0-9]+ mikes</output>
+  </test>
+
+  <test name="make-pilot-authenticate-2">
+    <input>hog, authenticate delta zulu charlie</input>
+    <output>Gunslinger, you have already authenticated</output>
+  </test>
+
+  <test name="endex-12">
+    <input>endex</input>
+    <output>Gunslinger, copy endex</output>
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <!-- Authenticate correctly. -->
+
+  <test name="do-authenticate-correctly">
+    <input>I authenticate whiskey</input>
+    <output>Gunslinger, Hog is checking in as-fragged, .* IP Bravo</output>
+    <output>Gunslinger, playtime is [-0-9]+ mikes</output>
+  </test>
+
+  <test name="do-copy-flight-info">
+    <input>hog, copy all</input>
+  </test>
+  
+  <test name="do-abort-code-check">
+    <input>do you have an abort code setup?</input>
+    <output>Gunslinger, abort code is bravo foxtrot</output>
+  </test>
+
+  <test name="do-abort-code-ack-badly">
+    <input>copy alpha hotel</input>
+    <output>Gunslinger, negative alpha hotel</output>
+    <output>Gunslinger, abort code is bravo foxtrot</output>
+  </test>
+
+  <test name="do-abort-code-ack">
+    <input>copy bravo foxtrot</input>
+  </test>
+
+  <!-- status at this point should still be inbound to IP -->
+  <!-- unfortunately, no way to pause tests until holding steady at IP -->
+  <test name="query-status-1">
+    <input>hog, say status</input>
+    <output>Gunslinger, I am inbound to I.P.</output>
+  </test>
+
+<!--
+  - 4/25/07 mrh:  taking out dialog option for nine line (for now)
+  -   <test name="start-nine-line">
+  -     <input>hog, say when ready for nine line</input>
+  -     <output>Gunslinger, go with 9-line.</output>
+  -   </test>
+  - 
+  -   <test name="nl1"><input>Bravo</input></test>
+  -   <test name="nl2"><input>three six zero degrees, offset three zero degrees right</input></test>
+  -   <test name="nl3"><input>six nauticals</input></test>
+  -   <test name="nl4"><input>five zero zero zero feet</input></test>
+  -   <test name="nl5"><input>t-55</input></test>
+  -   <test name="nl6"><input>hotel kilo three nine zero two eight zero</input></test>
+  -   <test name="nl7"><input>none</input></test>
+  -   <test name="nl8"><input>two clicks south</input></test>
+  -   <test name="nl9"><input>IP</input></test>
+  - 
+  -   <test name="nl-finish">
+  -     <input>how copy</input>
+  -     <output>Gunslinger, Hog copies all.</output>
+  -     <output>Gunslinger, Do you have remarks for Hog flight?</output>
+  -   </test>
+  - 
+  -   <test name="no-remarks">
+  -     <input>negative</input>
+  -   </test>
+-->
+
+  <!-- instead, trigger nine line through event -->
+  <test name="trigger-nine-line">
+    <setup>self.dialog_manager.action_module.magic_trigger_nine_line(self.dialog_manager, None, target="T-55")</setup>
+    <output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+  </test>
+
+  <test name="nine-line-readback">
+    <input>go with read back</input>
+    <output>Gunslinger, affirm.*standby one</output>
+    <output>.*Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop..*</output>
+  </test>
+
+  <test name="nine-line-optional-close">
+    <input>good copy</input>
+  </test>
+
+  <test name="talk-on-1">
+    <input>say when ready for talk on</input>
+    <output>Gunslinger, go with talk-on</output>
+  </test>
+
+<test name='call-contact-1'>
+  <input>hog, call contact with saucer shaped valley</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-2'>
+  <input>hog, call contact with  east-west running valley</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-3'>
+  <input>hog, call contact with  basin</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-4'>
+  <input>hog, call contact with  depression</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-5'>
+  <input>hog, call contact with  valley with dry lake bed</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-6'>
+  <input>hog, call contact with  flat area surrounded by mountains</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-7'>
+  <input>hog, call contact with  flat area surrounded by hills</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-8'>
+  <input>hog, call contact with  flat area surrounded by mountains north of IP</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-9'>
+  <input>hog, call contact with  valley north of the IP</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-10'>
+  <input>hog, call contact with  valley with Drinkwater Lake</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-11'>
+  <input>hog, call contact with  dry lake area surrounded by mountains</input>
+  <output>Gunslinger, (contact|visual valley)</output>
+</test>
+
+<test name='call-contact-12'>
+  <input>hog, call contact with northern mountain range</input>
+  <output>Gunslinger, (contact|visual northern mountains)</output>
+</test>
+
+<test name='call-contact-13'>
+  <input>hog, call contact with  range to the north of the valley</input>
+  <output>Gunslinger, (contact|visual northern mountains)</output>
+</test>
+
+<test name='call-contact-14'>
+  <input>hog, call contact with  mountain range in the north</input>
+  <output>Gunslinger, (contact|visual northern mountains)</output>
+</test>
+
+<test name='call-contact-15'>
+  <input>hog, call contact with  mountains on the north side of the valley</input>
+  <output>Gunslinger, (contact|visual northern mountains)</output>
+</test>
+
+<test name='call-contact-16'>
+  <input>hog, call contact with  north side of valley</input>
+  <output>Gunslinger, (contact|visual northern mountains)</output>
+</test>
+
+<test name='call-contact-17'>
+  <input>hog, call contact with  ridge to the north of the valley</input>
+  <output>Gunslinger, (contact|visual northern mountains)</output>
+</test>
+
+<test name='call-contact-18'>
+  <input>hog, call contact with  northern ridge</input>
+  <output>Gunslinger, (contact|visual northern mountains)</output>
+</test>
+
+<test name='call-contact-19'>
+  <input>hog, call contact with western mountain range</input>
+  <output>Gunslinger, (contact|visual western mountains)</output>
+</test>
+
+<test name='call-contact-20'>
+  <input>hog, call contact with  range to the west</input>
+  <output>Gunslinger, (contact|visual western mountains)</output>
+</test>
+
+<test name='call-contact-21'>
+  <input>hog, call contact with  mountain range in the west</input>
+  <output>Gunslinger, (contact|visual western mountains)</output>
+</test>
+
+<test name='call-contact-22'>
+  <input>hog, call contact with  mountains on the west side of the valley</input>
+  <output>Gunslinger, (contact|visual western mountains)</output>
+</test>
+
+<test name='call-contact-23'>
+  <input>hog, call contact with  west end of valley</input>
+  <output>Gunslinger, (contact|visual western mountains)</output>
+</test>
+
+<test name='call-contact-24'>
+  <input>hog, call contact with southern mountain range</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-25'>
+  <input>hog, call contact with  range to the south of the valley</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-26'>
+  <input>hog, call contact with  mountain range in the south of the valley</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-27'>
+  <input>hog, call contact with  mountains on the south side of the valley</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-28'>
+  <input>hog, call contact with  south side of valley</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-29'>
+  <input>hog, call contact with  ridge to the south of the valley</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-30'>
+  <input>hog, call contact with  southern ridge</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-31'>
+  <input>hog, call contact with  ridge to the north of the IP</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-32'>
+  <input>hog, call contact with  ridge line to the north of the IP</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-33'>
+  <input>hog, call contact with  mountains to the north of the IP</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-34'>
+  <input>hog, call contact with  mountains north of IP Bravo</input>
+  <output>Gunslinger, (contact|visual southern mountains)</output>
+</test>
+
+<test name='call-contact-35'>
+  <input>hog, call contact with open end of the valley</input>
+  <output>Gunslinger, (contact|visual open end of valley)</output>
+</test>
+
+<test name='call-contact-36'>
+  <input>hog, call contact with  east end of valley</input>
+  <output>Gunslinger, (contact|visual open end of valley)</output>
+</test>
+
+<test name='call-contact-37'>
+  <input>hog, call contact with  thin end of valley</input>
+  <output>Gunslinger, (contact|visual open end of valley)</output>
+</test>
+
+<test name='call-contact-38'>
+  <input>hog, call contact with  end of valley nearest dry lake bed</input>
+  <output>Gunslinger, (contact|visual open end of valley)</output>
+</test>
+
+<test name='call-contact-39'>
+  <input>hog, call contact with ridgeline west of the IP</input>
+  <output>Gunslinger, (contact|visual ridgeline west of ip)</output>
+</test>
+
+<test name='call-contact-40'>
+  <input>hog, call contact with  north-south running ridgeline west of the IP</input>
+  <output>Gunslinger, (contact|visual ridgeline west of ip)</output>
+</test>
+
+<test name='call-contact-41'>
+  <input>hog, call contact with mountains to the east of the IP</input>
+  <output>Gunslinger, (contact|visual mountains east of ip)</output>
+</test>
+
+<test name='call-contact-42'>
+  <input>hog, call contact with hills to the southwest of the IP</input>
+  <output>Gunslinger, (contact|visual hills southwest of ip)</output>
+</test>
+
+<test name='call-contact-43'>
+  <input>hog, call contact with dry lake bed</input>
+  <output>Gunslinger, (contact|visual drinkwater-lake)</output>
+</test>
+
+<test name='call-contact-44'>
+  <input>hog, call contact with  Drinkwater Lake</input>
+  <output>Gunslinger, (contact|visual drinkwater-lake)</output>
+</test>
+
+<test name='call-contact-45'>
+  <input>hog, call contact with  light sand colored shape</input>
+  <output>Gunslinger, (contact|visual drinkwater-lake)</output>
+</test>
+
+<test name='call-contact-46'>
+  <input>hog, call contact with  lake</input>
+  <output>Gunslinger, (contact|visual drinkwater-lake)</output>
+</test>
+
+<test name='call-contact-47'>
+  <input>hog, call contact with saddle on northern ridge</input>
+  <output>Gunslinger, (contact|visual saddle on northern ridge)</output>
+</test>
+
+<test name='call-contact-48'>
+  <input>hog, call contact with spur northeast of the dry lake</input>
+  <output>Gunslinger, (contact|visual spur northeast of dry lake)</output>
+</test>
+
+<test name='call-contact-49'>
+  <input>hog, call contact with large saddle on the northern ridge</input>
+  <output>Gunslinger, (contact|visual large saddle on northern ridge)</output>
+</test>
+
+<test name='call-contact-50'>
+  <input>hog, call contact with  saddle on northern ridge</input>
+  <output>Gunslinger, (contact|visual large saddle on northern ridge)</output>
+</test>
+
+<test name='call-contact-51'>
+  <input>hog, call contact with large saddle on southern ridge</input>
+  <output>Gunslinger, (contact|visual large saddle on southern ridge)</output>
+</test>
+
+<test name='call-contact-51.5'>
+  <input>hog, call contact with saddle on southern ridge</input>
+  <output>Gunslinger, (contact|visual large saddle on southern ridge)</output>
+</test>
+
+<test name='call-contact-52'>
+  <input>hog, call contact with southern ridge line</input>
+  <output>Gunslinger, (contact|visual southern ridge line)</output>
+</test>
+
+<test name='call-contact-53'>
+  <input>hog, call contact with  southern ridge</input>
+  <output>Gunslinger, (contact|visual southern ridge line)</output>
+</test>
+
+<test name='call-contact-54'>
+  <input>hog, call contact with  south ridge</input>
+  <output>Gunslinger, (contact|visual southern ridge line)</output>
+</test>
+
+<test name='call-contact-55'>
+  <input>hog, call contact with overlook point</input>
+  <output>Gunslinger, (contact|visual overlook point)</output>
+</test>
+
+<test name='call-contact-56'>
+  <input>hog, call contact with  overlook mountain</input>
+  <output>Gunslinger, (contact|visual overlook point)</output>
+</test>
+
+<test name='call-contact-57'>
+  <input>hog, call contact with  overlook hill</input>
+  <output>Gunslinger, (contact|visual overlook point)</output>
+</test>
+
+<test name='call-contact-58'>
+  <input>hog, call contact with spurs on southern ridge</input>
+  <output>Gunslinger, (contact|visual spurs on southern ridge)</output>
+</test>
+
+<test name='call-contact-59'>
+  <input>hog, call contact with draws on southern ridge</input>
+  <output>Gunslinger, (contact|visual draws on southern ridge)</output>
+</test>
+
+<test name='call-contact-60'>
+  <input>hog, call contact with flat area to the south of the valley</input>
+  <output>Gunslinger, (contact|visual flat south of valley)</output>
+</test>
+
+<test name='call-contact-61'>
+  <input>hog, call contact with  flat area north of IP</input>
+  <output>Gunslinger, (contact|visual flat south of valley)</output>
+</test>
+
+<test name='call-contact-62'>
+  <input>hog, call contact with spurs southeast of the valley</input>
+  <output>Gunslinger, (contact|visual spurs southeast of valley)</output>
+</test>
+
+<test name='call-contact-63'>
+  <input>hog, call contact with draw on northern ridge</input>
+  <output>Gunslinger, (contact|visual draw on northern ridge)</output>
+</test>
+
+<test name='call-contact-64'>
+  <input>hog, call contact with  draw on northern mountain</input>
+  <output>Gunslinger, (contact|visual draw on northern ridge)</output>
+</test>
+
+<test name='call-contact-65'>
+  <input>hog, call contact with northern ridge line</input>
+  <output>Gunslinger, (contact|visual northern ridge line)</output>
+</test>
+
+<test name='call-contact-66'>
+  <input>hog, call contact with  northern ridge</input>
+  <output>Gunslinger, (contact|visual northern ridge line)</output>
+</test>
+
+<test name='call-contact-67'>
+  <input>hog, call contact with  north ridge</input>
+  <output>Gunslinger, (contact|visual northern ridge line)</output>
+</test>
+
+<test name='call-contact-68'>
+  <input>hog, call contact with west end of valley</input>
+  <output>Gunslinger, (contact|visual west end of valley)</output>
+</test>
+
+<test name='call-contact-69'>
+  <input>hog, call contact with  western valley</input>
+  <output>Gunslinger, (contact|visual west end of valley)</output>
+</test>
+
+<test name='call-contact-70'>
+  <input>hog, call contact with eastern valley</input>
+  <output>Gunslinger, (contact|visual east end of valley)</output>
+</test>
+
+<test name='call-contact-71'>
+  <input>hog, call contact with  east end of the valley</input>
+  <output>Gunslinger, (contact|visual east end of valley)</output>
+</test>
+
+<test name='call-contact-72'>
+  <input>hog, call contact with pass</input>
+  <output>Gunslinger, (contact|visual large pass)</output>
+</test>
+
+<test name='call-contact-73'>
+  <input>hog, call contact with  gap</input>
+  <output>Gunslinger, (contact|visual large pass)</output>
+</test>
+
+<test name='call-contact-74'>
+  <input>hog, call contact with  pass north of IP Bravo</input>
+  <output>Gunslinger, (contact|visual large pass)</output>
+</test>
+
+<test name='call-contact-75'>
+  <input>hog, call contact with  gap north of IP Bravo</input>
+  <output>Gunslinger, (contact|visual large pass)</output>
+</test>
+
+<test name='call-contact-76'>
+  <input>hog, call contact with  gap in ridge</input>
+  <output>Gunslinger, (contact|visual large pass)</output>
+</test>
+
+<test name='call-contact-77'>
+  <input>hog, call contact with  gap in southern mountains</input>
+  <output>Gunslinger, (contact|visual large pass)</output>
+</test>
+
+<test name='call-contact-78'>
+  <input>hog, call contact with  pass to valley floor</input>
+  <output>Gunslinger, (contact|visual large pass)</output>
+</test>
+
+<test name='call-contact-79'>
+  <input>hog, call contact with  choke point</input>
+  <output>Gunslinger, (contact|visual large pass)</output>
+</test>
+
+<test name='call-contact-80'>
+  <input>hog, call contact with large hill</input>
+  <output>Gunslinger, (contact|visual large hilltop)</output>
+</test>
+
+<test name='call-contact-81'>
+  <input>hog, call contact with  large hilltop</input>
+  <output>Gunslinger, (contact|visual large hilltop)</output>
+</test>
+
+<test name='call-contact-82'>
+  <input>hog, call contact with pass next to IP</input>
+  <output>Gunslinger, (contact|visual pass at bravo)</output>
+</test>
+
+<test name='call-contact-83'>
+  <input>hog, call contact with western avenue of approach</input>
+  <output>Gunslinger, (contact|visual western approach)</output>
+</test>
+
+<test name='call-contact-84'>
+  <input>hog, call contact with tower</input>
+  <output>Gunslinger, (contact|visual radio tower)</output>
+</test>
+
+<test name='call-contact-85'>
+  <input>hog, call contact with  radio tower</input>
+  <output>Gunslinger, (contact|visual radio tower)</output>
+</test>
+
+<test name='call-contact-86'>
+  <input>hog, call contact with long straight road north east of IP Bravo</input>
+  <output>Gunslinger, (contact|visual long straight road)</output>
+</test>
+
+
+  <test name="talk-on-contact-7">
+    <input>hog, call contact with Drinkwater Lake just to your north</input>
+    <output>Gunslinger, (contact|visual Drinkwater Lake)</output>
+  </test>
+
+
+  <test name="talk-on-contact-1">
+    <input>hog, call contact with Drinkwater Lake just to your north</input>
+    <output>Gunslinger, (contact|visual Drinkwater Lake)</output>
+  </test>
+
+  <test name="talk-on-2">
+    <input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+    <output>Gunslinger, copy</output>
+  </test>
+
+  <test name="talk-on-3">
+    <input>hog, let's also establish the western limit of the lake as our anchor point</input>
+    <output>Gunslinger, copy</output>
+  </test>
+
+  <test name="talk-on-4">
+    <input>Take the unit of measure and go one half units to the west</input>
+    <output>Gunslinger, roger</output>
+  </test>
+
+  <test name="talk-on-5">
+    <input>you should see an intersection where two dirtballs meet</input>
+    <output>Gunslinger, (visual|contact)( dirtball intersection)?</output>
+  </test>
+
+  <test name="talk-on-5a">
+    <input>call contact on intersection</input>
+    <output>Gunslinger, (visual|contact)( intersection)?</output>
+  </test>
+
+  <test name="talk-on-6">
+    <input>hog, the t-55 is on the western corner of the intersection</input>
+    <output>Gunslinger, tally T-55, departing IP at this time</output>
+  </test>
+
+  <!-- run in portion -->
+  <test name="talk-on-finish">
+    <input>hog, copy departing IP</input>
+    <output>Gunslinger, Hog is .* seconds out</output>
+  </test>
+
+  <test name="run-in-2">
+    <input>Continue</input>
+    <output>Gunslinger, say status of T-55</output>
+  </test>
+
+  <test name="run-in-3">
+    <input>Hog, tank is stationary, still western corner of dirtball intersection</input>
+    <output>Gunslinger, copy</output>
+  </test>
+
+  <test name="run-in-status">
+    <input>say status</input>
+    <output>Gunslinger, I am inbound to target.</output>
+    <output>Gunslinger, Hog 01 is in hot from the south</output>
+  </test>
+
+  <!--
+  <test name="run-in-4">
+    <input>Continue</input>
+  </test>
+  -->
+
+  <test name="run-in-5">
+    <input>Hog 01, you're cleared hot</input>
+    <output>Gunslinger, copy, cleared hot</output>
+    <output>Gunslinger, Rifle!</output>
+  </test>
+
+  <test name="run-in-status-2">
+    <setup>time.sleep(1)</setup>
+    <input>Hog 01, say status</input>
+    <output>Gunslinger, I am egressing.</output>
+  </test>
+
+  <!-- second part of December demo transcript -->
+  <!-- this time, skip 9-line using setup code -->
+
+  <test name="phase-2-talk-on">
+    <setup>self.dialog_manager.action_module.testing_skip_to_talkon(self.dialog_manager, "bmp")</setup>
+    <input>say when ready for talk on</input>
+    <output>Gunslinger, go with talk-on</output>
+  </test>
+
+  <test name="phase-2-units">
+    <input>Hog, let's use the same unit of measure and anchor as last time</input>
+    <output>Gunslinger, copy</output>
+  </test>
+
+  <test name="phase-2-contact">
+    <input>At the southern side of Drinkwater Lake there is a dirtball road running southeast, northwest, call contact</input>
+    <output>Gunslinger, (contact|visual southeast northwest dirtball)</output>
+  </test>
+
+  <test name="phase-2-look-west">
+    <input>Take the unit of measure and go two units to the west and one quarter unit north on that dirtball</input>
+    <output>Gunslinger, roger</output>
+  </test>
+
+  <test name="phase-2-tank-sighted">
+    <input>bmp is on the dirtball</input>
+    <output>Gunslinger, tally BMP, departing IP at this time</output>
+  </test>
+
+  <test name="phase-2-copy-depart">
+    <input>Hog, copy departing IP</input>
+    <output>Gunslinger, Hog is .* out</output>
+    <output>Gunslinger, Hog 01 is in hot from the .*</output>
+  </test>
+
+  <test name="phase-2-finish">
+    <input>Hog 01, you're cleared hot</input>
+    <output>Gunslinger, copy, cleared hot</output>
+    <output>Gunslinger, Rifle!</output>
+  </test>
+
+  <!--
+ 
+   Other tests?
+
+  -->
+
+  <test name="say-position">
+    <input>say posit</input>
+    <!-- is 2 clicks south of IP, or is at IP -->
+    <output>Gunslinger, Hog is .* IP Bravo.</output>
+  </test>  
+
+  <test name="say-playtime-now">
+    <input>say playtime</input>
+    <output>^Gunslinger,( about| playtime is( about)?)? [0-9]+ mikes.$</output>
+  </test>  
+
+  <test name="say-fuel">
+    <input>what is your fuel state</input>
+    <output>^Gunslinger, fuel is [0-9]+ pounds.$</output>
+  </test>
+
+  <test name="say-weapons">
+    <input>hog, say weapon status</input>
+    <output>Gunslinger, I have two by maverick, two by mark eighty twos, and gun.</output>
+  </test>
+
+  <!-- it's too bad we don't actually have a good way to fix a heading -->
+  <!-- this test can't be accurate -->
+  <test name="say-heading">
+    <input>say heading</input>
+    <output>Gunslinger, heading is [0-9]+ degrees.</output>
+  </test>
+
+  <test name="say-altitude">
+    <input>what is your altitude</input>
+    <output>Gunslinger, altitude is [.0-9]+ thousand.</output>
+  </test>
+
+  <test name="alternate-look-1">
+    <setup>self.dialog_manager.action_module.testing_skip_to_talkon(self.dialog_manager, "t-55")</setup>
+    <input>say when ready for talk on</input>
+    <output>Gunslinger, go with talk-on</output>
+  </test>
+
+  <test name="alternate-look-2">
+    <input>hog, call contact with Drinkwater Lake just to your north</input>
+    <output>Gunslinger, (contact|visual Drinkwater Lake)</output>
+  </test>
+
+  <test name="alternate-look-3">
+    <input>look one unit south</input>
+    <output>Gunslinger, you didn't give me a unit of measure.</output>
+  </test>
+
+  <test name="alternate-look-4">
+    <input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+    <output>Gunslinger, copy</output>
+  </test>
+
+  <test name="alternate-look-5">
+    <input>look one unit south</input>
+    <output>Gunslinger, you didn't give me an anchor point.</output>
+  </test>
+
+  <test name="alternate-look-6">
+    <input>hog, let's also establish the southern edge of the lake as our anchor point</input>
+    <output>Gunslinger, copy</output>
+  </test>
+
+  <test name="alternate-look-7">
+    <input>You should see a dirtball road</input>
+    <output>Gunslinger, (visual|contact)( dirtball road)?</output>
+  </test>
+
+  <test name="alternate-look-8">
+    <input>look one unit south</input>
+    <output>Gunslinger, roger.</output>
+  </test>
+
+  <test name="alternate-look-9">
+    <input>go one unit east, and then one unit north</input>
+    <output>Gunslinger, roger.</output>
+  </test>
+
+  <test name="alternate-look-10">
+    <input>look one unit west</input>
+    <output>Gunslinger, roger.</output>
+  </test>
+
+  <test name="alternate-look-11">
+    <input>You should see a dirtball road</input>
+    <output>Gunslinger, (visual|contact)( dirtball road)?</output>
+  </test>
+
+  <test name="rtb-setup">
+    <setup>time.sleep(1)</setup>
+    <input>hog, say status</input>
+    <output>Gunslinger, I am egressing.</output>
+  </test>
+
+  <test name="rtb-1">
+    <input>r t b at this time</input>
+    <output>Gunslinger, roger, I am returning to base.</output>
+  </test>
+
+  <test name="rtb-2">
+    <setup>time.sleep(1)</setup>
+    <input>say status</input>
+    <output>Gunslinger, I am returning to base.</output>
+  </test>
+
+  <test name="rtb-3"> 
+    <input>fly to the radio tower</input>
+    <output>Gunslinger, I am going to fly to radio tower.</output>
+  </test>
+
+  <test name="rtb-4">
+    <input>establish at I.P. Bravo</input>
+    <output>Gunslinger, roger, I am returning to base.</output>
+  </test>
+
+  <test name="landmarks-1">
+    <input>look at the valley</input>
+    <output>Gunslinger, I am going to look at valley.</output>
+  </test>
+
+</testsuite>

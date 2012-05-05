@@ -1,0 +1,44 @@
+<!-- -*- Mode: XML; -*- -->
+<fdl>
+
+  <lexicon>
+
+    <lexeme>
+      <!-- Short for "roger". -->
+      <spelling>rog</spelling>
+      <part-of-speech>interjection</part-of-speech>
+      <phonemes>r ao jh</phonemes>
+    </lexeme>
+
+    <lexeme>
+      <!-- Short for "affirmative"? -->
+      <spelling>affirm</spelling>
+      <part-of-speech>interjection</part-of-speech>
+      <!-- Yuri says "a-firm." -->
+      <phonemes>ey - f ur m 1</phonemes>
+      <phonemes>ah - f ur m 1</phonemes>
+    </lexeme>
+
+    <lexeme>
+      <!-- "Sim", for the sim commands -->
+      <spelling>sim</spelling>
+      <part-of-speech>noun</part-of-speech>
+      <phonemes>s ih m</phonemes>
+     </lexeme>
+
+    <lexeme>
+      <spelling>manpad</spelling>
+      <part-of-speech>noun</part-of-speech>
+      <phonemes>m ae n 1 - p aa d</phonemes>
+     </lexeme>
+
+    <lexeme>
+      <!-- testing... -->
+      <spelling>82s</spelling>
+      <part-of-speech>noun</part-of-speech>
+      <phonemes>ey - t iy - t uw z</phonemes>
+    </lexeme>
+
+  </lexicon>
+
+</fdl>

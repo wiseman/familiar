@@ -1,0 +1,138 @@
+<!-- Fri Oct  5 16:47:39 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<debug>[&lt;ICPResult 0.156443421044 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156443421044 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<pilotmodel-reply>poseResponse     headingDeg 82.726740782084462 /headingDeg     pose      mn:orie</pilotmodel-reply>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, currently established at IP Bravo.</output>
+<!-- Fri Oct  5 16:47:39 2007 -->
+<pilotmodel-query>playtimeQuery     queryId 0 /queryId   /playtimeQuery      /pilotModelQueryConta</pilotmodel-query>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<pilotmodel-reply>playtimeResponse     playtime 29.233216666666667 /playtime     queryId 0 /queryI</pilotmodel-reply>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<input>go ahead</input>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162493841894 target: 'c-ready-to-copy' slots: {}&gt;, &lt;ICPResult score: 0.099597011089 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<output>Gunslinger, do you have a nine-line for me?</output>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<pilotmodel-command>nineLineCommand     commandId 0 /commandId    /nineLineCommand      /pilotModelC</pilotmodel-command>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>[&lt;ICPResult score: 0.142447213601 target: 'c-t-55' slots: {}&gt;]</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<input>continue</input>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>[&lt;ICPResult 0.16602699979 'c-continue' {}&gt;]</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.16602699979 target: 'c-continue' slots: {}&gt;]</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<input>say when ready for talk on</input>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-say-when-ready-for-talkon'&gt;]</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<input>hog, call contact with Drinkwater Lake just to your north</input>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-drinkwater-lake'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<action>do_call_contact</action>
+<!-- Fri Oct  5 16:47:40 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Fri Oct  5 16:47:41 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Fri Oct  5 16:47:41 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Fri Oct  5 16:47:41 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 0 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Fri Oct  5 16:47:41 2007 -->
+<pilotmodel-query>booleanEqualityObservationQuery     equalityConditions       mn:integerMap xmlns</pilotmodel-query>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<pilotmodel-reply>booleanResponse     booleanValue 1 /booleanValue     queryId 0 /queryId    /bool</pilotmodel-reply>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-establish-unit-of-measurement' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'extent'"&gt;: &lt;Expr: "&lt;Description base: 'c-extent' slots: {&lt;Expr: "'axis-origin'"&gt;: &lt;Expr: "&lt;Description base: 'i-east'&gt;"&gt;, &lt;Expr: "'axis-destination'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<action>do_establish_unit_of_measurement</action>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<debug>extent slot is eastWestExtent</debug>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<pilotmodel-query>detailEqualityObservationQuery     equalityConditions       mn:integerMap xmlns:</pilotmodel-query>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="0"/     entit</pilotmodel-reply>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<debug>eastWestExtent of drinkwater-lake is 2707.36856797639</debug>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<debug>Set unit of measure to 2707.36856798 meters</debug>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Fri Oct  5 16:47:42 2007 -->
+<input>hog, let's also establish the western limit of the lake as our anchor point</input>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-establish-anchor-point' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'point'"&gt;: &lt;Expr: "&lt;Description base: 'c-edge' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<action>do_establish_anchor_point1</action>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<action>get_edge_point</action>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<pilotmodel-query>detailEqualityObservationQuery     equalityConditions       mn:integerMap xmlns:</pilotmodel-query>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="0"/     entit</pilotmodel-reply>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<debug>westLimit of drinkwater-lake is 3412,1086,-1030</debug>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<debug>Set anchor point to (3412, 1086, -1030)</debug>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<input>Take the unit of measure and go one half units to the south and one half units to the west</input>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-look-based-on-unit-of-measure-no-anchor' slots: {&lt;Expr: "'vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'rest-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-half'&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-half'&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Fri Oct  5 16:47:43 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>

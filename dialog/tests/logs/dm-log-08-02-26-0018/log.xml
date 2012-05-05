@@ -1,0 +1,32 @@
+<!-- Tue Feb 26 00:12:29 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Feb 26 00:12:29 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Feb 26 00:12:29 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:12:29 2008 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Feb 26 00:12:29 2008 -->
+<input>endex</input>
+<!-- Tue Feb 26 00:12:29 2008 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Tue Feb 26 00:12:29 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Tue Feb 26 00:12:29 2008 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Tue Feb 26 00:12:30 2008 -->
+<action>do_endex</action>
+<!-- Tue Feb 26 00:12:30 2008 -->
+<output>Jackknife, copy endex.</output>
+<!-- Tue Feb 26 00:12:30 2008 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Tue Feb 26 00:12:30 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Feb 26 00:12:30 2008 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Feb 26 00:12:30 2008 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand    commandId 0 /commandI</pilotmodel-command>
+<!-- Tue Feb 26 00:12:30 2008 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Feb 26 00:12:30 2008 -->
+<input>Hog zero one, Jackknife has you loud and clear.</input>

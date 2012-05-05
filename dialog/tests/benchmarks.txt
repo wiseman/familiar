@@ -1,0 +1,51 @@
+logic 1.15, benchmark.py 1.1:
+
+62:~/Desktop/ENERGID/src/rl1/code/dialogManager/tests wiseman$ python2.4 benchmark.py
+Parsing 'two' took 0.053 (0.0557991027832) seconds.
+Parsing 'two zero zero' took 0.253 (0.26663942337) seconds.
+Parsing 'Take the unit of measure and go three units to the west and two units to the north' took 0.535 (0.564127182961) seconds.
+Query <Expr: "execute-method('c-loud-and-clear', 'foo')"> took 0.02 (0.0211569786072) seconds.
+Query <Expr: "execute-method('c-loud-and-clear', '?x')"> took 0.02 (0.0209369897842) seconds.
+Query <Expr: "$constraint('c-full-callsign', 'callsign', '?x')"> took 0.021 (0.0215053081512) seconds.
+Query <Expr: "ISA('?x', 'c-addressed-utterance')"> took 0.804 (0.853116297722) seconds.
+Query <Expr: "ISA('c-loud-and-clear', '?x')"> took 0.018 (0.0199373960495) seconds.
+Query <Expr: "$ISA('?x', 'c-addressed-utterance')"> took 0.007 (0.0071711063385) seconds.
+Query <Expr: "$ISA('c-loud-and-clear', '?x')"> took 0.004 (0.0041748046875) seconds.
+find_instances on <Description base: 'i-kampton-city'> took 0.807 (0.858900308609) seconds.
+
+2.69347
+
+
+logic.py 1.15.2.2, benchmark.py 1.1:
+
+62:~/Desktop/ENERGID/src/rl1/code/dialogManager/tests wiseman$ python2.4 benchmark.py
+Parsing 'two' took 0.006 (0.00577428340912) seconds.
+Parsing 'two zero zero' took 0.021 (0.0231012105942) seconds.
+Parsing 'Take the unit of measure and go three units to the west and two units to the north' took 0.057 (0.060092997551) seconds.
+Query <Expr: "execute-method('c-loud-and-clear', 'foo')"> took 0.001 (0.00107319355011) seconds.
+Query <Expr: "execute-method('c-loud-and-clear', '?x')"> took 0.001 (0.000784492492676) seconds.
+Query <Expr: "$constraint('c-full-callsign', 'callsign', '?x')"> took 0.001 (0.00091860294342) seconds.
+Query <Expr: "ISA('?x', 'c-addressed-utterance')"> took 0.804 (0.860962414742) seconds.
+Query <Expr: "ISA('c-loud-and-clear', '?x')"> took 0.018 (0.019984793663) seconds.
+Query <Expr: "$ISA('?x', 'c-addressed-utterance')"> took 0.007 (0.0076427936554) seconds.
+Query <Expr: "$ISA('c-loud-and-clear', '?x')"> took 0.004 (0.00463099479675) seconds.
+find_instances on <Description base: 'i-kampton-city'> took 0.805 (0.872268915176) seconds.
+
+1.85724 (1.4502542x)
+
+
+logic 1.15.2.6, benchmark.py 1.1.2.1
+
+Parsing 'two' took 0.004 (0.00445349216461) seconds.
+Parsing 'two zero zero' took 0.018 (0.0193563938141) seconds.
+Parsing 'Take the unit of measure and go three units to the west and two units to the north' took 0.038 (0.0391556024551) seconds.
+Query <Expr: "execute-method('c-loud-and-clear', 'foo')"> took 0.001 (0.001189494133) seconds.
+Query <Expr: "execute-method('c-loud-and-clear', '?x')"> took 0.001 (0.00101640224457) seconds.
+Query <Expr: "$constraint('c-full-callsign', 'callsign', '?x')"> took 0.001 (0.000949597358704) seconds.
+Query <Expr: "ISA('?x', 'c-addressed-utterance')"> took 0.227 (0.247285199165) seconds.
+Query <Expr: "ISA('c-loud-and-clear', '?x')"> took 0.005 (0.00477890968323) seconds.
+Query <Expr: "$ISA('?x', 'c-addressed-utterance')"> took 0.003 (0.00325899124146) seconds.
+Query <Expr: "$ISA('c-loud-and-clear', '?x')"> took 0.0 (0.000388717651367) seconds.
+find_instances on <Description base: 'i-kampton-city'> took 0.226 (0.24543800354) seconds.
+
+0.56729 (4.7479596x speedup total) [3.273881x speedup incremental]

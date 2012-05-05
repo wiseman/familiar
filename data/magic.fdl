@@ -1,0 +1,66 @@
+<!-- -*- Mode: XML; -*- -->
+<fdl>
+
+<!-- "end ex" has a real-world training analog -->
+<frame id="c-end-exercise">
+  <parent id="c-magic-command" />
+
+  <phrase>[endex|end exercise]</phrase>
+
+  <indexset>$c-end-exercise</indexset>
+  <testindex>end exercise</testindex>
+  <testindex>endex</testindex>
+
+  <slot name="execute-method" value="do_endex" />
+</frame>
+
+
+<!-- "fake nine line", however, is pure magic.  commented out by default.  -->
+<!--
+<frame id="c-fake-nine-line">
+  <parent id="c-magic-command"/>
+
+  <phrase>sim command fake [nineline|nine line]</phrase>
+
+  <indexset>!sim !command fake nine line</indexset>
+
+  <slot name="execute-method" value="magic_fake_nine_line" />
+</frame>
+-->
+
+
+<!-- changing parser modes is definitely magic -->
+<frame id="c-magic-parser-cp">
+  <parent id="c-magic-command" />
+
+  <phrase>sim command switch ?:to [concept|conceptual] parser</phrase>
+
+  <indexset>!sim !command switch to conceptual parser</indexset>
+  <indexset>!sim !command switch to concept parser</indexset>
+  <testindex>sim command switch to conceptual parser</testindex>
+
+  <slot name="execute-method" value="magic_switch_to_concept_parser" />
+</frame>
+
+<frame id="c-magic-parser-icp">
+  <parent id="c-magic-command" />
+
+  <phrase>sim command switch ?:to indexed parser</phrase>
+
+  <indexset>!sim !command switch to indexed parser</indexset>
+  <indexset>!sim !command switch to indexed concept parser</indexset>
+  <testindex>sim command switch to indexed parser</testindex>
+
+  <slot name="execute-method" value="magic_switch_to_indexed_parser" />
+</frame>
+
+<frame id="c-magic-trigger-nineline">
+  <parent id="c-magic-command" />
+  <phrase>sim command trigger [nine line|nineline]</phrase>
+  <indexset>!sim !command !trigger !nineline</indexset>
+  <indexset>!sim !command !trigger !nine !line</indexset>
+
+  <slot name="execute-method" value="magic_trigger_nine_line" />
+</frame>
+
+</fdl>

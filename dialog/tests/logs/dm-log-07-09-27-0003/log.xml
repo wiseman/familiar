@@ -1,0 +1,24 @@
+<!-- Thu Sep 27 14:42:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 14:42:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 14:42:17 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Thu Sep 27 14:42:18 2007 -->
+<debug>[&lt;ICPResult 0.156443421044 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:42:18 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 14:42:18 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Thu Sep 27 14:42:18 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 14:42:18 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Thu Sep 27 14:42:18 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Thu Sep 27 14:42:18 2007 -->
+<input>go ahead</input>
+<!-- Thu Sep 27 14:42:18 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:42:18 2007 -->
+<output>Gunslinger, do you have a nine-line for me?</output>

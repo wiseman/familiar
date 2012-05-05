@@ -1,0 +1,39 @@
+<!-- -*- Mode: XML; -*- -->
+<fdl>
+
+
+<frame id="c-jstars-id-bogey-call">
+  <parent id="c-addressed-utterance"/>
+  
+  <phrase>{standard-begin} id bogey bullseye {bearing} {distance} {target} {target-status}</phrase>
+  <testphrase>hog zero one, ID, bogey, bullseye zero two zero degrees, six, t-55, idle</testphrase>
+  <testphrase>hog zero one, ID, bogey, bullseye zero two zero degrees, six, tracked vehicle, idle</testphrase>
+  <testphrase>hog zero one, ID, bogey, bullseye zero two zero degrees, 6, tracked vehicle, idle</testphrase>
+  <testphrase>hog zero one, id, bogey, bullseye zero two zero degrees, 6, tracked vehicle, idle</testphrase>
+
+  <constraint slot="bearing" type="c-heading"/>
+  <constraint slot="distance" type="c-number"/>
+  <constraint slot="target" type="c-tank"/>
+  <constraint slot="target-status" type="c-target-status"/>
+
+  <slot name="concept-key" value="do_id_bogey_call"/>
+  <slot name="execute-method" value="do_bogey_id" />
+
+</frame>
+
+<frame id="c-jstars-kill-target-call">
+  <parent id="c-addressed-utterance"/>
+
+  <phrase>{standard-begin} kill hostile bullseye {bearing} {distance} {target}</phrase>
+
+  <constraint slot="bearing" type="c-heading"/>
+  <constraint slot="distance" type="c-number"/>
+  <constraint slot="target" type="c-tank"/>
+  
+  <testphrase>hog zero one, kill, hostile, bullseye zero two zero degrees, six, t-55 tank</testphrase>
+
+  <slot name="concept-key" value="do_kill_target_call"/>
+</frame>
+
+
+</fdl>

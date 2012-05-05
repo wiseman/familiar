@@ -1,0 +1,1419 @@
+<!--
+     This recognition grammar was automatically generated
+     by speechutil.py on Tue Feb 26 00:59:38 2008
+-->
+
+<GRAMMAR LANGID="409">
+  <RULE NAME="c-Village" TOPLEVEL="ACTIVE">
+    <P>village</P>
+  </RULE>
+
+  <RULE NAME="c-basic-callsign" TOPLEVEL="ACTIVE">
+    <P><O><P>and</P></O> <L><P>gunslinger</P> <P>hog</P></L> <O><P>element</P></O></P>
+  </RULE>
+
+  <RULE NAME="c-beacon-mark" TOPLEVEL="ACTIVE">
+    <P>beacon</P>
+  </RULE>
+
+  <RULE NAME="c-bmp-1" TOPLEVEL="ACTIVE">
+    <P><L><P>bmp</P> <P><P>b</P> <P>m</P> <P>p</P></P></L> <O><P>tank</P></O></P>
+  </RULE>
+
+  <RULE NAME="c-call-departing" TOPLEVEL="ACTIVE">
+    <P><O><P>and</P></O> <P>call</P> <P>departing</P></P>
+  </RULE>
+
+  <RULE NAME="c-call-with-direction" TOPLEVEL="ACTIVE">
+    <P><P>call</P> <O><P>with</P></O> <P>direction</P></P>
+  </RULE>
+
+  <RULE NAME="c-denver" TOPLEVEL="ACTIVE">
+    <P>denver</P>
+  </RULE>
+
+  <RULE NAME="c-digit" TOPLEVEL="ACTIVE">
+<L><P>seven</P><P>ten</P><P>niner</P><P>nine</P><P>six</P><P>three</P><P>two</P><P>four</P><P>zero</P><P>five</P><P>eight</P><P>one</P></L>  </RULE>
+
+  <RULE NAME="c-end-exercise" TOPLEVEL="ACTIVE">
+    <L><P>endex</P> <P><P>end</P> <P>exercise</P></P></L>
+  </RULE>
+
+  <RULE NAME="c-foot" TOPLEVEL="ACTIVE">
+    <L><P>foot</P> <P>feet</P></L>
+  </RULE>
+
+  <RULE NAME="c-half" TOPLEVEL="ACTIVE">
+    <P><O><L><P>one</P> <P>a</P></L></O> <P>half</P></P>
+  </RULE>
+
+  <RULE NAME="c-have" TOPLEVEL="ACTIVE">
+    <L><P>has</P> <P>have</P></L>
+  </RULE>
+
+  <RULE NAME="c-infrared-mark" TOPLEVEL="ACTIVE">
+    <L><P>ir</P> <P><P>i</P> <P>r</P></P> <P>infrared</P> <P><P>infra</P> <P>red</P></P></L>
+  </RULE>
+
+  <RULE NAME="c-initial-point" TOPLEVEL="ACTIVE">
+    <P><L><P>ip</P> <P><P>i</P> <P>p</P></P></L> <O><P>bravo</P></O></P>
+  </RULE>
+
+  <RULE NAME="c-intersection-adjectives" TOPLEVEL="ACTIVE">
+    <L><P><P>two</P> <P>way</P></P> <P><P>three</P> <P>way</P></P> <P>star</P> <P>y</P></L>
+  </RULE>
+
+  <RULE NAME="c-kilometer" TOPLEVEL="ACTIVE">
+    <L><P>km</P> <P>kilometer</P> <P>kilometers</P> <P>click</P> <P>clicks</P> <P>klick</P> <P>klicks</P></L>
+  </RULE>
+
+  <RULE NAME="c-laser-mark" TOPLEVEL="ACTIVE">
+    <P>laser</P>
+  </RULE>
+
+  <RULE NAME="c-left" TOPLEVEL="ACTIVE">
+    <P>left</P>
+  </RULE>
+
+  <RULE NAME="c-magic-parser-cp" TOPLEVEL="ACTIVE">
+    <P><P>sim</P> <P>command</P> <P>switch</P> <O><P>to</P></O> <L><P>concept</P> <P>conceptual</P></L> <P>parser</P></P>
+  </RULE>
+
+  <RULE NAME="c-magic-parser-icp" TOPLEVEL="ACTIVE">
+    <P><P>sim</P> <P>command</P> <P>switch</P> <O><P>to</P></O> <P>indexed</P> <P>parser</P></P>
+  </RULE>
+
+  <RULE NAME="c-magic-trigger-nineline" TOPLEVEL="ACTIVE">
+    <P><P>sim</P> <P>command</P> <P>trigger</P> <L><P><P>nine</P> <P>line</P></P> <P>nineline</P></L></P>
+  </RULE>
+
+  <RULE NAME="c-manpad" TOPLEVEL="ACTIVE">
+  <L>
+    <P>manpad</P>
+    <P>MANPAD</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-meter" TOPLEVEL="ACTIVE">
+    <L><P>m</P> <P>meter</P> <P>meters</P></L>
+  </RULE>
+
+  <RULE NAME="c-mountain-or-ridge" TOPLEVEL="ACTIVE">
+  <L>
+    <P><L><P>mountain</P> <P>mountains</P></L> <O><L><P>range</P> <P>ridge</P></L></O></P>
+    <P>range</P>
+    <L><P><P>ridge</P> <O><P>line</P></O></P> <P>ridgeline</P></L>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-mountain-range" TOPLEVEL="ACTIVE">
+  <L>
+    <P><L><P>mountain</P> <P>mountains</P></L> <O><L><P>range</P> <P>ridge</P></L></O></P>
+    <P>range</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-moving" TOPLEVEL="ACTIVE">
+  <L>
+    <P><P>moving</P> <O><L><P>slowly</P> <P>quickly</P></L></O></P>
+    <P><P>in</P> <P>motion</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-nato-alpha" TOPLEVEL="ACTIVE">
+    <P>alpha</P>
+  </RULE>
+
+  <RULE NAME="c-nato-bravo" TOPLEVEL="ACTIVE">
+    <P>bravo</P>
+  </RULE>
+
+  <RULE NAME="c-nato-charlie" TOPLEVEL="ACTIVE">
+    <P>charlie</P>
+  </RULE>
+
+  <RULE NAME="c-nato-delta" TOPLEVEL="ACTIVE">
+    <P>delta</P>
+  </RULE>
+
+  <RULE NAME="c-nato-echo" TOPLEVEL="ACTIVE">
+    <P>echo</P>
+  </RULE>
+
+  <RULE NAME="c-nato-foxtrot" TOPLEVEL="ACTIVE">
+    <P>foxtrot</P>
+  </RULE>
+
+  <RULE NAME="c-nato-golf" TOPLEVEL="ACTIVE">
+    <P>golf</P>
+  </RULE>
+
+  <RULE NAME="c-nato-hotel" TOPLEVEL="ACTIVE">
+    <P>hotel</P>
+  </RULE>
+
+  <RULE NAME="c-nato-india" TOPLEVEL="ACTIVE">
+    <P>india</P>
+  </RULE>
+
+  <RULE NAME="c-nato-juliet" TOPLEVEL="ACTIVE">
+    <P>juliet</P>
+  </RULE>
+
+  <RULE NAME="c-nato-kilo" TOPLEVEL="ACTIVE">
+    <P>kilo</P>
+  </RULE>
+
+  <RULE NAME="c-nato-lima" TOPLEVEL="ACTIVE">
+    <P>lima</P>
+  </RULE>
+
+  <RULE NAME="c-nato-mike" TOPLEVEL="ACTIVE">
+    <P>mike</P>
+  </RULE>
+
+  <RULE NAME="c-nato-november" TOPLEVEL="ACTIVE">
+    <P>november</P>
+  </RULE>
+
+  <RULE NAME="c-nato-oscar" TOPLEVEL="ACTIVE">
+    <P>oscar</P>
+  </RULE>
+
+  <RULE NAME="c-nato-papa" TOPLEVEL="ACTIVE">
+    <P>papa</P>
+  </RULE>
+
+  <RULE NAME="c-nato-quebec" TOPLEVEL="ACTIVE">
+    <P>quebec</P>
+  </RULE>
+
+  <RULE NAME="c-nato-romeo" TOPLEVEL="ACTIVE">
+    <P>romeo</P>
+  </RULE>
+
+  <RULE NAME="c-nato-sierra" TOPLEVEL="ACTIVE">
+    <P>sierra</P>
+  </RULE>
+
+  <RULE NAME="c-nato-tango" TOPLEVEL="ACTIVE">
+    <P>tango</P>
+  </RULE>
+
+  <RULE NAME="c-nato-uniform" TOPLEVEL="ACTIVE">
+    <P>uniform</P>
+  </RULE>
+
+  <RULE NAME="c-nato-victor" TOPLEVEL="ACTIVE">
+    <P>victor</P>
+  </RULE>
+
+  <RULE NAME="c-nato-whiskey" TOPLEVEL="ACTIVE">
+    <P>whiskey</P>
+  </RULE>
+
+  <RULE NAME="c-nato-xray" TOPLEVEL="ACTIVE">
+    <P>xray</P>
+  </RULE>
+
+  <RULE NAME="c-nato-yankee" TOPLEVEL="ACTIVE">
+    <P>yankee</P>
+  </RULE>
+
+  <RULE NAME="c-nato-zulu" TOPLEVEL="ACTIVE">
+    <P>zulu</P>
+  </RULE>
+
+  <RULE NAME="c-nautical-mile" TOPLEVEL="ACTIVE">
+    <L><P>nm</P> <P><P>nautical</P> <O><L><P>mile</P> <P>miles</P></L></O></P> <P>nauticals</P></L>
+  </RULE>
+
+  <RULE NAME="c-negative" TOPLEVEL="ACTIVE">
+    <P>negative</P>
+  </RULE>
+
+  <RULE NAME="c-nine-line" TOPLEVEL="ACTIVE">
+    <L><P><P>9</P> <P>line</P></P> <P><P>nine</P> <P>line</P></P></L>
+  </RULE>
+
+  <RULE NAME="c-no-drop-without-clearance" TOPLEVEL="ACTIVE">
+    <P><P>no</P> <P>clearance</P> <P>no</P> <P>drop</P></P>
+  </RULE>
+
+  <RULE NAME="c-no-mark" TOPLEVEL="ACTIVE">
+    <P>none</P>
+  </RULE>
+
+  <RULE NAME="c-none" TOPLEVEL="ACTIVE">
+    <P>none</P>
+  </RULE>
+
+  <RULE NAME="c-one-quarter" TOPLEVEL="ACTIVE">
+    <P><O><L><P>one</P> <P>a</P></L></O> <L><P>quarter</P> <P>fourth</P></L></P>
+  </RULE>
+
+  <RULE NAME="c-one-third" TOPLEVEL="ACTIVE">
+    <P><O><L><P>a</P> <P>one</P></L></O> <P>third</P></P>
+  </RULE>
+
+  <RULE NAME="c-require-clearance-on-final" TOPLEVEL="ACTIVE">
+    <P><P>clearance</P> <P>on</P> <P>final</P></P>
+  </RULE>
+
+  <RULE NAME="c-ridgeline" TOPLEVEL="ACTIVE">
+    <L><P><P>ridge</P> <O><P>line</P></O></P> <P>ridgeline</P></L>
+  </RULE>
+
+  <RULE NAME="c-right" TOPLEVEL="ACTIVE">
+    <P>right</P>
+  </RULE>
+
+  <RULE NAME="c-roger" TOPLEVEL="ACTIVE">
+  <L>
+    <L><P>roger</P> <P>rog</P></L>
+    <L><P>affirm</P> <P>affirmative</P></L>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-stationary" TOPLEVEL="ACTIVE">
+  <L>
+    <P>stationary</P>
+    <P><P>not</P> <P>moving</P></P>
+    <P><P>dug</P> <P>in</P></P>
+    <P><L><P>sitting</P> <P>staying</P></L> <P>still</P></P>
+    <P>motionless</P>
+    <P>idle</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-t-55" TOPLEVEL="ACTIVE">
+    <P><L><P>t-55</P> <P><P>t</P> <P>5</P> <P>5</P></P> <P><P>t</P> <P>fifty</P> <P>five</P></P></L> <O><P>tank</P></O></P>
+  </RULE>
+
+  <RULE NAME="c-t-72" TOPLEVEL="ACTIVE">
+    <P><L><P>t-72</P> <P><P>t</P> <P>7</P> <P>2</P></P> <P><P>t</P> <P>seventy</P> <P>two</P></P></L> <O><P>tank</P></O></P>
+  </RULE>
+
+  <RULE NAME="c-talk-on" TOPLEVEL="ACTIVE">
+    <L><P><P>talk</P> <P>on</P></P> <P>talkon</P></L>
+  </RULE>
+
+  <RULE NAME="c-three-quarter" TOPLEVEL="ACTIVE">
+    <P><P>three</P> <L><P>quarters</P> <P>fourths</P></L></P>
+  </RULE>
+
+  <RULE NAME="c-two-thirds" TOPLEVEL="ACTIVE">
+    <P><P>two</P> <P>thirds</P></P>
+  </RULE>
+
+  <RULE NAME="c-white-phosphorus-mark" TOPLEVEL="ACTIVE">
+    <L><P>wp</P> <P><P>w</P> <P>p</P></P> <P><P>willy</P> <P>pete</P></P></L>
+  </RULE>
+
+  <RULE NAME="i-Large-Hilltop" TOPLEVEL="ACTIVE">
+    <P><P>large</P> <L><P>hill</P> <P>hilltop</P> <P><P>hill</P> <P>top</P></P></L></P>
+  </RULE>
+
+  <RULE NAME="i-Overlook-Point" TOPLEVEL="ACTIVE">
+    <P><P>overlook</P> <L><P>point</P> <P>mountain</P> <P>hill</P></L></P>
+  </RULE>
+
+  <RULE NAME="i-Radio-Tower" TOPLEVEL="ACTIVE">
+    <P><O><P>radio</P></O> <P>tower</P></P>
+  </RULE>
+
+  <RULE NAME="i-blue" TOPLEVEL="ACTIVE">
+    <P>blue</P>
+  </RULE>
+
+  <RULE NAME="i-drinkwater-lake" TOPLEVEL="ACTIVE">
+  <L>
+    <P><P>drinkwater</P> <O><P>lake</P></O></P>
+    <P><P>drink</P> <P>water</P> <O><P>lake</P></O></P>
+    <P><P>dry</P> <L><P>lake</P> <P><P>lake</P> <P>bed</P></P> <P>lakebed</P></L></P>
+    <P><P>light</P> <O><P>colored</P></O> <P>sand</P> <P>shape</P></P>
+    <P><P>light</P> <P>sand</P> <P>colored</P> <P>shape</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-east" TOPLEVEL="ACTIVE">
+  <L>
+    <P>east</P>
+    <P>eastern</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-freq-green" TOPLEVEL="ACTIVE">
+    <P>green</P>
+  </RULE>
+
+  <RULE NAME="i-freq-uniform" TOPLEVEL="ACTIVE">
+    <P>uniform</P>
+  </RULE>
+
+  <RULE NAME="i-kampton-city" TOPLEVEL="ACTIVE">
+    <P><P>kampton</P> <P>city</P></P>
+  </RULE>
+
+  <RULE NAME="i-north" TOPLEVEL="ACTIVE">
+  <L>
+    <P>north</P>
+    <P>northern</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-northeast" TOPLEVEL="ACTIVE">
+  <L>
+    <L><P>northeast</P> <P><P>north</P> <P>east</P></P></L>
+    <P>northeastern</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-northwest" TOPLEVEL="ACTIVE">
+  <L>
+    <L><P>northwest</P> <P><P>north</P> <P>west</P></P></L>
+    <P>northwestern</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-red" TOPLEVEL="ACTIVE">
+    <P>red</P>
+  </RULE>
+
+  <RULE NAME="i-seattle-codeword" TOPLEVEL="ACTIVE">
+    <P>seattle</P>
+  </RULE>
+
+  <RULE NAME="i-signal-mirror" TOPLEVEL="ACTIVE">
+  <L>
+    <P><P>signal</P> <L><P>mirror</P> <P>panel</P> <P>marker</P></L></P>
+    <L><P><P>observation</P> <P>point</P></P> <P><P>o</P> <P>p</P></P></L>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-south" TOPLEVEL="ACTIVE">
+  <L>
+    <P>south</P>
+    <P>southern</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-southeast" TOPLEVEL="ACTIVE">
+  <L>
+    <L><P>southeast</P> <P><P>south</P> <P>east</P></P></L>
+    <P>southeastern</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-southwest" TOPLEVEL="ACTIVE">
+  <L>
+    <L><P>southwest</P> <P><P>south</P> <P>west</P></P></L>
+    <P>southwestern</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-west" TOPLEVEL="ACTIVE">
+  <L>
+    <P>west</P>
+    <P>western</P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-integer" TOPLEVEL="ACTIVE">
+  <L>
+    <P><RULEREF NAME="c-digit"/> <O><RULEREF NAME="c-integer"/></O></P>
+<L><P><RULEREF NAME="c-digit"/></P><P><RULEREF NAME="c-digit"/><RULEREF NAME="c-integer"/></P></L>  </L>
+  </RULE>
+
+  <RULE NAME="i-Pass-at-Bravo" TOPLEVEL="ACTIVE">
+    <P><L><P>pass</P> <P>gap</P></L> <L><P>at</P> <P><P>next</P> <P>to</P></P></L> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P></L></P>
+  </RULE>
+
+  <RULE NAME="i-Valley" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><P><P>saucer</P> <P>shaped</P></P></O> <L><P>basin</P> <P>depression</P> <P>valley</P></L></P>
+    <P><P>flat</P> <P>area</P></P>
+    <P><P>east</P> <P>west</P> <O><P>running</P></O> <P>valley</P></P>
+    <P>depression</P>
+    <P><P>valley</P> <P>with</P> <P>dry</P> <P>lake</P> <P>bed</P></P>
+    <P><P>flat</P> <P>area</P> <P>surrounded</P> <P>by</P> <O><P><L><P>mountains</P> <P>hills</P></L> <O><P><P>north</P> <P>of</P> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P> <P>hills</P></L></P></O></P></O></P>
+    <P><P>valley</P> <P>north</P> <P>of</P> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P></L></P>
+    <P><P>valley</P> <P>with</P> <P>drinkwater</P> <P>lake</P></P>
+    <P><P>dry</P> <P>lake</P> <P>area</P> <P>surrounded</P> <P>by</P> <P>mountains</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-nato-phonetic-word" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-nato-alpha"/>
+      <RULEREF NAME="c-nato-bravo"/>
+      <RULEREF NAME="c-nato-charlie"/>
+      <RULEREF NAME="c-nato-delta"/>
+      <RULEREF NAME="c-nato-echo"/>
+      <RULEREF NAME="c-nato-foxtrot"/>
+      <RULEREF NAME="c-nato-golf"/>
+      <RULEREF NAME="c-nato-hotel"/>
+      <RULEREF NAME="c-nato-india"/>
+      <RULEREF NAME="c-nato-juliet"/>
+      <RULEREF NAME="c-nato-kilo"/>
+      <RULEREF NAME="c-nato-lima"/>
+      <RULEREF NAME="c-nato-mike"/>
+      <RULEREF NAME="c-nato-november"/>
+      <RULEREF NAME="c-nato-oscar"/>
+      <RULEREF NAME="c-nato-papa"/>
+      <RULEREF NAME="c-nato-quebec"/>
+      <RULEREF NAME="c-nato-romeo"/>
+      <RULEREF NAME="c-nato-sierra"/>
+      <RULEREF NAME="c-nato-tango"/>
+      <RULEREF NAME="c-nato-uniform"/>
+      <RULEREF NAME="c-nato-victor"/>
+      <RULEREF NAME="c-nato-whiskey"/>
+      <RULEREF NAME="c-nato-xray"/>
+      <RULEREF NAME="c-nato-yankee"/>
+      <RULEREF NAME="c-nato-zulu"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-unit-of-measurement" TOPLEVEL="ACTIVE">
+  <L>
+    <L><P>unit</P> <P>units</P></L>
+    <L><P>measure</P> <P>measurement</P></L>
+    <L>
+      <RULEREF NAME="c-nautical-mile"/>
+      <RULEREF NAME="c-foot"/>
+      <RULEREF NAME="c-kilometer"/>
+      <RULEREF NAME="c-meter"/>
+    </L>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-target-status" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-stationary"/>
+      <RULEREF NAME="c-moving"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-procedure" TOPLEVEL="ACTIVE">
+    <RULEREF NAME="c-talk-on"/>
+  </RULE>
+
+  <RULE NAME="c-fraction" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-half"/>
+      <RULEREF NAME="c-one-quarter"/>
+      <RULEREF NAME="c-three-quarter"/>
+      <RULEREF NAME="c-one-third"/>
+      <RULEREF NAME="c-two-thirds"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-target-designation-mark" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-white-phosphorus-mark"/>
+      <RULEREF NAME="c-laser-mark"/>
+      <RULEREF NAME="c-infrared-mark"/>
+      <RULEREF NAME="c-beacon-mark"/>
+      <RULEREF NAME="c-no-mark"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-lake" TOPLEVEL="ACTIVE">
+  <L>
+    <P>lake</P>
+    <RULEREF NAME="i-drinkwater-lake"/>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-Mountains-East-of-IP" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-mountain-or-ridge"/> <O><P><P>to</P> <P>the</P></P></O> <RULEREF NAME="i-east"/> <P>of</P> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P></L></P>
+  </RULE>
+
+  <RULE NAME="c-frequency" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="i-freq-green"/>
+      <RULEREF NAME="i-freq-uniform"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-city" TOPLEVEL="ACTIVE">
+  <L>
+    <P>city</P>
+    <L>
+      <RULEREF NAME="c-denver"/>
+      <RULEREF NAME="i-kampton-city"/>
+      <RULEREF NAME="c-Village"/>
+    </L>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-Spur-Northeast-of-Dry-Lake" TOPLEVEL="ACTIVE">
+    <P><P>spur</P> <RULEREF NAME="i-northeast"/> <P>of</P> <O><P>the</P></O> <P>dry</P> <L><P><P>lake</P> <O><P>bed</P></O></P> <P>lakebed</P></L></P>
+  </RULE>
+
+  <RULE NAME="i-Long-Straight-Road" TOPLEVEL="ACTIVE">
+    <P><P>long</P> <O><P>straight</P></O> <P>road</P> <O><P><RULEREF NAME="i-northeast"/> <P>of</P> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P></L></P></O></P>
+  </RULE>
+
+  <RULE NAME="c-color" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="i-red"/>
+      <RULEREF NAME="i-blue"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-codeword" TOPLEVEL="ACTIVE">
+    <RULEREF NAME="i-seattle-codeword"/>
+  </RULE>
+
+  <RULE NAME="c-marker" TOPLEVEL="ACTIVE">
+    <RULEREF NAME="i-signal-mirror"/>
+  </RULE>
+
+  <RULE NAME="i-Southern-Ridge-Line" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="i-south"/> <RULEREF NAME="c-ridgeline"/></P>
+  </RULE>
+
+  <RULE NAME="i-Hills-Southwest-of-IP" TOPLEVEL="ACTIVE">
+    <P><P>hills</P> <O><P><P>to</P> <P>the</P></P></O> <RULEREF NAME="i-southwest"/> <P>of</P> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P></L></P>
+  </RULE>
+
+  <RULE NAME="i-Western-Approach" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="i-west"/> <O><P><P>avenue</P> <P>of</P></P></O> <P>approach</P></P>
+  </RULE>
+
+  <RULE NAME="c-cardinal-direction" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="i-north"/>
+      <RULEREF NAME="i-south"/>
+      <RULEREF NAME="i-east"/>
+      <RULEREF NAME="i-west"/>
+      <RULEREF NAME="i-northwest"/>
+      <RULEREF NAME="i-northeast"/>
+      <RULEREF NAME="i-southwest"/>
+      <RULEREF NAME="i-southeast"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="i-Ridgeline-West-of-IP" TOPLEVEL="ACTIVE">
+  <L>
+    <P><P>north</P> <P>south</P> <O><P>running</P></O> <RULEREF NAME="c-ridgeline"/> <RULEREF NAME="i-west"/> <L><P>from</P> <P>of</P></L> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P></L></P>
+    <P><O><P>the</P></O> <RULEREF NAME="c-ridgeline"/> <O><P><P>that</P> <P>runs</P> <P>north</P> <P>south</P></P></O> <O><P>thats</P></O> <RULEREF NAME="i-west"/> <L><P>from</P> <P>of</P></L> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P></L></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-East-End-of-Valley" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="i-east"/> <RULEREF NAME="i-Valley"/></P>
+  </RULE>
+
+  <RULE NAME="i-Northern-Mountains" TOPLEVEL="ACTIVE">
+  <L>
+    <P><RULEREF NAME="i-north"/> <RULEREF NAME="c-mountain-or-ridge"/></P>
+    <P><RULEREF NAME="c-mountain-or-ridge"/> <O><P><L><P>to</P> <P>in</P> <P>on</P></L> <O><P>the</P></O></P></O> <RULEREF NAME="i-north"/> <O><P>side</P></O> <O><P><P>of</P> <O><P>the</P></O> <RULEREF NAME="i-Valley"/></P></O></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-Open-End-of-Valley" TOPLEVEL="ACTIVE">
+  <L>
+    <P><L><P>open</P> <P>thin</P></L> <P>end</P> <P>of</P> <O><P>the</P></O> <RULEREF NAME="i-Valley"/></P>
+    <P><P>end</P> <P>of</P> <RULEREF NAME="i-Valley"/> <L><P>near</P> <P>nearest</P></L> <O><P>the</P></O> <P>dry</P> <P>lake</P> <P>bed</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-West-End-of-Valley" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="i-west"/> <RULEREF NAME="i-Valley"/></P>
+  </RULE>
+
+  <RULE NAME="i-Western-Mountains" TOPLEVEL="ACTIVE">
+  <L>
+    <P><RULEREF NAME="i-west"/> <RULEREF NAME="c-mountain-range"/></P>
+    <P><RULEREF NAME="c-mountain-range"/> <O><P><L><P>to</P> <P>in</P> <P>on</P></L> <O><P>the</P></O></P></O> <RULEREF NAME="i-west"/> <O><P>side</P></O> <O><P><P>of</P> <P>the</P> <RULEREF NAME="i-Valley"/></P></O></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-Spurs-Southeast-of-Valley" TOPLEVEL="ACTIVE">
+    <P><P>spurs</P> <O><P>to</P></O> <O><P>the</P></O> <RULEREF NAME="i-southeast"/> <P>of</P> <O><P>the</P></O> <RULEREF NAME="i-Valley"/></P>
+  </RULE>
+
+  <RULE NAME="i-Southern-Mountains" TOPLEVEL="ACTIVE">
+  <L>
+    <P><RULEREF NAME="i-south"/> <RULEREF NAME="c-mountain-range"/></P>
+    <P><RULEREF NAME="c-mountain-range"/> <O><P><L><P>to</P> <P>in</P> <P>on</P></L> <O><P>the</P></O></P></O> <RULEREF NAME="i-south"/> <O><P>side</P></O> <O><P><P>of</P> <P>the</P> <RULEREF NAME="i-Valley"/></P></O></P>
+    <P><RULEREF NAME="c-mountain-range"/> <O><P><L><P>to</P> <P>in</P> <P>on</P></L> <O><P>the</P></O></P></O> <RULEREF NAME="i-north"/> <O><P>side</P></O> <P><P>of</P> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P></L></P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-Flat-South-of-Valley" TOPLEVEL="ACTIVE">
+  <L>
+    <P><P>flat</P> <P>area</P> <O><P>to</P></O> <O><P>the</P></O> <RULEREF NAME="i-south"/> <P>of</P> <O><P>the</P></O> <RULEREF NAME="i-Valley"/></P>
+    <P><P>flat</P> <P>area</P> <O><P>to</P></O> <O><P>the</P></O> <RULEREF NAME="i-north"/> <P>of</P> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P></L></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-mgrs-square" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-nato-phonetic-word"/> <RULEREF NAME="c-nato-phonetic-word"/></P>
+  </RULE>
+
+  <RULE NAME="c-rational" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-integer"/> <P>and</P> <RULEREF NAME="c-fraction"/></P>
+  </RULE>
+
+  <RULE NAME="c-distinct-feature" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="i-Radio-Tower"/>
+      <RULEREF NAME="i-Long-Straight-Road"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-farmhouse" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-color"/></O> <L><P>farmhouse</P> <P><P>farm</P> <P>house</P></P> <P>house</P></L></P>
+  </RULE>
+
+  <RULE NAME="c-tank" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-color"/></O> <P>tank</P></P>
+    <P><P>tracked</P> <P>vehicle</P></P>
+    <L>
+      <RULEREF NAME="c-t-55"/>
+      <RULEREF NAME="c-t-72"/>
+      <RULEREF NAME="c-bmp-1"/>
+    </L>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-Draws-on-Southern-Ridge" TOPLEVEL="ACTIVE">
+    <P><L><P>draw</P> <P>draws</P></L> <P>on</P> <O><P>the</P></O> <RULEREF NAME="i-Southern-Ridge-Line"/></P>
+  </RULE>
+
+  <RULE NAME="i-Large-Saddle-on-Southern-Ridge" TOPLEVEL="ACTIVE">
+    <P><O><P>large</P></O> <P>saddle</P> <P>on</P> <O><P>the</P></O> <RULEREF NAME="i-Southern-Ridge-Line"/></P>
+  </RULE>
+
+  <RULE NAME="i-Spurs-on-Southern-Ridge" TOPLEVEL="ACTIVE">
+    <P><P>spurs</P> <P>on</P> <O><P>the</P></O> <RULEREF NAME="i-Southern-Ridge-Line"/></P>
+  </RULE>
+
+  <RULE NAME="c-dirtball-road" TOPLEVEL="ACTIVE">
+  <L>
+    <P><P>dirtball</P> <O><P>road</P></O></P>
+    <P><P>dirtball</P> <O><P>road</P></O> <O><P>running</P></O> <O><P>from</P></O> <RULEREF NAME="c-cardinal-direction"/> <O><P>to</P></O> <RULEREF NAME="c-cardinal-direction"/></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-extent" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-cardinal-direction"/> <RULEREF NAME="c-cardinal-direction"/> <L><P>extent</P> <P>expanse</P> <P>length</P> <P>axis</P></L></P>
+  </RULE>
+
+  <RULE NAME="c-hardball-road" TOPLEVEL="ACTIVE">
+  <L>
+    <P><P>hardball</P> <O><P>road</P></O></P>
+    <P><P>hardball</P> <O><P>road</P></O> <O><P>running</P></O> <O><P>from</P></O> <RULEREF NAME="c-cardinal-direction"/> <O><P>to</P></O> <RULEREF NAME="c-cardinal-direction"/></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-edge" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-cardinal-direction"/> <O><P>most</P></O> <L><P>edge</P> <P>limit</P> <P>side</P> <P>end</P></L></P>
+  </RULE>
+
+  <RULE NAME="c-direction" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-left"/>
+      <RULEREF NAME="c-right"/>
+      <RULEREF NAME="c-cardinal-direction"/>
+      <RULEREF NAME="i-north"/>
+      <RULEREF NAME="i-south"/>
+      <RULEREF NAME="i-east"/>
+      <RULEREF NAME="i-west"/>
+      <RULEREF NAME="i-northwest"/>
+      <RULEREF NAME="i-northeast"/>
+      <RULEREF NAME="i-southwest"/>
+      <RULEREF NAME="i-southeast"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="i-Saddle-on-Northern-Ridge" TOPLEVEL="ACTIVE">
+    <P><P>saddle</P> <P>on</P> <O><P>the</P></O> <RULEREF NAME="i-Northern-Mountains"/></P>
+  </RULE>
+
+  <RULE NAME="i-Large-Saddle-on-Northern-Ridge" TOPLEVEL="ACTIVE">
+    <P><L><P>large</P> <P>big</P></L> <P>saddle</P> <P>on</P> <O><P>the</P></O> <RULEREF NAME="i-Northern-Mountains"/></P>
+  </RULE>
+
+  <RULE NAME="i-Draw-on-Northern-Ridge" TOPLEVEL="ACTIVE">
+    <P><L><P>draw</P> <P>draws</P></L> <P>on</P> <O><P>the</P></O> <RULEREF NAME="i-Northern-Mountains"/></P>
+  </RULE>
+
+  <RULE NAME="c-major-geographic-feature" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="i-Valley"/>
+      <RULEREF NAME="i-Northern-Mountains"/>
+      <RULEREF NAME="i-Western-Mountains"/>
+      <RULEREF NAME="i-Southern-Mountains"/>
+      <RULEREF NAME="i-Open-End-of-Valley"/>
+      <RULEREF NAME="i-Ridgeline-West-of-IP"/>
+      <RULEREF NAME="i-Mountains-East-of-IP"/>
+      <RULEREF NAME="i-Hills-Southwest-of-IP"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="i-Large-Pass" TOPLEVEL="ACTIVE">
+  <L>
+    <P><L><P>pass</P> <P>gap</P> <P><P>choke</P> <P>point</P></P> <P>chokepoint</P></L> <O><P><RULEREF NAME="i-north"/> <P>of</P> <O><P>the</P></O> <L><RULEREF NAME="c-initial-point"/> <P>bravo</P></L></P></O></P>
+    <P><L><P>pass</P> <P>gap</P> <P><P>choke</P> <P>point</P></P> <P>chokepoint</P></L> <P>in</P> <RULEREF NAME="c-ridgeline"/></P>
+    <P><L><P>pass</P> <P>gap</P></L> <P>to</P> <RULEREF NAME="i-Valley"/> <O><P>floor</P></O></P>
+    <P><L><P>pass</P> <P>gap</P></L> <P>in</P> <RULEREF NAME="i-Southern-Mountains"/></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-number" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-integer"/>
+      <RULEREF NAME="c-fraction"/>
+      <RULEREF NAME="c-half"/>
+      <RULEREF NAME="c-one-quarter"/>
+      <RULEREF NAME="c-three-quarter"/>
+      <RULEREF NAME="c-one-third"/>
+      <RULEREF NAME="c-two-thirds"/>
+      <RULEREF NAME="c-rational"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-building" TOPLEVEL="ACTIVE">
+  <L>
+    <P>building</P>
+    <RULEREF NAME="c-farmhouse"/>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-road" TOPLEVEL="ACTIVE">
+  <L>
+    <P>road</P>
+    <P><P>road</P> <O><P>running</P></O> <O><P>from</P></O> <RULEREF NAME="c-cardinal-direction"/> <O><P>to</P></O> <RULEREF NAME="c-cardinal-direction"/></P>
+    <L>
+      <RULEREF NAME="c-dirtball-road"/>
+      <RULEREF NAME="c-hardball-road"/>
+    </L>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-minor-geographic-feature" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="i-drinkwater-lake"/>
+      <RULEREF NAME="i-Saddle-on-Northern-Ridge"/>
+      <RULEREF NAME="i-Spur-Northeast-of-Dry-Lake"/>
+      <RULEREF NAME="i-Large-Saddle-on-Northern-Ridge"/>
+      <RULEREF NAME="i-Large-Saddle-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Southern-Ridge-Line"/>
+      <RULEREF NAME="i-Overlook-Point"/>
+      <RULEREF NAME="i-Spurs-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Draws-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Flat-South-of-Valley"/>
+      <RULEREF NAME="i-Spurs-Southeast-of-Valley"/>
+      <RULEREF NAME="i-Draw-on-Northern-Ridge"/>
+      <RULEREF NAME="i-West-End-of-Valley"/>
+      <RULEREF NAME="i-East-End-of-Valley"/>
+      <RULEREF NAME="i-Large-Pass"/>
+      <RULEREF NAME="i-Large-Hilltop"/>
+      <RULEREF NAME="i-Pass-at-Bravo"/>
+      <RULEREF NAME="i-Western-Approach"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-heading" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-number"/> <P>degrees</P></P>
+  </RULE>
+
+  <RULE NAME="c-mgrs-coords" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-mgrs-square"/> <RULEREF NAME="c-number"/></P>
+  </RULE>
+
+  <RULE NAME="c-building-designator" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-nato-phonetic-word"/> <RULEREF NAME="c-number"/></P>
+  </RULE>
+
+  <RULE NAME="c-linear-measurement" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-number"/> <RULEREF NAME="c-unit-of-measurement"/></P>
+  </RULE>
+
+  <RULE NAME="c-hardball-intersection" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-intersection-adjectives"/></O> <P>intersection</P> <L><P>where</P> <P>of</P> <P>with</P></L> <RULEREF NAME="c-number"/> <P>hardballs</P> <O><L><P>meet</P> <P><P>come</P> <P>together</P></P></L></O></P>
+    <P><O><RULEREF NAME="c-intersection-adjectives"/></O> <P>hardball</P> <P>intersection</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-offset" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-number"/> <P>degrees</P> <RULEREF NAME="c-direction"/></P>
+  </RULE>
+
+  <RULE NAME="c-full-callsign" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-basic-callsign"/> <RULEREF NAME="c-number"/></P>
+  </RULE>
+
+  <RULE NAME="c-dirtball-intersection" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-intersection-adjectives"/></O> <P>intersection</P> <L><P>where</P> <P>of</P> <P>with</P></L> <RULEREF NAME="c-number"/> <P>dirtballs</P> <O><L><P>meet</P> <P><P>come</P> <P>together</P></P></L></O></P>
+    <P><O><RULEREF NAME="c-intersection-adjectives"/></O> <P>dirtball</P> <P>intersection</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-building-reference" TOPLEVEL="ACTIVE">
+    <P><P>building</P> <RULEREF NAME="c-building-designator"/></P>
+  </RULE>
+
+  <RULE NAME="c-vector" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-linear-measurement"/> <O><P><P>to</P> <P>the</P></P></O> <RULEREF NAME="c-cardinal-direction"/></P>
+  </RULE>
+
+  <RULE NAME="c-measurement" TOPLEVEL="ACTIVE">
+    <RULEREF NAME="c-linear-measurement"/>
+  </RULE>
+
+  <RULE NAME="c-heading-with-offset" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-heading"/> <P>offset</P> <RULEREF NAME="c-offset"/></P>
+  </RULE>
+
+  <RULE NAME="c-callsign" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-basic-callsign"/>
+      <RULEREF NAME="c-full-callsign"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-intersection" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-intersection-adjectives"/></O> <P>intersection</P></P>
+    <L>
+      <RULEREF NAME="c-hardball-intersection"/>
+      <RULEREF NAME="c-dirtball-intersection"/>
+    </L>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-rooftop" TOPLEVEL="ACTIVE">
+    <P><L><P>roof</P> <P>rooftop</P> <P><P>roof</P> <P>top</P></P></L> <O><P><O><P>of</P></O> <RULEREF NAME="c-building-reference"/></P></O></P>
+  </RULE>
+
+  <RULE NAME="c-unit-vector-sum" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-vector"/> <O><P><P>and</P> <O><P>then</P></O> <O><P>go</P></O> <RULEREF NAME="c-unit-vector-sum"/></P></O></P>
+  </RULE>
+
+  <RULE NAME="c-say-again" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-callsign"/></O> <P>say</P> <P>again</P> <O><L><P><P>last</P> <P>calling</P> <P>station</P></P> <RULEREF NAME="c-callsign"/></L></O></P>
+  </RULE>
+
+  <RULE NAME="c-std-utterance-begin" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-callsign"/> <O><P><O><P><P>this</P> <P>is</P></P></O> <RULEREF NAME="c-callsign"/></P></O></P>
+  </RULE>
+
+  <RULE NAME="c-authentication-response" TOPLEVEL="ACTIVE">
+  <L>
+    <P><RULEREF NAME="c-callsign"/> <P>authenticates</P> <RULEREF NAME="c-nato-phonetic-word"/></P>
+    <P><O><RULEREF NAME="c-callsign"/></O> <P>i</P> <L><P>have</P> <P>show</P> <P>authenticate</P></L> <RULEREF NAME="c-nato-phonetic-word"/></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-intersection-corner" TOPLEVEL="ACTIVE">
+  <L>
+    <P><P>corner</P> <P>of</P> <O><P>the</P></O> <RULEREF NAME="c-intersection"/></P>
+    <P><P>intersection</P> <P>corner</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-copy-departing-ip" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>copy</P> <P>departing</P> <P>ip</P></P>
+  </RULE>
+
+  <RULE NAME="c-weak-but-readable" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-std-utterance-begin"/> <O><P>I</P></O> <L><P>has</P> <P>have</P></L> <P>you</P> <P>weak</P> <P>but</P> <P>readable</P></P>
+  </RULE>
+
+  <RULE NAME="c-query-status" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P><P>what</P> <P>is</P> <P>your</P></P> <P>say</P></L> <P>status</P></P>
+  </RULE>
+
+  <RULE NAME="c-continue" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>continue</P></P>
+  </RULE>
+
+  <RULE NAME="c-frequency-change-ok" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>pushing</P> <RULEREF NAME="c-frequency"/> <O><P><P>this</P> <P>time</P></P></O></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>up</P> <RULEREF NAME="c-frequency"/> <O><P><P>at</P> <P>this</P> <P>time</P></P></O></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-reuse-anchor-point" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><L><P>lets</P> <P>let's</P> <P><P>let</P> <P>us</P></P></L></O> <L><P>establish</P> <P>use</P> <P>reuse</P></L> <P>the</P> <P>same</P> <P>anchor</P> <O><P>point</P></O> <O><P><P>as</P> <P>last</P> <P>time</P></P></O></P>
+  </RULE>
+
+  <RULE NAME="c-request-frequency-change" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P><P>can</P> <P>you</P></P></O> <P>push</P> <RULEREF NAME="c-frequency"/> <O><L><P><P>this</P> <P>time</P></P> <P><O><P>up</P></O> <P>this</P> <P>frequency</P></P></L></O></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>are</P> <P>you</P> <P>able</P> <O><P>to</P></O> <O><P>push</P></O> <RULEREF NAME="c-frequency"/> <O><P>at</P></O> <O><P><P>this</P> <P>time</P></P></O></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-abort-code-request" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P><P>do</P> <P>you</P> <P>have</P></P> <P>say</P></L> <O><P>an</P></O> <P>abort</P> <P>code</P> <O><P>setup</P></O></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>what</P> <P>is</P> <L><P>the</P> <P>your</P></L> <P>abort</P> <P>code</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-cleared-hot" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><L><P>you're</P> <P><P>you</P> <P>are</P></P></L></O> <P>cleared</P> <P>hot</P></P>
+  </RULE>
+
+  <RULE NAME="c-frequency-change-deny" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P>is</P></O> <P>unable</P> <O><P><P>to</P> <P>push</P></P></O> <RULEREF NAME="c-frequency"/> <O><P><P>at</P> <P>this</P> <P>time</P></P></O></P>
+  </RULE>
+
+  <RULE NAME="i-fuel-query" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P>say</P> <P><P>what</P> <P>is</P> <O><P>your</P></O></P></L> <P>fuel</P> <O><L><P>state</P> <P>status</P></L></O></P>
+  </RULE>
+
+  <RULE NAME="c-look-based-on-unit-of-measure-from-anchor" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>from</P> <O><L><P>the</P> <P>that</P> <P>our</P></L></O> <P>anchor</P> <O><P>point</P></O> <O><P><P>take</P> <O><L><P>the</P> <P>that</P></L></O> <P>unit</P> <P>of</P> <L><P>measure</P> <P>measurement</P></L> <P>and</P></P></O> <L><P>go</P> <P>look</P> <P>take</P></L> <RULEREF NAME="c-unit-vector-sum"/> <O><P><L><P>along</P> <P>on</P></L> <L><P>that</P> <P>the</P></L> <RULEREF NAME="c-road"/></P></O></P>
+  </RULE>
+
+  <RULE NAME="c-abort-code-ack" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>copy</P> <RULEREF NAME="c-nato-phonetic-word"/> <RULEREF NAME="c-nato-phonetic-word"/></P>
+  </RULE>
+
+  <RULE NAME="c-assert-urban-layout" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <RULEREF NAME="c-city"/> <P>is</P> <RULEREF NAME="c-codeword"/></P>
+  </RULE>
+
+  <RULE NAME="c-standby" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P><P>stand</P> <P>by</P></P> <P>standby</P></L> <O><P>one</P></O></P>
+  </RULE>
+
+  <RULE NAME="c-look-based-on-unit-of-measure-no-anchor" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P><P>take</P> <O><L><P>the</P> <P>that</P></L></O> <P>unit</P> <P>of</P> <L><P>measure</P> <P>measurement</P></L> <P>and</P></P></O> <L><P>go</P> <P>look</P></L> <RULEREF NAME="c-unit-vector-sum"/> <O><P><L><P>along</P> <P>on</P></L> <L><P>that</P> <P>the</P></L> <RULEREF NAME="c-road"/></P></O></P>
+  </RULE>
+
+  <RULE NAME="c-query-position" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P><P>what</P> <P>is</P> <P>your</P></P> <P>say</P></L> <L><P>posit</P> <P>position</P></L></P>
+  </RULE>
+
+  <RULE NAME="c-query-ammo" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P><P>what</P> <P>is</P> <P>your</P></P> <P>say</P></L> <L><P>ammo</P> <P>weapon</P></L> <O><P>status</P></O></P>
+  </RULE>
+
+  <RULE NAME="c-copy-ack" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-callsign"/></O> <P>copy</P> <O><P>all</P></O></P>
+    <P><O><P><RULEREF NAME="c-callsign"/> <O><RULEREF NAME="c-callsign"/></O></P></O> <P>copies</P> <P>all</P></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>good</P> <P>copy</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-playtime-response" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-callsign"/></O> <RULEREF NAME="c-callsign"/> <P>copies</P> <RULEREF NAME="c-number"/> <P>mikes</P> <O><P>playtime</P></O></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>roger</P> <RULEREF NAME="c-number"/> <P>mikes</P> <O><P>playtime</P></O></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-jstars-kill-target-call" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-std-utterance-begin"/> <P>kill</P> <P>hostile</P> <P>bullseye</P> <RULEREF NAME="c-heading"/> <RULEREF NAME="c-number"/> <RULEREF NAME="c-tank"/></P>
+  </RULE>
+
+  <RULE NAME="c-what-do-you-see" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>what</P> <L><P>do</P> <P>can</P></L> <P>you</P> <P>see</P></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>what</P> <P>are</P> <P>you</P> <P>looking</P> <P>at</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-reuse-unit-of-measure" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><L><P>lets</P> <P>let's</P> <P><P>let</P> <P>us</P></P></L></O> <O><P>also</P></O> <L><P>establish</P> <P>use</P> <P>reuse</P></L> <P>the</P> <P>same</P> <P>unit</P> <P>of</P> <L><P>measure</P> <P>measurement</P></L> <O><P><L><P>as</P> <P>from</P></L> <P>last</P> <P>time</P></P></O></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><L><P>lets</P> <P>let's</P> <P><P>let</P> <P>us</P></P></L></O> <O><P>also</P></O> <L><P>establish</P> <P>use</P> <P>reuse</P></L> <P>the</P> <P>unit</P> <P>of</P> <L><P>measure</P> <P>measurement</P></L> <L><P>as</P> <P>from</P></L> <P>last</P> <P>time</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-playtime-query" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P>say</P> <P><P>what</P> <P>is</P> <O><P>your</P></O></P></L> <L><P>playtime</P> <P><P>play</P> <P>time</P></P></L> <O><P>state</P></O></P>
+  </RULE>
+
+  <RULE NAME="c-reuse-anchor-and-unit-of-measurement" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><L><P>lets</P> <P>let's</P> <P><P>let</P> <P>us</P></P></L></O> <L><P>establish</P> <P>use</P> <P>reuse</P></L> <P>the</P> <P>same</P> <P>unit</P> <P>of</P> <L><P>measure</P> <P>measurement</P></L> <P>and</P> <P>anchor</P> <O><P>point</P></O> <O><P><P>as</P> <P>last</P> <P>time</P></P></O></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><L><P>lets</P> <P>let's</P> <P><P>let</P> <P>us</P></P></L></O> <L><P>establish</P> <P>use</P> <P>reuse</P></L> <P>the</P> <P>anchor</P> <O><P>point</P></O> <P>and</P> <P>unit</P> <P>of</P> <L><P>measure</P> <P>measurement</P></L> <O><P><P>as</P> <P>last</P> <P>time</P></P></O></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-disregard-unit-of-measure" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P>disregard</P> <P>ignore</P> <P>forget</P></L> <O><L><P>the</P> <P>that</P></L></O> <O><L><P>previous</P> <P>last</P></L></O> <P>unit</P> <P>of</P> <L><P>measure</P> <P>measurement</P></L></P>
+  </RULE>
+
+  <RULE NAME="c-jstars-id-bogey-call" TOPLEVEL="ACTIVE">
+    <P><RULEREF NAME="c-std-utterance-begin"/> <P>id</P> <P>bogey</P> <P>bullseye</P> <RULEREF NAME="c-heading"/> <RULEREF NAME="c-number"/> <RULEREF NAME="c-tank"/> <RULEREF NAME="c-target-status"/></P>
+  </RULE>
+
+  <RULE NAME="c-return-to-base" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P><P>r</P> <P>t</P> <P>b</P></P> <P><P>return</P> <P>to</P> <P>base</P></P></L> <O><P><P>at</P> <P>this</P> <P>time</P></P></O></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P>return</P> <P>establish</P></L> <L><P>to</P> <P>at</P></L> <RULEREF NAME="c-initial-point"/> <O><P><P>at</P> <P>this</P> <P>time</P></P></O></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-copy-req" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>how</P> <P>copy</P></P>
+  </RULE>
+
+  <RULE NAME="c-query-heading" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P><P>what</P> <P>is</P> <P>your</P></P> <P>say</P></L> <P>heading</P></P>
+  </RULE>
+
+  <RULE NAME="i-do-nine-line-readback" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>go</P> <O><P>ahead</P></O> <P>with</P> <L><P>readback</P> <P><P>read</P> <P>back</P></P> <P><P>nine</P> <P>line</P></P> <P>nineline</P></L></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>confirm</P> <P>you</P> <P>have</P> <P>the</P> <L><P>nineline</P> <P><P>nine</P> <P>line</P></P></L></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P>is</P></O> <P>ready</P> <P>for</P> <L><P>readback</P> <P><P>read</P> <P>back</P></P> <P><P>nine</P> <P>line</P></P> <P>nineline</P></L> <O><P><P>at</P> <P>this</P> <P>time</P></P></O></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-loud-and-clear" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><P>roger</P></O> <O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P>I</P></O> <L><P>has</P> <P>have</P></L> <P>you</P> <L><P><P>loud</P> <P>and</P> <P>clear</P></P> <P><O><P>the</P></O> <P>same</P></P></L></P>
+    <P><RULEREF NAME="c-std-utterance-begin"/> <P>loud</P> <P>and</P> <P>clear</P></P>
+    <P><O><RULEREF NAME="c-callsign"/></O> <P>go</P> <P>for</P> <O><RULEREF NAME="c-callsign"/></O></P>
+    <P><RULEREF NAME="c-callsign"/> <L><P><RULEREF NAME="c-callsign"/> <P>has</P></P> <P><P>I</P> <P>have</P></P></L> <P>you</P> <P>five</P> <P>by</P> <P>five</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-query-altitude" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P><P>what</P> <P>is</P> <P>your</P></P> <P>say</P></L> <P>altitude</P></P>
+  </RULE>
+
+  <RULE NAME="c-say-when-ready-for-talkon" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>say</P> <P>when</P> <P>ready</P> <P>for</P> <O><L><P><P>talk</P> <P>on</P></P> <P>talkon</P></L></O></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>say</P> <P>when</P> <P>ready</P> <P>for</P> <P>target</P> <O><P>area</P></O> <O><P><P>talk</P> <P>on</P> <P>and</P></P></O> <P>brief</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-ready-to-copy" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>go</P> <O><P>ahead</P></O></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>ready</P> <P>to</P> <P>copy</P></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-corner" TOPLEVEL="ACTIVE">
+  <L>
+    <P>corner</P>
+    <P><RULEREF NAME="c-cardinal-direction"/> <RULEREF NAME="c-corner"/></P>
+    <RULEREF NAME="c-intersection-corner"/>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-magic-command" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-end-exercise"/>
+      <RULEREF NAME="c-magic-parser-cp"/>
+      <RULEREF NAME="c-magic-parser-icp"/>
+      <RULEREF NAME="c-magic-trigger-nineline"/>
+      <RULEREF NAME="c-say-again"/>
+      <RULEREF NAME="c-standby"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-basic-location" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-city"/>
+      <RULEREF NAME="c-denver"/>
+      <RULEREF NAME="i-kampton-city"/>
+      <RULEREF NAME="c-Village"/>
+      <RULEREF NAME="c-lake"/>
+      <RULEREF NAME="i-drinkwater-lake"/>
+      <RULEREF NAME="c-edge"/>
+      <RULEREF NAME="c-intersection"/>
+      <RULEREF NAME="c-hardball-intersection"/>
+      <RULEREF NAME="c-dirtball-intersection"/>
+      <RULEREF NAME="c-road"/>
+      <RULEREF NAME="c-dirtball-road"/>
+      <RULEREF NAME="c-hardball-road"/>
+      <RULEREF NAME="c-corner"/>
+      <RULEREF NAME="c-intersection-corner"/>
+      <RULEREF NAME="c-major-geographic-feature"/>
+      <RULEREF NAME="i-Valley"/>
+      <RULEREF NAME="i-Northern-Mountains"/>
+      <RULEREF NAME="i-Western-Mountains"/>
+      <RULEREF NAME="i-Southern-Mountains"/>
+      <RULEREF NAME="i-Open-End-of-Valley"/>
+      <RULEREF NAME="i-Ridgeline-West-of-IP"/>
+      <RULEREF NAME="i-Mountains-East-of-IP"/>
+      <RULEREF NAME="i-Hills-Southwest-of-IP"/>
+      <RULEREF NAME="c-minor-geographic-feature"/>
+      <RULEREF NAME="i-drinkwater-lake"/>
+      <RULEREF NAME="i-Saddle-on-Northern-Ridge"/>
+      <RULEREF NAME="i-Spur-Northeast-of-Dry-Lake"/>
+      <RULEREF NAME="i-Large-Saddle-on-Northern-Ridge"/>
+      <RULEREF NAME="i-Large-Saddle-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Southern-Ridge-Line"/>
+      <RULEREF NAME="i-Overlook-Point"/>
+      <RULEREF NAME="i-Spurs-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Draws-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Flat-South-of-Valley"/>
+      <RULEREF NAME="i-Spurs-Southeast-of-Valley"/>
+      <RULEREF NAME="i-Draw-on-Northern-Ridge"/>
+      <RULEREF NAME="i-West-End-of-Valley"/>
+      <RULEREF NAME="i-East-End-of-Valley"/>
+      <RULEREF NAME="i-Large-Pass"/>
+      <RULEREF NAME="i-Large-Hilltop"/>
+      <RULEREF NAME="i-Pass-at-Bravo"/>
+      <RULEREF NAME="i-Western-Approach"/>
+      <RULEREF NAME="c-distinct-feature"/>
+      <RULEREF NAME="i-Radio-Tower"/>
+      <RULEREF NAME="i-Long-Straight-Road"/>
+      <RULEREF NAME="c-rooftop"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-compound-location" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><P>the</P></O> <RULEREF NAME="c-edge"/> <P>of</P> <O><P>the</P></O> <RULEREF NAME="c-basic-location"/></P>
+    <P><RULEREF NAME="c-basic-location"/> <RULEREF NAME="c-edge"/></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-location" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-basic-location"/>
+      <RULEREF NAME="c-city"/>
+      <RULEREF NAME="c-denver"/>
+      <RULEREF NAME="i-kampton-city"/>
+      <RULEREF NAME="c-Village"/>
+      <RULEREF NAME="c-lake"/>
+      <RULEREF NAME="i-drinkwater-lake"/>
+      <RULEREF NAME="c-edge"/>
+      <RULEREF NAME="c-intersection"/>
+      <RULEREF NAME="c-hardball-intersection"/>
+      <RULEREF NAME="c-dirtball-intersection"/>
+      <RULEREF NAME="c-road"/>
+      <RULEREF NAME="c-dirtball-road"/>
+      <RULEREF NAME="c-hardball-road"/>
+      <RULEREF NAME="c-corner"/>
+      <RULEREF NAME="c-intersection-corner"/>
+      <RULEREF NAME="c-major-geographic-feature"/>
+      <RULEREF NAME="i-Valley"/>
+      <RULEREF NAME="i-Northern-Mountains"/>
+      <RULEREF NAME="i-Western-Mountains"/>
+      <RULEREF NAME="i-Southern-Mountains"/>
+      <RULEREF NAME="i-Open-End-of-Valley"/>
+      <RULEREF NAME="i-Ridgeline-West-of-IP"/>
+      <RULEREF NAME="i-Mountains-East-of-IP"/>
+      <RULEREF NAME="i-Hills-Southwest-of-IP"/>
+      <RULEREF NAME="c-minor-geographic-feature"/>
+      <RULEREF NAME="i-drinkwater-lake"/>
+      <RULEREF NAME="i-Saddle-on-Northern-Ridge"/>
+      <RULEREF NAME="i-Spur-Northeast-of-Dry-Lake"/>
+      <RULEREF NAME="i-Large-Saddle-on-Northern-Ridge"/>
+      <RULEREF NAME="i-Large-Saddle-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Southern-Ridge-Line"/>
+      <RULEREF NAME="i-Overlook-Point"/>
+      <RULEREF NAME="i-Spurs-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Draws-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Flat-South-of-Valley"/>
+      <RULEREF NAME="i-Spurs-Southeast-of-Valley"/>
+      <RULEREF NAME="i-Draw-on-Northern-Ridge"/>
+      <RULEREF NAME="i-West-End-of-Valley"/>
+      <RULEREF NAME="i-East-End-of-Valley"/>
+      <RULEREF NAME="i-Large-Pass"/>
+      <RULEREF NAME="i-Large-Hilltop"/>
+      <RULEREF NAME="i-Pass-at-Bravo"/>
+      <RULEREF NAME="i-Western-Approach"/>
+      <RULEREF NAME="c-distinct-feature"/>
+      <RULEREF NAME="i-Radio-Tower"/>
+      <RULEREF NAME="i-Long-Straight-Road"/>
+      <RULEREF NAME="c-rooftop"/>
+      <RULEREF NAME="c-compound-location"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-thing" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-color"/></O> <P>thing</P></P>
+    <L>
+      <RULEREF NAME="c-initial-point"/>
+      <RULEREF NAME="c-location"/>
+      <RULEREF NAME="c-basic-location"/>
+      <RULEREF NAME="c-city"/>
+      <RULEREF NAME="c-denver"/>
+      <RULEREF NAME="i-kampton-city"/>
+      <RULEREF NAME="c-Village"/>
+      <RULEREF NAME="c-lake"/>
+      <RULEREF NAME="i-drinkwater-lake"/>
+      <RULEREF NAME="c-edge"/>
+      <RULEREF NAME="c-intersection"/>
+      <RULEREF NAME="c-hardball-intersection"/>
+      <RULEREF NAME="c-dirtball-intersection"/>
+      <RULEREF NAME="c-road"/>
+      <RULEREF NAME="c-dirtball-road"/>
+      <RULEREF NAME="c-hardball-road"/>
+      <RULEREF NAME="c-corner"/>
+      <RULEREF NAME="c-intersection-corner"/>
+      <RULEREF NAME="c-major-geographic-feature"/>
+      <RULEREF NAME="i-Valley"/>
+      <RULEREF NAME="i-Northern-Mountains"/>
+      <RULEREF NAME="i-Western-Mountains"/>
+      <RULEREF NAME="i-Southern-Mountains"/>
+      <RULEREF NAME="i-Open-End-of-Valley"/>
+      <RULEREF NAME="i-Ridgeline-West-of-IP"/>
+      <RULEREF NAME="i-Mountains-East-of-IP"/>
+      <RULEREF NAME="i-Hills-Southwest-of-IP"/>
+      <RULEREF NAME="c-minor-geographic-feature"/>
+      <RULEREF NAME="i-drinkwater-lake"/>
+      <RULEREF NAME="i-Saddle-on-Northern-Ridge"/>
+      <RULEREF NAME="i-Spur-Northeast-of-Dry-Lake"/>
+      <RULEREF NAME="i-Large-Saddle-on-Northern-Ridge"/>
+      <RULEREF NAME="i-Large-Saddle-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Southern-Ridge-Line"/>
+      <RULEREF NAME="i-Overlook-Point"/>
+      <RULEREF NAME="i-Spurs-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Draws-on-Southern-Ridge"/>
+      <RULEREF NAME="i-Flat-South-of-Valley"/>
+      <RULEREF NAME="i-Spurs-Southeast-of-Valley"/>
+      <RULEREF NAME="i-Draw-on-Northern-Ridge"/>
+      <RULEREF NAME="i-West-End-of-Valley"/>
+      <RULEREF NAME="i-East-End-of-Valley"/>
+      <RULEREF NAME="i-Large-Pass"/>
+      <RULEREF NAME="i-Large-Hilltop"/>
+      <RULEREF NAME="i-Pass-at-Bravo"/>
+      <RULEREF NAME="i-Western-Approach"/>
+      <RULEREF NAME="c-distinct-feature"/>
+      <RULEREF NAME="i-Radio-Tower"/>
+      <RULEREF NAME="i-Long-Straight-Road"/>
+      <RULEREF NAME="c-rooftop"/>
+      <RULEREF NAME="c-compound-location"/>
+      <RULEREF NAME="c-marker"/>
+      <RULEREF NAME="i-signal-mirror"/>
+      <RULEREF NAME="c-tank"/>
+      <RULEREF NAME="c-t-55"/>
+      <RULEREF NAME="c-t-72"/>
+      <RULEREF NAME="c-bmp-1"/>
+      <RULEREF NAME="c-building"/>
+      <RULEREF NAME="c-farmhouse"/>
+      <RULEREF NAME="c-building-reference"/>
+      <RULEREF NAME="c-manpad"/>
+    </L>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-implied-call-contact" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P>do</P></O> <P>you</P> <O><P>should</P></O> <P>see</P> <O><L><P>a</P> <P>an</P> <P>the</P></L></O> <RULEREF NAME="c-thing"/></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P>the</P></O> <P>target</P> <P>is</P> <O><L><P>a</P> <P>an</P> <P>the</P></L></O> <RULEREF NAME="c-thing"/></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>call</P> <P>contact</P> <P>on</P> <RULEREF NAME="c-thing"/></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-target-status-assertion" TOPLEVEL="ACTIVE">
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P><O><P>the</P></O> <RULEREF NAME="c-thing"/> <P>is</P></P></O> <O><P>still</P></O> <O><P>now</P></O> <RULEREF NAME="c-target-status"/> <O><L><P>now</P> <P><P>at</P> <P>this</P> <P>time</P></P></L></O> <O><P><O><P>still</P></O> <O><P>at</P></O> <O><P>the</P></O> <RULEREF NAME="c-location"/></P></O></P>
+  </RULE>
+
+  <RULE NAME="i-fly-to" TOPLEVEL="ACTIVE">
+    <P><P>fly</P> <P>to</P> <O><L><P>a</P> <P>the</P></L></O> <RULEREF NAME="c-thing"/></P>
+  </RULE>
+
+  <RULE NAME="c-establish-anchor-point" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><L><P>lets</P> <P>let's</P> <P><P>let</P> <P>us</P></P></L></O> <O><P>also</P></O> <L><P>establish</P> <P>use</P></L> <P>the</P> <RULEREF NAME="c-location"/> <P>of</P> <O><P>the</P></O> <RULEREF NAME="c-thing"/> <P>as</P> <L><P>a</P> <P>an</P> <P>the</P> <P>our</P></L> <L><P><P>anchor</P> <P>point</P></P> <P>anchorpoint</P> <P>anchor</P></L></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P>for</P> <P>as</P></L> <L><P>a</P> <P>an</P> <P>the</P> <P>our</P></L> <P>anchor</P> <O><P>point</P></O> <O><L><P>lets</P> <P>let's</P> <P><P>let</P> <P>us</P></P></L></O> <L><P>use</P> <P>establish</P> <P><P>make</P> <P>it</P></P></L> <P>the</P> <RULEREF NAME="c-location"/> <P>of</P> <O><P>the</P></O> <RULEREF NAME="c-thing"/></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-implied-call-contact-with-hint" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P>the</P></O> <RULEREF NAME="c-thing"/> <P>is</P> <L><P>on</P> <P>at</P></L> <O><L><P>the</P> <P>that</P></L></O> <RULEREF NAME="c-location"/> <O><P><P>call</P> <P>contact</P></P></O></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P>the</P></O> <P>target</P> <P>is</P> <O><L><P>a</P> <P>an</P> <P>the</P></L></O> <RULEREF NAME="c-thing"/> <O><P><P>that</P> <P>is</P></P></O> <L><P>on</P> <P>at</P></L> <O><L><P>the</P> <P>that</P></L></O> <RULEREF NAME="c-location"/> <O><P><P>call</P> <P>contact</P></P></O></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-establish-unit-of-measurement" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><L><P>lets</P> <P>let's</P> <P><P>let</P> <P>us</P></P></L></O> <O><P>also</P></O> <L><P>establish</P> <P>use</P></L> <P>the</P> <RULEREF NAME="c-extent"/> <P>of</P> <O><P>the</P></O> <RULEREF NAME="c-thing"/> <P>as</P> <L><P>a</P> <P>the</P> <P>our</P></L> <P>unit</P> <P>of</P> <L><P>measure</P> <P>measurement</P></L></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <L><P>for</P> <P>as</P></L> <L><P>a</P> <P>an</P> <P>the</P> <P>our</P></L> <P>unit</P> <P>of</P> <L><P>measure</P> <P>measurement</P></L> <O><L><P>lets</P> <P>let's</P> <P><P>let</P> <P>us</P></P></L></O> <L><P>use</P> <P>establish</P> <P><P>make</P> <P>it</P></P></L> <P>the</P> <RULEREF NAME="c-extent"/> <P>of</P> <O><P>the</P></O> <RULEREF NAME="c-thing"/></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-call-contact-with-location-obj" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><P>at</P></O> <RULEREF NAME="c-compound-location"/> <P>there</P> <P>is</P> <O><L><P>a</P> <P>an</P> <P>the</P></L></O> <RULEREF NAME="c-thing"/> <P>call</P> <P>contact</P></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>call</P> <P>contact</P> <P>with</P> <RULEREF NAME="c-thing"/> <O><L><P>at</P> <P>on</P></L></O> <RULEREF NAME="c-compound-location"/></P>
+  </L>
+  </RULE>
+
+  <RULE NAME="i-look-at" TOPLEVEL="ACTIVE">
+    <P><P>look</P> <P>at</P> <O><P>the</P></O> <RULEREF NAME="c-thing"/></P>
+  </RULE>
+
+  <RULE NAME="c-call-contact" TOPLEVEL="ACTIVE">
+  <L>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>call</P> <P>contact</P> <O><P>with</P></O> <O><P>the</P></O> <RULEREF NAME="c-thing"/></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><L><P><P>there</P> <P>is</P></P> <P><P>do</P> <P>you</P> <P>see</P></P></L></O> <O><L><P>a</P> <P>an</P> <P>the</P></L></O> <RULEREF NAME="c-thing"/> <P>call</P> <P>contact</P></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <P>call</P> <P>contact</P> <O><P>with</P></O> <RULEREF NAME="c-thing"/> <O><P>just</P></O> <O><P>to</P></O> <O><L><P>your</P> <P>the</P></L></O> <RULEREF NAME="c-direction"/></P>
+    <P><O><RULEREF NAME="c-std-utterance-begin"/></O> <O><L><P><P>there</P> <P>is</P></P> <P><P>do</P> <P>you</P> <P>see</P></P></L></O> <O><L><P>a</P> <P>an</P> <P>the</P></L></O> <RULEREF NAME="c-thing"/> <O><P>just</P></O> <O><P>to</P></O> <O><L><P>your</P> <P>the</P></L></O> <RULEREF NAME="c-direction"/> <P>call</P> <P>contact</P></P>
+    <RULEREF NAME="c-implied-call-contact"/>
+  </L>
+  </RULE>
+
+  <RULE NAME="c-action" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="i-look-at"/>
+      <RULEREF NAME="i-fly-to"/>
+    </L>
+  </RULE>
+
+  <RULE NAME="c-addressed-utterance" TOPLEVEL="ACTIVE">
+    <L>
+      <RULEREF NAME="c-loud-and-clear"/>
+      <RULEREF NAME="c-weak-but-readable"/>
+      <RULEREF NAME="c-ready-to-copy"/>
+      <RULEREF NAME="c-cleared-hot"/>
+      <RULEREF NAME="c-authentication-response"/>
+      <RULEREF NAME="c-copy-ack"/>
+      <RULEREF NAME="c-copy-req"/>
+      <RULEREF NAME="c-abort-code-request"/>
+      <RULEREF NAME="c-abort-code-ack"/>
+      <RULEREF NAME="c-say-when-ready-for-talkon"/>
+      <RULEREF NAME="c-what-do-you-see"/>
+      <RULEREF NAME="c-call-contact"/>
+      <RULEREF NAME="c-implied-call-contact"/>
+      <RULEREF NAME="c-call-contact-with-location-obj"/>
+      <RULEREF NAME="c-establish-unit-of-measurement"/>
+      <RULEREF NAME="c-establish-anchor-point"/>
+      <RULEREF NAME="c-reuse-anchor-and-unit-of-measurement"/>
+      <RULEREF NAME="c-reuse-anchor-point"/>
+      <RULEREF NAME="c-reuse-unit-of-measure"/>
+      <RULEREF NAME="c-look-based-on-unit-of-measure-no-anchor"/>
+      <RULEREF NAME="c-look-based-on-unit-of-measure-from-anchor"/>
+      <RULEREF NAME="c-disregard-unit-of-measure"/>
+      <RULEREF NAME="c-implied-call-contact-with-hint"/>
+      <RULEREF NAME="c-target-status-assertion"/>
+      <RULEREF NAME="c-copy-departing-ip"/>
+      <RULEREF NAME="i-playtime-query"/>
+      <RULEREF NAME="i-playtime-response"/>
+      <RULEREF NAME="i-fuel-query"/>
+      <RULEREF NAME="c-continue"/>
+      <RULEREF NAME="i-do-nine-line-readback"/>
+      <RULEREF NAME="c-request-frequency-change"/>
+      <RULEREF NAME="c-frequency-change-ok"/>
+      <RULEREF NAME="c-frequency-change-deny"/>
+      <RULEREF NAME="c-query-position"/>
+      <RULEREF NAME="c-query-status"/>
+      <RULEREF NAME="c-query-ammo"/>
+      <RULEREF NAME="c-query-altitude"/>
+      <RULEREF NAME="c-query-heading"/>
+      <RULEREF NAME="c-return-to-base"/>
+      <RULEREF NAME="c-assert-urban-layout"/>
+      <RULEREF NAME="c-jstars-id-bogey-call"/>
+      <RULEREF NAME="c-jstars-kill-target-call"/>
+    </L>
+  </RULE>
+
+</GRAMMAR>

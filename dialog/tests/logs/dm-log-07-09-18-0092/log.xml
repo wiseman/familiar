@@ -1,0 +1,36 @@
+<!-- Tue Sep 18 23:24:08 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Tue Sep 18 23:24:08 2007 -->
+<pilotmodel-command>guidanceCommand mode="pursuit" status="inbound to ip"     commandId 0 /commandId</pilotmodel-command>
+<!-- Tue Sep 18 23:24:08 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Tue Sep 18 23:24:08 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Tue Sep 18 23:24:08 2007 -->
+<debug>[&lt;ICPResult 0.156410904905 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Sep 18 23:24:08 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Tue Sep 18 23:24:08 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Tue Sep 18 23:24:08 2007 -->
+<debug>[&lt;ICPResult 0.166083576195 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Tue Sep 18 23:24:09 2007 -->
+<pilotmodel-query>pilotPoseQuery     queryId 0 /queryId   /pilotPoseQuery      /pilotModelQueryCon</pilotmodel-query>
+<!-- Tue Sep 18 23:24:09 2007 -->
+<pilotmodel-reply>poseResponse     headingDeg 150.73011641292246 /headingDeg     pose      mn:orie</pilotmodel-reply>
+<!-- Tue Sep 18 23:24:09 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, currently established at IP Bravo.</output>
+<!-- Tue Sep 18 23:24:09 2007 -->
+<pilotmodel-query>playtimeQuery     queryId 0 /queryId   /playtimeQuery      /pilotModelQueryConta</pilotmodel-query>
+<!-- Tue Sep 18 23:24:09 2007 -->
+<pilotmodel-reply>playtimeResponse     playtime -3.4738000000000042 /playtime     queryId 0 /query</pilotmodel-reply>
+<!-- Tue Sep 18 23:24:09 2007 -->
+<output>Gunslinger, playtime is 0 mikes.</output>
+<!-- Tue Sep 18 23:24:09 2007 -->
+<input>go ahead</input>
+<!-- Tue Sep 18 23:24:09 2007 -->
+<debug>[&lt;ICPResult 0.162410182681 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.0996453598107 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Tue Sep 18 23:24:09 2007 -->
+<output>Gunslinger, do you have a nine-line for me?</output>
+<!-- Tue Sep 18 23:24:39 2007 -->
+<debug>Conversation gone idle.</debug>

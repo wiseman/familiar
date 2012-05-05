@@ -1,0 +1,10 @@
+<!-- Thu Oct  4 14:31:06 2007 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand xmlns:xsi="http://www.w3</pilotmodel-command>
+<!-- Thu Oct  4 14:31:08 2007 -->
+<pilotmodel-query>allQuery     queryId 0 /queryId   /allQuery      /pilotModelQueryContainer</pilotmodel-query>
+<!-- Thu Oct  4 14:31:09 2007 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="27"      elem</pilotmodel-reply>
+<!-- Thu Oct  4 14:31:09 2007 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand xmlns:xsi="http://www.w3</pilotmodel-command>
+<!-- Thu Oct  4 14:31:11 2007 -->
+<pilotmodel-query>allQuery     queryId 0 /queryId   /allQuery      /pilotModelQueryContainer</pilotmodel-query>

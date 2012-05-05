@@ -1,0 +1,294 @@
+<!-- -*- Mode: XML; -*- -->
+<fdl>
+
+<!-- Valley -->
+<frame id='i-Valley'>
+  <parent id='c-major-geographic-feature' instanceof='true'/>
+  <generate>valley</generate>
+  <slot name="objid" value="Valley"/>
+  <slot name="type" value="Major Geographic Details"/>
+  <slot name="subtype" value="Valley"/>
+  <slot name="position" value="{'slots': {'x': 2498.0, 'y': -1178.0, 'z': -1059.0}}"/>
+</frame>
+
+<!-- Northern Mountains -->
+<frame id='i-Northern-Mountains'>
+  <parent id='c-major-geographic-feature' instanceof='true'/>
+  <generate>northern mountains</generate>
+  <slot name="objid" value="Northern Mountains"/>
+  <slot name="type" value="Major Geographic Details"/>
+  <slot name="subtype" value="Mountains"/>
+  <slot name="position" value="{'slots': {'x': 6726.0, 'y': 1322.0, 'z': -1343.0}}"/>
+</frame>
+
+<!-- Western Mountains -->
+<frame id='i-Western-Mountains'>
+  <parent id='c-major-geographic-feature' instanceof='true'/>
+  <generate>western mountains</generate>
+  <slot name="objid" value="Western Mountains"/>
+  <slot name="type" value="Major Geographic Details"/>
+  <slot name="subtype" value="Mountains"/>
+  <slot name="position" value="{'slots': {'x': 2556.0, 'y': -8335.0, 'z': -1058.0}}"/>
+</frame>
+
+<!-- Southern Mountains -->
+<frame id='i-Southern-Mountains'>
+  <parent id='c-major-geographic-feature' instanceof='true'/>
+  <generate>southern mountains</generate>
+  <slot name="objid" value="Southern Mountains"/>
+  <slot name="type" value="Major Geographic Details"/>
+  <slot name="subtype" value="Mountains"/>
+  <slot name="position" value="{'slots': {'x': -288.0, 'y': -5034.0, 'z': -1218.0}}"/>
+</frame>
+
+<!-- Open End of Valley -->
+<frame id='i-Open-End-of-Valley'>
+  <parent id='c-major-geographic-feature' instanceof='true'/>
+  <generate>open end of valley</generate>
+  <slot name="objid" value="Open End of Valley"/>
+  <slot name="type" value="Major Geographic Details"/>
+  <slot name="subtype" value="Valley"/>
+  <slot name="position" value="{'slots': {'x': 3309.0, 'y': 5403.0, 'z': -1048.0}}"/>
+</frame>
+
+<!-- Ridgeline West of IP -->
+<frame id='i-Ridgeline-West-of-IP'>
+  <parent id='c-major-geographic-feature' instanceof='true'/>
+  <generate>ridgeline west of ip</generate>
+  <slot name="objid" value="Ridgeline West of IP"/>
+  <slot name="type" value="Major Geographic Details"/>
+  <slot name="subtype" value="Ridge"/>
+  <slot name="position" value="{'slots': {'x': -4905.0, 'y': -3175.0, 'z': -1285.0}}"/>
+</frame>
+
+<!-- Mountains East of IP -->
+<frame id='i-Mountains-East-of-IP'>
+  <parent id='c-major-geographic-feature' instanceof='true'/>
+  <generate>mountains east of ip</generate>
+  <slot name="objid" value="Mountains East of IP"/>
+  <slot name="type" value="Major Geographic Details"/>
+  <slot name="subtype" value="Mountains"/>
+  <slot name="position" value="{'slots': {'x': -6492.0, 'y': 4843.0, 'z': -979.0}}"/>
+</frame>
+
+<!-- Hills Southwest of IP -->
+<frame id='i-Hills-Southwest-of-IP'>
+  <parent id='c-major-geographic-feature' instanceof='true'/>
+  <generate>hills southwest of ip</generate>
+  <slot name="objid" value="Hills Southwest of IP"/>
+  <slot name="type" value="Major Geographic Details"/>
+  <slot name="subtype" value="Hills"/>
+  <slot name="position" value="{'slots': {'x': -8745.0, 'y': -8052.0, 'z': -957.0}}"/>
+</frame>
+
+<!-- drinkwater-lake -->
+<frame id='i-drinkwater-lake'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>drinkwater lake</generate>
+  <slot name="objid" value="drinkwater-lake"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Dry Lake"/>
+  <slot name="position" value="{'slots': {'x': 3185.0, 'y': 2439.0, 'z': -1029.0}}"/>
+</frame>
+
+<!-- Saddle on Northern Ridge -->
+<frame id='i-Saddle-on-Northern-Ridge'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>saddle on northern ridge</generate>
+  <slot name="objid" value="Saddle on Northern Ridge"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Saddle"/>
+  <slot name="position" value="{'slots': {'x': 6573.0, 'y': 263.0, 'z': -1305.0}}"/>
+</frame>
+
+<!-- Spur Northeast of Dry Lake -->
+<frame id='i-Spur-Northeast-of-Dry-Lake'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>spur northeast of dry lake</generate>
+  <slot name="objid" value="Spur Northeast of Dry Lake"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Spur"/>
+  <slot name="position" value="{'slots': {'x': 6274.0, 'y': 4447.0, 'z': -1268.0}}"/>
+</frame>
+
+<!-- Large Saddle on Northern Ridge -->
+<frame id='i-Large-Saddle-on-Northern-Ridge'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>large saddle on northern ridge</generate>
+  <slot name="objid" value="Large Saddle on Northern Ridge"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Saddle"/>
+  <slot name="position" value="{'slots': {'x': 7144.0, 'y': 2678.0, 'z': -1195.0}}"/>
+</frame>
+
+<!-- Large Saddle on Southern Ridge -->
+<frame id='i-Large-Saddle-on-Southern-Ridge'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>large saddle on southern ridge</generate>
+  <slot name="objid" value="Large Saddle on Southern Ridge"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Saddle"/>
+  <slot name="position" value="{'slots': {'x': -703.0, 'y': 193.0, 'z': -1224.0}}"/>
+</frame>
+
+<!-- Southern Ridge Line -->
+<frame id='i-Southern-Ridge-Line'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>southern ridge line</generate>
+  <slot name="objid" value="Southern Ridge Line"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Ridge"/>
+  <slot name="position" value="{'slots': {'x': -437.0, 'y': -7258.0, 'z': -1354.0}}"/>
+</frame>
+
+<!-- Overlook Point -->
+<frame id='i-Overlook-Point'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>overlook point</generate>
+  <slot name="objid" value="Overlook Point"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Hill"/>
+  <slot name="position" value="{'slots': {'x': 565.0, 'y': -598.0, 'z': -1203.0}}"/>
+</frame>
+
+<!-- Spurs on Southern Ridge -->
+<frame id='i-Spurs-on-Southern-Ridge'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>spurs on southern ridge</generate>
+  <slot name="objid" value="Spurs on Southern Ridge"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Spur"/>
+  <slot name="position" value="{'slots': {'x': -242.0, 'y': -7870.0, 'z': -1328.0}}"/>
+</frame>
+
+<!-- Draws on Southern Ridge -->
+<frame id='i-Draws-on-Southern-Ridge'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>draws on southern ridge</generate>
+  <slot name="objid" value="Draws on Southern Ridge"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Draw"/>
+  <slot name="position" value="{'slots': {'x': -172.0, 'y': -7958.0, 'z': -1321.0}}"/>
+</frame>
+
+<!-- Flat South of Valley -->
+<frame id='i-Flat-South-of-Valley'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>flat south of valley</generate>
+  <slot name="objid" value="Flat South of Valley"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Flat"/>
+  <slot name="position" value="{'slots': {'x': -2348.0, 'y': 1632.0, 'z': -1158.0}}"/>
+</frame>
+
+<!-- Spurs Southeast of Valley -->
+<frame id='i-Spurs-Southeast-of-Valley'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>spurs southeast of valley</generate>
+  <slot name="objid" value="Spurs Southeast of Valley"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Spur"/>
+  <slot name="position" value="{'slots': {'x': -75.0, 'y': 3197.0, 'z': -1264.0}}"/>
+</frame>
+
+<!-- Draw on Northern Ridge -->
+<frame id='i-Draw-on-Northern-Ridge'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>draw on northern ridge</generate>
+  <slot name="objid" value="Draw on Northern Ridge"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Draw"/>
+  <slot name="position" value="{'slots': {'x': 5118.0, 'y': -2934.0, 'z': -1113.0}}"/>
+</frame>
+
+<!-- Northern Ridge Line -->
+<frame id='i-Northern-Ridge-Line'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>northern ridge line</generate>
+  <slot name="objid" value="Northern Ridge Line"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Ridge"/>
+  <slot name="position" value="{'slots': {'x': 7296.0, 'y': 727.0, 'z': -1372.0}}"/>
+</frame>
+
+<!-- West End of Valley -->
+<frame id='i-West-End-of-Valley'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>west end of valley</generate>
+  <slot name="objid" value="West End of Valley"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Valley"/>
+  <slot name="position" value="{'slots': {'x': 2399.0, 'y': -4557.0, 'z': -1057.0}}"/>
+</frame>
+
+<!-- East End of Valley -->
+<frame id='i-East-End-of-Valley'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>east end of valley</generate>
+  <slot name="objid" value="East End of Valley"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Valley"/>
+  <slot name="position" value="{'slots': {'x': 3147.0, 'y': 1571.0, 'z': -1025.0}}"/>
+</frame>
+
+<!-- Large Pass -->
+<frame id='i-Large-Pass'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>large pass</generate>
+  <slot name="objid" value="Large Pass"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Pass"/>
+  <slot name="position" value="{'slots': {'x': 510.0, 'y': 37.0, 'z': -1190.0}}"/>
+</frame>
+
+<!-- Large Hilltop -->
+<frame id='i-Large-Hilltop'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>large hilltop</generate>
+  <slot name="objid" value="Large Hilltop"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Hill"/>
+  <slot name="position" value="{'slots': {'x': 4365.0, 'y': 7358.0, 'z': -1142.0}}"/>
+</frame>
+
+<!-- Pass at Bravo -->
+<frame id='i-Pass-at-Bravo'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>pass at bravo</generate>
+  <slot name="objid" value="Pass at Bravo"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Pass"/>
+  <slot name="position" value="{'slots': {'x': -4695.0, 'y': -675.0, 'z': -1168.0}}"/>
+</frame>
+
+<!-- Western Approach -->
+<frame id='i-Western-Approach'>
+  <parent id='c-minor-geographic-feature' instanceof='true'/>
+  <generate>western approach</generate>
+  <slot name="objid" value="Western Approach"/>
+  <slot name="type" value="Minor Geographic Details"/>
+  <slot name="subtype" value="Pass"/>
+  <slot name="position" value="{'slots': {'x': 3891.0, 'y': -8108.0, 'z': -962.0}}"/>
+</frame>
+
+<!-- Radio Tower -->
+<frame id='i-Radio-Tower'>
+  <parent id='c-distinct-feature' instanceof='true'/>
+  <generate>radio tower</generate>
+  <slot name="objid" value="Radio Tower"/>
+  <slot name="type" value="Distinct Features"/>
+  <slot name="subtype" value="Tower"/>
+  <slot name="position" value="{'slots': {'x': -1592.0, 'y': -3286.0, 'z': -1509.0}}"/>
+</frame>
+
+<!-- Long Straight Road -->
+<frame id='i-Long-Straight-Road'>
+  <parent id='c-distinct-feature' instanceof='true'/>
+  <generate>long straight road</generate>
+  <slot name="objid" value="Long Straight Road"/>
+  <slot name="type" value="Distinct Features"/>
+  <slot name="subtype" value="Road"/>
+  <slot name="position" value="{'slots': {'x': -1813.0, 'y': 5098.0, 'z': -1020.0}}"/>
+</frame>
+
+</fdl>

@@ -1,0 +1,192 @@
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[&lt;ICPResult 0.156410904905 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>I authenticate Romeo</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[&lt;ICPResult 0.166083576195 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-romeo'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>hog, copy all</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[&lt;ICPResult 0.156872071107 'c-copy-ack' {}&gt;]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>copy bravo foxtrot</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[&lt;ICPResult 0.158478329393 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-foxtrot'"&gt;}&gt;, &lt;ICPResult 0.107102602275 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0964481574412 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>Bravo</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[&lt;ICPResult 0.0873501682872 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>six nauticals</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>t-55</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[&lt;ICPResult 0.142482829216 'c-t-55' {}&gt;]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>none</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>IP</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>negative</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>hog, call contact with Drinkwater Lake just to your north</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:14 2007 -->
+<input>hog, let's also establish the western limit of the lake as our anchor point</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>Take the unit of measure and go one half units to the west</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>[&lt;ICPResult 0.10264745685 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>you should see an intersection where two dirtballs meet</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>hog, the t-55 is on the western corner of the intersection</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>[&lt;ICPResult 0.135186237137 'c-t-55' {}&gt;]</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>hog, copy departing IP</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>[&lt;ICPResult 0.107506333133 'c-copy-ack' {}&gt;]</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>Continue</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>[&lt;ICPResult 0.165932947501 'c-continue' {}&gt;]</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>Hog, tank is stationary, still western corner of dirtball intersection</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>Hog 01, you're cleared hot</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>say when ready for talk on</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>Hog, let's use the same unit of measure and anchor as last time</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<action>do_reuse_anchor_point_and_uom</action>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, negative, no previous unit of measure established.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>At the southern side of Drinkwater Lake there is a dirtball road running southeast, northwest, call contact</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<action>do_call_contact_location_obj</action>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>&lt;Description base: 'i-drinkwater-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<action>get_edge_point</action>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>southLimit of drinkwater-lake is 2667,3657</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>Pilot is looking at (2667, 3657, 0)</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>Pilot was able to look at location portion of object</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>Take the unit of measure and go two units to the west and one quarter unit north on that dirtball</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, you didn't give me a unit of measure.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>bmp is on the dirtball</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<output>Gunslinger, tally BMP, departing IP at this time.</output>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<debug>Moving from state {Talk-On State} to {Run-In State}</debug>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<input>Hog, copy departing IP</input>
+<!-- Fri Sep 14 13:13:15 2007 -->
+<action>do_nop</action>
+<!-- Fri Sep 14 13:13:17 2007 -->
+<output>Gunslinger, Hog is 60 seconds out.</output>
+<!-- Fri Sep 14 13:13:19 2007 -->
+<output>Gunslinger, Hog 01 is in hot from the southeast.</output>
+<!-- Fri Sep 14 13:13:19 2007 -->
+<input>Hog 01, you're cleared hot</input>
+<!-- Fri Sep 14 13:13:19 2007 -->
+<output>Gunslinger, copy, cleared hot.</output>
+<!-- Fri Sep 14 13:13:21 2007 -->
+<output>Gunslinger, Rifle!</output>
+<!-- Fri Sep 14 13:13:21 2007 -->
+<debug>Moving from state {Run-In State} to {Nine-Line State}</debug>
+<!-- Fri Sep 14 13:13:21 2007 -->
+<input>say posit</input>
+<!-- Fri Sep 14 13:13:21 2007 -->
+<output>Gunslinger, Hog is currently 5.0 clicks north of IP Bravo.</output>

@@ -1,0 +1,112 @@
+<!-- Thu Sep 27 21:48:51 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:51 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>[&lt;ICPResult 0.156443421044 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156443421044 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<input>go for gunslinger</input>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>[&lt;ICPResult 0.159276606142 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.159276606142 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<input>hog zero one, go for gunslinger</input>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>[&lt;ICPResult 0.156534054609 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156534054609 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<input>gunslinger</input>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>[&lt;ICPResult 0.103737760146 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.103737760146 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<input>gunslinger has you weak but readable</input>
+<!-- Thu Sep 27 21:48:52 2007 -->
+<debug>[&lt;ICPResult 0.160063831347 'c-weak-but-readable' {}&gt;, &lt;ICPResult 0.10610703218 'c-loud-and-clear' {}&gt;]</debug>

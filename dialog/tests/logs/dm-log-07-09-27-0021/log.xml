@@ -1,0 +1,682 @@
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.156443421044 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156443421044 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>go for gunslinger</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.159276606142 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.159276606142 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>hog zero one, go for gunslinger</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.156534054609 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156534054609 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>gunslinger</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.103737760146 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.103737760146 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>gunslinger has you weak but readable</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.160063831347 'c-weak-but-readable' {}&gt;, &lt;ICPResult 0.10610703218 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.160063831347 target: 'c-weak-but-readable' slots: {}&gt;, &lt;ICPResult score: 0.10610703218 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>say again last calling station</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.174810602625 'c-say-again' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.174810602625 target: 'c-say-again' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.174810602625 target: 'c-say-again' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<action>do_say_again</action>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>say again hog zero one</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.155485465564 'c-say-again' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.155485465564 target: 'c-say-again' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.155485465564 target: 'c-say-again' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<action>do_say_again</action>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>blah</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: []</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>gunslinger i have bravo</input>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>[&lt;ICPResult 0.15819029441 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;, &lt;ICPResult 0.106298591268 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15819029441 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;, &lt;ICPResult score: 0.106298591268 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:55 2007 -->
+<input>gunslinger i have charlie</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.15819029441 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.106298591268 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15819029441 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.106298591268 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>gunslinger has you loud and clear, hog</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.157808089345 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.157808089345 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.126359733165 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult score: 0.121467556206 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<action>do_authentication_request</action>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, negative.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>go ahead</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162493841894 target: 'c-ready-to-copy' slots: {}&gt;, &lt;ICPResult score: 0.099597011089 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, do you have a nine-line for me?</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult score: 0.142447213601 target: 'c-t-55' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>continue</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.16602699979 'c-continue' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.16602699979 target: 'c-continue' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-end-exercise'&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Magic command &lt;Description base: 'c-end-exercise'&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>gunslinger copies 30 mikes playtime</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.158341106759 'i-playtime-response' {}&gt;, &lt;ICPResult 0.107516311337 'c-copy-ack' {}&gt;, &lt;ICPResult 0.106584246587 'c-loud-and-clear' {}&gt;, &lt;ICPResult 0.100874546448 'i-playtime-query' {}&gt;, &lt;ICPResult 0.096011205739 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-mike'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158341106759 target: 'i-playtime-response' slots: {}&gt;, &lt;ICPResult score: 0.107516311337 target: 'c-copy-ack' slots: {}&gt;, &lt;ICPResult score: 0.106584246587 target: 'c-loud-and-clear' slots: {}&gt;, &lt;ICPResult score: 0.100874546448 target: 'i-playtime-query' slots: {}&gt;, &lt;ICPResult score: 0.096011205739 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-mike'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult score: 0.142447213601 target: 'c-t-55' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>go ahead</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162493841894 target: 'c-ready-to-copy' slots: {}&gt;, &lt;ICPResult score: 0.099597011089 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-end-exercise'&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Magic command &lt;Description base: 'c-end-exercise'&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.126359733165 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult score: 0.121467556206 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<action>do_authentication_request</action>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, hog authenticates bravo.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>do you have an abort code setup?</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.155087868331 'c-abort-code-request' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.155087868331 target: 'c-abort-code-request' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Thu Sep 27 21:48:56 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.126359733165 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult score: 0.121467556206 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_authentication_request</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, you have already authenticated.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_endex</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, copy all</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>[&lt;ICPResult 0.156903388843 'c-copy-ack' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156903388843 target: 'c-copy-ack' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>do you have an abort code setup?</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>[&lt;ICPResult 0.155087868331 'c-abort-code-request' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.155087868331 target: 'c-abort-code-request' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>copy alpha hotel</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>[&lt;ICPResult 0.15855630718 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-hotel'"&gt;}&gt;, &lt;ICPResult 0.107183364999 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0965354186499 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15855630718 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-hotel'"&gt;}&gt;, &lt;ICPResult score: 0.107183364999 target: 'c-copy-ack' slots: {}&gt;, &lt;ICPResult score: 0.0965354186499 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_abort_code_ack</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, negative alpha hotel.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>copy bravo foxtrot</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>[&lt;ICPResult 0.15855630718 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-foxtrot'"&gt;}&gt;, &lt;ICPResult 0.107183364999 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0965354186499 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15855630718 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-foxtrot'"&gt;}&gt;, &lt;ICPResult score: 0.107183364999 target: 'c-copy-ack' slots: {}&gt;, &lt;ICPResult score: 0.0965354186499 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_abort_code_ack</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, say status</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>[&lt;ICPResult 0.156397113568 'c-query-status' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156397113568 target: 'c-query-status' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, I am inbound to I.P.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>[&lt;ICPResult score: 0.142447213601 target: 'c-t-55' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>go with read back</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>[&lt;ICPResult 0.162104903423 'i-do-nine-line-readback' {}&gt;, &lt;ICPResult 0.100255400208 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162104903423 target: 'i-do-nine-line-readback' slots: {}&gt;, &lt;ICPResult score: 0.100255400208 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_nine_line_readback</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>good copy</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-copy-ack'&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>say when ready for talk on</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-say-when-ready-for-talkon'&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, call contact with saucer shaped valley</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, contact valley.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, call contact with  east-west running valley</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, call contact with  basin</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, call contact with  depression</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, contact valley.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, call contact with  valley with dry lake bed</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, call contact with  flat area surrounded by mountains</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, call contact with  flat area surrounded by hills</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, call contact with  flat area surrounded by mountains north of IP</input>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<output>Gunslinger, visual valley.</output>
+<!-- Thu Sep 27 21:48:57 2007 -->
+<input>hog, call contact with  valley north of the IP</input>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley' slots: {&lt;Expr: "'ip'"&gt;: &lt;Expr: "&lt;Description base: 'c-initial-point'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<output>Gunslinger, visual valley.</output>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<input>hog, call contact with  valley with Drinkwater Lake</input>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<output>Gunslinger, visual valley.</output>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<input>hog, call contact with  dry lake area surrounded by mountains</input>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-Valley'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<debug>Pilot is looking at [2498.0, -1178.0, -1059.0]</debug>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<output>Gunslinger, visual valley.</output>
+<!-- Thu Sep 27 21:48:58 2007 -->
+<input>hog, call contact with northern mountain range</input>

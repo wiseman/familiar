@@ -1,0 +1,699 @@
+<!-- -*- Mode: XML; -*- -->
+<frames>
+
+
+<!-- Callsigns -->
+
+<frame id="c-callsign">
+</frame>
+
+<frame id="c-basic-callsign">
+  <parent id="c-callsign" />
+
+  <phrase>[gunslinger|hog]</phrase>
+  <testphrase>gunslinger</testphrase>
+  <testphrase>hog</testphrase>
+</frame>
+
+
+<frame id="c-number">
+  <constraint slot="first" type="c-digit" />
+  <constraint slot="rest" type="c-number" />
+  <phrase>{first} ?:{rest}</phrase>
+  <testphrase>zero one</testphrase>
+</frame>
+
+<!-- A "full" callsign includes a basic callsign and a number -->
+
+<frame id="c-full-callsign">
+  <parent id="c-callsign" />
+
+  <constraint slot="callsign" type="c-basic-callsign" />
+  <constraint slot="number" type="c-number" />
+  <phrase>{callsign} {number}</phrase>
+
+  <testphrase>gunslinger 42</testphrase>
+  <testphrase>gunslinger four two</testphrase>
+  <testphrase>hog 01</testphrase>
+  <testphrase>hog zero one</testphrase>
+</frame>
+
+
+<!-- An utterance that's explicitly addressed to some callsign -->
+
+<frame id="c-addressed-utterance">
+  <constraint slot="to-agent" type="c-callsign" />
+</frame>
+
+
+<frame id="c-loud-and-clear">
+  <parent id="c-addressed-utterance" />
+
+  <constraint slot="from-agent" type="c-callsign" />
+  <phrase>{to-agent} {from-agent} has you loud and clear</phrase>
+  <testphrase>hog 01, gunslinger has you loud and clear</testphrase>
+
+  <slot name="execute-method" value="do_loud_and_clear" />
+</frame>
+
+
+<!-- These are handled by a preparser, so we just include tests here. -->
+
+<frame id="c-nato-phonetic-word">
+  <testphrase>alpha</testphrase>
+  <testphrase>bravo</testphrase>
+  <testphrase>kilo</testphrase>
+  <testphrase>hotel</testphrase>
+</frame>
+
+<frame id="c-authentication-response">
+  <parent id="c-addressed-utterance" />
+
+  <constraint slot="codeword" type="c-nato-phonetic-word" />
+  <phrase>{to-agent} i authenticate {codeword}</phrase>
+  <testphrase>hog, I authenticate romeo</testphrase>
+
+  <slot name="execute-method" value="do_authentication_response" />
+</frame>
+
+
+<frame id="c-copy-ack">
+  <parent id="c-addressed-utterance" />
+
+  <phrase>?:{to-agent} copy</phrase>
+  <testphrase>hog, copy</testphrase>
+  <testphrase>hog 01, copy</testphrase>
+
+  <slot name="execute-method" value="do_copy_ack" />
+</frame>
+
+<frame id="c-copy-req">
+  <parent id="c-addressed-utterance" />
+
+  <phrase>?:{to-agent} how copy</phrase>
+  <testphrase>hog, how copy?</testphrase>
+
+  <slot name="execute-method" value="do_copy_req" />
+
+</frame>
+
+
+<frame id="c-nine-line">
+  <phrase>[9 line|nine line]</phrase>
+</frame>
+
+
+<frame id="c-nine-line-readiness-prompt">
+  <parent id="c-addressed-utterance" />
+
+  <constraint slot="dummy" type="c-nine-line" />
+  <phrase>?:{to-agent} say when ready for {dummy}</phrase>
+  <testphrase>hog, say when ready for 9 line</testphrase>
+
+  <slot name="execute-method" value="do_nine_line_readiness_prompt" />
+</frame>
+  
+
+<frame id="c-denver">
+  <parent id="c-city" />
+  <phrase>denver</phrase>
+</frame>
+
+
+<frame id="c-heading">
+  <constraint slot="angle" type="c-number" />
+  <phrase>{angle} degrees</phrase>
+  <testphrase>330 degrees</testphrase>
+  <testphrase>three three zero degrees</testphrase>
+</frame>
+
+
+<frame id="c-linear-measurement">
+  <parent id="c-measurement" />
+  <constraint slot="magnitude" type="c-number" />
+  <constraint slot="unit" type="c-unit-of-measurement" />
+  <phrase>{magnitude} {unit}</phrase>
+  <testphrase>5 nautical miles</testphrase>
+  <testphrase>2000 feet</testphrase>
+  <testphrase>two zero zero zero feet</testphrase>
+</frame>
+
+<frame id="c-unit-of-measurement">
+  <phrase>[unit|units]</phrase>
+</frame>
+
+<frame id="c-nautical-mile">
+  <parent id="c-unit-of-measurement" />
+  <phrase>[nm|nautical mile|nautical miles]</phrase>
+</frame>
+
+<frame id="c-foot">
+  <parent id="c-unit-of-measurement" />
+  <phrase>[foot|feet]</phrase>
+</frame>
+
+<frame id="c-kilometer">
+  <parent id="c-unit-of-measurement" />
+  <phrase>[km|kilometer|kilometers|click|klick]</phrase>
+</frame>
+
+<frame id="c-meter">
+  <parent id="c-unit-of-measurement" />
+  <phrase>[m|meter|meters]</phrase>
+</frame>
+
+<frame id="c-thing">
+  <constraint slot="color" type="c-color" />
+  <phrase>?:{color} thing</phrase>
+  <testphrase>blue thing</testphrase>
+  <testphrase>thing</testphrase>
+</frame>
+
+<!--
+<frame id="c-tank">
+  <parent id="c-thing" />
+  <phrase>tank</phrase>
+</frame>
+-->
+
+<frame id="c-t55-tank">
+  <parent id="c-tank" />
+
+  <phrase>[t-55|t 5 5|t fifty five] ?:tank</phrase>
+
+  <generate>T-55</generate>
+</frame>
+
+
+<!-- See http://www.globalsecurity.org/military/library/policy/army/fm/3-25-26/ch4.htm#par4 -->
+
+<frame id="c-mgrs-square">
+  <constraint slot="letter1" type="c-nato-phonetic-word" />
+  <constraint slot="letter2" type="c-nato-phonetic-word" />
+  <phrase>{letter1} {letter2}</phrase>
+  <testphrase>hk</testphrase>
+  <testphrase>hotel kilo</testphrase>
+</frame>
+
+<frame id="c-mgrs-coords">
+  <constraint slot="square" type="c-mgrs-square" />
+  <constraint slot="point" type="c-number" />
+  <phrase>{square} {point}</phrase>
+  <testphrase>HK 410446</testphrase>
+  <testphrase>hotel kilo four one zero four four six</testphrase>
+</frame>
+
+
+<frame id="c-none">
+  <phrase>none</phrase>
+</frame>
+
+
+<frame id="c-vector">
+  <constraint slot="magnitude" type="c-linear-measurement" />
+  <constraint slot="direction" type="c-direction" />
+  <phrase>{magnitude} ?:[to the] {direction}</phrase>
+  <testphrase>1 kilometer south</testphrase>
+  <testphrase>two units south</testphrase>
+</frame>
+
+
+<frame id="c-cardinal-direction">
+  <parent id="c-direction" />
+</frame>
+
+<frame id="i-north">
+  <parent id="c-cardinal-direction" instanceof="true"/>
+
+  <phrase>north</phrase>
+  <phrase>northern</phrase>
+
+  <slot name="extent-slot-name" value="north"/>
+  <slot name="rawvector" value="i-north-unit-vector"/>
+</frame>
+
+<frame id="i-north-unit-vector">
+  <slot name="x" value="1"/>
+  <slot name="y" value="0"/>
+  <slot name="z" value="0"/>
+</frame>
+
+<frame id="i-south">
+
+  <parent id="c-cardinal-direction" instanceof="true"/>
+  <phrase>south</phrase>
+  <phrase>southern</phrase>
+
+  <slot name="extent-slot-name" value="south"/>
+  <slot name="rawvector" value="i-south-unit-vector"/>
+</frame>
+
+<frame id="i-south-unit-vector">
+  <slot name="x" value="-1"/>
+  <slot name="y" value="0"/>
+  <slot name="z" value="0"/>
+</frame>
+
+
+<frame id="i-east">
+  <parent id="c-cardinal-direction" instanceof="true"/>
+
+  <phrase>east</phrase>
+  <phrase>eastern</phrase>
+
+  <slot name="extent-slot-name" value="east"/>
+  <slot name="rawvector" value="i-east-unit-vector"/>
+</frame>
+
+<frame id="i-east-unit-vector">
+  <slot name="x" value="0"/>
+  <slot name="y" value="1"/>
+  <slot name="z" value="0"/>
+</frame>
+
+
+<frame id="i-west">
+  <parent id="c-cardinal-direction" instanceof="true"/>
+
+  <phrase>west</phrase>
+  <phrase>western</phrase>
+
+  <slot name="extent-slot-name" value="west"/>
+  <slot name="rawvector" value="i-west-unit-vector"/>
+</frame>
+
+<frame id="i-west-unit-vector">
+  <slot name="x" value="0"/>
+  <slot name="y" value="-1"/>
+  <slot name="z" value="0"/>
+</frame>
+
+
+<frame id="i-northwest">
+  <parent id="c-cardinal-direction" instanceof="true"/>
+  <phrase>[northwest|north west]</phrase>
+  <phrase>northwestern</phrase>
+</frame>
+
+<frame id="i-northeast">
+  <parent id="c-cardinal-direction" instanceof="true"/>
+  <phrase>[northeast|north east]</phrase>
+  <phrase>northeastern</phrase>
+</frame>
+
+<frame id="i-southwest">
+  <parent id="c-cardinal-direction" instanceof="true"/>
+  <phrase>[southwest|south west]</phrase>
+  <phrase>southwestern</phrase>
+</frame>
+
+<frame id="i-southeast">
+  <parent id="c-cardinal-direction" instanceof="true"/>
+  <phrase>[southeast|south east]</phrase>
+  <phrase>southeastern</phrase>
+</frame>
+
+
+<frame id="c-initial-point">
+  <phrase>[ip|i p]</phrase>
+</frame>
+
+<frame id="c-roger">
+  <phrase>roger</phrase>
+
+  <slot name="execute-method" value="do_roger" />
+</frame>
+
+<frame id="c-negative">
+  <phrase>negative</phrase>
+
+  <slot name="execute-method" value="do_nop" />
+</frame>
+
+<frame id="c-require-clearance-on-final">
+  <phrase>clearance on final</phrase>
+</frame>
+
+<frame id="c-no-drop-without-clearance">
+  <phrase>no clearance no drop</phrase>
+</frame>
+
+<frame id="c-call-departing">
+  <phrase>?:and call departing</phrase>
+</frame>
+
+<frame id="c-say-when-ready-for-talkon">
+  <parent id="c-addressed-utterance"/>
+  <phrase>?:{to-agent} say when ready for ?:[talk on|talkon]</phrase>
+  <testphrase>say when ready for talk-on</testphrase>
+
+  <slot name="execute-method" value="do_talkon_readiness_prompt"/>
+</frame>
+
+<frame id="c-talk-on">
+  <parent id="c-procedure" />
+  <phrase>[talk on|talkon]</phrase>
+</frame>
+
+<frame id="c-call-contact">
+  <parent id="c-addressed-utterance" />
+  <constraint slot="object" type="c-thing" />
+  <constraint slot="direction" type="c-direction" />
+  <phrase>?:{to-agent} call contact with {object}</phrase>
+  <phrase>?:{to-agent} call contact with {object} ?:just ?:to ?:[your|the] {direction}</phrase>
+
+  <testphrase>hog call contact with kampton city</testphrase>
+  <testphrase>call contact with kampton city just to your north</testphrase>
+
+  <slot name="execute-method" value="do_call_contact"/>
+</frame>
+
+
+<frame id="c-location">
+  <parent id="c-thing" />
+</frame>
+
+<frame id="c-city">
+  <parent id="c-location" />
+
+  <phrase>city</phrase>
+
+  <slot name="type" value="City"/>
+</frame>
+
+<frame id="i-kampton-city">
+  <parent id="c-city" instanceof="true"/>
+  <phrase>kampton city</phrase>
+
+  <slot name="objid" value="kampton-city"/>
+  <slot name="position" value="i-kampton-city-position"/>
+  <slot name="east-west-extent" value="2000"/>
+  <slot name="west-limit" value="i-kampton-west-limit-position"/>
+</frame>
+
+<frame id="i-kampton-city-position">
+  <slot name="x" value="616.2"/>
+  <slot name="y" value="-3652.3"/>
+  <slot name="z" value="-701.3"/>
+</frame>
+
+<frame id="i-kampton-west-limit-position">
+  <slot name="x" value="616"/>
+  <slot name="y" value="-4652"/>
+  <slot name="z" value="-1100"/>
+</frame>
+
+<frame id="c-establish-unit-of-measurement">
+  <parent id="c-addressed-utterance" />
+
+  <constraint slot="extent" type="c-extent" />
+  <constraint slot="object" type="c-thing" />
+  <phrase>
+    ?:{to-agent} ?:[lets|let's|let us]
+    ?:also [establish|use] the {extent} of ?:the {object} as
+    [a|the|our] unit of measurement
+  </phrase>
+  <testphrase>
+    hog, let's establish the east-west extent of the city as a unit of
+    measurement
+  </testphrase>
+  <testphrase>
+    use the east-west extent of kampton city as the unit of
+    measurement
+  </testphrase>
+
+  <slot name="execute-method" value="do_establish_unit_of_measurement" />
+</frame>
+
+<frame id="c-extent">
+  <constraint slot="axis-origin" type="c-cardinal-direction" />
+  <constraint slot="axis-destination" type="c-cardinal-direction" />
+  <phrase>{axis-origin} {axis-destination} [extent|expanse|length|axis]</phrase>
+  
+  <testphrase>east-west extent</testphrase>
+  <testphrase>north-south length</testphrase>
+</frame>
+
+<frame id="c-establish-anchor-point">
+  <parent id="c-addressed-utterance" />
+  <constraint slot="point" type="c-location" />
+  <constraint slot="object" type="c-thing" />
+  <phrase>
+    ?:{to-agent} ?:[lets|let's|let us] ?:also [establish|use] the
+    {point} of ?:the {object} as [a|the|our] [anchor
+    point|anchorpoint]
+  </phrase>
+  <testphrase>
+    hog, let's also establish the western limit of the city as our
+    anchor point
+  </testphrase>
+
+  <slot name="execute-method" value="do_establish_anchor_point1"/>
+</frame>
+
+<frame id="c-edge">
+  <parent id="c-location" />
+  <constraint slot="direction" type="c-cardinal-direction" />
+  <phrase>{direction} [edge|limit]</phrase>
+  <testphrase>western limit</testphrase>
+
+  <slot name="get-method" value="get_edge_point"/>
+</frame>
+
+<frame id="c-unit-vector-sum">
+  <constraint slot="first-vector" type="c-vector" />
+  <constraint slot="rest-vector" type="c-unit-vector-sum" />
+  <phrase>{first-vector} ?:[and ?:then ?:go {rest-vector}]</phrase>
+  <testphrase>two units north and then three units west</testphrase>
+  <testphrase>two units north and then three units west and then five units south</testphrase>
+</frame>
+
+<frame id="c-look-based-on-unit-of-measure">
+  <parent id="c-addressed-utterance"/>
+
+  <constraint slot="vector" type="c-unit-vector-sum" />
+  <phrase>?:{to-agent} take the unit of measure and go {vector}</phrase>
+  <testphrase>take the unit of measure and go two units to the west and one unit to the north</testphrase>
+
+  <slot name="execute-method" value="do_look_based_on_unit_of_measure"/>
+</frame>
+
+<frame id="c-implied-call-contact">
+  <parent id="c-call-contact" />
+
+  <phrase>?:{to-agent} you ?:should see ?:[a|an|the] {object}</phrase>
+  <testphrase>you should see a t-55</testphrase>
+  <testphrase>you should see an intersection where two hardballs meet</testphrase>
+  <testphrase>hog, do you see an intersection where two hardballs meet</testphrase>
+  <testphrase>hog, you should see an intersection where two hardballs meet</testphrase>
+
+  <slot name="execute-method" value="do_implied_call_contact"/>
+</frame>
+
+<frame id="c-implied-call-contact-with-hint">
+  <parent id="c-addressed-utterance" />
+
+  <constraint slot="object" type="c-thing" />
+  <constraint slot="location" type="c-location" />
+  <phrase>{to-agent} ?:the {object} is [on|at] ?:the {location}</phrase>
+  <testphrase>hog, the t-55 is on the south-east corner of the intersection</testphrase>
+
+  <slot name="execute-method" value="do_implied_call_contact"/>
+</frame>
+
+<frame id="c-intersection">
+  <parent id="c-thing" />
+
+  <phrase>intersection</phrase>
+
+  <slot name="type" value="Intersection"/>
+  <generate>intersection</generate>
+</frame>
+
+<frame id="c-hardball-intersection">
+  <parent id="c-intersection" />
+
+  <constraint slot="order" type="c-number" />
+  <phrase>intersection [where|of|with] {order} hardballs ?:[meet|come together]</phrase>
+  <testphrase>intersection where two hardballs meet</testphrase>
+</frame>
+
+
+<frame id="c-corner">
+  <parent id="c-location" />
+
+  <constraint slot="direction" type="c-cardinal-direction" />
+  <phrase>corner</phrase>
+  <phrase>{direction} {:head}</phrase>
+
+</frame>
+
+<frame id="c-intersection-corner">
+  <parent id="c-corner" />
+  <phrase>corner of the intersection</phrase>
+  <phrase>intersection corner</phrase>
+</frame>
+
+<frame id="c-copy-departing-ip">
+  <parent id="c-addressed-utterance" />
+
+  <phrase>?:{to-agent} copy departing ip</phrase>
+  <testphrase>hog, copy departing ip</testphrase>
+
+  <slot name="execute-method" value="do_nop"/>
+</frame>
+
+
+<frame id="c-target-designation-mark">
+</frame>
+
+<frame id="c-white-phosphorus-mark">
+  <parent id="c-target-designation-mark" />
+  <phrase>[wp|w p]</phrase>
+</frame>
+
+<frame id="c-laser-mark">
+  <parent id="c-target-designation-mark" />
+  <phrase>laser</phrase>
+</frame>
+
+<frame id="c-infrared-mark">
+  <parent id="c-target-designation-mark" />
+  <phrase>[ir|i r|infrared|infra red]</phrase>
+</frame>
+
+<frame id="c-beacon-mark">
+  <parent id="c-target-designation-mark" />
+  <phrase>beacon</phrase>
+</frame>
+
+<frame id="c-no-mark">
+  <parent id="c-target-designation-mark" />
+  <phrase>none</phrase>
+</frame>
+
+
+<frame id="c-end-exercise">
+  <parent id="c-magic-command" />
+  <phrase>[endex|end exercise]</phrase>
+
+  <slot name="execute-method" value="do_endex" />
+</frame>
+
+
+
+<!--
+The following is just some quick & dirty stuff just to get real
+closed-loop interaction between the human, the dialog manager and the
+simulation.
+-->
+
+<frame id="c-tank">
+  <parent id="c-thing" />
+  <constraint slot="color" type="c-color" />
+  <phrase>?:{color} tank</phrase>
+  <testphrase>red tank</testphrase>
+  <testphrase>blue tank</testphrase>
+
+  <slot name="type" value="Tank" />
+</frame>
+
+<frame id="c-building">
+  <parent id="c-thing" />
+  <phrase>building</phrase>
+</frame>
+
+<frame id="c-farmhouse">
+  <parent id="c-building" />
+  <constraint slot="color" type="c-color" />
+  <phrase>?:{color} [farmhouse|farm house|house]</phrase>
+  <testphrase>blue farm house</testphrase>
+  <testphrase>farmhouse</testphrase>
+  <testphrase>red house</testphrase>
+
+  <slot name="type" value="Building" />
+</frame>
+
+<frame id="c-color">
+</frame>
+
+<frame id="i-red">
+  <parent id="c-color" instanceof="true" />
+  <phrase>red</phrase>
+</frame>
+
+<frame id="i-blue">
+  <parent id="c-color" instanceof="true" />
+  <phrase>blue</phrase>
+</frame>
+
+<frame id="i-red-tank">
+  <parent id="c-tank" instanceof="true" />
+  <slot name="position" value="i-red-tank-position" />
+  <slot name="color" value="i-red" />
+</frame>
+
+<frame id="i-red-tank-position">
+  <slot name="x" value="3154" />
+  <slot name="y" value="1628" />
+  <slot name="z" value="-1430" />
+</frame>
+
+
+<frame id="i-blue-farmhouse">
+  <parent id="c-farmhouse" instanceof="true" />
+  <slot name="position" value="i-blue-farmhouse-position" />
+  <slot name="color" value="i-blue" />
+</frame>
+
+<frame id="i-blue-farmhouse-position">
+  <slot name="x" value="-1535" />
+  <slot name="y" value="-1389" />
+  <slot name="z" value="701" />
+</frame>
+
+
+<frame id="i-look-at">
+  <parent id="c-action" instanceof="true" />
+  <constraint slot="object" type="c-thing" />
+  <phrase>look at ?:the {object}</phrase>
+
+  <testphrase>look at the red tank</testphrase>
+  <testphrase>look at the blue farm house</testphrase>
+
+  <slot name="execute-method" value="do_look_at" />
+</frame>
+
+<frame id="i-tell-details">
+  <parent id="c-action" instanceof="true" />
+  <phrase>give me the details</phrase>
+  <slot name="execute-method" value="do_detail_query" />
+</frame>
+
+<frame id="i-tell-all">
+  <parent id="c-action" instanceof="true" />
+  <phrase>give me everything</phrase>
+  <slot name="execute-method" value="do_all_query" />
+</frame>
+
+<frame id="i-tell-observe">
+  <parent id="c-action" instanceof="true" />
+  <constraint slot="object" type="c-thing" />
+  <phrase>do you see ?:[a|the] {object}</phrase>
+  <testphrase>do you see the tank</testphrase>
+  <testphrase>do you see the building</testphrase>
+
+  <slot name="execute-method" value="do_tell_observe" />
+</frame>
+
+<frame id="i-fly-to">
+  <parent id="c-action" instanceof="true"/>
+
+  <constraint slot="object" type="c-thing"/>
+  <phrase>fly to ?:[a|the] {object}</phrase>
+  <testphrase>fly to the tank</testphrase>
+
+  <slot name="execute-method" value="do_fly_to"/>
+</frame>
+
+</frames>

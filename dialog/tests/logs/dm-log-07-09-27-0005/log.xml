@@ -1,0 +1,150 @@
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>[&lt;ICPResult 0.156443421044 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<input>go ahead</input>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<output>Gunslinger, do you have a nine-line for me?</output>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>[&lt;ICPResult 0.142447213601 'c-t-55' {}&gt;]</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>[&lt;ICPResult score: 0.142447213601 target: 'c-t-55' slots: {}&gt;]</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<input>continue</input>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>[&lt;ICPResult 0.16602699979 'c-continue' {}&gt;]</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<input>call contact with the dry lake</input>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<output>Gunslinger, visual drinkwater-lake.</output>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<input>hog, call contact with Drinkwater Lake just to your north</input>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<action>do_call_contact</action>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Thu Sep 27 14:42:57 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Thu Sep 27 14:43:07 2007 -->
+<input>what do you see</input>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<action>do_what_do_you_see</action>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>Unknown class for descriptor &lt;</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.TypeError'&gt;, 'str' object does not support item assignment)</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 476, in run_input_loop
+    self.handle_parse(parse)
+</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 516, in handle_parse
+    function(self, parse)
+</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/actions.py", line 849, in do_what_do_you_see
+    e['class'] = descriptor_class(dm, e)
+</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<action>do_establish_unit_of_measurement</action>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>extent slot is eastWestExtent</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>eastWestExtent of drinkwater-lake is 2707.4</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>Set unit of measure to 2707.4 meters</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<input>hog, let's also establish the western limit of the lake as our anchor point</input>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<action>do_establish_anchor_point1</action>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<action>get_edge_point</action>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>westLimit of drinkwater-lake is 3412,1086</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>Set anchor point to (3412, 1086, 0)</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<input>Take the unit of measure and go one half units to the west</input>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>vector is [0.0, -1353.7, 0.0] from anchor point</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>target coords are [3412.0, -267.70000000000005, 0.0]</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<input>you should see an intersection where two dirtballs meet</input>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<output>Gunslinger, contact dirtball intersection.</output>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<input>what do you see</input>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<action>do_what_do_you_see</action>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>Unknown class for descriptor &lt;</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.TypeError'&gt;, 'str' object does not support item assignment)</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 476, in run_input_loop
+    self.handle_parse(parse)
+</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 516, in handle_parse
+    function(self, parse)
+</debug>
+<!-- Thu Sep 27 14:43:08 2007 -->
+<debug>  File "/Users/wiseman/Desktop/ENERGID/src/rl1/code/dialogManager/energid/actions.py", line 849, in do_what_do_you_see
+    e['class'] = descriptor_class(dm, e)
+</debug>

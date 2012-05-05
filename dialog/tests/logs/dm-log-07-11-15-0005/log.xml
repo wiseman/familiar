@@ -1,0 +1,430 @@
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>[&lt;ICPResult 0.156443421044 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156443421044 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:06 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<input>gunslinger i have charlie</input>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>[&lt;ICPResult 0.15819029441 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.106298591268 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15819029441 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.106298591268 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.126359733165 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult score: 0.121467556206 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<action>do_authentication_request</action>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<output>Gunslinger, hog authenticates bravo.</output>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<input>go ahead</input>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162493841894 target: 'c-ready-to-copy' slots: {}&gt;, &lt;ICPResult score: 0.099597011089 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:07 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>continue</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.16602699979 'c-continue' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.16602699979 target: 'c-continue' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>gunslinger copies 30 mikes playtime</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.158341106759 'i-playtime-response' {}&gt;, &lt;ICPResult 0.107516311337 'c-copy-ack' {}&gt;, &lt;ICPResult 0.106584246587 'c-loud-and-clear' {}&gt;, &lt;ICPResult 0.100874546448 'i-playtime-query' {}&gt;, &lt;ICPResult 0.096011205739 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-mike'"&gt;}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158341106759 target: 'i-playtime-response' slots: {}&gt;, &lt;ICPResult score: 0.107516311337 target: 'c-copy-ack' slots: {}&gt;, &lt;ICPResult score: 0.106584246587 target: 'c-loud-and-clear' slots: {}&gt;, &lt;ICPResult score: 0.100874546448 target: 'i-playtime-query' slots: {}&gt;, &lt;ICPResult score: 0.096011205739 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-mike'"&gt;}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>go ahead</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162493841894 target: 'c-ready-to-copy' slots: {}&gt;, &lt;ICPResult score: 0.099597011089 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>do you have an abort code setup?</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.155087868331 'c-abort-code-request' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.155087868331 target: 'c-abort-code-request' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult score: 0.126359733165 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult score: 0.121467556206 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158190031496 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<action>do_authentication_request</action>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, hog authenticates bravo.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>endex</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.19839811528 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<action>do_endex</action>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>hog, copy all</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.156903388843 'c-copy-ack' {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156903388843 target: 'c-copy-ack' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>copy alpha hotel</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.15855630718 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-hotel'"&gt;}&gt;, &lt;ICPResult 0.107183364999 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0965354186499 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15855630718 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-hotel'"&gt;}&gt;, &lt;ICPResult score: 0.107183364999 target: 'c-copy-ack' slots: {}&gt;, &lt;ICPResult score: 0.0965354186499 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<input>copy bravo foxtrot</input>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>[&lt;ICPResult 0.15855630718 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-foxtrot'"&gt;}&gt;, &lt;ICPResult 0.107183364999 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0965354186499 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.15855630718 target: 'c-abort-code-ack' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-foxtrot'"&gt;}&gt;, &lt;ICPResult score: 0.107183364999 target: 'c-copy-ack' slots: {}&gt;, &lt;ICPResult score: 0.0965354186499 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;]</debug>
+<!-- Thu Nov 15 19:08:37 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<input>go with read back</input>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>[&lt;ICPResult 0.162104903423 'i-do-nine-line-readback' {}&gt;, &lt;ICPResult 0.100255400208 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162104903423 target: 'i-do-nine-line-readback' slots: {}&gt;, &lt;ICPResult score: 0.100255400208 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<input>good copy</input>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>[&lt;ICPResult 0.106395062103 'c-copy-ack' {}&gt;]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.106395062103 target: 'c-copy-ack' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<input>hog, call contact with saucer shaped valley</input>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>[]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>Raw parses: []</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<input>hog, call contact with  east-west running valley</input>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>[]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>Raw parses: []</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<input>hog, call contact with  basin</input>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>[]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>Raw parses: []</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<input>hog, call contact with  depression</input>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>[]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>Raw parses: []</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<input>hog, call contact with  valley with dry lake bed</input>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>[]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>Raw parses: []</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<input>hog, call contact with  flat area surrounded by mountains</input>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>[&lt;ICPResult 0.107918321674 'c-standby' {}&gt;]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.107918321674 target: 'c-standby' slots: {}&gt;]</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.107918321674 target: 'c-standby' slots: {}&gt; takes priority.</debug>
+<!-- Thu Nov 15 19:09:08 2007 -->
+<action>do_standby</action>

@@ -1,0 +1,76 @@
+<testsuite name="'what are you looking at?' tests">
+
+  <!-- Get through the check-in and nine-line -->
+  <test name="initial utterance">
+    <output>Gunslinger 42, Hog 01</output>
+  </test>
+
+  <test name="check-in-1">
+    <input>Hog zero one, Gunslinger has you loud and clear.</input>
+    <output>Gunslinger, authenticate Bravo Hotel November</output>
+  </test>
+
+  <test name="readback-1">
+    <input>I authenticate whiskey</input>
+    <output>Gunslinger, Hog is checking in as-fragged, .* IP Bravo</output>
+    <output>Gunslinger, playtime is [-0-9]+ mikes</output>
+  </test>
+
+  <test name="readback-1a">
+    <input>go ahead</input>
+    <output>Gunslinger, do you have a nine-line for me?</output>
+  </test>
+
+  <test name="readback-2">
+    <setup>self.dialog_manager.action_module.magic_trigger_nine_line(self.dialog_manager, None, target="T-55")</setup>
+    <output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+  </test>
+
+  <test name="readback-3">
+    <input>continue</input>
+    <output>gunslinger, affirm.*</output>
+    <output>gunslinger, i have.* degrees.* remarks.*</output>
+  </test>
+
+  <test name="cc-drinkwater">
+    <input>call contact with the dry lake</input>
+    <output>Gunslinger, contact.*</output>
+  </test>
+
+  <test name="talk-on-contact-1">
+    <input>hog, call contact with Drinkwater Lake just to your north</input>
+    <output>Gunslinger, (contact|visual Drinkwater Lake)</output>
+  </test>
+
+  <test name="cc-what-see-2">
+    <setup>time.sleep(10)</setup>
+    <input>what do you see</input>
+    <output>Gunslinger, contact .*</output>
+  </test>
+
+  <test name="talk-on-2">
+    <input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+    <output>Gunslinger, copy</output>
+  </test>
+
+  <test name="talk-on-3">
+    <input>hog, let's also establish the western limit of the lake as our anchor point</input>
+    <output>Gunslinger, copy</output>
+  </test>
+
+  <test name="talk-on-4">
+    <input>Take the unit of measure and go one half units to the west</input>
+    <output>Gunslinger, roger</output>
+  </test>
+
+  <test name="talk-on-5">
+    <input>you should see an intersection where two dirtballs meet</input>
+    <output>Gunslinger, (visual|contact)( dirtball intersection)?</output>
+  </test>
+
+  <test name="cc-what-see-2">
+    <input>what do you see</input>
+    <output>Gunslinger, contact .*</output>
+  </test>
+
+</testsuite>

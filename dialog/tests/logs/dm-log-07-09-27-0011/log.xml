@@ -1,0 +1,388 @@
+<!-- Thu Sep 27 14:53:48 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Sep 27 14:53:48 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Sep 27 14:53:48 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.156443421044 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<input>go for gunslinger</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.159276606142 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<input>hog zero one, go for gunslinger</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.156534054609 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<input>gunslinger</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.103737760146 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<input>gunslinger has you weak but readable</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.160063831347 'c-weak-but-readable' {}&gt;, &lt;ICPResult 0.10610703218 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<input>say again last calling station</input>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>[&lt;ICPResult 0.174810602625 'c-say-again' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:49 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>say again hog zero one</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[&lt;ICPResult 0.155485465564 'c-say-again' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>blah</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>gunslinger i have bravo</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[&lt;ICPResult 0.15819029441 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;, &lt;ICPResult 0.106298591268 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>gunslinger i have charlie</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[&lt;ICPResult 0.15819029441 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.106298591268 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>gunslinger has you loud and clear, hog</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[&lt;ICPResult 0.157808089345 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[&lt;ICPResult 0.158190031496 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126359733165 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121467556206 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<input>endex</input>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>[&lt;ICPResult 0.19839811528 'c-end-exercise' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:50 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<input>go ahead</input>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<output>Gunslinger, sorry, processing error.  Please send following error info to John or Mike.</output>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<debug>Unexpected error: (&lt;type 'exceptions.NameError'&gt;, global name 'dm' is not defined)</debug>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 469, in run_input_loop
+    parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+</debug>
+<!-- Thu Sep 27 14:53:51 2007 -->
+<debug>  File "../energid/dialogmanager.py", line 336, in parse_with_prompt
+    dm.debug("Raw parses: %s" % (parses,))
+</debug>

@@ -1,0 +1,158 @@
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>[&lt;ICPResult 0.156443421044 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.156443421044 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<input>I authenticate whiskey</input>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>[&lt;ICPResult 0.166223898812 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.166223898812 target: 'c-authentication-response' slots: {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<input>go ahead</input>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>[&lt;ICPResult 0.162493841894 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.099597011089 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.162493841894 target: 'c-ready-to-copy' slots: {}&gt;, &lt;ICPResult score: 0.099597011089 target: 'c-loud-and-clear' slots: {}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, do you have a nine-line for me?</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>[&lt;ICPResult 0.160460251281 'c-manpad' {}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>[&lt;ICPResult score: 0.160460251281 target: 'c-manpad' slots: {}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<input>continue</input>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>[&lt;ICPResult 0.16602699979 'c-continue' {}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Raw parses: [&lt;ICPResult score: 0.16602699979 target: 'c-continue' slots: {}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; MANPAD; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<input>say when ready for talk on</input>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-say-when-ready-for-talkon'&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<input>hog, call contact with Drinkwater Lake just to your north</input>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'i-drinkwater-lake'&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-north'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<action>do_call_contact</action>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, contact.</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-establish-unit-of-measurement' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'extent'"&gt;: &lt;Expr: "&lt;Description base: 'c-extent' slots: {&lt;Expr: "'axis-origin'"&gt;: &lt;Expr: "&lt;Description base: 'i-east'&gt;"&gt;, &lt;Expr: "'axis-destination'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<action>do_establish_unit_of_measurement</action>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>extent slot is eastWestExtent</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>eastWestExtent of drinkwater-lake is 2707.4</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Set unit of measure to 2707.4 meters</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, copy.</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<input>hog, let's also establish the western limit of the lake as our anchor point</input>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-establish-anchor-point' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-lake'&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'point'"&gt;: &lt;Expr: "&lt;Description base: 'c-edge' slots: {&lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<action>do_establish_anchor_point1</action>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<action>get_edge_point</action>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>westLimit of drinkwater-lake is 3412,1086</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<debug>Set anchor point to (3412, 1086, 0)</debug>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<output>Gunslinger, copy.</output>
+<!-- Thu Feb 21 15:19:26 2008 -->
+<input>Take the unit of measure and go one half units to the south and one half units to the west</input>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-look-based-on-unit-of-measure-no-anchor' slots: {&lt;Expr: "'vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'rest-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-vector-sum' slots: {&lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-half'&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-west'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'first-vector'"&gt;: &lt;Expr: "&lt;Description base: 'c-vector' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-linear-measurement' slots: {&lt;Expr: "'magnitude'"&gt;: &lt;Expr: "&lt;Description base: 'c-half'&gt;"&gt;, &lt;Expr: "'unit'"&gt;: &lt;Expr: "&lt;Description base: 'c-unit-of-measurement'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'direction'"&gt;: &lt;Expr: "&lt;Description base: 'i-south'&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<debug>vector is [-1353.7, -1353.7, 0.0] from anchor point</debug>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<debug>target coords are [2058.3000000000002, -267.70000000000005, 0.0]</debug>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<output>Gunslinger, roger.</output>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<input>you should see a village</input>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-Village'&gt;"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<action>do_implied_call_contact</action>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<output>Gunslinger, contact village.</output>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<input>hog, village is seattle</input>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-assert-urban-layout' slots: {&lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'codeword'"&gt;: &lt;Expr: "&lt;Description base: 'i-seattle-codeword'&gt;"&gt;, &lt;Expr: "'city'"&gt;: &lt;Expr: "&lt;Description base: 'c-Village'&gt;"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<action>do_assert_urban_layout</action>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<output>Gunslinger, copy, I have the Seattle layout.</output>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<input>hog, copy</input>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-copy-ack' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<input>hog, call contact building echo four</input>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-call-contact' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;Description base: 'c-building-reference' slots: {&lt;Expr: "'designator'"&gt;: &lt;Expr: "&lt;Description base: 'c-building-designator' slots: {&lt;Expr: "'letter'"&gt;: &lt;Expr: "&lt;Description base: 'c-nato-echo'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "4"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<action>do_call_contact</action>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<action>resolve_building_reference</action>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<action>resolve_building_reference</action>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<debug>Pilot is looking at [2190.0, -631.0, -1069.0]</debug>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<output>Gunslinger, contact e4.</output>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<input>hog, target is MANPAD on roof of building echo four, call contact</input>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<debug>Raw parses: [&lt;Description base: 'c-implied-call-contact-with-hint' slots: {&lt;Expr: "'object'"&gt;: &lt;Expr: "&lt;ICPResult score: 0.160460251281 target: 'c-manpad' slots: {}&gt;"&gt;, &lt;Expr: "'standard-begin'"&gt;: &lt;Expr: "&lt;Description base: 'c-std-utterance-begin' slots: {&lt;Expr: "'to-agent'"&gt;: &lt;Expr: "&lt;Description base: 'c-basic-callsign'&gt;"&gt;}&gt;"&gt;, &lt;Expr: "'location'"&gt;: &lt;Expr: "&lt;Description base: 'c-rooftop' slots: {&lt;Expr: "'building'"&gt;: &lt;Expr: "&lt;Description base: 'c-building-reference' slots: {&lt;Expr: "'designator'"&gt;: &lt;Expr: "&lt;Description base: 'c-building-designator' slots: {&lt;Expr: "'letter'"&gt;: &lt;Expr: "&lt;Description base: 'c-nato-echo'&gt;"&gt;, &lt;Expr: "'number'"&gt;: &lt;Expr: "&lt;Description base: 'c-integer' slots: {&lt;Expr: "'first'"&gt;: &lt;Expr: "&lt;Description base: 'c-digit' slots: {&lt;Expr: "'value'"&gt;: &lt;Expr: "4"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;"&gt;}&gt;]</debug>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<action>do_implied_call_contact</action>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<output>Gunslinger, tally MANPAD, departing IP at this time.</output>
+<!-- Thu Feb 21 15:19:27 2008 -->
+<debug>Moving from state {Talk-On State} to {Run-In State}</debug>

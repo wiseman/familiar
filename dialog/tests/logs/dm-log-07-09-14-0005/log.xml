@@ -1,0 +1,796 @@
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>Hog zero one, Gunslinger has you loud and clear.</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.156410904905 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>go for gunslinger</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.159207827287 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>hog zero one, go for gunslinger</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.156499985574 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>gunslinger</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.103881196297 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>gunslinger has you weak but readable</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.159989766335 'c-weak-but-readable' {}&gt;, &lt;ICPResult 0.106200013695 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>say again last calling station</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.174634647805 'c-say-again' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.174634647805 target: 'c-say-again' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_say_again</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>say again hog zero one</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.155456496099 'c-say-again' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.155456496099 target: 'c-say-again' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_say_again</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>blah</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>gunslinger i have bravo</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.15812283355 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;, &lt;ICPResult 0.10638836891 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>gunslinger i have charlie</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.15812283355 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.10638836891 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:17 2007 -->
+<input>gunslinger has you loud and clear, hog</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.15775918677 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.158120018815 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126244409375 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121287372214 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158120018815 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_authentication_request</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, negative.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, authenticate Bravo Hotel November.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.166083576195 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>go ahead</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.162410182681 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.0996453598107 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, do you have a nine-line for me?</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.142482829216 'c-t-55' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>continue</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.165932947501 'c-continue' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Magic command &lt;Description base: 'c-end-exercise'&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.166083576195 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>gunslinger copies 30 mikes playtime</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.158293254089 'i-playtime-response' {}&gt;, &lt;ICPResult 0.107435702814 'c-copy-ack' {}&gt;, &lt;ICPResult 0.106668010215 'c-loud-and-clear' {}&gt;, &lt;ICPResult 0.101090042555 'i-playtime-query' {}&gt;, &lt;ICPResult 0.0959409469857 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-mike'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.142482829216 'c-t-55' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>go ahead</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.162410182681 'c-ready-to-copy' {}&gt;, &lt;ICPResult 0.0996453598107 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Magic command &lt;Description base: 'c-end-exercise'&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.158120018815 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126244409375 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121287372214 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158120018815 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_authentication_request</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, hog authenticates bravo.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>do you have an abort code setup?</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.155245522289 'c-abort-code-request' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.166083576195 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>hog, authenticate delta zulu charlie</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.158120018815 'c-authentication-request' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt;, &lt;ICPResult 0.126244409375 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;}&gt;, &lt;ICPResult 0.121287372214 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.158120018815 target: 'c-authentication-request' slots: {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-delta'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-zulu'"&gt;, &lt;Expr: "'letter3'"&gt;: &lt;Expr: "'c-nato-charlie'"&gt;}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_authentication_request</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, you have already authenticated.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>endex</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.198351089135 'c-end-exercise' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Magic command &lt;ICPResult score: 0.198351089135 target: 'c-end-exercise' slots: {}&gt; takes priority.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_endex</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, copy endex.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Resetting exercise.  Should reset sim to initial state.  Resetting dialog.</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Initializing to state {Check-In State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>I authenticate whiskey</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.166083576195 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-whiskey'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, Hog is checking in as-fragged, current position 5.0 clicks north of IP Bravo.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, playtime is 30 mikes.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>hog, copy all</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.156872071107 'c-copy-ack' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>do you have an abort code setup?</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.155245522289 'c-abort-code-request' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>copy alpha hotel</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.158478329393 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-hotel'"&gt;}&gt;, &lt;ICPResult 0.107102602275 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0964481574412 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-alpha'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_abort_code_ack</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, negative alpha hotel.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, abort code is bravo foxtrot.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>copy bravo foxtrot</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.158478329393 'c-abort-code-ack' {&lt;Expr: "'letter1'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;, &lt;Expr: "'letter2'"&gt;: &lt;Expr: "'c-nato-foxtrot'"&gt;}&gt;, &lt;ICPResult 0.107102602275 'c-copy-ack' {}&gt;, &lt;ICPResult 0.0964481574412 'c-authentication-response' {&lt;Expr: "'codeword'"&gt;: &lt;Expr: "'c-nato-bravo'"&gt;}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_abort_code_ack</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>hog, say status</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.156330288079 'c-query-status' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, I am inbound to I.P.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to indexed concept parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.142482829216 'c-t-55' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Moving from state {Check-In State} to {Nine-Line State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, I have the nine-line you sent, say when ready for read-back.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>go with read back</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>[&lt;ICPResult 0.16204133751 'i-do-nine-line-readback' {}&gt;, &lt;ICPResult 0.100294632452 'c-loud-and-clear' {}&gt;]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_nine_line_readback</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, affirm.  standby one.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, I have Bravo; 346 degrees, offset 30 degrees right; 5 nautical miles; 3300 feet; T-55; NV 399 282; None; 2 clicks south; IP.  Remarks: call departing; call with direction; clearance on final; no clearance, no drop.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>good copy</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>say when ready for talk on</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>hog, call contact with Drinkwater Lake just to your north</input>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<action>do_call_contact</action>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<output>Gunslinger, contact Drinkwater Lake.</output>
+<!-- Fri Sep 14 13:16:18 2007 -->
+<input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<action>do_establish_unit_of_measurement</action>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<debug>extent slot is eastWestExtent</debug>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<debug>eastWestExtent of drinkwater-lake is 2707.4</debug>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<debug>Set unit of measure to 2707.4 meters</debug>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<input>hog, let's also establish the western limit of the lake as our anchor point</input>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<action>do_establish_anchor_point1</action>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<action>get_edge_point</action>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<debug>westLimit of drinkwater-lake is 3412,1086</debug>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<debug>Set anchor point to (3412, 1086, 0)</debug>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<input>Take the unit of measure and go one half units to the west</input>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<debug>vector is [0.0, -1353.7, 0.0] from anchor point</debug>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<debug>target coords are [3412.0, -267.70000000000005, 0.0]</debug>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<input>you should see an intersection where two dirtballs meet</input>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<input>call contact on intersection</input>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<input>hog, the t-55 is on the western corner of the intersection</input>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<output>Gunslinger, tally T-55, departing IP at this time.</output>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<debug>Moving from state {Talk-On State} to {Run-In State}</debug>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<input>hog, copy departing IP</input>
+<!-- Fri Sep 14 13:16:19 2007 -->
+<action>do_nop</action>
+<!-- Fri Sep 14 13:16:21 2007 -->
+<output>Gunslinger, Hog is 60 seconds out.</output>
+<!-- Fri Sep 14 13:16:21 2007 -->
+<input>Continue</input>
+<!-- Fri Sep 14 13:16:21 2007 -->
+<output>Gunslinger, say status of T-55.</output>
+<!-- Fri Sep 14 13:16:21 2007 -->
+<input>Hog, tank is stationary, still western corner of dirtball intersection</input>
+<!-- Fri Sep 14 13:16:21 2007 -->
+<action>do_target_status_assertion</action>
+<!-- Fri Sep 14 13:16:21 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Fri Sep 14 13:16:21 2007 -->
+<input>say status</input>
+<!-- Fri Sep 14 13:16:21 2007 -->
+<output>Gunslinger, I am inbound to target.</output>
+<!-- Fri Sep 14 13:16:23 2007 -->
+<output>Gunslinger, Hog 01 is in hot from the southeast.</output>
+<!-- Fri Sep 14 13:16:23 2007 -->
+<input>Hog 01, you're cleared hot</input>
+<!-- Fri Sep 14 13:16:23 2007 -->
+<output>Gunslinger, copy, cleared hot.</output>
+<!-- Fri Sep 14 13:16:25 2007 -->
+<output>Gunslinger, Rifle!</output>
+<!-- Fri Sep 14 13:16:25 2007 -->
+<debug>Moving from state {Run-In State} to {Nine-Line State}</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<input>Hog 01, say status</input>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<output>Gunslinger, I am egressing.</output>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<input>say when ready for talk on</input>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<input>Hog, let's use the same unit of measure and anchor as last time</input>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<action>do_reuse_anchor_point_and_uom</action>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>Set unit of measure to 2707.4 meters</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>Set anchor point to (3412, 1086, 0)</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<input>At the southern side of Drinkwater Lake there is a dirtball road running southeast, northwest, call contact</input>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<action>do_call_contact_location_obj</action>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>&lt;Description base: 'i-drinkwater-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<action>get_edge_point</action>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>southLimit of drinkwater-lake is 2667,3657</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>Pilot is looking at (2667, 3657, 0)</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>Pilot was able to look at location portion of object</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<output>Gunslinger, contact southeast northwest dirtball.</output>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<input>Take the unit of measure and go two units to the west and one quarter unit north on that dirtball</input>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>vector is [676.85000000000002, -5414.8000000000002, 0.0] from anchor point</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>target coords are [4088.8499999999999, -4328.8000000000002, 0.0]</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<input>bmp is on the dirtball</input>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<output>Gunslinger, tally BMP, departing IP at this time.</output>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<debug>Moving from state {Talk-On State} to {Run-In State}</debug>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<input>Hog, copy departing IP</input>
+<!-- Fri Sep 14 13:16:26 2007 -->
+<action>do_nop</action>
+<!-- Fri Sep 14 13:16:28 2007 -->
+<output>Gunslinger, Hog is 60 seconds out.</output>
+<!-- Fri Sep 14 13:16:30 2007 -->
+<output>Gunslinger, Hog 01 is in hot from the southeast.</output>
+<!-- Fri Sep 14 13:16:30 2007 -->
+<input>Hog 01, you're cleared hot</input>
+<!-- Fri Sep 14 13:16:30 2007 -->
+<output>Gunslinger, copy, cleared hot.</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<output>Gunslinger, Rifle!</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<debug>Moving from state {Run-In State} to {Nine-Line State}</debug>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<input>say posit</input>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<output>Gunslinger, Hog is currently 5.0 clicks north of IP Bravo.</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<input>say playtime</input>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<output>Gunslinger, 30 mikes.</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<input>what is your fuel state</input>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<output>Gunslinger, fuel is 0 pounds.</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<input>hog, say weapon status</input>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<output>Gunslinger, I have two by maverick, two by mark eighty twos, and gun.</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<input>say heading</input>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<output>Gunslinger, heading is 0 degrees.</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<input>what is your altitude</input>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<output>Gunslinger, altitude is 0 thousand.</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<input>say when ready for talk on</input>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<output>Gunslinger, go with talk-on.</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<debug>Moving from state {Nine-Line State} to {Talk-On State}</debug>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<debug>Setting parser mode to conceptual parser</debug>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<input>hog, call contact with Drinkwater Lake just to your north</input>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<action>do_call_contact</action>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<debug>Pilot is looking at [3185.0, 2439.0, -1029.0]</debug>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<output>Gunslinger, contact.</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<input>look one unit south</input>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<output>Gunslinger, you didn't give me a unit of measure.</output>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<input>hog, lets establish the east-west extent of the lake as a unit of measurement</input>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<action>do_establish_unit_of_measurement</action>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<debug>extent slot is eastWestExtent</debug>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<debug>eastWestExtent of drinkwater-lake is 2707.4</debug>
+<!-- Fri Sep 14 13:16:32 2007 -->
+<debug>Set unit of measure to 2707.4 meters</debug>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<input>look one unit south</input>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<output>Gunslinger, you didn't give me an anchor point.</output>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<input>hog, let's also establish the southern edge of the lake as our anchor point</input>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<action>do_establish_anchor_point1</action>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<debug>&lt;Description base: 'c-lake'&gt; is unambiguous; there's only one in the world.</debug>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<action>get_edge_point</action>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<debug>southLimit of drinkwater-lake is 2667,3657</debug>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<debug>Set anchor point to (2667, 3657, 0)</debug>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<output>Gunslinger, copy.</output>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<input>You should see a dirtball road</input>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<output>Gunslinger, contact dirtball.</output>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<input>look one unit south</input>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<debug>vector is [-2707.4000000000001, 0.0, 0.0] from anchor point</debug>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<debug>target coords are [-40.400000000000091, 3657.0, 0.0]</debug>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<input>go one unit east, and then one unit north</input>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<debug>vector is [2707.4000000000001, 2707.4000000000001, 0.0] from current position [-40.400000000000091, 3657.0, 0.0]</debug>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<debug>target coords are [2667.0, 6364.3999999999996, 0.0]</debug>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<input>look one unit west</input>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<action>do_look_based_on_unit_of_measure_no_anchor</action>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<debug>vector is [0.0, -2707.4000000000001, 0.0] from current position [2667.0, 6364.3999999999996, 0.0]</debug>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<debug>target coords are [2667.0, 3656.9999999999995, 0.0]</debug>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<output>Gunslinger, roger.</output>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<input>You should see a dirtball road</input>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<action>do_implied_call_contact</action>
+<!-- Fri Sep 14 13:16:33 2007 -->
+<output>Gunslinger, contact dirtball.</output>
+<!-- Fri Sep 14 13:16:34 2007 -->
+<input>hog, say status</input>
+<!-- Fri Sep 14 13:16:34 2007 -->
+<output>Gunslinger, I am egressing.</output>
+<!-- Fri Sep 14 13:16:34 2007 -->
+<input>r t b at this time</input>
+<!-- Fri Sep 14 13:16:34 2007 -->
+<output>Gunslinger, roger, I am returning to base.</output>
+<!-- Fri Sep 14 13:16:35 2007 -->
+<input>say status</input>
+<!-- Fri Sep 14 13:16:35 2007 -->
+<output>Gunslinger, I am returning to base.</output>
+<!-- Fri Sep 14 13:16:35 2007 -->
+<input>fly to the radio tower</input>
+<!-- Fri Sep 14 13:16:35 2007 -->
+<action>do_fly_to</action>
+<!-- Fri Sep 14 13:16:35 2007 -->
+<output>Gunslinger, I am going to fly to radio tower.</output>
+<!-- Fri Sep 14 13:16:35 2007 -->
+<input>establish at I.P. Bravo</input>
+<!-- Fri Sep 14 13:16:35 2007 -->
+<output>Gunslinger, roger, I am returning to base.</output>
+<!-- Fri Sep 14 13:16:35 2007 -->
+<input>look at the valley</input>
+<!-- Fri Sep 14 13:16:35 2007 -->
+<action>do_look_at</action>
+<!-- Fri Sep 14 13:16:35 2007 -->
+<output>Gunslinger, I am going to look at valley.</output>

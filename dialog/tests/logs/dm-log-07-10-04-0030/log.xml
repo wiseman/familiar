@@ -1,0 +1,24 @@
+<!-- Thu Oct  4 14:03:56 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Thu Oct  4 14:03:56 2007 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand xmlns:xsi="http://www.w3</pilotmodel-command>
+<!-- Thu Oct  4 14:03:57 2007 -->
+<pilotmodel-query>allQuery     queryId 0 /queryId   /allQuery      /pilotModelQueryContainer</pilotmodel-query>
+<!-- Thu Oct  4 14:03:58 2007 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="23"      elem</pilotmodel-reply>
+<!-- Thu Oct  4 14:04:00 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Thu Oct  4 14:04:00 2007 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand xmlns:xsi="http://www.w3</pilotmodel-command>
+<!-- Thu Oct  4 14:04:01 2007 -->
+<pilotmodel-query>allQuery     queryId 0 /queryId   /allQuery      /pilotModelQueryContainer</pilotmodel-query>
+<!-- Thu Oct  4 14:04:02 2007 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="27"      elem</pilotmodel-reply>
+<!-- Thu Oct  4 14:04:03 2007 -->
+<pilotmodel-command>lookDirectionCommand mode="absolute"     commandId 0 /commandId     inWorldCoord</pilotmodel-command>
+<!-- Thu Oct  4 14:04:03 2007 -->
+<pilotmodel-command>?xml version="1.0" encoding="ISO-8859-1"?   zoomCommand xmlns:xsi="http://www.w3</pilotmodel-command>
+<!-- Thu Oct  4 14:04:04 2007 -->
+<pilotmodel-query>allQuery     queryId 0 /queryId   /allQuery      /pilotModelQueryContainer</pilotmodel-query>
+<!-- Thu Oct  4 14:04:06 2007 -->
+<pilotmodel-reply>detailResponse     areKnown 1 /areKnown     entityBlobVector size="33"      elem</pilotmodel-reply>

@@ -1,0 +1,29 @@
+<fdl>
+
+  <frame id="c-feeling">
+  </frame>
+
+  <frame id="c-good">
+    <parent id="c-feeling"/>
+
+    <phrase>good</phrase>
+    <phrase>well</phrase>
+    <phrase>fine</phrase>
+  </frame>
+
+  <frame id="c-bad">
+    <parent id="c-feeling"/>
+
+    <phrase>bad</phrase>
+    <phrase>sick</phrase>
+    <phrase>not good</phrase>
+  </frame>
+
+  <frame id="c-status-assertion">
+    <constraint slot="status" type="c-feeling"/>
+
+    <indexset>i feel {status}</indexset>
+    <indexset>i am {status}</indexset>
+  </frame>
+
+</fdl>
