@@ -10,6 +10,7 @@ class DiscTree:
     self.index = index
     self.parent = parent
     self.var_test = var_test
+    assert var_test
     self.leaves = []
     self.interiors = []
     self.ints = {}
@@ -88,7 +89,7 @@ class DiscTree:
       next_index = path[0]
       next_disc_tree = self.child_matching_index(next_index)
       if next_disc_tree == None:
-        next_disc_tree = DiscTree(next_index, self)
+        next_disc_tree = DiscTree(next_index, self, var_test=self.var_test)
         self.interiors.append(next_disc_tree)
         self.ints[next_disc_tree.index] = next_disc_tree
       next_disc_tree.put(path[1:], leaf)

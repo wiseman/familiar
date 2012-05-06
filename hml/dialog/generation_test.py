@@ -1,14 +1,15 @@
-from energid import logic
-from energid import generation
 import unittest
-from testutils import DMTestCase
+
+from hml.dialog import logic
+from hml.dialog import generation
+from hml.dialog import test_utils
 
 
 def add_template(kb, concept, template):
   kb.tell(logic.expr(generation.GENERATION_PROPOSITION)(logic.expr(concept), logic.Expr(template)))
   
 
-class TestCase(DMTestCase):
+class TestCase(test_utils.DMTestCase):
 
   def testGeneration(self):
     """Tests natural language generation"""

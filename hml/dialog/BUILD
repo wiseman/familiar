@@ -1,8 +1,8 @@
 py_unit_test(name='dialog',
-             srcs=['fdl_test.py',
-                   'generation_test.py',
-                   'logic_test.py',
+             srcs=['logic_test.py',
                    'parser_test.py',
-                   'pilotmodel_test.py',
+                   'generation_test.py',
+                   'fdl_test.py',
                    'speechutil_test.py',
-                   'test_utils.py'])
+                   'pilotmodel_test.py',
+                   ])

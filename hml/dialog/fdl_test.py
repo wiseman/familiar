@@ -1,8 +1,10 @@
+import os.path
+import unittest
+
 from hml.dialog import parser
 from hml.dialog import logic
 from hml.dialog import fdl
 from hml.dialog import generation
-import unittest
 from hml.dialog import test_utils
 
     
@@ -119,7 +121,10 @@ class FDLTest (test_utils.DMTestCase):
     icp_parser = parser.IndexedConceptParser(kb)
     fdl_handler = fdl.BaseFrameHandler(kb, cp_parser, icp_parser)
     fdl_parser = fdl.FDLParser(fdl_handler)
-    self.assertEqual(fdl_parser.parse_fdl_file("test.fdl"), True)
+    test_fdl_path = os.path.join(
+      os.path.dirname(__file__),
+      'test.fdl')
+    self.assertEqual(fdl_parser.parse_fdl_file(test_fdl_path), True)
     self.assertParseEqual(cp_parser.parse("hog let us restart the talk on"),
                           [logic.Description("c-action-request",
                                              {"action": "c-restart",

@@ -75,7 +75,7 @@ class PropKB(KB):
   """
 
   def __init__(self):
-    self.tree = disctree.make_root_disc_tree()
+    self.tree = disctree.make_root_disc_tree(var_test=is_variable)
     self.functions = {}   # Memory functions
     self.fluents = []     # Fluent relations
     self.heritable = []   # Heritable (default) relations

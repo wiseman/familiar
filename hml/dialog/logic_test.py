@@ -1,10 +1,10 @@
-from energid import logic
-from energid import disctree
 import unittest
-from testutils import DMTestCase
+
+from hml.dialog import logic
+from hml.dialog import test_utils
 
 
-class TestCase(DMTestCase):
+class TestCase(test_utils.DMTestCase):
 
   def testSimpleAssertions(self):
     """Tests simple propositional assertions."""

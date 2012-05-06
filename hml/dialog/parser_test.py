@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
-from energid import parser
-from energid import logic
-import unittest
-from testutils import DMTestCase
 import pprint
+import unittest
 
-class ConceptualParserTest (DMTestCase):
+from hml.dialog import parser
+from hml.dialog import logic
+from hml.dialog import test_utils
+
+class ConceptualParserTest(test_utils.DMTestCase):
 
   def testPhrasalPatternParser(self):
     p = parser.PhrasalPatternParser()
@@ -427,7 +428,7 @@ class ConceptualParserTest (DMTestCase):
 
 
 
-class ICPTest (DMTestCase):
+class ICPTest(test_utils.DMTestCase):
 
   def testIndexSetPatternParser(self):
     """Test indexset parsing."""
