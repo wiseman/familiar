@@ -3,10 +3,10 @@ from hml.dialog import logic
 from hml.dialog import fdl
 from hml.dialog import generation
 import unittest
-from testutils import DMTestCase
+from hml.dialog import test_utils
 
     
-class FDLTest (DMTestCase):
+class FDLTest (test_utils.DMTestCase):
 
   def testStringParsing(self):
     xml = """

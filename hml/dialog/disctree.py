@@ -1,16 +1,15 @@
 """Implementation of discrimination trees."""
 
-import energid.logic
-
 import sys
 
 
 class DiscTree:
   """A node of a discrimination tree."""
   
-  def __init__(self, index, parent):
+  def __init__(self, index, parent, var_test=None):
     self.index = index
     self.parent = parent
+    self.var_test = var_test
     self.leaves = []
     self.interiors = []
     self.ints = {}
@@ -30,6 +29,9 @@ class DiscTree:
     print len(self.interiors), len(self.leaves)
     for i in self.interiors:
       i.printt(depth + 1)
+
+  def is_variable(self, sym):
+    return self.var_test(sym)
     
   def retrieve(self, path):
     """Yields all propositions in this tree matching the specified
@@ -44,7 +46,8 @@ class DiscTree:
       # being a completely generic container.  It turns out to be
       # about 10% faster to keep this specific and avoid an indirect
       # funcall.
-      if energid.logic.is_variable(next_index):
+      if self.is_variable(next_index):
+      #if logic.logic.is_variable(next_index):
         for leaf in self.retrieve_variable(path[1:]):
           yield leaf
       else:
@@ -116,7 +119,7 @@ class DiscTree:
     
     
 
-def make_root_disc_tree():
+def make_root_disc_tree(var_test=None):
   """Creates and returns a brand new root node."""
-  return DiscTree("ROOT", None)
+  return DiscTree("ROOT", None, var_test=var_test)
 

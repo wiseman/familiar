@@ -11,10 +11,10 @@ Will Fitzgerald's thesis "Building Embedded Conceptual Parsers".
 """
 
 
-from energid import logic
-from energid import fdl
-from energid import utils
-from energid import stemmer
+from hml.dialog import logic
+from hml.dialog import fdl
+from hml.dialog import utils
+from hml.dialog import stemmer
 
 import time
 import re

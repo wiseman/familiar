@@ -1,7 +1,7 @@
 """Implements a parser and reader for the Frame Description Language (FDL)."""
 
-from energid import logic
-from energid import iomanager
+from hml.dialog import logic
+from hml.dialog import iomanager
 import time
 import pprint
 import os.path

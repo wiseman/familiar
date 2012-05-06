@@ -1,4 +1,4 @@
-from energid import logic
+from hml.dialog import logic
 
 GENERATION_PROPOSITION = "$generate"
 

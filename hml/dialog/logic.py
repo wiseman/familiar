@@ -1,9 +1,9 @@
 """Implements propositional databases and logical expressions."""
 
-from energid import disctree
+from hml.dialog import disctree
 
 import re
-from energid.utils import *
+from hml.dialog.utils import *
 import pprint
 
 

@@ -1,5 +1,6 @@
 import unittest
-from energid import logic
+
+from hml.dialog import logic
 
 
 def cookBindings(b):
