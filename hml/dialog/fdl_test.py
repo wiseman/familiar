@@ -1,7 +1,7 @@
-from energid import parser
-from energid import logic
-from energid import fdl
-from energid import generation
+from hml.dialog import parser
+from hml.dialog import logic
+from hml.dialog import fdl
+from hml.dialog import generation
 import unittest
 from testutils import DMTestCase
 
