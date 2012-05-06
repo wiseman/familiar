@@ -2,6 +2,7 @@ import logging
 import os.path
 import unittest
 
+from hml.base import testrunner
 from hml.dialog import parser
 from hml.dialog import logic
 from hml.dialog import fdl
@@ -142,7 +143,4 @@ class FDLTest (test_utils.DMTestCase):
 
 
 if __name__ == "__main__":
-  print "FDL tests:"
-  format = '%(levelname)s:%(module)s:%(funcName)s:%(lineno)d: %(message)s'
-  logging.basicConfig(level=logging.DEBUG, format=format)
-  unittest.main()
+  testrunner.TestApp().run()

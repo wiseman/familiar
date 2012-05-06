@@ -43,11 +43,12 @@ class PythonTestTarget(TestTarget):
     TestTarget.__init__(self, build_file=build_file, name=name, srcs=srcs,
                         deps=deps)
 
-  def run_tests(self):
+  def run_tests(self, args):
     for src in self.srcs:
       test_runner_path = os.path.join(os.path.dirname(self.build_file),
                                       src)
-      subprocess.call(['python', test_runner_path])
+      subprocess.call(['python', test_runner_path,
+                       '--log_level', args.log_level])
 
 
 _build_file = None
@@ -146,6 +147,7 @@ class TestCommand(Command):
       help='The target package spec to test on.')
     subparser.add_argument(
       '-l', '--log_level',
+      dest='log_level',
       choices=['DEBUG', 'INFO', 'ERROR'],
       help='The logging level to run tests with.')
     subparser.set_defaults(func=self)
@@ -156,7 +158,7 @@ class TestCommand(Command):
     for target_name in expand_package_spec(args.target_spec):
       target = get_target(target_name)
       if isinstance(target, TestTarget):
-        target.run_tests()
+        target.run_tests(args)
 
 
 Command.register('test', TestCommand())
