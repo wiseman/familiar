@@ -149,6 +149,7 @@ class TestCommand(Command):
       '-l', '--log_level',
       dest='log_level',
       choices=['DEBUG', 'INFO', 'ERROR'],
+      default='INFO',
       help='The logging level to run tests with.')
     subparser.set_defaults(func=self)
 
