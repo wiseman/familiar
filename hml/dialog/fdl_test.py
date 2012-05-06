@@ -143,5 +143,6 @@ class FDLTest (test_utils.DMTestCase):
 
 if __name__ == "__main__":
   print "FDL tests:"
-  logging.basicConfig(level=logging.DEBUG)
+  format = '%(levelname)s:%(module)s:%(lineno)d: %(message)s'
+  logging.basicConfig(level=logging.DEBUG, format=format)
   unittest.main()
