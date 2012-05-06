@@ -144,6 +144,10 @@ class TestCommand(Command):
       'target_spec',
       metavar='<target_spec>',
       help='The target package spec to test on.')
+    subparser.add_argument(
+      '-l', '--log_level',
+      choices=['DEBUG', 'INFO', 'ERROR'],
+      help='The logging level to run tests with.')
     subparser.set_defaults(func=self)
 
   def execute(self, args):
