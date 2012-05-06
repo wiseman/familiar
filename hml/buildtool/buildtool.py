@@ -1,3 +1,4 @@
+import argparse
 import os.path
 import subprocess
 import sys
@@ -106,20 +107,50 @@ def dir_of_package(package_spec):
   return directory
 
 
-@buildtool_command
-def test(package_spec):
-  for target_name in expand_package_spec(package_spec):
+def test_command(args):
+  load_build_file_for_dir(
+    dir_of_package(args.target_spec))
+  for target_name in expand_package_spec(args.target_spec):
     target = get_target(target_name)
     if isinstance(target, TestTarget):
       target.run_tests()
 
 
+def setup_arg_parser():
+  arg_parser = argparse.ArgumentParser(
+    description='Build tool.')
+#  arg_parser.add_argument(
+#    'command',
+#    metavar='<command>',
+#    help='The build command to run.')
+  arg_parser.add_argument('-v', '--verbose', action='store_true',
+                          help='Run in verbose mode.')
+
+  subparsers = arg_parser.add_subparsers(
+    title='Commands',
+    description='valid subcommands',
+    help='Command help')
+  parser_test = subparsers.add_parser('test', help='test help')
+  parser_test.add_argument(
+    'target_spec',
+    metavar='<target_spec>',
+    help='The target package spec to test on.')
+  parser_test.set_defaults(func=test_command)
+
+  parser_build = subparsers.add_parser('build', help='build help')
+  parser_build.add_argument(
+    'target_spec',
+    metavar='<target_spec>',
+    help='The target package spec to build on.')
+  parser_build.set_defaults(func=test_command)
+
+  return arg_parser
+
+
 def main():
-  command_name = sys.argv[1]
-  target_spec = sys.argv[2]
-  load_build_file_for_dir(
-    dir_of_package(target_spec))
-  command = get_command(command_name)(target_spec)
+  arg_parser = setup_arg_parser()
+  args = arg_parser.parse_args()
+  args.func(args)
 
 
 if __name__ == '__main__':
