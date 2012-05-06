@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 import pprint
-import unittest
 
+from hml.base import unittest
 from hml.dialog import parser
 from hml.dialog import logic
 from hml.dialog import test_utils

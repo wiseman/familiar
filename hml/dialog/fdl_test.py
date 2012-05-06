@@ -1,4 +1,4 @@
-ximport logging
+import logging
 import os.path
 
 from hml.base import unittest

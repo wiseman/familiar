@@ -1,11 +1,10 @@
-import unittest
 import difflib
 
+from hml.base import unittest
 from hml.dialog import logic
 from hml.dialog import speechutil
 from hml.dialog import parser
 from hml.dialog import fdl
-
 
 
 class TestCase(unittest.TestCase):

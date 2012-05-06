@@ -1,6 +1,6 @@
 import unittest
 
-from hml.base import testrunner
+from hml.base import unittest
 from hml.dialog import logic
 from hml.dialog import test_utils
 
@@ -507,4 +507,4 @@ class TestCase(test_utils.DMTestCase):
 
 
 if __name__ == "__main__":
-  testrunner.TestApp().run()
+  unittest.main()

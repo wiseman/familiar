@@ -1,5 +1,4 @@
-import unittest
-
+from hml.base import unittest
 from hml.dialog import logic
 from hml.dialog import generation
 from hml.dialog import test_utils

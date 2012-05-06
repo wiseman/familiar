@@ -1,8 +1,9 @@
+from __future__ import absolute_import
+
 import argparse
 import logging
 import sys
 import unittest
-
 
 TestCase = unittest.TestCase
 
@@ -37,7 +38,7 @@ class TestApp(object):
     logging.basicConfig(
       level=get_logging_level_by_name(args.log_level),
       format='%(levelname)s:%(module)s:%(lineno)d: %(message)s')
-    unittest.main(argv=[sys.argv[0]])
+    unittest.TestProgram(argv=[sys.argv[0]])
 
 
 main = TestApp
