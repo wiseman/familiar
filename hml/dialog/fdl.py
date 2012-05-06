@@ -1,14 +1,15 @@
 """Implements a parser and reader for the Frame Description Language (FDL)."""
 
+import logging
+import os.path
+import pprint
+import sys
+import time
+from xml.dom import minidom
+from xml.parsers import expat
+
 from hml.dialog import logic
 from hml.dialog import iomanager
-import time
-import pprint
-import os.path
-
-import sys
-from xml.dom import minidom
-import xml.parsers.expat
 
 class CPTest:
   "A test for the ConceptualParser."
@@ -56,29 +57,26 @@ class FDLParser:
         rc = rc + child.data
     return rc
 
-  def parse_fdl_file(self, path, debug = 0):
+  def parse_fdl_file(self, path):
     # record the file we started with
     self.loaded_files = [os.path.realpath(path)]
     # parse and run
     doc = minidom.parse(path).documentElement
-    return self.parse_fdl_doc(doc, debug, path)
+    return self.parse_fdl_doc(doc, path)
     
-  def parse_fdl_string(self, string, debug = 0):
+  def parse_fdl_string(self, string):
     doc = minidom.parseString(string).documentElement
-    return self.parse_fdl_doc(doc, debug)
+    return self.parse_fdl_doc(doc)
 
-  def parse_fdl_doc(self, doc, debug, source_file = ""):
+  def parse_fdl_doc(self, doc, source_file = ""):
     start_time = time.time()
-    self.debug = debug
 
     # call helper function.
     self.__parse_fdl_doc_helper(doc, source_file)
     
     end_time = time.time()
 
-    if debug > 0:
-      print "Processed %s files." % (len(self.loaded_files),)
-
+    logging.info('Processed %s files.' % (len(self.loaded_files),))
     return True
 
 
@@ -92,25 +90,21 @@ class FDLParser:
       print "\nWARNING: Include file \"%s\" does not exist, knowledge may be incomplete." % (raw_file,)
       print "         Expected location: \"%s\"\n" % (include_file,)
     elif (include_file in self.loaded_files):
-      if self.debug > 0:
-        print "Skipping include file \"%s\" (already processed)." % (raw_file,)
-
+      logging.info('Skipping include file "%s" (already processed).' % (raw_file,))
     else:
-      if self.debug > 0:
-        print "Processing include file: \"%s\"" % (raw_file,)
+      logging.info('Processing include file: \"%s\"' % (raw_file,))
       # record new file
       self.loaded_files += [include_file]
       # parse it
       try:
         new_doc = minidom.parse(include_file).documentElement
-      except xml.parsers.expat.ExpatError, e:
+      except expat.ExpatError, e:
         raise str("Error while parsing '%s': %s" % (include_file, e))
       self.__parse_fdl_doc_helper(new_doc, merge_file)
 
 
   def handle_lexicon(self, lexicon):
-    if self.debug > 0:
-      print "Processing lexicon"
+    logging.info('Processing lexicon')
 
     lexemes = []
     for lexeme_node in lexicon.getElementsByTagName("lexeme"):
@@ -146,14 +140,12 @@ class FDLParser:
   def handle_frame_parent(self, parent_node):
     parent = parent_node.attributes["id"].value
     is_instance = False
-    if parent_node.hasAttribute("instanceof") and parent_node.attributes["instanceof"].value == "true":
-      if self.debug > 1:
-        print "  is an instance"
+    if (parent_node.hasAttribute("instanceof") and
+        parent_node.attributes["instanceof"].value == "true"):
+      logging.debug(' is an instance')
       is_instance = True
-    if self.debug > 1:
-      print "  Parent is %s" % (parent,)
-    if self.debug > 1:
-      print "  Is an instance of %s" % (parent,)
+    logging.info('Parent is %s' % (parent,))
+    logging.info('  Is an instance of %s' % (parent,))
     return [parent, is_instance]
     
 
@@ -166,8 +158,7 @@ class FDLParser:
       slot = slot_node.attributes["name"].value
       value = slot_node.attributes["value"].value
       slots[slot] = value
-    if self.debug > 1:
-      print "  Slots are %s" % (slots,)
+    logging.info('  Slots are %s' % (slots,))
     return slots
 
 
@@ -180,8 +171,7 @@ class FDLParser:
       slot = constraint_node.attributes["slot"].value
       type = constraint_node.attributes["type"].value
       constraints[slot] = type
-    if self.debug > 1:
-      print "  Constraints are %s" % (constraints,)
+    logging.info('  Constraints are %s', constraints)
     return constraints
 
 
@@ -189,8 +179,7 @@ class FDLParser:
     phrases = []
     for phrase_node in phrase_nodes:
       phrases.append(self.get_text(phrase_node))
-    if self.debug > 1:
-      print "  Phrases are %s" % (phrases,)
+    logging.info('  Phrases are %s' % (phrases,))
     return phrases
 
 
@@ -198,8 +187,7 @@ class FDLParser:
     indexsets = []
     for indexset_node in indexset_nodes:
       indexsets.append(self.get_text(indexset_node))
-    if self.debug > 1:
-      print "  Index sets are %s" % (indexsets,)
+    logging.info('  Index sets are %s' % (indexsets,))
     return indexsets
 
 
@@ -207,8 +195,7 @@ class FDLParser:
     generates = []
     for generate_node in generate_nodes:
       generates.append(self.get_text(generate_node))
-    if self.debug > 1:
-      print "  Generation templates are %s" % (generates,)
+    logging.info('  Generation templates are %s' % (generates,))
     return generates
     
 
@@ -236,9 +223,7 @@ class FDLParser:
 
   def handle_frame(self, frame):
     class_name = frame.attributes["id"].value
-
-    if self.debug > 0:
-      print "Processing frame %s" % (class_name,)
+    logging.info('Processing frame %s' % (class_name,))
 
     # Handle <parent>
     parent_nodes = frame.getElementsByTagName("parent")

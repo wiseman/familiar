@@ -1,3 +1,4 @@
+import logging
 import os.path
 import unittest
 
@@ -142,4 +143,5 @@ class FDLTest (test_utils.DMTestCase):
 
 if __name__ == "__main__":
   print "FDL tests:"
+  logging.basicConfig(level=logging.DEBUG)
   unittest.main()
