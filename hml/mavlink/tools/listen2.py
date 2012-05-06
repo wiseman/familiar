@@ -8,6 +8,8 @@ import string
 import sys
 import time
 
+import hml
+
 import mavlink
 import mavutil
 
