@@ -1,5 +1,5 @@
-from energid import utils
-from energid import logic
+from hml.dialog import utils
+from hml.dialog import logic
 
 import socket
 import struct

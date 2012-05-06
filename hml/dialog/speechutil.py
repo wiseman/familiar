@@ -3,10 +3,10 @@
 from an FDL file.
 """
 
-from energid import parser
-from energid import logic
-from energid import fdl
-from energid import utils
+from hml.dialog import parser
+from hml.dialog import logic
+from hml.dialog import fdl
+from hml.dialog import utils
 
 import sys
 import time

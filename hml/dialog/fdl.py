@@ -58,6 +58,7 @@ class FDLParser:
     return rc
 
   def parse_fdl_file(self, path):
+    logging.info('Parsing FDL file %s', path)
     # record the file we started with
     self.loaded_files = [os.path.realpath(path)]
     # parse and run
@@ -65,6 +66,7 @@ class FDLParser:
     return self.parse_fdl_doc(doc, path)
     
   def parse_fdl_string(self, string):
+    logging.info('Parsing FDL string.')
     doc = minidom.parseString(string).documentElement
     return self.parse_fdl_doc(doc)
 

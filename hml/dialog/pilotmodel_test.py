@@ -1,5 +1,6 @@
-from energid import pilotmodel
 import unittest
+
+from hml.dialog import pilotmodel
 
 
 ETA_EVENT_1 = """

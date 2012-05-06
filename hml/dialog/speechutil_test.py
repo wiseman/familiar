@@ -1,10 +1,11 @@
-from energid import logic
-from energid import speechutil
-from energid import parser
-from energid import fdl
-
 import unittest
 import difflib
+
+from hml.dialog import logic
+from hml.dialog import speechutil
+from hml.dialog import parser
+from hml.dialog import fdl
+
 
 
 class TestCase(unittest.TestCase):
