@@ -9,56 +9,72 @@ class TestCase(test_utils.DMTestCase):
 
   def testSimpleAssertions(self):
     """Tests simple propositional assertions."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("color(cat, black)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, black)")), [{}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(cat, black)")),
+      [{}])
     kb.tell(logic.expr("age(cat, 35)"))
     self.assertAllBindingsEqual(kb.ask_all(logic.expr("age(cat, 35)")), [{}])
 
-
   def testSimpleAssertions2(self):
     """Tests simple propositional assertions."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("color(cat, coat, black)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, coat, black)")), [{}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(cat, coat, black)")),
+      [{}])
     kb.tell(logic.expr("age(cat, toy, 35)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("age(cat, toy, 35)")), [{}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("age(cat, toy, 35)")),
+      [{}])
     kb.tell(logic.expr("color(cat, mitten, left, black)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, mitten, left, black)")), [{}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(cat, mitten, left, black)")),
+      [{}])
     kb.tell(logic.expr("age(cat, toy, top, 35)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("age(cat, toy, top, 35)")), [{}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("age(cat, toy, top, 35)")),
+      [{}])
     kb.tell(logic.expr("age(cat, toy, top, x, y, z, 35)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("age(cat, toy, top, x, y, z, 35)")), [{}])
-
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("age(cat, toy, top, x, y, z, 35)")),
+      [{}])
 
   def testSimpleErasures(self):
     """ Tests simple variable-less retractions."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("color(cat, black)"))
     kb.tell(logic.expr("age(cat,35)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, black)")), [{}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(cat, black)")),
+      [{}])
     kb.retract(logic.expr("color(cat, black)"))
-    self.assertBindingsEqual(kb.ask(logic.expr("color(cat, black)")), False)
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, black)")), [])
-
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("color(cat, black)")),
+      False)
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(cat, black)")),
+      [])
 
   def testSimpleErasures2(self):
     """ Tests simple variable-less retractions."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("color(cat, coat, black)"))
     kb.tell(logic.expr("age(cat, toy, 35)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, coat, black)")), [{}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(cat, coat, black)")),
+      [{}])
     kb.retract(logic.expr("color(cat, coat, black)"))
-    self.assertBindingsEqual(kb.ask(logic.expr("color(cat, coat, black)")), False)
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, coat, black)")), [])
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("color(cat, coat, black)")),
+      False)
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(cat, coat, black)")),
+      [])
 
   def testErasures(self):
     """Tests retractions with variables."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("has(john, cat)"))
     kb.tell(logic.expr("has(john, car)"))
@@ -71,7 +87,6 @@ class TestCase(test_utils.DMTestCase):
 
   def testErasures2(self):
     """Tests retractions with variables."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("has(john, bag, cat)"))
     kb.tell(logic.expr("has(john, bag, car)"))
@@ -83,58 +98,85 @@ class TestCase(test_utils.DMTestCase):
     self.assertAllBindingsEqual(kb.ask_all(logic.expr("has(john, bin, ?t)")),
                                 [{"?t": "cat"}, {"?t": "car"}])
     self.assertAllBindingsEqual(kb.ask_all(logic.expr("has(john, ?t)")), [])
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("has(cat, bag, toy)")), [{}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("has(cat, bag, toy)")),
+      [{}])
     kb.tell(logic.expr("has(john, bag, cat)"))
     kb.tell(logic.expr("has(john, bag, car)"))
     kb.retract(logic.expr("has(john, ?t, cat)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("has(john, ?t, cat)")), [])
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("has(john, ?t, car)")), [{"?t": "bin"}, {"?t": "bag"}])
-    
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("has(john, ?t, cat)")),
+      [])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("has(john, ?t, car)")),
+      [{"?t": "bin"}, {"?t": "bag"}])
+
   def testSimpleUnification(self):
     """Tests simple queries with variables."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("color(cat, black)"))
     kb.tell(logic.expr("age(cat, 35)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, ?x)")), [{"?x": "black"}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(cat, ?x)")),
+      [{"?x": "black"}])
 
   def testSimpleUnification2(self):
     """Tests simple queries with variables."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("color(cat, fur, black)"))
     kb.tell(logic.expr("age(cat, mental, 3)"))
     self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, ?x)")), [])
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, fur, ?x)")), [{"?x": "black"}])
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("age(cat, ?type, 3)")), [{"?type": "mental"}])
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("age(cat, ?type, 4)")), [])
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(cat, ?thing, ?c)")),
-                                [{"?c": "black", "?thing": "fur"}])
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(?a, ?b, ?c)")),
-                                [{"?a": "cat", "?b": "fur", "?c": "black"}])
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("color(?a, ?b, ?c, ?d)")), [])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(cat, fur, ?x)")),
+      [{"?x": "black"}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("age(cat, ?type, 3)")),
+      [{"?type": "mental"}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("age(cat, ?type, 4)")),
+      [])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(cat, ?thing, ?c)")),
+      [{"?c": "black", "?thing": "fur"}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(?a, ?b, ?c)")),
+      [{"?a": "cat", "?b": "fur", "?c": "black"}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("color(?a, ?b, ?c, ?d)")),
+      [])
 
   def testConjunction(self):
     """Tests conjunctive queries."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("color(cat, black)"))
     kb.tell(logic.expr("age(cat, 35)"))
     kb.tell(logic.expr("name(cat, ted)"))
-    self.assertBindingsEqual(kb.ask(logic.expr("(color(cat, black) & age(cat, 35))")), {})
-    self.assertBindingsEqual(kb.ask(logic.expr("(color(cat, black) & (age(cat, 35) & name(cat, ted)))")), {})
-    self.assertBindingsEqual(kb.ask(logic.expr("(color(cat, white) & age(cat, 35))")), False)
-    self.assertBindingsEqual(kb.ask(logic.expr("(color(cat, black) & age(cat, 34))")), False)
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("(color(cat, ?c) & age(cat, ?a))")),
-                                [{"?a": "35", "?c": "black"}])
-    self.assertBindingsEqual(kb.ask(logic.expr("(color(cat, ?c) & age(cat, ?c))")), False)
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(color(cat, black) & age(cat, 35))")),
+      {})
+    self.assertBindingsEqual(
+      kb.ask(logic.expr(
+        "(color(cat, black) & (age(cat, 35) & name(cat, ted)))")),
+      {})
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(color(cat, white) & age(cat, 35))")),
+      False)
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(color(cat, black) & age(cat, 34))")),
+      False)
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("(color(cat, ?c) & age(cat, ?a))")),
+      [{"?a": "35", "?c": "black"}])
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(color(cat, ?c) & age(cat, ?c))")),
+      False)
     kb.tell(logic.expr("color(car, black)"))
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("(color(cat, ?b) & color(car, ?b))")),
-                                [{"?b": "black"}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("(color(cat, ?b) & color(car, ?b))")),
+      [{"?b": "black"}])
 
   def testFunctions(self):
     """Tests memory functions."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("color(cat, black)"))
     kb.tell(logic.expr("color(car, black)"))
@@ -145,56 +187,75 @@ class TestCase(test_utils.DMTestCase):
     self.assertBindingsEqual(kb.ask(logic.expr("(cat <=> Cat)")), False)
     self.assertBindingsEqual(kb.ask(logic.expr("(~(Cat <=> Cat))")), False)
     self.assertBindingsEqual(kb.ask(logic.expr("(~(Cat <=> Baseball))")), {})
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("((color(cat, ?x) & color(car, ?y)) & (?x <=> ?y))")),
-                                [{"?x": "black", "?y": "black"}])
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("((color(?a, black) & color(?b, black)) & (~(?a <=> ?b)))")),
-                                [{"?a": "cat", "?b": "car"}, {"?a": "car", "?b": "cat"}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr(
+        "((color(cat, ?x) & color(car, ?y)) & (?x <=> ?y))")),
+      [{"?x": "black", "?y": "black"}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr(
+        "((color(?a, black) & color(?b, black)) & (~(?a <=> ?b)))")),
+      [{"?a": "cat", "?b": "car"}, {"?a": "car", "?b": "cat"}])
 
     # Bind is another memory function; it just binds a variable.
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("Bind(?x, boo)")), [{"?x": "boo"}])
-    self.assertBindingsEqual(kb.ask(logic.expr("(Color(Cat, ?b) & Bind(?b, Boo))")), False)
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("Bind(?x, boo)")), [{"?x": "boo"}])
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(Color(Cat, ?b) & Bind(?b, Boo))")), False)
 
     # Shouldn't be able to assert a 'Bind'.
     self.assertRaises(ValueError, lambda: kb.tell("Bind(?x, boo)"))
 
   def testDisjunction(self):
     """Tests disjunctive queries."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("Color(Cat, Black)"))
     kb.tell(logic.expr("Age(Cat, 35)"))
     kb.tell(logic.expr("Name(Cat, Ted)"))
-    self.assertBindingsEqual(kb.ask(logic.expr("(Color(Cat, Black) | Age(Cat, 35))")), {})
-    self.assertBindingsEqual(kb.ask(logic.expr("(Color(Cat, Black) | Age(Cat, 36))")), {})
-    self.assertBindingsEqual(kb.ask(logic.expr("(Color(Cat, White) | Age(Cat, 35))")), {})
-    self.assertBindingsEqual(kb.ask(logic.expr("(Color(Cat, White) | Age(Cat, 36))")), False)
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("(Color(Cat, ?c) | Age(Cat, ?a))")),
-                                [{"?c": "Black"}, {"?a": "35"}])
-    self.assertAllBindingsEqual(kb.ask_all(logic.expr("(Color(Cat, ?c) | Age(Cat, 36))")),
-                                [{"?c": "Black"}])
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(Color(Cat, Black) | Age(Cat, 35))")), {})
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(Color(Cat, Black) | Age(Cat, 36))")), {})
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(Color(Cat, White) | Age(Cat, 35))")), {})
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(Color(Cat, White) | Age(Cat, 36))")), False)
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("(Color(Cat, ?c) | Age(Cat, ?a))")),
+      [{"?c": "Black"}, {"?a": "35"}])
+    self.assertAllBindingsEqual(
+      kb.ask_all(logic.expr("(Color(Cat, ?c) | Age(Cat, 36))")),
+      [{"?c": "Black"}])
 
   def testNot(self):
     """Gotta have NOT."""
-    
     kb = logic.PropKB()
     kb.tell(logic.expr("Color(Cat, Black)"))
     kb.tell(logic.expr("Age(Cat, 35)"))
     kb.tell(logic.expr("Name(Cat, Ted)"))
-    self.assertBindingsEqual(kb.ask(logic.expr("(Color(Cat, Black) & (~Age(Cat, 36)))")), {})
-    self.assertBindingsEqual(kb.ask(logic.expr("(Color(Cat, Black) & (~Age(Cat, 35)))")), False)
-    self.assertBindingsEqual(kb.ask(logic.expr("((~Age(Cat, 35)) & Color(Cat, Black))")), False)
-    self.assertBindingsEqual(kb.ask(logic.expr("((~Age(Cat, 36)) & Color(Cat, Black))")), {})
-    self.assertBindingsEqual(kb.ask(logic.expr("(Color(Cat, Black) & (~Age(Cat, ?c)))")), False)
-    self.assertBindingsEqual(kb.ask(logic.expr("((~Age(Cat, ?c)) & Color(Cat, Black))")), False)
-    self.assertBindingsEqual(kb.ask(logic.expr("(Color(Cat, ?c) & (~Age(Cat, ?a)))")), False)
-    self.assertBindingsEqual(kb.ask(logic.expr("((~Age(Cat, ?a)) & Color(Cat, ?c))")), False)
-    self.assertBindingsEqual(kb.ask(logic.expr("((~Age(Cat, 36)) & Color(Cat, ?c))")),
-                             {"?c": "Black"})
-    self.assertBindingsEqual(kb.ask(logic.expr("(Color(Cat, ?c) & (~Age(Cat, 36)))")),
-                             {"?c": "Black"})
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(Color(Cat, Black) & (~Age(Cat, 36)))")), {})
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(Color(Cat, Black) & (~Age(Cat, 35)))")), False)
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("((~Age(Cat, 35)) & Color(Cat, Black))")), False)
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("((~Age(Cat, 36)) & Color(Cat, Black))")), {})
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(Color(Cat, Black) & (~Age(Cat, ?c)))")), False)
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("((~Age(Cat, ?c)) & Color(Cat, Black))")), False)
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(Color(Cat, ?c) & (~Age(Cat, ?a)))")), False)
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("((~Age(Cat, ?a)) & Color(Cat, ?c))")), False)
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("((~Age(Cat, 36)) & Color(Cat, ?c))")),
+      {"?c": "Black"})
+    self.assertBindingsEqual(
+      kb.ask(logic.expr("(Color(Cat, ?c) & (~Age(Cat, 36)))")),
+      {"?c": "Black"})
     self.assertBindingsEqual(kb.ask(logic.expr("~Age(Cat, 35)")), False)
     self.assertBindingsEqual(kb.ask(logic.expr("~Age(Cat, 36)")), {})
-    
 
   def testConDis(self):
     """Tests queries that combine conjunction and disjunction."""
