@@ -1,5 +1,6 @@
 import unittest
 
+from hml.base import testrunner
 from hml.dialog import logic
 from hml.dialog import test_utils
 
@@ -503,11 +504,7 @@ class TestCase(test_utils.DMTestCase):
     kb.tell(logic.expr("Foo(x, y) & Foo(x, y)"))
     self.assertAllBindingsEqual(kb.ask_all(logic.expr("Foo(x, ?y)")),
                                 [{"?y": "y"}])
-    
 
-    
 
-  
 if __name__ == "__main__":
-  print "Logic tests:"
-  unittest.main()
+  testrunner.TestApp().run()
