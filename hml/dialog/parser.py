@@ -1,4 +1,3 @@
-#!/usr/bin/env python2.5
 """Conceptual parser.
 
 This module provides two types of natural language parsers:
@@ -23,6 +22,7 @@ import sys
 from copy import copy
 import math
 import StringIO
+import types
 
 import pprint
 import getopt
@@ -64,7 +64,7 @@ class ParserBase:
   def parse(self, text, debug=0):
     """Parses a string.  Returns the list of valid parses."""
     logging.info('Parser %s parsing %r', self, text)
-    if not isinstance(text, basestring):
+    if not isinstance(text, types.StringTypes):
       raise TypeError('%s is not a string.' % (text,))
     results = self.parse_tokens(self.tokenize(text), debug)
     if len(results) > 1:
@@ -114,6 +114,7 @@ class ConceptualParser(ParserBase):
       self.stemmer = stemmer.PorterStemmer()
     self.install_syntax_functions()
     self.install_preparsers()
+    self.position = 0
     self.reset()
 
   def install_syntax_functions(self):
@@ -242,7 +243,7 @@ class ConceptualParser(ParserBase):
         new_token = self.stemmer.stem(token)
         logging.info('Stemmed %s into %s', token, new_token)
         token = new_token
-      if not isinstance(token, basestring):
+      if not isinstance(token, types.StringTypes):
         raise TypeError(
           'Only string tokens are allowed; %s is not a string.' % (token,))
       self.reference(token, self.position, self.position, 0.0)
@@ -272,7 +273,7 @@ class ConceptualParser(ParserBase):
     # References an item (a token string or a class).
     logging.info('Referencing item:%s start:%s end:%s value:%s',
                  item, start, end, value)
-    assert isinstance(item, basestring) or isinstance(item, logic.Description)
+    assert isinstance(item, types.StringTypes) or isinstance(item, logic.Description)
     if self.debug > 0:
       print "referencing %s" % ((item, start, end),)
     self.references.append([item, start, end, value])
@@ -403,8 +404,8 @@ class ConceptualParser(ParserBase):
       return spec
 
   def all_abstractions(self, item):
-    if isinstance(item, basestring):
-        return [item]
+    if isinstance(item, types.StringTypes):
+      return [item]
     elif isinstance(item, logic.Expr):
       return self.kb.all_parents(item)
     elif isinstance(item, logic.Description):
@@ -427,16 +428,16 @@ class Prediction:
   """Represents a prediction the parser has made about what the next
   token might be and what frame it is part of.
   """
-  def __init__(self, base, phrasal_pattern, start, next, slots, value):
+  def __init__(self, base, phrasal_pattern, start, next_pos, slots, value):
     self.base = base
     self.phrasal_pattern = phrasal_pattern
     self.start = start
-    self.next = next
+    self.next = next_pos
     self.slots = slots
     self.value = value
 
   def __repr__(self):
-    return "<%s base: %s start: %s next: %s slots: %s pattern: %s value: %s>" % \
+    return '<%s base:%s start:%s next:%s slots:%s pattern:%s value:%s>' % \
            (self.__class__.__name__, repr(self.base), self.start, self.next,
             repr(self.slots), self.phrasal_pattern, self.value)
 
@@ -452,7 +453,7 @@ class Prediction:
   def __setattr__(self, name, value):
     if name == 'phrasal_pattern':
       if (len(value) > 0 and
-          isinstance(value[0], basestring) and
+          isinstance(value[0], types.StringTypes) and
           value[0][0] != ':' and
           value[0][0] != '?'):
         tokens = self.tokenize(value[0])
@@ -468,8 +469,8 @@ class Prediction:
     else:
       raise AttributeError(name)
 
-  def tokenize(self, string):
-    return tokenize(string)
+  def tokenize(self, text):
+    return tokenize(text)
 
 
 def predictions_on(prediction_table, item):
@@ -507,7 +508,7 @@ def optional_prediction_generator(base, phrasal_pattern,
 def any_prediction_generator(base, phrasal_pattern,
                              start, position, slots):
   # Generates predictions for :any.
-  preds = map(lambda pat: Prediction(base, [pat,] + phrasal_pattern[1:],
+  preds = map(lambda pat: Prediction(base, [pat] + phrasal_pattern[1:],
                                      start, position, slots, 0.0),
               phrasal_pattern[0][1:])
   return preds
@@ -573,99 +574,107 @@ class PhrasalPatternParser:
     """Parses a string containing a phrasal pattern into a tree
     representation.
     """
-    phrasal_pattern = self.convert_parse_tree_to_phrasal_pattern(self.parse_tree(pattern))
+    assert isinstance(pattern, types.StringTypes), '%r must be a string' % (pattern,)
+    phrasal_pattern = self.convert_parse_tree_to_phrasal_pattern(
+      self.parse_tree(pattern))
     return phrasal_pattern
 
-  def parse_tree(self, input):
-    [object, position] = self.read_sequence(input, 0)
-    return object
+  def parse_tree(self, input_str):
+    [obj, unused_position] = self.read_sequence(input_str, 0)
+    return obj
 
-  def read(self, input, position):
-    position = self.skip_whitespace(input, position)
-    if position >= len(input):
+  def read(self, input_str, position):
+    position = self.skip_whitespace(input_str, position)
+    if position >= len(input_str):
       return [None, position]
 
-    char = input[position]
+    char = input_str[position]
     if char == '<':
-      return self.read_slot(input, position + 1)
+      return self.read_slot(input_str, position + 1)
     elif char == '{':
-      return self.read_slot(input, position + 1, "{", "}")
-    elif char == '?' and input[position+1] == ':':
-      return self.read_optional(input, position + 2)
+      return self.read_slot(input_str, position + 1, "{", "}")
+    elif char == '?' and input_str[position + 1] == ':':
+      return self.read_optional(input_str, position + 2)
     elif char == '[':
-      return self.read_choice(input, position + 1)
+      return self.read_choice(input_str, position + 1)
     elif self.is_symbol_char(char):
-      return self.read_token(input, position)
+      return self.read_token(input_str, position)
     else:
-      raise SyntaxError, \
-            "Illegal character '%s' at position %s in '%s'." % (char, position, repr(input))
+      raise SyntaxError('Illegal character %r at position %s in %r.' % (
+        char, position, input_str))
 
-  def read_sequence(self, input, position, terminators = ''):
+  def read_sequence(self, input_str, position, terminators=''):
     objects = []
-    [object, position] = self.read(input, position)
-    if object != None:
-      objects.append(object)
-    while object != None and (position >= len(input) or not input[position] in terminators):
-      [object, position] = self.read(input, position)
-      if object != None:
-        objects.append(object)
+    [obj, position] = self.read(input_str, position)
+    if obj != None:
+      objects.append(obj)
+    while (obj != None and
+           (position >= len(input_str)
+            or not input_str[position] in terminators)):
+      [obj, position] = self.read(input_str, position)
+      if obj != None:
+        objects.append(obj)
     return [self.make_sequence(objects), position]
 
-  def read_slot(self, input, position, slot_char='<', terminator='>'):
-    [symbol, position] = self.read_symbol(input, position)
-    position = self.skip_whitespace(input, position)
-    if not position < len(input):
-      raise SyntaxError, \
-            "Unterminated '%s' in phrasal pattern '%s'." % (slot_char, input)
-    if input[position] != terminator:
-      raise SyntaxError, \
-            "Unexpected character '%s' in slot reference in phrasal pattern '%s'" % (input[position], input)
+  def read_slot(self, input_str, position, slot_char='<', terminator='>'):
+    [symbol, position] = self.read_symbol(input_str, position)
+    position = self.skip_whitespace(input_str, position)
+    if not position < len(input_str):
+      raise SyntaxError('Unterminated %r in phrasal pattern %r.' % (
+        slot_char, input_str))
+    if input_str[position] != terminator:
+      raise SyntaxError('Unexpected character %r in slot reference in phrasal '
+                        'pattern %r' % (
+        input_str[position], input_str))
     return [self.make_slot(symbol), position + 1]
 
-  def read_optional(self, input, position):
-    [object, position] = self.read(input, position)
-    return [self.make_optional(object), position]
+  def read_optional(self, input_str, position):
+    [obj, position] = self.read(input_str, position)
+    return [self.make_optional(obj), position]
 
-  def read_choice(self, input, position):
+  def read_choice(self, input_str, position):
     choices = []
-    while input[position] != ']':
-      [object, position] = self.read_sequence(input, position, '|]')
-      position = self.skip_whitespace(input, position)
-      if position >= len(input):
-        raise SyntaxError, "Unterminated '[' in '%s'." % (input,)
-      if not (input[position] == ']' or input[position] == '|'):
-        raise SyntaxError, "Illegal character '%s' in '%s'." % (input[character], input)
-      if input[position] == '|':
-        position = position + 1
-      choices.append(object)
+    while input_str[position] != ']':
+      [obj, position] = self.read_sequence(input_str, position, '|]')
+      position = self.skip_whitespace(input_str, position)
+      if position >= len(input_str):
+        raise SyntaxError('Unterminated \'[\' in %r.' % (input_str,))
+      if not (input_str[position] == ']' or input_str[position] == '|'):
+        raise SyntaxError('Illegal character %r in %r.' % (
+          input_str[position], input_str))
+      if input_str[position] == '|':
+        position += 1
+      choices.append(obj)
     return [self.make_choice(choices), position + 1]
 
-  def read_symbol(self, input, position):
-    position = self.skip_whitespace(input, position)
+  def read_symbol(self, input_str, position):
+    position = self.skip_whitespace(input_str, position)
     start_position = position
-    while position < len(input) and self.is_symbol_char(input[position]):
-      position = position + 1
-    return [self.make_symbol(input[start_position:position]), position]
+    while (position < len(input_str) and
+           self.is_symbol_char(input_str[position])):
+      position += 1
+    return [self.make_symbol(input_str[start_position:position]), position]
 
-  def read_token(self, input, position):
-    position = self.skip_whitespace(input, position)
+  def read_token(self, input_str, position):
+    position = self.skip_whitespace(input_str, position)
     start_position = position
-    while position < len(input) and self.is_symbol_char(input[position]):
-      position = position + 1
-    return [self.make_symbol(self.maybe_stem(input[start_position:position])), position]
-    
+    while (position < len(input_str) and
+           self.is_symbol_char(input_str[position])):
+      position += 1
+    return [self.make_symbol(
+      self.maybe_stem(input_str[start_position:position])), position]
 
-  def make_symbol(self, string):
-    return [":symbol", string]
+  def make_symbol(self, text):
+    return [":symbol", text]
 
   def make_sequence(self, objects):
     if len(objects) == 1:
       return objects[0]
     else:
       return [":sequence"] + objects
-  
-  def make_optional(self, object):
-    return [":optional", object]
+
+  def make_optional(self, obj):
+    return [":optional", obj]
 
   def make_choice(self, objects):
     if len(objects) == 1:
@@ -676,8 +685,9 @@ class PhrasalPatternParser:
   def make_slot(self, symbol):
     return [":slotref", symbol]
 
-  def skip_whitespace(self, input, position):
-    while position < len(input) and (input[position] == ' ' or input[position] == '\n'):
+  def skip_whitespace(self, input_str, position):
+    while (position < len(input_str) and
+           (input_str[position] == ' ' or input_str[position] == '\n')):
       position = position + 1
     return position
 
@@ -685,10 +695,12 @@ class PhrasalPatternParser:
     return char in string.digits or char in string.letters or char in "-'?:"
 
   def convert_parse_tree_to_phrasal_pattern(self, tree):
-    type = tree[0]
-    if type == ':sequence':
-      return [":sequence"] + map(self.convert_parse_tree_to_phrasal_pattern, tree[1:])
-    elif type == ':symbol':
+    assert utils.issequence(tree), '%s must be a sequence.' % (tree,)
+    element_type = tree[0]
+    if element_type == ':sequence':
+      return [":sequence"] + map(
+        self.convert_parse_tree_to_phrasal_pattern, tree[1:])
+    elif element_type == ':symbol':
       if tree[1][0] == '?' and tree[1][1] in string.letters:
         return tree[1]
       else:
@@ -697,41 +709,42 @@ class PhrasalPatternParser:
           return symbols[0]
         else:
           return [":sequence"] + symbols
-    elif type == ':slotref':
+    elif element_type == ':slotref':
       symbol_str = tree[1][1]
       if symbol_str == ":head":
         return ":head"
       else:
         return "?" + symbol_str
-    elif type == ':optional':
-      return [":optional"] + map(self.convert_parse_tree_to_phrasal_pattern, tree[1:])
-    elif type == ':any':
-      return [":any"] + map(self.convert_parse_tree_to_phrasal_pattern, tree[1:])
+    elif element_type == ':optional':
+      return [":optional"] + map(
+        self.convert_parse_tree_to_phrasal_pattern, tree[1:])
+    elif element_type == ':any':
+      return [":any"] + map(
+        self.convert_parse_tree_to_phrasal_pattern, tree[1:])
     else:
-      raise SyntaxError, "Unknown element %s. (%s)" % (type, tree)
+      raise SyntaxError('Unknown element %s. (%s)' % (element_type, tree))
 
   def maybe_stem(self, token):
     if self.stemmer:
       return self.stemmer.stem(token)
     else:
       return token
-    
+
 
 class FrameHandler(fdl.BaseFrameHandler):
   def __init__(self, kb, cp, icp):
     fdl.BaseFrameHandler.__init__(self, kb, cp, icp)
     self.constraints = {}
-    
+
   def handle_constraints(self, frame, constraints):
     fdl.BaseFrameHandler.handle_constraints(self, frame, constraints)
     if len(constraints) > 0:
       self.constraints[frame['class_name']] = constraints
-      
+
 
 class InteractiveParserApp:
   """Lets you interactively play with a ConceptualParser."""
   def __init__(self, argv):
-    self.debug = 0
     self.run_tests = False
     self.transcript_path = None
     self.test_classes = []
@@ -747,17 +760,19 @@ class InteractiveParserApp:
         self.transcript_path = v
     self.fdl_file = args[0]
 
-  def run(self):
     self.kb = logic.PropKB()
     self.cp_parser = ConceptualParser(self.kb)
     self.icp_parser = IndexedConceptParser(self.kb)
     self.fdl_handler = FrameHandler(self.kb, self.cp_parser, self.icp_parser)
     self.fdl_parser = fdl.FDLParser(self.fdl_handler)
-    self.fdl_parser.parse_fdl_file(self.fdl_file, self.debug)
+
+  def run(self):
+    self.fdl_parser.parse_fdl_file(self.fdl_file)
 
     if self.run_tests:
       self.check_constraints()
-      self.fdl_parser.run_test_phrases(self.test_classes, self.cp_parser, self.icp_parser)
+      self.fdl_parser.run_test_phrases(
+        self.test_classes, self.cp_parser, self.icp_parser)
 
     if self.transcript_path:
       for line in open(self.transcript_path):
@@ -767,10 +782,9 @@ class InteractiveParserApp:
           parses = self.cp_parser.parse(line)
           print "  %s:" % (len(parses),)
           pprint.pprint(parses)
-        
+
     if not self.run_tests and not self.transcript_path:
       self.do_parse_loop()
-
 
   def check_constraints(self):
     def can_be_constraint(concept):
@@ -778,36 +792,39 @@ class InteractiveParserApp:
         if c in self.cp_parser.phrasal_patterns:
           return True
       return False
-  
+
     for class_name in self.fdl_handler.constraints:
       constraints = self.fdl_handler.constraints[class_name]
       for name in constraints:
-        type = constraints[name]
-        if not can_be_constraint(type):
-          print "Warning: %s has constraint '%s IS-A %s' which has no phrasal patterns" % \
-                (class_name, name, type)
+        constraint_type = constraints[name]
+        if not can_be_constraint(constraint_type):
+          logging.warn('Warning: %s has constraint \'%s IS-A %s\' which has '
+                       'no phrasal patterns',
+                       class_name, name, constraint_type)
         sv = self.kb.slot_value(logic.expr(class_name), logic.expr(name))
         if sv:
-          if not self.kb.isa(sv, logic.expr(type)):
-            print "Warning: %s has constraint '%s IS-A %s' which is not consistent with slot value %s" % \
-                  (class_name, name, type, sv)
+          if not self.kb.isa(sv, logic.expr(constraint_type)):
+            logging.warn('Warning: %s has constraint \'%s IS-A %s\' which is '
+                         'not consistent with slot value %s',
+                         class_name, name, constraint_type, sv)
 
   def do_parse_loop(self):
     while True:
       sys.stdout.write("\n\n? ")
-      input = sys.stdin.readline()
-      if len(input) == 0:
+      input_line = sys.stdin.readline()
+      if len(input_line) == 0:
         break
-      if input[0] == '#':
-        print "CP: " + self.cp_parser.predictions_on(eval(input[1:]))
-        print "ICP: " + self.icp_parser.predictions_on(eval(input[1:]))
-      elif input[0] == '%':
+      if input_line[0] == '#':
+        print "CP: " + self.cp_parser.predictions_on(eval(input_line[1:]))
+        print "ICP: " + self.icp_parser.predictions_on(eval(input_line[1:]))
+      elif input_line[0] == '%':
         print "CP: " + self.cp_parser.anytime_predictions
         print "ICP: " + self.icp_parser.anytime_predictions
       else:
-        print "\nCP:  ==> \n%s" % pprint.pformat((self.cp_parser.parse(input, debug=self.debug),))
-        print "\nICP: ==> \n%s" % pprint.pformat((self.icp_parser.parse(input, debug=self.debug),))
-
+        print "\nCP:  ==> \n%s" % pprint.pformat(
+          (self.cp_parser.parse(input_line, debug=self.debug),))
+        print "\nICP: ==> \n%s" % pprint.pformat(
+          (self.icp_parser.parse(input_line, debug=self.debug),))
 
 
 # --------------------------------------------------
@@ -816,8 +833,8 @@ class InteractiveParserApp:
 
 # Only parse results with a score greater than this will be returned.
 CUTOFF_ICP_SCORE = -1000000
-MIN_PROBABILITY = -100.0/CUTOFF_ICP_SCORE
-MIN_INFORMATION_VALUE = -100.0/CUTOFF_ICP_SCORE
+MIN_PROBABILITY = -100.0 / CUTOFF_ICP_SCORE
+MIN_INFORMATION_VALUE = -100.0 / CUTOFF_ICP_SCORE
 
 
 class IndexedConceptParser(ParserBase):
@@ -840,15 +857,15 @@ class IndexedConceptParser(ParserBase):
   def add_appraiser(self, appraiser, votes):
     self.appraisers.append([appraiser, votes])
     self.total_appraiser_votes = self.total_appraiser_votes + votes
-    
+
   def install_standard_appraisers(self):
     self.add_appraiser(PredictedScore(self), 1)
     self.add_appraiser(UnpredictedScore(self), 1)
     self.add_appraiser(UnseenScore(self), 1)
     self.add_appraiser(RequiredScore(self), 10)
-  
+
   def stem(self, token):
-    if isinstance(token, basestring):
+    if isinstance(token, types.StringTypes):
       return self.stemmer.stem(token)
     else:
       return token
@@ -876,8 +893,9 @@ class IndexedConceptParser(ParserBase):
     # Uses the CP to parse tokens and returns a list of the tokens and
     # any concepts that were referenced.
     items = []
-    def add_ref(item, start, end, value):
-#      print "REFERENCING %s" % (item,)
+
+    def add_ref(item, unused_start, unused_end, unused_value):
+      logging.debug('Referencing %s', item)
       if isinstance(item, logic.Description):
         items.append(logic.expr(item))
       else:
@@ -889,7 +907,7 @@ class IndexedConceptParser(ParserBase):
   def score_index_sets(self, found_indices):
     results = []
     for index_set in self.candidate_index_sets(found_indices):
-#      print "INDEX SET %s" % (index_set,)
+      logging.debug('Index set %s', index_set)
       result = ICPResult(None,
                          self.index_set_score(index_set, found_indices),
                          index_set.target_concept,
@@ -910,20 +928,21 @@ class IndexedConceptParser(ParserBase):
         return candidate_filler
       else:
         return current_filler
-      
+
     result_slots = {}
     for [slot, constraint] in index_set.slots:
       filler = None
       for i, index in enumerate(found_indices):
-        if isinstance(index, logic.Expr) and self.kb.isa(index, constraint) and \
-           not (i in result_slots.values()):
+        if (isinstance(index, logic.Expr) and
+            self.kb.isa(index, constraint) and
+            not (i in result_slots.values())):
           filler = maybe_use_filler(found_indices, filler, i)
       if filler != None:
         result_slots[slot] = filler
-    for k, v in result_slots.items():
+    for k, unused_v in result_slots.items():
       result_slots[k] = found_indices[result_slots[k]]
     return result_slots
-  
+
   def candidate_index_sets(self, found_indices):
     candidates = []
     abstractions = []
@@ -935,49 +954,53 @@ class IndexedConceptParser(ParserBase):
     return utils.remove_duplicates(candidates)
 
   def all_abstractions(self, item):
-    if isinstance(item, basestring):
-        return [item]
+    if isinstance(item, types.StringTypes):
+      return [item]
     elif isinstance(item, logic.Expr):
       return self.kb.all_parents(item)
     elif isinstance(item, logic.Description):
       return self.kb.all_parents(logic.expr(item.base))
     else:
-      raise ValueError, "%s must be a string or Expr." % (repr(item,))
+      raise ValueError('%r must be a string or Expr.', item)
 
   def install(self, index_set):
     """Installs an index set."""
-#    print "Installing: %s" % (index_set,)
+    logging.info('Installing index set %s', index_set)
     index_set.indices = map(self.stem, index_set.indices)
     index_set.required_indices = map(self.stem, index_set.required_indices)
     self.unique_target_concepts[index_set.target_concept] = True
     for index in index_set.indices:
       if not index in self.target_concepts.get(index, []):
-        self.target_concepts[index] = [index_set.target_concept] + self.target_concepts.get(index, [])
+        self.target_concepts[index] = ([index_set.target_concept] +
+                                       self.target_concepts.get(index, []))
       if not index_set in self.index_sets.get(index, []):
         self.index_sets[index] = [index_set] + self.index_sets.get(index, [])
 
-  def add_phrasal_pattern (self, base, phrasal_pattern):
+  def add_phrasal_pattern(self, base, phrasal_pattern):
     # We keep track of indexsets while we let the CP keep track of
     # phrasal patterns.
     self.cp_parser.add_phrasal_pattern(base, phrasal_pattern)
-    
+
   def add_index_set(self, target_concept, indexsetpattern):
     """Adds an index set to the target concept.  The indexsetpattern
     must be a string containing an indexset pattern (see
     IndexSetPatternParser).
     """
-    indexset = self.index_set_pattern_parser.parse(logic.expr(target_concept), indexsetpattern)
+    indexset = self.index_set_pattern_parser.parse(
+      logic.expr(target_concept), indexsetpattern)
     self.install(indexset)
 
   def index_set_score(self, index_set, found_indices):
     score = 0
     for (appraiser, votes) in self.appraisers:
       if votes > 0:
-        appraiser_score = self.call_appraiser(appraiser,
-                                              votes / float(self.total_appraiser_votes),
-                                              index_set,
-                                              found_indices)
-#        print "%s score for %s is %s" % (appraiser.__class__.__name__, index_set.target_concept, appraiser_score)
+        appraiser_score = self.call_appraiser(
+          appraiser,
+          votes / float(self.total_appraiser_votes),
+          index_set,
+          found_indices)
+        logging.debug('%s score for %s is %s', appraiser.__class__.__name__,
+                      index_set.target_concept, appraiser_score)
         score = score + appraiser_score
     return score
 
@@ -995,16 +1018,17 @@ class IndexedConceptParser(ParserBase):
       return float(cardinality) / len(self.unique_target_concepts)
 
   def target_concept_cardinality(self, index):
-#    print "cardinality of %s: %s" % (index, self.target_concepts.get(index, []))
+    logging.debug('Cardinality of %s: %s',
+                  index, self.target_concepts.get(index, []))
     return len(self.target_concepts.get(index, []))
 
-  def summed_value(self, base, predicted_set):
-    sum = 0.0
+  def summed_value(self, unused_base, predicted_set):
+    total = 0.0
     for item in predicted_set:
-      sum = sum + self.information_value(item)
+      total += self.information_value(item)
 #      print "Info value of %s is %s" % (item, self.information_value(item))
 #    print "summed value of %s is %s" % (predicted_set, sum)
-    return sum
+    return total
 
   def information_value(self, index):
     value = -math.log(self.probability_of_index(index), 2)
@@ -1018,19 +1042,21 @@ class IndexSet:
   """Represents a set of indices for the IndexedConceptParser.
   Includes the target concept, the indices, and required indices.
   """
-  def __init__(self, target=None, indices=None, required_indices=None, slots=None):
+  def __init__(self, target=None, indices=None, required_indices=None,
+               slots=None):
     def cond(test, a, b):
       if test:
         return a
       else:
         return b
-      
-    if isinstance(target, basestring):
+
+    if isinstance(target, types.StringTypes):
       self.target_concept = logic.expr(target)
     else:
       self.target_concept = target
     self.indices = cond(indices == None, [], indices)
-    self.required_indices = cond(required_indices == None, [], required_indices)
+    self.required_indices = cond(
+      required_indices == None, [], required_indices)
     self.slots = cond(slots == None, [], slots)
 
   def __repr__(self):
@@ -1043,10 +1069,6 @@ class IndexSet:
       s.write(" slots: %s" % (self.slots,))
     s.write(">")
     return s.getvalue()
-          
-    return "<%s target: %s indices: %s required: %s slot refs: %s>" % \
-           (self.__class__.__name__, self.target_concept, self.indices,
-            self.required_indices, self.slots)
 
   def __cmp__(self, other):
     if (other is self) or (isinstance(other, IndexSet) and
@@ -1069,7 +1091,7 @@ class ICPResult(logic.Description):
     self.score = score
     self.index_concepts = index_concepts
     self.target_concept = target_concept
-  
+
   def __repr__(self):
     return "<%s score: %s target: %s slots: %s>" % \
            (self.__class__.__name__, self.score, self.target_concept,
@@ -1086,7 +1108,7 @@ class PredictedScore:
   """
   def __init__(self, parser):
     self.parser = parser
-    
+
   def score(self, index_set, found_indices):
     predicted = index_set.indices
     pred_items = predicted_items(self.parser.kb, found_indices, predicted)
@@ -1096,7 +1118,7 @@ class PredictedScore:
              self.parser.summed_value(index_set.target_concept, predicted))
     return score
 
-    
+
 class UnpredictedScore:
   """ICP appraiser that penalizes for indices that we've seen that
   were not part of the indexset.
@@ -1109,8 +1131,10 @@ class UnpredictedScore:
     unpred_items = unpredicted_items(self.parser.kb, found_indices, predicted)
 #    print "  PREDICTED: %s" % (predicted,)
 #    print "  UNPREDICTED ITEMS: %s" % (unpred_items,)
-    score = 1.0 - (self.parser.summed_value(index_set.target_concept, unpred_items) / \
-                   self.parser.summed_value(index_set.target_concept, found_indices))
+    score = 1.0 - (self.parser.summed_value(
+      index_set.target_concept, unpred_items) /
+                   self.parser.summed_value(
+      index_set.target_concept, found_indices))
     return score
 
 
@@ -1144,7 +1168,7 @@ class RequiredScore:
     for requirement in index_set.required_indices:
       if not requirement in found_indices:
         # Return something nice and low.
-        return CUTOFF_ICP_SCORE*10
+        return CUTOFF_ICP_SCORE * 10
       else:
         # Don't want to use a single index to satisfy multiple
         # requirements.
@@ -1159,11 +1183,13 @@ class RequiredScore:
 def is_concept(thing):
   return isinstance(thing, logic.Description) or isinstance(thing, logic.Expr)
 
+
 def abst_or_whole_of(kb, big, small):
   if is_concept(big) and is_concept(small):
     return kb.isa(big, small)
   else:
     return big == small
+
 
 def spec_or_part_of(kb, big, small):
   if is_concept(big) and is_concept(small):
@@ -1171,15 +1197,18 @@ def spec_or_part_of(kb, big, small):
   else:
     return big == small
 
+
 def predicted_items(kb, seen_set, predicted_set):
   return utils.intersection(predicted_set,
                             seen_set,
                             lambda e1, e2: abst_or_whole_of(kb, e1, e2))
 
+
 def unpredicted_items(kb, seen_set, predicted_set):
   return utils.set_difference(seen_set,
                               predicted_set,
                               lambda e1, e2: spec_or_part_of(kb, e1, e2))
+
 
 def unseen_items(kb, seen_set, predicted_set):
   return utils.set_difference(predicted_set,
@@ -1204,49 +1233,48 @@ class IndexSetPatternParser:
 
   def __init__(self, kb):
     self.kb = kb
-    
+
   def parse(self, target, pattern):
     """Parses a string containing a indexset pattern and returns an
     IndexSet.
     """
     indexset = IndexSet(target)
     return self.read(indexset, pattern, 0)
-  
-  def read(self, indexset, input, position):
-    [index, position] = self.read_one(indexset, input, position)
-    while position < len(input):
-      [index, position] = self.read_one(indexset, input, position)
+
+  def read(self, indexset, input_str, position):
+    [index, position] = self.read_one(indexset, input_str, position)
+    while position < len(input_str):
+      [index, position] = self.read_one(indexset, input_str, position)
     return indexset
 
-  def read_one(self, indexset, input, position):
-    position = self.skip_whitespace(input, position)
-    if position >= len(input):
+  def read_one(self, indexset, input_str, position):
+    position = self.skip_whitespace(input_str, position)
+    if position >= len(input_str):
       return [None, position]
-    char = input[position]
+    char = input_str[position]
     if char == '$':
-      return self.parse_concept(indexset, input, position)
+      return self.parse_concept(indexset, input_str, position)
     elif char == '!':
-      return self.parse_required(indexset, input, position)
+      return self.parse_required(indexset, input_str, position)
     elif char == '{':
-      return self.parse_slot(indexset, input, position)
+      return self.parse_slot(indexset, input_str, position)
     elif self.is_symbol_char(char):
-      return self.parse_token(indexset, input, position)
+      return self.parse_token(indexset, input_str, position)
     else:
-      raise SyntaxError, \
-            "Illegal character '%s' at position %s in indexset '%s'." % \
-            (char, position, repr(input))
+      raise SyntaxError(
+        'Illegal character %r at position %s in indexset %r.' % (
+        char, position, input_str))
 
-  def parse_token(self, indexset, input, position):
+  def parse_token(self, indexset, input_str, position):
     # -- Token
-    [index, position] = self.read_symbol(input, position)
+    [index, position] = self.read_symbol(input_str, position)
     indexset.indices = indexset.indices + [index]
     return [index, position]
-    
-  def parse_concept(self, indexset, input, position):
-    [index, position] = self.read_concept(input, position + 1)
+
+  def parse_concept(self, indexset, input_str, position):
+    [index, position] = self.read_concept(input_str, position + 1)
     if index == None:
-      raise SyntaxError, \
-            "Lone ! in indexset %s." % (repr(input),)
+      raise SyntaxError('Lone ! in indexset %r.' % (input,))
     indexset.indices = indexset.indices + [index]
     return [index, position]
 
@@ -1310,5 +1338,4 @@ class IndexSetPatternParser:
 
 
 if __name__ == "__main__":
-  p = InteractiveParserApp(sys.argv)
-  p.run()
+  InteractiveParserApp(sys.argv).run()

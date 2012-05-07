@@ -1,4 +1,5 @@
 import argparse
+import logging
 import os.path
 import subprocess
 
@@ -108,9 +109,10 @@ def read_build_file(path):
 
 
 def expand_package_spec(package_spec):
+  logging.info('Expanding package spec %r', package_spec)
   dir, base = split_package_spec(package_spec)
   if base != 'all':
-    return package_spec
+    return [package_spec]
   else:
     load_build_file_for_dir(dir)
     return get_targets_in_dir(dir)
@@ -186,6 +188,7 @@ class TestCommand(Command):
     subparser.set_defaults(func=self)
 
   def execute(self, args):
+    logging.info('Executing test on target spec %s', args.target_spec)
     load_build_file_for_dir(
       dir_of_package(args.target_spec))
     for target_name in expand_package_spec(args.target_spec):
@@ -213,6 +216,7 @@ def setup_arg_parser():
 
 
 def main():
+  logging.basicConfig(level=logging.INFO)
   arg_parser = setup_arg_parser()
   args = arg_parser.parse_args()
   args.func.execute(args)

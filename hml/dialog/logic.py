@@ -496,17 +496,21 @@ class PropKB(KB):
       self.tree.erase(proposition.form)
 
 
-class MemoryFunction:
+class MemoryFunction(object):
   """MemoryFunctions are ways to hook arbitrary code into queries (and
   assertions and retractions).  MemoryFunctions may define ask, tell
   and retract methods which will be called in the appropriate
   contexts.
   """
+  def __init__(self):
+    pass
 
   def ask(self, kb, clause, s):
     raise NotImplementedError
+
   def tell(self, kb, clause):
     raise NotImplementedError
+
   def retract(self, kb, clause):
     raise NotImplementedError
 

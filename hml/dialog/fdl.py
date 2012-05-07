@@ -2,7 +2,6 @@
 
 import logging
 import os.path
-import pprint
 import sys
 import time
 from xml.dom import minidom
@@ -10,6 +9,7 @@ from xml.parsers import expat
 
 from hml.dialog import logic
 from hml.dialog import iomanager
+
 
 class CPTest:
   "A test for the ConceptualParser."
@@ -29,7 +29,7 @@ class CPTest:
         if parse.base == logic.expr(self.result):
           return True
       return False
-  
+
 
 class ICPTest:
   "A test for the IndexedConceptParser."
@@ -64,21 +64,21 @@ class FDLParser:
     # parse and run
     doc = minidom.parse(path).documentElement
     return self.parse_fdl_doc(doc, path)
-    
+
   def parse_fdl_string(self, string):
     logging.info('Parsing FDL string.')
     doc = minidom.parseString(string).documentElement
     return self.parse_fdl_doc(doc)
 
-  def parse_fdl_doc(self, doc, source_file = ""):
+  def parse_fdl_doc(self, doc, source_file=''):
     start_time = time.time()
-
     # call helper function.
     self.__parse_fdl_doc_helper(doc, source_file)
-    
     end_time = time.time()
 
-    logging.info('Processed %s files.', len(self.loaded_files))
+    logging.info('Processed %s files in %.2f seconds.',
+                 len(self.loaded_files),
+                 end_time - start_time)
     return True
 
   def handle_include(self, include_node, source_file):
@@ -170,8 +170,8 @@ class FDLParser:
          (not constraint_node.hasAttribute("type")):
         raise SyntaxError, "%s is not a valid constraint." % (constraint_node.toxml(),)
       slot = constraint_node.attributes["slot"].value
-      type = constraint_node.attributes["type"].value
-      constraints[slot] = type
+      constraint_type = constraint_node.attributes["type"].value
+      constraints[slot] = constraint_type
     logging.info('  Constraints are %s', constraints)
     return constraints
 
