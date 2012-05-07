@@ -1145,10 +1145,13 @@ class UnseenScore:
   def score(self, index_set, found_indices):
     predicted = index_set.indices
     unseed_items = unseen_items(self.parser.kb, found_indices, predicted)
-#    print "  PREDICTED: %s" % (predicted,)
-#    print "  UNSEEN ITEMS: %s" % (unseed_items,)
-    score = 1.0 - (self.parser.summed_value(index_set.target_concept, unseed_items) / \
-                   self.parser.summed_value(index_set.target_concept, found_indices))
+    logging.debug('Predicted: %s', predicted)
+    logging.debug('Unseen items: %s', unseed_items)
+    numerator = self.parser.summed_value(
+      index_set.target_concept, unseed_items)
+    denominator = self.parser.summed_value(
+      index_set.target_concept, found_indices)
+    score = 1.0 - numerator / denominator
     return score
 
 
@@ -1239,9 +1242,9 @@ class IndexSetPatternParser:
     return self.read(indexset, pattern, 0)
 
   def read(self, indexset, input_str, position):
-    [index, position] = self.read_one(indexset, input_str, position)
+    unused_index, position = self.read_one(indexset, input_str, position)
     while position < len(input_str):
-      [index, position] = self.read_one(indexset, input_str, position)
+      unused_index, position = self.read_one(indexset, input_str, position)
     return indexset
 
   def read_one(self, indexset, input_str, position):
@@ -1264,64 +1267,63 @@ class IndexSetPatternParser:
 
   def parse_token(self, indexset, input_str, position):
     # -- Token
-    [index, position] = self.read_symbol(input_str, position)
+    index, position = self.read_symbol(input_str, position)
     indexset.indices = indexset.indices + [index]
-    return [index, position]
+    return (index, position)
 
   def parse_concept(self, indexset, input_str, position):
-    [index, position] = self.read_concept(input_str, position + 1)
+    index, position = self.read_concept(input_str, position + 1)
     if index == None:
-      raise SyntaxError('Lone ! in indexset %r.' % (input,))
+      raise SyntaxError('Lone ! in indexset %r.' % (input_str,))
     indexset.indices = indexset.indices + [index]
-    return [index, position]
+    return (index, position)
 
-  def parse_required(self, indexset, input, position):
+  def parse_required(self, indexset, input_str, position):
     # -- Required
-    [index, position] = self.read_one(indexset, input, position + 1)
+    index, position = self.read_one(indexset, input_str, position + 1)
     if index == None:
-      raise SyntaxError, \
-            "Lone ! in indexset %s." % (repr(input),)
+      raise SyntaxError('Lone ! in indexset %r.' % (input_str,))
     indexset.required_indices = indexset.required_indices + [index]
-    return [index, position]
+    return (index, position)
 
-  def parse_slot(self, indexset, input, position):
+  def parse_slot(self, indexset, input_str, position):
     # -- Slot reference
-    [slot_name, position] = self.read_slot(input, position + 1)
+    slot_name, position = self.read_slot(input_str, position + 1)
     if slot_name == None:
-      raise SyntaxError, \
-            "Empty slot reference in indexset %s." % (repr(input),)
+      raise SyntaxError('Empty slot reference in indexset %r.' % (input_str,))
     if slot_name in [slot_ref[0] for slot_ref in indexset.slots]:
-      raise SyntaxError, \
-            "Duplicate slot reference %s in indexset %s." % (slot_name, repr(input))
+      raise SyntaxError('Duplicate slot reference %s in indexset %r.' % (
+        slot_name, input_str))
     slot_type = self.slot_constraint(indexset.target_concept, slot_name)
     indexset.slots.append([slot_name, slot_type])
     indexset.indices = indexset.indices + [slot_type]
     return [slot_type, position]
 
-  def read_symbol(self, input, position):
-    position = self.skip_whitespace(input, position)
+  def read_symbol(self, input_str, position):
+    position = self.skip_whitespace(input_str, position)
     start_position = position
-    while position < len(input) and self.is_symbol_char(input[position]):
+    while (position < len(input_str) and
+           self.is_symbol_char(input_str[position])):
       position += 1
-    return [input[start_position:position], position]
+    return [input_str[start_position:position], position]
 
-  def read_concept(self, input, position):
-    [symbol, position] = self.read_symbol(input, position)
+  def read_concept(self, input_str, position):
+    [symbol, position] = self.read_symbol(input_str, position)
     return [logic.expr(symbol), position]
 
-  def read_slot(self, input, position):
-    [symbol, position] = self.read_symbol(input, position)
-    position = self.skip_whitespace(input, position)
-    if not position < len(input):
-      raise SyntaxError('Unterminated \'{\' in indexset %r' % (input,))
-    if input[position] != '}':
+  def read_slot(self, input_str, position):
+    [symbol, position] = self.read_symbol(input_str, position)
+    position = self.skip_whitespace(input_str, position)
+    if not position < len(input_str):
+      raise SyntaxError('Unterminated \'{\' in indexset %r' % (input_str,))
+    if input_str[position] != '}':
       raise SyntaxError('Unexpected character %r in slot reference in '
-                        'indexset %s.' % (input[position], repr(input)))
+                        'indexset %r.' % (input_str[position], input_str))
     return [symbol, position + 1]
 
-  def skip_whitespace(self, input, position):
-    while (position < len(input) and
-           (input[position] == ' ' or input[position] == '\n')):
+  def skip_whitespace(self, input_str, position):
+    while (position < len(input_str) and
+           (input_str[position] == ' ' or input_str[position] == '\n')):
       position += 1
     return position
 
