@@ -34,11 +34,11 @@ class TestApp(object):
       choices=['CRITICAL', 'ERROR', 'WARNING', 'INFO', 'DEBUG'],
       default='INFO',
       help='The logging level to use while running tests.')
-    args = parser.parse_args()
+    args, unknown_args = parser.parse_known_args()
     logging.basicConfig(
       level=get_logging_level_by_name(args.log_level),
       format='%(levelname)s:%(module)s:%(lineno)d: %(message)s')
-    unittest.TestProgram(argv=[sys.argv[0]])
+    unittest.TestProgram(argv=[sys.argv[0]] + unknown_args)
 
 
 main = TestApp

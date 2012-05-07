@@ -47,8 +47,12 @@ class PythonTestTarget(TestTarget):
     for src in self.srcs:
       test_runner_path = os.path.join(os.path.dirname(self.build_file),
                                       src)
-      subprocess.call(['python', test_runner_path,
-                       '--log_level', args.log_level])
+      test_args = ['python', test_runner_path]
+      test_args += ['--log_level', args.log_level]
+      if args.fail_fast:
+        test_args.append('--failfast')
+      print test_args
+      subprocess.call(test_args)
 
 
 _build_file = None
@@ -146,11 +150,16 @@ class TestCommand(Command):
       metavar='<target_spec>',
       help='The target package spec to test on.')
     subparser.add_argument(
-      '-l', '--log_level',
+      '--log_level',
       dest='log_level',
       choices=['DEBUG', 'INFO', 'ERROR'],
       default='INFO',
       help='The logging level to run tests with.')
+    subparser.add_argument(
+      '--fail_fast',
+      action='store_true',
+      dest='fail_fast',
+      help='Stop after the first failure.')
     subparser.set_defaults(func=self)
 
   def execute(self, args):
