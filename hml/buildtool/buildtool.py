@@ -51,7 +51,6 @@ class PythonTestTarget(TestTarget):
       test_args += ['--log_level', args.log_level]
       if args.fail_fast:
         test_args.append('--failfast')
-      print test_args
       subprocess.call(test_args)
 
 
