@@ -60,7 +60,7 @@ class TestCase(unittest.TestCase):
 
     correct_grammar = """<GRAMMAR LANGID="409">
   <RULE NAME="c-digit" TOPLEVEL="ACTIVE">
-<L><P>seven</P><P>ten</P><P>niner</P><P>nine</P><P>six</P><P>three</P><P>two</P><P>four</P><P>zero</P><P>five</P><P>eight</P><P>one</P></L>  </RULE>
+<L><P>zero</P><P>one</P><P>two</P><P>three</P><P>four</P><P>five</P><P>six</P><P>seven</P><P>eight</P><P>niner</P><P>nine</P><P>ten</P></L>  </RULE>
 
   <RULE NAME="c-gunslinger" TOPLEVEL="ACTIVE">
     <P>gunslinger</P>

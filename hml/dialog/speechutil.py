@@ -8,6 +8,7 @@ from hml.dialog import logic
 from hml.dialog import fdl
 from hml.dialog import utils
 
+import operator
 import sys
 import time
 import os.path
@@ -254,8 +255,11 @@ class MicrosoftSRGrammarGenerator:
         # Generates rules corresponding to the Parser's pre-parser for
         # numbers.
         xml = "<L>"
-        for digit in parser.Cardinals:
-            xml = xml + "<P>%s</P>" % (digit)
+        digits = zip(parser.Cardinals.values(), parser.Cardinals.keys())
+        digits = sorted(digits, key=operator.itemgetter(0))
+        for digit in digits:
+            unused_value, name = digit
+            xml = xml + "<P>%s</P>" % (name,)
         xml = xml + "</L>"
         rule = Rule('c-digit', xml, [])
         self.add_rule(rule)
