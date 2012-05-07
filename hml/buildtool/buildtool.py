@@ -38,7 +38,7 @@ def get_target(target_name):
 def get_targets_in_dir(directory):
   targets = []
   for target in g_targets:
-    package_dir, package_name = split_package_spec(target)
+    package_dir, unused_package_name = split_package_spec(target)
     if package_dir == directory:
       targets.append(target)
   return targets
@@ -67,7 +67,20 @@ class PythonTestTarget(TestTarget):
       subprocess.call(test_args)
 
 
-_build_file = None
+class BuildFileContext(object):
+  _build_file = None
+
+  @classmethod
+  def build_file(klass):
+    return klass._build_file
+
+  @classmethod
+  def set_build_file(klass, path):
+    klass._build_file = path
+
+  @classmethod
+  def clear_build_file(klass):
+    klass._build_file = None
 
 _build_functions = {}
 
@@ -95,7 +108,7 @@ def buildtool_command(fn):
 
 @build_function
 def py_unit_test(name=None, srcs=None, deps=None):
-  target = PythonTestTarget(build_file=_build_file,
+  target = PythonTestTarget(build_file=BuildFileContext.build_file(),
                             name=name, srcs=srcs, deps=deps)
   register_target(target)
 
@@ -105,10 +118,12 @@ def build_function_table():
 
 
 def read_build_file(path):
-  global _build_file
-  _build_file = path
-  global_syms = build_function_table()
-  execfile(path, global_syms, {})
+  try:
+    BuildFileContext.set_build_file(path)
+    global_syms = build_function_table()
+    execfile(path, global_syms, {})
+  finally:
+    BuildFileContext.clear_build_file()
 
 
 def expand_package_spec(package_spec):
