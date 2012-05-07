@@ -7,7 +7,7 @@ def cookBindings(b):
   """Converts a set of bindings made of strings (e.g., {"?x":
   "Petunia"}) to one containing Expr's (e.g., {logic.expr("?x"):
   logic.expr("Petunia")}.  Saves a lot of wordiness in the tests."""
-  
+
   if b == False:
     return b
   bindings = {}
@@ -15,11 +15,12 @@ def cookBindings(b):
     bindings[logic.expr(var)] = logic.expr(b[var])
   return bindings
 
-def descriptify (a):
+
+def descriptify(a):
   if isinstance(a, str):
     return logic.Description(a)
   elif isinstance(a, logic.Expr):
-      return descriptify(a.op)
+    return descriptify(a.op)
   elif isinstance(a, logic.Description):
     newslots = {}
     for slot in a.slots:
@@ -27,11 +28,10 @@ def descriptify (a):
     return logic.Description(a.base, newslots)
   else:
     return a
-      
-def parse_equal (a, b):
+
+
+def parse_equal(a, b):
   return descriptify(a) == descriptify(b)
-
-
 
 
 #class TestCase(unittest.TestCase):
@@ -75,7 +75,7 @@ class DMTestCase(unittest.TestCase):
       self.failUnless(b == False, "%s != %s" % (a, b))
     if b == False:
       self.failUnless(a == False, "%s != %s" % (a, b))
-      
+
     bindingsa = map(cookBindings, a)
     bindingsb = map(cookBindings, b)
     for x in bindingsa:
@@ -85,10 +85,14 @@ class DMTestCase(unittest.TestCase):
       if not x in bindingsa:
         self.fail("%s != %s" % (bindingsa, bindingsb))
 
-  def assertParseEqual (self, parses, results):
-    self.failUnless(len(parses) == len(results), "%s != %s" % (parses, results))
+  def assertParseEqual(self, parses, results):
+    self.failUnless(len(parses) == len(results),
+                    "%s != %s" % (parses, results))
     for (parse, result) in zip(parses, results):
-      self.failUnless(parse_equal(parse, result), "%s != %s (in particular, %s != %s)" % (parses, results, parse, result))
+      self.failUnless(
+        parse_equal(parse, result),
+        "%s != %s (in particular, %s != %s)" % (
+          parses, results, parse, result))
 
   def assertApproxEqual(self, a, b, epsilon):
     if abs(a - b) > epsilon:

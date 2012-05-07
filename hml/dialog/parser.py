@@ -17,6 +17,7 @@ from hml.dialog import utils
 from hml.dialog import stemmer
 
 import time
+import logging
 import re
 import string
 import sys
@@ -50,7 +51,7 @@ class ParserBase:
   """
   def __init__(self):
     self.debug = 0
-      
+
   def tokenize(self, string):
     """Tokenizes a string."""
     tokens = tokenize(string.lower())
@@ -58,10 +59,14 @@ class ParserBase:
       print "Tokens: %s" % (tokens,)
     return tokens
 
-  def parse(self, string, debug = 0):
+  def parse_tokens(self, s, debug):
+    raise NotImplementedError
+
+  def parse(self, string, debug=0):
     """Parses a string.  Returns the list of valid parses."""
+    logging.info('Parser %s parsing %r', self, string)
     if not isinstance(string, basestring):
-      raise TypeError, "%s is not a string." % (string,)
+      raise TypeError('%s is not a string.' % (string,))
     results = self.parse_tokens(self.tokenize(string), debug)
     if len(results) > 1:
       results = utils.remove_duplicates(results)
@@ -69,8 +74,20 @@ class ParserBase:
       result.text = string
     return results
 
-Cardinals = {"zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
-             "six": 6, "seven": 7, "eight": 8, "nine": 9, "niner": 9, "ten": 10}
+Cardinals = {
+  'zero': 0,
+  'one': 1,
+  'two': 2,
+  'three': 3,
+  'four': 4,
+  'five': 5,
+  'six': 6,
+  'seven': 7,
+  'eight': 8,
+  'nine': 9,
+  'niner': 9,
+  'ten': 10
+  }
 
 
 # ----------------------------------------
@@ -79,8 +96,7 @@ Cardinals = {"zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
 
 class ConceptualParser(ParserBase):
   """A DMAP-inspired conceptual memory parser."""
-
-  def __init__ (self, kb, stem=False):
+  def __init__(self, kb, stem=False):
     ParserBase.__init__(self)
     self.kb = kb
     self.kb.define_fluent(CONSTRAINT_EXPR, inherited=True)
@@ -208,28 +224,34 @@ class ConceptualParser(ParserBase):
   def clear_predictions(self):
     self.anytime_predictions = {}
     self.dynamic_predictions = {}
-  
-  def pparse(self, string, debug = 0):
+
+  def pparse(self, text, debug=0):
     """Parses a string and pretty-prints the results."""
     pprint.pprint(map(logic.Description.dictify,
-                      self.parse(string, debug)))
-  
-  def parse_tokens (self, tokens, debug=0):
+                      self.parse(text, debug)))
+
+  def parse_tokens(self, tokens, debug=0):
     """Parses a sequence of tokens. Returns the list of valid parses."""
     self.reset()
     self.debug = debug
     for position, token in enumerate(tokens):
       if self.stem:
-        token = self.stemmer.stem(token)
+        new_token = self.stemmer.stem(token)
+        logging.info('Stemmed %s into %s', token, new_token)
+        token = new_token
       if not isinstance(token, basestring):
-        raise TypeError, "Only string tokens are allowed; %s is not a string." % (token,)
+        raise TypeError(
+          'Only string tokens are allowed; %s is not a string.' % (token,))
       self.reference(token, self.position, self.position, 0.0)
       preparse = self.check_preparsers(token)
+      logging.info('Preparse: %s', preparse)
       if preparse != None:
         self.reference(preparse, self.position, self.position, 0.0)
       self.position = position + 1
+      logging.info('Position: %s', self.position)
     parses = self.complete_parses(len(tokens))
-    return self.complete_parses(len(tokens))
+    logging.info('Complete parses: %s', parses)
+    return parses
 
   def complete_parses(self, pos):
     """Returns a list of complete parses given the current parser
@@ -242,8 +264,10 @@ class ConceptualParser(ParserBase):
 #          print "PARSE: %s %s" % (item, value)
     return parses
 
-  def reference (self, item, start, end, value):
+  def reference(self, item, start, end, value):
     # References an item (a token string or a class).
+    logging.info('Referencing item:%s start:%s end:%s value:%s',
+                 item, start, end, value)
     assert isinstance(item, basestring) or isinstance(item, logic.Description)
     if self.debug > 0:
       print "referencing %s" % ((item, start, end),)
@@ -256,8 +280,7 @@ class ConceptualParser(ParserBase):
 
   def advance_prediction(self, prediction, item, start, end):
     # Advances a prediction.
-    if self.debug > 2:
-      print "Advancing prediction %s" % ((prediction, item, start, end),)
+    logging.debug('Advancing prediction %s', (prediction, item, start, end))
     if prediction.next == None or prediction.next == start:
       phrasal_pattern = prediction.phrasal_pattern[1:]
       if prediction.start != None:
@@ -804,15 +827,14 @@ class IndexedConceptParser(ParserBase):
     self.debug = debug
     self.cp_parser.debug = debug
     indices = self.find_indices(tokens, self.match_function)
-    if debug > 0:
-      print "ICP parsing tokens %s" % (tokens,)
-    if debug > 1:
-      print "ICP found indices %s" % (indices,)
+    logging.info('Parsing tokens %s', tokens)
+    logging.info('ICP found indices %s', indices)
     results = self.score_index_sets(indices)
     results.sort(key=lambda x: x.score, reverse=True)
     results = [result for result in results if result.score > CUTOFF_ICP_SCORE]
-    results = utils.remove_duplicates(results,
-                                      lambda r1, r2: r1.target_concept == r2.target_concept)
+    results = utils.remove_duplicates(
+      results,
+      lambda r1, r2: r1.target_concept == r2.target_concept)
     if debug > 0:
       print "ICP results: %s" % (results,)
     return results
