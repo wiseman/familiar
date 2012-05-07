@@ -1,29 +1,46 @@
 <fdl>
 
-  <frame id="c-feeling">
-  </frame>
+<frame id="c-action-request">
+  <parent id="c-utterance" />
+  <constraint slot="addressee" type="c-name" />
+  <constraint slot="action" type="c-action" />
+  <constraint slot="object" type="c-thing" />
+  <phrase>{addressee} ?:[let's|let us|why don't we] {action} ?:[with|on] ?:the {object}</phrase>
 
-  <frame id="c-good">
-    <parent id="c-feeling"/>
+  <testphrase>hog let us restart the talk on</testphrase>
+  <testphrase>hog, let's start over with the talkon</testphrase>
+</frame>
 
-    <phrase>good</phrase>
-    <phrase>well</phrase>
-    <phrase>fine</phrase>
-  </frame>
+<frame id="c-hog">
+  <parent id="c-name" />
+  <phrase>hog</phrase>
+</frame>
 
-  <frame id="c-bad">
-    <parent id="c-feeling"/>
+<frame id="c-restart">
+  <parent id="c-action" />
+  <phrase>[restart|start over]</phrase>
+</frame>
 
-    <phrase>bad</phrase>
-    <phrase>sick</phrase>
-    <phrase>not good</phrase>
-  </frame>
+<frame id="c-talkon">
+  <parent id="c-thing" />
+  <phrase>[talk on|talkon]</phrase>
+</frame>
 
-  <frame id="c-status-assertion">
-    <constraint slot="status" type="c-feeling"/>
+<!-- just make sure that constraints are inheritable -->
+<frame id="c-please-action-request">
+  <parent id="c-action-request" />
+  <phrase>please {addressee} {action} {object}</phrase>
+  <testphrase>please, hog, restart talk on</testphrase>
+</frame>
 
-    <indexset>i feel {status}</indexset>
-    <indexset>i am {status}</indexset>
-  </frame>
+  <lexicon>
+    <lexeme>
+      <!-- Short for "roger". -->
+      <spelling>rog</spelling>
+      <part-of-speech>interjection</part-of-speech>
+      <phonemes>r ao jh</phonemes>
+    </lexeme>
+  </lexicon>
+  
 
 </fdl>

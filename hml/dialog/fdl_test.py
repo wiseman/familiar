@@ -146,14 +146,6 @@ class FDLTest (test_utils.DMTestCase):
       os.path.dirname(__file__),
       'test.fdl')
     self.assertEqual(fdl_parser.parse_fdl_file(test_fdl_path), True)
-    import sys
-    sys.stdout.flush()
-    print '\n' * 5
-    print 'WOOJJW start'
-    sys.stdout.flush()
-    print 'WOOJJW: %s' % (cp_parser.parse("hog let us restart the talk on"),)
-    print '\n' * 5
-    sys.stdout.flush()
     self.assertParseEqual(
       cp_parser.parse("hog let us restart the talk on"),
       [logic.Description("c-action-request",

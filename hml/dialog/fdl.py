@@ -78,9 +78,8 @@ class FDLParser:
     
     end_time = time.time()
 
-    logging.info('Processed %s files.' % (len(self.loaded_files),))
+    logging.info('Processed %s files.', len(self.loaded_files))
     return True
-
 
   def handle_include(self, include_node, source_file):
     raw_file = include_node.attributes["file"].value
@@ -260,18 +259,19 @@ class FDLParser:
                          constraints=constraints, phrases=phrases, indexsets=indexsets,
                          generates=generates, cp_tests=cp_tests, icp_tests=icp_tests)
 
-
   def __parse_fdl_doc_helper(self, doc, source_file):
     """Helper method which allows parse_fdl_doc to recurse while
     keeping timing and total counts for all objects straight, and only
     executing the tests once at end.
     """
-    # As first step, handle included files.  It would probably be better to handle
-    # these in-line, so you could set up some definitions and then include another
-    # file which required them, but this will do for now.
+    # As first step, handle included files.  It would probably be
+    # better to handle these in-line, so you could set up some
+    # definitions and then include another file which required them,
+    # but this will do for now.
     #
     # Files are relative to current file.
-    for node in doc.childNodes:
+    for i, node in enumerate(doc.childNodes):
+      logging.info('Processing node #%s', i)
       if node.nodeType == node.ELEMENT_NODE:
         if node.localName == 'lexicon':
           self.handle_lexicon(node)
@@ -281,12 +281,12 @@ class FDLParser:
           self.handle_include(node, source_file)
         else:
           print "WARNING: Unknown element '%s'" % (node.localName,)
-    
-      
+    logging.info('Processed %s nodes', i)
+
   def do_handle_frame(self, **args):
     if self.frame_handler != None:
       self.frame_handler.handle_fdl_frame(args)
-    self.cp_tests= self.cp_tests + args['cp_tests']
+    self.cp_tests = self.cp_tests + args['cp_tests']
     self.icp_tests = self.icp_tests + args['icp_tests']
 
   def run_test_phrases(self, parents, cp_parser, icp_parser):
@@ -296,7 +296,7 @@ class FDLParser:
     results = self.run_test_cp_phrases(parents, cp_parser)
     test_count += results[0]
     fail_count += results[1]
-      
+
     results = self.run_test_icp_phrases(parents, icp_parser)
     test_count += results[0]
     fail_count += results[1]
