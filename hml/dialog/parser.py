@@ -270,11 +270,9 @@ class ConceptualParser(ParserBase):
 
   def reference(self, item, start, end, value):
     # References an item (a token string or a class).
-    logging.info('Referencing item:%s start:%s end:%s value:%s',
+    logging.debug('Referencing item:%s start:%s end:%s value:%s',
                  item, start, end, value)
-    assert isinstance(item, types.StringTypes) or isinstance(item, logic.Description)
-    if self.debug > 0:
-      print "referencing %s" % ((item, start, end),)
+    utils.check_type(item, types.StringTypes + (logic.Description,))
     self.references.append([item, start, end, value])
     for abst in self.all_abstractions(item):
       if self.reference_callback != None:
@@ -573,7 +571,7 @@ class PhrasalPatternParser:
     """Parses a string containing a phrasal pattern into a tree
     representation.
     """
-    assert isinstance(pattern, types.StringTypes), '%r must be a string' % (pattern,)
+    utils.check_type(pattern, types.StringTypes)
     phrasal_pattern = self.convert_parse_tree_to_phrasal_pattern(
       self.parse_tree(pattern))
     return phrasal_pattern
@@ -694,7 +692,7 @@ class PhrasalPatternParser:
     return char in string.digits or char in string.letters or char in "-'?:"
 
   def convert_parse_tree_to_phrasal_pattern(self, tree):
-    assert utils.issequence(tree), '%s must be a sequence.' % (tree,)
+    utils.check_type(tree, (list, tuple))
     element_type = tree[0]
     if element_type == ':sequence':
       return [":sequence"] + map(

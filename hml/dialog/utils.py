@@ -831,3 +831,16 @@ class Timer(threading._Timer):
   def __init__(self, interval, function, args=[], kwargs={}):
     threading._Timer.__init__(self, interval, function, args, kwargs)
     self.setDaemon(True)
+
+
+def check_type(value, allowed_types, message=None):
+  if __debug__:
+    if not isinstance(allowed_types, (list, tuple)):
+      allowed_types = (allowed_types,)
+    for allowed_type in allowed_types:
+      if isinstance(value, allowed_type):
+        return True
+    if not message:
+      message = '%r is not one of the allowed types: %s' % (
+        value, allowed_types)
+    raise AssertionError(message)
