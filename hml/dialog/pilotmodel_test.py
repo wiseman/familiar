@@ -46,18 +46,21 @@ class TestCase(unittest.TestCase):
   def testEventParsing(self):
     self.assertEqual(
       pilotmodel.parse_event_string(ETA_EVENT_1),
-      {'type': 'eta',
-       'eta': 8.7930947296801865,
-       'pilot-pose': [[1.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0]],
-       'target-coords': [-2951.0, -4052.4000000000001, -4052.4000000000001]})
+      [True,
+       {'type': 'eta',
+        'eta': 8.7930947296801865,
+        'pilot-pose': [[1.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0], 0],
+        'target-coords': [-2951.0, -4052.4000000000001, -4052.4000000000001]}])
     self.assertEqual(
       pilotmodel.parse_event_string(ATTACK_RUN_COMPLETE_EVENT_1),
-      {'type': 'attack-run-complete',
-       'status': 1})
+      [True,
+       {'type': 'attack-run-complete',
+        'status': 1}])
     self.assertEqual(
       pilotmodel.parse_event_string(ATTACK_RUN_COMPLETE_EVENT_2),
-      {'type': 'attack-run-complete',
-       'status': 0})
+      [True,
+       {'type': 'attack-run-complete',
+        'status': 0}])
 
 
 if __name__ == "__main__":
