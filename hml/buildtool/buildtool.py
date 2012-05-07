@@ -3,6 +3,8 @@ import logging
 import os.path
 import subprocess
 
+from hml.base import unittest
+
 
 class Target(object):
   def __init__(self, build_file=None, name=None, srcs=None, deps=None):
@@ -25,6 +27,7 @@ g_targets = {}
 
 
 def register_target(target):
+  logging.debug('Registering target %s', target.key())
   g_targets[target.key()] = target
 
 
@@ -57,7 +60,7 @@ class PythonTestTarget(TestTarget):
       test_runner_path = os.path.join(os.path.dirname(self.build_file),
                                       src)
       test_args = ['python', test_runner_path]
-      test_args += ['--log_level', args.log_level]
+      test_args += ['--log_level', args.test_log_level]
       #test_args += ['-v']
       if args.fail_fast:
         test_args.append('--failfast')
@@ -110,12 +113,14 @@ def read_build_file(path):
 
 def expand_package_spec(package_spec):
   logging.info('Expanding package spec %r', package_spec)
-  dir, base = split_package_spec(package_spec)
+  directory, base = split_package_spec(package_spec)
   if base != 'all':
-    return [package_spec]
+    result = [package_spec]
   else:
-    load_build_file_for_dir(dir)
-    return get_targets_in_dir(dir)
+    load_build_file_for_dir(directory)
+    result = get_targets_in_dir(directory)
+  logging.info('Expansion result is %s', result)
+  return result
 
 
 directories_read = []
@@ -123,7 +128,9 @@ directories_read = []
 
 def load_build_file_for_dir(directory):
   if not directory in directories_read:
-    read_build_file(os.path.join(directory, 'BUILD'))
+    build_path = os.path.join(directory, 'BUILD')
+    logging.info('Loading %s', build_path)
+    read_build_file(build_path)
     directories_read.append(directory)
 
 
@@ -133,8 +140,8 @@ def split_package_spec(package_spec):
 
 
 def dir_of_package(package_spec):
-  (dir, unused_name) = split_package_spec(package_spec)
-  return dir
+  (directory, unused_name) = split_package_spec(package_spec)
+  return directory
 
 
 class Command(object):
@@ -175,10 +182,10 @@ class TestCommand(Command):
       metavar='<target_spec>',
       help='The target package spec to test on.')
     subparser.add_argument(
-      '--log_level',
-      dest='log_level',
-      choices=['DEBUG', 'INFO', 'ERROR'],
-      default='ERROR',
+      '--test_log_level',
+      dest='test_log_level',
+      choices=['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'],
+      default='WARNING',
       help='The logging level to run tests with.')
     subparser.add_argument(
       '--fail_fast',
@@ -203,9 +210,12 @@ Command.register('test', TestCommand())
 def setup_arg_parser():
   arg_parser = argparse.ArgumentParser(
     description='Build tool.')
-  arg_parser.add_argument('-v', '--verbose', action='store_true',
-                          help='Run in verbose mode.')
-
+  arg_parser.add_argument(
+    '--log_level',
+    dest='log_level',
+    choices=['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'],
+    default='WARNING',
+    help='The logging level to use.')
   subparsers = arg_parser.add_subparsers(
     title='Commands',
     description='valid subcommands',
@@ -216,9 +226,9 @@ def setup_arg_parser():
 
 
 def main():
-  logging.basicConfig(level=logging.INFO)
   arg_parser = setup_arg_parser()
   args = arg_parser.parse_args()
+  logging.basicConfig(level=unittest.get_logging_level_by_name(args.log_level))
   args.func.execute(args)
 
 
