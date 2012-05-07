@@ -9,23 +9,21 @@ Charles Martin's Direct Memory Access Parser.
 Will Fitzgerald's thesis "Building Embedded Conceptual Parsers".
 """
 
+import copy
+import getopt
+import logging
+import math
+import pprint
+import re
+import string
+import StringIO
+import sys
+import types
 
 from hml.dialog import logic
 from hml.dialog import fdl
 from hml.dialog import utils
 from hml.dialog import stemmer
-
-import logging
-import re
-import string
-import sys
-from copy import copy
-import math
-import StringIO
-import types
-
-import pprint
-import getopt
 
 
 # We'll be using $constraint internally.
@@ -72,6 +70,7 @@ class ParserBase:
     for result in results:
       result.text = text
     return results
+
 
 Cardinals = {
   'zero': 0,
@@ -376,7 +375,7 @@ class ConceptualParser(ParserBase):
     spec = prediction.phrasal_pattern[0]
     slots = prediction.slots
     if is_role_specifier(spec):
-      new_slots = copy(slots)
+      new_slots = copy.copy(slots)
       new_slot = self.role_specifier(spec)
       if new_slot in new_slots:
         raise DuplicateSlotError(
@@ -1316,10 +1315,10 @@ class IndexSetPatternParser:
     [symbol, position] = self.read_symbol(input, position)
     position = self.skip_whitespace(input, position)
     if not position < len(input):
-      raise SyntaxError, "Unterminated '{' in indexset %s" % (repr(input),)
+      raise SyntaxError('Unterminated \'{\' in indexset %r' % (input,))
     if input[position] != '}':
-      raise SyntaxError, \
-            "Unexpected character '%s' in slot reference in indexset %s." % (input[position], repr(input))
+      raise SyntaxError('Unexpected character %r in slot reference in '
+                        'indexset %s.' % (input[position], repr(input)))
     return [symbol, position + 1]
 
   def skip_whitespace(self, input, position):
