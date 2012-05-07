@@ -16,7 +16,6 @@ from hml.dialog import fdl
 from hml.dialog import utils
 from hml.dialog import stemmer
 
-import time
 import logging
 import re
 import string
@@ -131,8 +130,9 @@ class ConceptualParser(ParserBase):
     self.add_preparser("[0-9]+", parse_c_number)
 
     def parse_cardinal(token):
-      return logic.Description(logic.expr("c-digit"),
-                               {logic.expr("value"): logic.expr(Cardinals[token])})
+      return logic.Description(
+        logic.expr("c-digit"),
+        {logic.expr("value"): logic.expr(Cardinals[token])})
     self.add_preparser("one|two|three|four|five|six|seven|eight|nine|ten|zero",
                        parse_cardinal)
 
@@ -166,13 +166,13 @@ class ConceptualParser(ParserBase):
     else:
       return result
 
-  def reset (self):
+  def reset(self):
     """Resets the parser state as if it hadn't yet parsed anything."""
     self.dynamic_predictions = {}
     self.position = 0
     self.references = []
 
-  def add_phrasal_pattern (self, base, phrasal_pattern):
+  def add_phrasal_pattern(self, base, phrasal_pattern):
     """Adds a phrasal pattern to a class.  The phrasal_pattern
     argument is a string using the phrasal pattern syntax,
     e.g. "<action> the ?:[dang|darn] <object>" (see the
@@ -182,41 +182,44 @@ class ConceptualParser(ParserBase):
       self.phrasal_patterns[base] = [phrasal_pattern]
     else:
       self.phrasal_patterns[base].append(phrasal_pattern)
-    
+
     pattern_parser = PhrasalPatternParser(stem=self.stem)
     pp_obj = pattern_parser.parse(phrasal_pattern)
     self.add_phrasal_pattern_object(base, pp_obj)
 
-  def add_phrasal_pattern_object (self, base, phrasal_pattern_obj):
+  def add_phrasal_pattern_object(self, base, phrasal_pattern_obj):
     if not base in self.phrasal_pattern_objects:
       self.phrasal_pattern_objects[base] = [phrasal_pattern_obj]
     else:
       self.phrasal_pattern_objects[base].append(phrasal_pattern_obj)
-        
-    for pred in self.generate_predictions(base, [phrasal_pattern_obj], None, None, {}, 0.0):
+
+    for pred in self.generate_predictions(
+      base, [phrasal_pattern_obj], None, None, {}, 0.0):
       self.index_anytime_prediction(pred)
 
-  def index_prediction (self, table, prediction):
+  def index_prediction(self, table, prediction):
     target = self.prediction_target(prediction)
     if target in table:
       table[target].append(prediction)
     else:
       table[target] = [prediction]
-    
+
   def index_anytime_prediction(self, prediction):
     """Adds a prediction to the set of anytime predictions."""
     if self.debug > 1:
       print "Indexing anytime prediction %s" % (prediction,)
     self.index_prediction(self.anytime_predictions, prediction)
-    
+
   def index_dynamic_prediction(self, prediction):
     """Adds a prediction to the set of dynamic predictions."""
     if self.debug > 1:
       print "Indexing dynamic prediction %s" % (prediction,)
     self.index_prediction(self.dynamic_predictions, prediction)
-      
+
   def predictions_on(self, item):
-    preds = predictions_on(self.dynamic_predictions, item) + predictions_on(self.anytime_predictions, item)
+    preds = predictions_on(
+      self.dynamic_predictions, item) + predictions_on(
+        self.anytime_predictions, item)
     if self.debug > 1:
       print "Predictions on %s are %s" % (item, preds)
     return preds
@@ -258,8 +261,9 @@ class ConceptualParser(ParserBase):
     state.
     """
     parses = []
-    for [item, start, end, value] in self.references:
-        if start == 0 and end == pos - 1 and isinstance(item, logic.Description):
+    for [item, start, end, unused_value] in self.references:
+        if (start == 0 and end == pos - 1 and
+            isinstance(item, logic.Description)):
           parses.append(item)
 #          print "PARSE: %s %s" % (item, value)
     return parses
@@ -297,20 +301,28 @@ class ConceptualParser(ParserBase):
       if phrasal_pattern == []:
         # Prediction has been used up.
 #        print "Fulfilled prediction %s" % (prediction,)
-        self.reference(self.find_frame(base, slots), start, end, prediction.value)
+        self.reference(
+          self.find_frame(base, slots), start, end, prediction.value)
       else:
-        for prediction in self.generate_predictions(base, phrasal_pattern, start, self.position + 1, slots, prediction.value):
+        for prediction in self.generate_predictions(
+            base, phrasal_pattern, start, self.position + 1,
+            slots, prediction.value):
           if len(prediction.phrasal_pattern) > 0:
             self.index_dynamic_prediction(prediction)
           else:
-            self.reference(self.find_frame(prediction.base, slots), start, end, prediction.value)
+            self.reference(
+              self.find_frame(prediction.base, slots),
+              start, end, prediction.value)
 
-  def generate_predictions(self, base, phrasal_pattern, start, position, slots, value):
-    predictions = list(self.generate_predictions2(base, phrasal_pattern,
-                                                  start, position, slots, value))
+  def generate_predictions(self, base, phrasal_pattern, start,
+                           position, slots, value):
+    predictions = list(self.generate_predictions2(
+      base, phrasal_pattern,
+      start, position, slots, value))
     return predictions
 
-  def generate_predictions2(self, base, phrasal_pattern, start, position, slots, value):
+  def generate_predictions2(self, base, phrasal_pattern, start,
+                            position, slots, value):
     # If there's no syntax directive, it's an implicit sequence.  Make
     # explicit what's implicit.
     if not self.is_syntax_directive(phrasal_pattern[0]):
@@ -320,7 +332,8 @@ class ConceptualParser(ParserBase):
                             [base, phrasal_pattern, start, position, slots])
     for pred in new_predictions:
       pred.value = pred.value + value
-      if len(pred.phrasal_pattern) > 0 and self.is_syntax_directive(pred.phrasal_pattern[0]):
+      if (len(pred.phrasal_pattern) > 0 and
+          self.is_syntax_directive(pred.phrasal_pattern[0])):
         for p in self.generate_predictions2(base, pred.phrasal_pattern,
                                             start, position, slots, value):
           yield p
@@ -333,7 +346,7 @@ class ConceptualParser(ParserBase):
     if isinstance(term, list):
       if term[0] in self.syntax_functions:
         return True
-      raise ValueError, "%s is not a valid syntax function." % (term[0],)
+      raise ValueError('%s is not a valid syntax function.' % (term[0],))
     else:
       return False
 
@@ -342,7 +355,8 @@ class ConceptualParser(ParserBase):
     # slots.
     for slot in pred_slots:
       if slot in item_slots:
-        raise DuplicateSlotError, "Slot %s already has the value %s." % (slot, item_slots[slot])
+        raise DuplicateSlotError(
+          'Slot %s already has the value %s.' % (slot, item_slots[slot]))
     slots = {}
     for slot in pred_slots:
       slots[slot] = pred_slots[slot]
@@ -353,7 +367,7 @@ class ConceptualParser(ParserBase):
   def find_frame(self, base, slots):
     # Creates a description with the specified base class and slots.
     return logic.Description(base, slots)
-  
+
   def extend_slots(self, prediction, item):
     # If the prediction is waiting for a slot-filler, and the item we
     # saw can fill the slot, add the slot with filler to the
@@ -364,15 +378,17 @@ class ConceptualParser(ParserBase):
       new_slots = copy(slots)
       new_slot = self.role_specifier(spec)
       if new_slot in new_slots:
-        raise DuplicateSlotError, "Slot %s already exists in %s." % (new_slot, prediction)
+        raise DuplicateSlotError(
+          'Slot %s already exists in %s.' % (new_slot, prediction))
       new_slots[new_slot] = item
       return new_slots
     else:
       return slots
 
   def prediction_target(self, prediction):
-    assert(not self.is_syntax_directive(prediction.phrasal_pattern[0]),
-           "Cannot index on syntax directive %s." % (prediction.phrasal_pattern[0]))
+    assert not self.is_syntax_directive(prediction.phrasal_pattern[0]), \
+           "Cannot index on syntax directive %s." % (
+      prediction.phrasal_pattern[0])
     spec = prediction.phrasal_pattern[0]
     if is_role_specifier(spec):
       base = prediction.base
@@ -380,7 +396,7 @@ class ConceptualParser(ParserBase):
       if value != None:
         return value
       else:
-        raise ValueError, "%s has no constraint in %s." % (spec, base)
+        raise ValueError('%s has no constraint in %s.' % (spec, base))
     elif is_head(spec):
       return prediction.base
     else:
@@ -394,15 +410,17 @@ class ConceptualParser(ParserBase):
     elif isinstance(item, logic.Description):
       return self.kb.all_parents(logic.expr(item.base))
     else:
-      raise ValueError, "%s must be a string or Expr." % (repr(item,))
+      raise ValueError('%s must be a string or Expr.' % (repr(item,)))
 
   def slot_constraint(self, item, role_spec):
     # Looks up the constraint on the specified slot for item.
-    return self.kb.slot_value(logic.expr(item), CONSTRAINT_EXPR, logic.expr(role_spec))
+    return self.kb.slot_value(
+      logic.expr(item),
+      CONSTRAINT_EXPR,
+      logic.expr(role_spec))
 
-  def role_specifier (self, item):
+  def role_specifier(self, item):
     return logic.expr(item[1:])
-
 
 
 class Prediction:
@@ -433,7 +451,10 @@ class Prediction:
   # FIXME: This doesn't feel like the best place to do this.
   def __setattr__(self, name, value):
     if name == 'phrasal_pattern':
-      if len(value) > 0 and isinstance(value[0], basestring) and value[0][0] != ':' and value[0][0] != '?':
+      if (len(value) > 0 and
+          isinstance(value[0], basestring) and
+          value[0][0] != ':' and
+          value[0][0] != '?'):
         tokens = self.tokenize(value[0])
         self.__dict__[name] = tokens + value[1:]
       else:
@@ -445,7 +466,7 @@ class Prediction:
     if name == "phrasal_pattern":
       return self._phrasal_pattern
     else:
-      raise AttributeError, name
+      raise AttributeError(name)
 
   def tokenize(self, string):
     return tokenize(string)
@@ -464,33 +485,42 @@ def predictions_on(prediction_table, item):
 
 def head_prediction_generator(base, phrasal_pattern, start, position, slots):
   # Generates predictions for :head.
-  return [Prediction(base, [":head"] + phrasal_pattern[1:], start, position, slots)]
+  return [Prediction(base, [":head"] + phrasal_pattern[1:],
+                     start, position, slots)]
 
-def sequence_prediction_generator(base, phrasal_pattern, start, position, slots):
+
+def sequence_prediction_generator(base, phrasal_pattern,
+                                  start, position, slots):
   # Generates predictions for :sequence.
   return [Prediction(base, phrasal_pattern[0][1:] + phrasal_pattern[1:],
                      start, position, slots, 1.0)]
 
-def optional_prediction_generator(base, phrasal_pattern, start, position, slots):
+
+def optional_prediction_generator(base, phrasal_pattern,
+                                  start, position, slots):
   # Generates predictions for :optional.
   return [Prediction(base, phrasal_pattern[1:], start, position, slots, 0.2),
-          Prediction(base, phrasal_pattern[0][1:] + phrasal_pattern[1:], start, position, slots, 0.0)]
+          Prediction(base, phrasal_pattern[0][1:] + phrasal_pattern[1:],
+                     start, position, slots, 0.0)]
 
-def any_prediction_generator(base, phrasal_pattern, start, position, slots):
+
+def any_prediction_generator(base, phrasal_pattern,
+                             start, position, slots):
   # Generates predictions for :any.
   preds = map(lambda pat: Prediction(base, [pat,] + phrasal_pattern[1:],
                                      start, position, slots, 0.0),
               phrasal_pattern[0][1:])
   return preds
-  
+
 
 class DuplicateSlotError(Exception):
   pass
 
 
-def is_role_specifier (item):
+def is_role_specifier(item):
   return item[0] == '?'
-  
+
+
 def is_head(item):
   return item == ":head"
 
