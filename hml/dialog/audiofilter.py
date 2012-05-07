@@ -2,40 +2,42 @@
 sound of a noisy, low bandwidth radio communications link.
 """
 
-import struct
-from random import randrange
+import array
+import logging
+import random
 import sys
 import StringIO
-import array
 
 # We use our patched version of the standard wave module that lets us
 # write wav data to a StringIO buffer.  Silly Python.
-from energid import wave
+from hml.dialog import wave
 
 
-def readfile(file):
+def readfile(path):
   """Reads a .wav file, returns a list containing the raw audio data.
   Assumes 16 bit samples.
   """
-  win = wave.open(file, "r")
-#  print "num channels: %s" % (win.getnchannels(),)
-#  print "sample width: %s" % (win.getsampwidth(),)
-#  print "rate        : %s" % (win.getframerate(),)
-#  print "num frames  : %s" % (win.getnframes(),)
+  win = wave.open(path, "r")
+  logging.info('Num channels: %s', win.getnchannels())
+  logging.info('Sample width: %s', win.getsampwidth())
+  logging.info('Rate        : %s', win.getframerate())
+  logging.info('num frames  : %s', win.getnframes())
   audio = win.readframes(win.getnframes())
   samples = array.array('h', audio)
   return samples
 
-def writefile(samples, file):
+
+def writefile(samples, path):
   """Writes a .wav file.  Hardcoded to handle mono, 16 bit, 16 kHz
   samples.
   """
-  wout = wave.open(file, "w")
+  wout = wave.open(path, "w")
   wout.setnchannels(1)
   wout.setsampwidth(2)
   wout.setframerate(16000)
   wout.writeframes(samples.tostring())
   wout.close()
+
 
 def writebuffer(samples):
   """Creates a string containing .wav data.  Hardcoded to handle mono,
@@ -50,41 +52,44 @@ def writebuffer(samples):
   wout.close()
   return array.array('h', buf.getvalue())
 
-def noise(len, amplitude=32767):
+
+def noise(n, amplitude=32767):
   """Returns a list containing audio samples corresponding to white
-  noise.  len is the number of samples to generate, amplitude is the
+  noise.  n is the number of samples to generate, amplitude is the
   maximum amplitude of the signal.
   """
-  samples = [0] * len
-  for i in xrange(0, len):
-    samples[i] = randint(-amplitude, amplitude)
+  samples = [0] * n
+  for i in xrange(0, n):
+    samples[i] = random.randint(-amplitude, amplitude)
   return samples
 
 
 def add_noise(samples, amplitude=32767, clip=32767):
   minusclip = -clip
   for i in xrange(0, len(samples)):
-    a = samples[i] + randrange(-amplitude, amplitude, 1)
+    a = samples[i] + random.randrange(-amplitude, amplitude, 1)
     if a > clip:
       a = clip
     elif a < minusclip:
       a = minusclip
     samples[i] = a
   return samples
-    
+
 
 def amplify(samples, gain, clipmax=32767):
   """Multiplies audio samples by a constant factor."""
   for i in xrange(0, len(samples)):
     samples[i] = clip(samples[i] * gain, clipmax)
   return samples
-  
+
+
 def addv(a, b, clipmax=32767):
   """Sums two audio samples."""
   c = array.array(a.typecode, a)
   for i in xrange(0, len(a)):
     c[i] = clip(a[i] + b[i], clipmax)
   return c
+
 
 def clip(value, clipmax):
   value = int(value)
@@ -123,6 +128,7 @@ static void filterloop()
 NZEROS = 6
 NPOLES = 6
 GAIN1 = 1.886646501e+02 / 256
+
 
 def filter1(sample, clipmax):
   """Runs the sample through a 3rd order bandpass filter with a
@@ -182,6 +188,7 @@ static void filterloop()
 
 GAIN2 = 1.886646501e+02 / 256
 
+
 def filter2(samples, clipmax=32767):
   """Runs the sample through a 3rd order bandpass filter with a
   1500-3500 Hz window.
@@ -206,9 +213,9 @@ def filter2(samples, clipmax=32767):
     yv[4] = yv[5]
     yv[5] = yv[6]
     yv[6] = (xv[6] - xv[0]) + 3 * (xv[2] - xv[4]) \
-            + ( -0.1978251873 * yv[0]) + (  0.9043292381 * yv[1]) \
-            + ( -2.3109942388 * yv[2]) + (  3.6253639773 * yv[3]) \
-            + ( -3.9282953328 * yv[4]) + (  2.6814143273 * yv[5])
+            + (-0.1978251873 * yv[0]) + (0.9043292381 * yv[1]) \
+            + (-2.3109942388 * yv[2]) + (3.6253639773 * yv[3]) \
+            + (-3.9282953328 * yv[4]) + (2.6814143273 * yv[5])
     result[i] = clip(yv[6], clipmax)
   return result
 
@@ -219,7 +226,7 @@ def radioify(sample):
   """
   d = filter2(sample)
   d = amplify(d, 2)
-  d = amplify(d, 1.0/2)
+  d = amplify(d, 0.5)
   d = add_noise(d, amplitude=2000)
 #  n = noise(len(d), amplitude=2000)
 #  d = addv(d, n)
@@ -230,9 +237,12 @@ def radioify(sample):
 # argument and output the transformed audio to the wav file from the
 # second argument.
 
-if __name__ == '__main__':
+def main():
   d = readfile(sys.argv[1])
   d = radioify(d)
-  buf = writebuffer(d)
+  writebuffer(d)
   writefile(d, sys.argv[2])
 
+
+if __name__ == '__main__':
+  main()

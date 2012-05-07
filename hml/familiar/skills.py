@@ -1,6 +1,8 @@
 # Copyright 2012 John Wiseman
 # jjwiseman@gmail.com
 
+import hml
+
 import logging
 import sys
 import threading
@@ -39,6 +41,19 @@ class Agent(object):
     pass
 
 
+class Timer(object):
+  def __init__(self):
+    self.start_time = None
+    self.end_time = None
+
+  def start(self):
+    self.start_time = time.time()
+    return self
+
+  def elapsed_time(self):
+    return time.time() - self.start_time
+
+
 class AgentCommThread(threading.Thread):
   def __init__(self, mavlink_port=None):
     assert(mavlink_port)
@@ -60,14 +75,19 @@ class AgentCommThread(threading.Thread):
   def handle_message(self, message):
     logging.info('Handling message %s', message)
 
+  def connect(self):
+    # Wait to get a couple heartbeats
+    logging.info('Connecting to familiar...')
+    timer = Timer().start()
+    logging.debug('Waiting for 1st heartbeat')
+    self.mavlink_port.wait_heartbeat()
+    logging.debug('Got 1st heartbeat, Waiting for 2nd heartbeat')
+    self.mavlink_port.wait_heartbeat()
+    logging.info('Connected in %.3f seconds.', timer.elapsed_time())
+
   def initialize(self):
     mavlink_port = self.mavlink_port
-    # Wait to get a couple heartbeats
-    logging.info('Connecting to familiar')
-    logging.debug('Waiting for 1st heartbeat')
-    mavlink_port.wait_heartbeat()
-    logging.debug('Got 1st heartbeat, Waiting for 2nd heartbeat')
-    mavlink_port.wait_heartbeat()
+    self.connect()
     # Tell the drone to send us telemetry at 1 Hz.
     mavlink_port.mav.request_data_stream_send(
       mavlink_port.target_system, mavlink_port.target_component,

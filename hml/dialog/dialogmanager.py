@@ -1,28 +1,27 @@
-from energid import logic
-from energid import parser
-from energid import fdl
-from energid import pilotmodel
-from energid import generation
-from energid import iomanager
-from energid import utils
-from energid import filter
-
-import energid.actions
-
-import sys
 import getopt
-import cgi
-import time
-import random
-import threading
-import traceback
-import pprint
-import re
 import os.path
+import pprint
+import random
+import re
+import sys
+import threading
+import time
+import traceback
 from xml.sax import saxutils
 
+from hml.dialog import logic
+from hml.dialog import parser
+from hml.dialog import fdl
+from hml.dialog import pilotmodel
+from hml.dialog import generation
+from hml.dialog import iomanager
+from hml.dialog import utils
+from hml.dialog import audiofilter
+
+from hml.dialog import actions
+
 if sys.platform == 'win32':
-  from energid import speech
+  from hml.dialog import speech
 
 
 class Attention:
@@ -477,7 +476,7 @@ class DialogManager:
           else:
             self.say("authenticate %s" % (self.authentication_challenge_code,))
             self.jtac_authentication_requested = True
-      except energid.dialogmanager.EndExercise, e:
+      except EndExercise:
         self.reset()
       except EOFError:
         return
