@@ -18,7 +18,10 @@ class TestCase(unittest.TestCase):
   <constraint slot="addressee" type="c-name" />
   <constraint slot="action" type="c-action" />
   <constraint slot="object" type="c-thing" />
-  <phrase>{addressee} ?:[let's|let us|why don't we] {action} ?:[with|on] ?:the {object}</phrase>
+  <phrase>
+    {addressee} ?:[let's|let us|why don't we]
+    {action} ?:[with|on] ?:the {object}
+  </phrase>
 </frame>
 
 <frame id="c-hog">
@@ -105,19 +108,21 @@ class TestCase(unittest.TestCase):
 """
 
     generated_grammar = gen.generate_grammar()
-    
+
     # Remove the initial comment, which includes a timestamp that will
     # cause a mismatch.
-    generated_grammar = generated_grammar[generated_grammar.index("-->\n")+5:]
+    generated_grammar = generated_grammar[
+      generated_grammar.index("-->\n") + 5:]
 
     if generated_grammar != correct_grammar:
       # Print a diff!
-      for line in difflib.unified_diff(correct_grammar.split('\n'), generated_grammar.split('\n')):
+      for line in difflib.unified_diff(
+          correct_grammar.split('\n'),
+          generated_grammar.split('\n')):
         print line
 
     self.assertEqual(generated_grammar, correct_grammar)
 
-  
+
 if __name__ == "__main__":
-  print "Speech Util tests:"
   unittest.main()

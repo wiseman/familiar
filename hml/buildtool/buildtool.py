@@ -32,6 +32,15 @@ def get_target(target_name):
   return g_targets[target_name]
 
 
+def get_targets_in_dir(dir):
+  targets = []
+  for target in g_targets:
+    package_dir, package_name = split_package_spec(target)
+    if package_dir == dir:
+      targets.append(target)
+  return targets
+
+
 class TestTarget(Target):
   def __init__(self, build_file=None, name=None, srcs=None, deps=None):
     Target.__init__(self, build_file=build_file, name=name, srcs=srcs,
@@ -98,17 +107,32 @@ def read_build_file(path):
   execfile(path, global_syms, {})
 
 
-def expand_package_spec(spec):
-  return [spec]
+def expand_package_spec(package_spec):
+  dir, base = split_package_spec(package_spec)
+  if base != 'all':
+    return package_spec
+  else:
+    load_build_file_for_dir(dir)
+    return get_targets_in_dir(dir)
+
+
+directories_read = []
 
 
 def load_build_file_for_dir(directory):
-  read_build_file(os.path.join(directory, 'BUILD'))
+  if not directory in directories_read:
+    read_build_file(os.path.join(directory, 'BUILD'))
+    directories_read.append(directory)
+
+
+def split_package_spec(package_spec):
+  colon_pos = package_spec.rfind(':')
+  return package_spec[0:colon_pos], package_spec[colon_pos + 1:]
 
 
 def dir_of_package(package_spec):
-  directory = package_spec[0:package_spec.rfind(':')]
-  return directory
+  (dir, unused_name) = split_package_spec(package_spec)
+  return dir
 
 
 class Command(object):
@@ -152,7 +176,7 @@ class TestCommand(Command):
       '--log_level',
       dest='log_level',
       choices=['DEBUG', 'INFO', 'ERROR'],
-      default='INFO',
+      default='ERROR',
       help='The logging level to run tests with.')
     subparser.add_argument(
       '--fail_fast',
