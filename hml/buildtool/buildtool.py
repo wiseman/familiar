@@ -1,7 +1,6 @@
 import argparse
 import os.path
 import subprocess
-import sys
 
 
 class Target(object):
@@ -32,11 +31,11 @@ def get_target(target_name):
   return g_targets[target_name]
 
 
-def get_targets_in_dir(dir):
+def get_targets_in_dir(directory):
   targets = []
   for target in g_targets:
     package_dir, package_name = split_package_spec(target)
-    if package_dir == dir:
+    if package_dir == directory:
       targets.append(target)
   return targets
 
@@ -58,6 +57,7 @@ class PythonTestTarget(TestTarget):
                                       src)
       test_args = ['python', test_runner_path]
       test_args += ['--log_level', args.log_level]
+      #test_args += ['-v']
       if args.fail_fast:
         test_args.append('--failfast')
       subprocess.call(test_args)

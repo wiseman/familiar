@@ -1,4 +1,3 @@
-#!/usr/bin/env python2.5
 from energid import logic
 from energid import parser
 from energid import fdl

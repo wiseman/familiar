@@ -1,31 +1,32 @@
 """Implements propositional databases and logical expressions."""
 
 from hml.dialog import disctree
+from hml.dialog import utils
 
-import re
-from hml.dialog.utils import *
 import pprint
+import re
 
 
 class KB:
   """Mostly abstract interface to knowledge bases."""
 
   def __init__(self, sentence=None):
-    abstract
+    pass
 
-  def tell(self, sentence): 
+  def tell(self, sentence):
     """Adds the logical sentence to the KB."""
-    abstract
+    raise NotImplementedError
 
   def ask(self, query):
     """Returns a substitution that makes the query true, or it returns
     False. It is implemented in terms of ask_generator.
     """
-    try: 
+    try:
       answer = self.ask_generator(query).next()
       return answer
     except StopIteration:
       return False
+
   def ask_all(self, query):
     """Returns a list of all substitutions that make the query
     true.
@@ -33,13 +34,13 @@ class KB:
     answer = list(self.ask_generator(query))
     return answer
 
-  def ask_generator(self, query): 
+  def ask_generator(self, query, bindings=None):
     # Yields all the substitutions that make query true.
-    abstract
+    raise NotImplementedError
 
   def retract(self, sentence):
     """Remove the sentence from the KB."""
-    abstract
+    raise NotImplementedError
 
 
 #______________________________________________________________________________
@@ -63,10 +64,9 @@ class Proposition:
     # Returns the Expr the Proposition represents.
     return apply(Expr, [self.form[0]] + self.form[1:])
 
+
 def reuse_proposition(old_prop, form):
   old_prop.form = form
-
-
 
 
 class PropKB(KB):
@@ -75,16 +75,17 @@ class PropKB(KB):
   """
 
   def __init__(self):
+    KB.__init__(self)
     self.tree = disctree.make_root_disc_tree(var_test=is_variable)
     self.functions = {}   # Memory functions
     self.fluents = []     # Fluent relations
     self.heritable = []   # Heritable (default) relations
     self.install_standard_functions()
 
-  def tell(self, sentence): 
+  def tell(self, sentence):
     """Add the sentence's clauses to the KB."""
     if not isinstance(sentence, Expr):
-      raise ValueError, "%s must be an Expr." % (repr(sentence),)
+      raise ValueError('%s must be an Expr.' % (repr(sentence),))
     else:
       clauses = conjuncts(to_cnf(sentence))
       for clause in clauses:
@@ -101,9 +102,9 @@ class PropKB(KB):
   def assert_isa(self, child, parent):
     """Adds an inheritance relationship between child and parent."""
     if not isinstance(child, Expr):
-      raise ValueError, "%s must be an Expr." % (child,)
+      raise ValueError('%s must be an Expr.' % (child,))
     if not isinstance(parent, Expr):
-      raise ValueError, "%s must be an Expr." % (parent,)
+      raise ValueError('%s must be an Expr.' % (parent,))
     # Use $ISA internally to record explicit ISA links.
     self.invalidate_isa_cache()
     self.tell(expr("$ISA(%s, %s)" % (child.op, parent.op)))
@@ -113,30 +114,32 @@ class PropKB(KB):
     marks child as an instance.
     """
     if not isinstance(child, Expr):
-      raise ValueError, "%s must be an Expr." % (child,)
+      raise ValueError('%s must be an Expr.' % (child,))
     if not isinstance(parent, Expr):
-      raise ValueError, "%s must be an Expr." % (parent,)
+      raise ValueError('%s must be an Expr.' % (parent,))
     # First assert the ISA-ness.
     self.assert_isa(child, parent)
     # Then use $INSTANCE internally to record explicit
     # instance-ness.
     self.tell(expr("$INSTANCE(%s)" % (child.op)))
 
-  def ask_generator(self, query, s = {}):
+  def ask_generator(self, query, bindings=None):
     # Returns a generator for all the substitutions that make the
     # query true.
     #
     # AND (&) and OR (|) could be implemented as memory functions just
     # like NOT.
+    if bindings is None:
+      bindings = {}
     if query.op == '&':
-      binding_generator = self.ask_and(query, s)
+      binding_generator = self.ask_and(query, bindings)
     elif query.op == '|':
-      binding_generator = self.ask_or(query, s)
+      binding_generator = self.ask_or(query, bindings)
     elif query.op in self.functions:
-      binding_generator = self.ask_function(query, s)
+      binding_generator = self.ask_function(query, bindings)
     else:
       # It's not & or | or a memory function.
-      binding_generator = self.ask_simple(query, s)
+      binding_generator = self.ask_simple(query, bindings)
     return binding_generator
 
   def retract(self, clause):
@@ -197,11 +200,9 @@ class PropKB(KB):
 #                generator = self.extend_heritables_to_children(query, generator)
     return generator
 
-
 #    def extend_heritables_to_children(self, query, generator):
 #        (inner_relations, object, value) = self.deconstruct_query(query)
 #        found_bindings = False
-
 
   def match_against_one_proposition(self, query, proposition, active_bindings):
     return unify(query, proposition.clause(), active_bindings)
@@ -216,7 +217,8 @@ class PropKB(KB):
     else:
       return None
 
-  def filter_possible_matches(self, match_fn, possible_matches, query, active_bindings):
+  def filter_possible_matches(self, match_fn, possible_matches,
+                              query, active_bindings):
     # Takes a generator of possible matches and returns a new
     # generator containing actual matches (actually yields binding
     # sets).
@@ -239,8 +241,8 @@ class PropKB(KB):
                                                      active_bindings):
           yield bindings
 
-
-  def retrieve_description_form(self, relation, object, value, active_bindings):
+  def retrieve_description_form(self, relation, object, value,
+                                active_bindings):
     # Handles queries on Descriptions.  We first check to see if the
     # Description has a slot satisfying the query, and if it does not
     # then we do the same query on the base class of the description.
@@ -273,23 +275,26 @@ class PropKB(KB):
                 map(lambda s: subst(active_bindings, s), query.args[1:-1])
     slot_value = subst(active_bindings, query.args[-1])
     if is_var_symbol(slot_value.op) and is_var_symbol(thing.op):
-      raise ValueError, \
-            "Cannot have both an unbound object variable and an unbound value variable: %s." % ((query, active_bindings),)
+      raise ValueError(
+        'Cannot have both an unbound object variable and an unbound value '
+        'variable: %s.' % ((query, active_bindings),))
     elif is_var_symbol(slot_value.op):
       # Find the value of a slot
       var = expr("?var")
       for parent in self.all_parents(thing):
-        for binding in self.unify_with_propositions(apply(slot_path[0],
-                                                          [parent] + slot_path[1:] + [var]),
-                                                    {}):
+        for binding in self.unify_with_propositions(
+          apply(slot_path[0],
+                [parent] + slot_path[1:] + [var]),
+          {}):
           yield extend(active_bindings, slot_value, binding[var])
           return
     elif is_var_symbol(thing.op):
       # Find all things that have a particular slot-value, including
       # through inheritance.
       answers = map(lambda b: b[expr("?x")],
-                    self.unify_with_propositions(apply(slot_path[0], [expr("?x")] + slot_path[1:] + [slot_value]),
-                                                 {}))
+                    self.unify_with_propositions(
+        apply(slot_path[0], [expr("?x")] + slot_path[1:] + [slot_value]),
+        {}))
       for answer in answers:
         for child in self.all_children(answer):
           child_slot_value = self.slot_value2(child, slot_path)
@@ -309,22 +314,26 @@ class PropKB(KB):
     """Returns the value of the specified relations."""
     return self.slot_value2(object, relations)
 
-
   def slot_value2(self, object, relations):
     """Returns the value of the specified relations."""
-    if not (isinstance(object, str) or isinstance(object, Expr) or isinstance(object, Description)):
-      raise ValueError, "%s is neither a string, a Description nor an Expr." % (repr(object),)
+    if (not (isinstance(object, str) or
+             isinstance(object, Expr) or
+             isinstance(object, Description))):
+      raise ValueError('%s is neither a string, a Description nor an Expr.' % (
+        repr(object),))
     for relation in relations:
       if not (isinstance(relation, str) or isinstance(relation, Expr)):
-        raise ValueError, "%s is neither a string nor an Expr." % (repr(relation),)
+        raise ValueError('%s is neither a string nor an Expr.' % (
+          repr(relation),))
 
     object = expr(object)
     relations = map(expr, relations)
     if not isinstance(object, Expr):
-      raise ValueError, "Object %s must be an Expr." % (object,)
+      raise ValueError('Object %s must be an Expr.' % (object,))
     for relation in relations:
       if not isinstance(relation, Expr):
-        raise ValueError, "Slots argument %s contains a non-Expr: %s." % (relations, relation)
+        raise ValueError('Slots argument %s contains a non-Expr: %s.' % (
+          relations, relation))
     var = expr("?v")
     query = apply(relations[0], (object,) + tuple(relations[1:]) + (var,))
     bindings = self.ask(query)
@@ -351,7 +360,7 @@ class PropKB(KB):
       return self.parent_cache[x]
 
     if not isinstance(x, Expr):
-      raise ValueError, "%s must be an Expr." % (x,)
+      raise ValueError('%s must be an Expr.' % (x,))
     var = expr("?x")
     query = expr("ISA")(x, var)
     solutions = self.ask_all(query)
@@ -808,11 +817,12 @@ class Expr:
 
   def __init__(self, op, *args):
     "Op is a string or number; args are Exprs (or are coerced to Exprs)."
-    assert isinstance(op, str) or isinstance(op, Description) or (isnumber(op) and not args)
+    assert (isinstance(op, str) or isinstance(op, Description) or
+            (utils.isnumber(op) and not args))
     if isinstance(op, Description):
       self.op = op
     else:
-      self.op = num_or_str(op)
+      self.op = utils.num_or_str(op)
     self.args = map(expr, args) ## Coerce args to Exprs
 
   def __call__(self, *args):
@@ -823,7 +833,7 @@ class Expr:
     return Expr(self.op, *args)
 
   def __repr__(self):
-    return '<%s: "%s">' % (x.__class__.__name__, str(self))
+    return '<%s: "%s">' % (self.__class__.__name__, str(self))
 
   def __str__(self):
     "Show something like 'P' or 'P(x, y)', or '~P' or '(P | Q | R)'"
@@ -899,9 +909,12 @@ def expr2(s):
   >>> expr('P & Q | ~R(x, F(x))')
   ((P & Q) | ~R(x, F(x)))
   """
-  if isinstance(s, Expr): return s
-  if isnumber(s): return Expr(s)
-  if isinstance(s, Description): return Expr(s)
+  if isinstance(s, Expr):
+    return s
+  if utils.isnumber(s):
+    return Expr(s)
+  if isinstance(s, Description):
+    return Expr(s)
   ## Replace the alternative spellings of operators with canonical spellings
   s = s.replace('==>', '>>').replace('<==', '<<')
   s = s.replace('<=>', '%').replace('=/=', '^')
@@ -909,15 +922,18 @@ def expr2(s):
   s = re.sub(r'([a-zA-Z0-9_\-$.?]+)', r'Expr("\1")', s)
   ## Now eval the string.  (A security hole; do not use with an adversary.)
 #    print "EVALLING: %s" % (s,)
-  return eval(s, {'Expr':Expr})
+  return eval(s, {'Expr': Expr})
+
 
 def is_symbol(s):
   "A string s is a symbol if it starts with an alphabetic char."
   return isinstance(s, str) and (s[0].isalpha() or s[0] == '$' or s[0] == '?')
 
+
 def is_var_symbol(s):
   "A logic variable symbol is an initial-lowercase string."
   return is_symbol(s) and s[0] == '?'
+
 
 def is_prop_symbol(s):
   """A proposition logic symbol is an initial-uppercase string other than
@@ -926,8 +942,13 @@ def is_prop_symbol(s):
 
 
 ## Useful constant Exprs used in examples and code:
-TRUE, FALSE, ZERO, ONE, TWO = map(Expr, ['TRUE', 'FALSE', 0, 1, 2]) 
-A, B, C, F, G, P, Q, x, y, z  = map(Expr, 'ABCFGPQxyz') 
+#TRUE, FALSE, ZERO, ONE, TWO = map(Expr, ['TRUE', 'FALSE', 0, 1, 2])
+#A, B, C, F, G, P, Q, x, y, z  = map(Expr, 'ABCFGPQxyz')
+TRUE = Expr('TRUE')
+FALSE = Expr('FALSE')
+ZERO = Expr(0)
+ONE = Expr(1)
+
 
 #______________________________________________________________________________
 
@@ -938,16 +959,19 @@ def tt_entails(kb, alpha):
   """
   return tt_check_all(kb, alpha, prop_symbols(kb & alpha), {})
 
+
 def tt_check_all(kb, alpha, symbols, model):
   "Auxiliary routine to implement tt_entails."
   if not symbols:
-    if pl_true(kb, model): return pl_true(alpha, model)
-    else: return True
-    assert result != None
+    if pl_true(kb, model):
+      return pl_true(alpha, model)
+    else:
+      return True
   else:
     P, rest = symbols[0], symbols[1:]
     return (tt_check_all(kb, alpha, rest, extend(model, P, True)) and
             tt_check_all(kb, alpha, rest, extend(model, P, False)))
+
 
 def prop_symbols(x):
   "Return a list of all propositional symbols in x."
@@ -962,6 +986,7 @@ def prop_symbols(x):
         s.add(symbol)
     return list(s)
 
+
 def tt_true(alpha):
   """Is the sentence alpha a tautology? (alpha will be coerced to an expr.)
   >>> tt_true(expr("(P >> Q) <=> (~P | Q)"))
@@ -969,13 +994,16 @@ def tt_true(alpha):
   """
   return tt_entails(TRUE, expr(alpha))
 
-def pl_true(exp, model={}):
+
+def pl_true(exp, model=None):
   """Return True if the propositional logic expression is true in the
   model, and False if it is false. If the model does not specify the
   value for every proposition, this may return None to indicate 'not
   obvious'; this may happen even when the expression is
   tautological.
   """
+  if model is None:
+    model = {}
   op, args = exp.op, exp.args
   if exp == TRUE:
     return True
@@ -985,8 +1013,10 @@ def pl_true(exp, model={}):
     return model.get(exp)
   elif op == '~':
     p = pl_true(args[0], model)
-    if p == None: return None
-    else: return not p
+    if p == None:
+      return None
+    else:
+      return not p
   elif op == '|':
     result = False
     for arg in args:
@@ -1077,6 +1107,7 @@ def move_not_inwards(s):
   else:
     return Expr(s.op, *map(move_not_inwards, s.args))
 
+
 def distribute_and_over_or(s):
   """Given a sentence s consisting of conjunctions and disjunctions
   of literals, return an equivalent sentence in CNF.
@@ -1085,9 +1116,9 @@ def distribute_and_over_or(s):
   """
   if s.op == '|':
     s = NaryExpr('|', *s.args)
-    if len(s.args) == 0: 
+    if len(s.args) == 0:
       return FALSE
-    if len(s.args) == 1: 
+    if len(s.args) == 1:
       return distribute_and_over_or(s.args[0])
     conj = find_if((lambda d: d.op == '&'), s.args)
     if not conj:
@@ -1104,7 +1135,9 @@ def distribute_and_over_or(s):
   else:
     return s
 
+
 _NaryExprTable = {'&':TRUE, '|':FALSE, '+':ZERO, '*':ONE}
+
 
 def NaryExpr(op, *args):
   """Create an Expr, but with an nary, associative op, so we can promote
@@ -1169,14 +1202,16 @@ def unify(x, y, s):
     return unify(x.args, y.args, unify(x.op, y.op, s))
   elif isterm(x) or isterm(y) or not x or not y:
     return if_(x == y, s, None)
-  elif issequence(x) and issequence(y) and len(x) == len(y):
+  elif utils.issequence(x) and utils.issequence(y) and len(x) == len(y):
     return unify(x[1:], y[1:], unify(x[0], y[0], s))
   else:
     return None
 
+
 def is_variable(x):
   "A variable is an Expr with no args and a lowercase symbol as the op."
   return isinstance(x, Expr) and not x.args and is_var_symbol(x.op)
+
 
 def unify_var(var, x, s):
   if var in s:
@@ -1186,19 +1221,22 @@ def unify_var(var, x, s):
   else:
     return extend(s, var, x)
 
+
 def occur_check(var, x):
   "Return true if var occurs anywhere in x."
   if var == x:
     return True
   elif isinstance(x, Expr):
     return var.op == x.op or occur_check(var, x.args)
-  elif not isterm(x) and issequence(x):
+  elif not isterm(x) and utils.issequence(x):
     for xi in x:
       if occur_check(var, xi): return True
   return False
 
+
 def isterm(item):
   return isinstance(item, str) or isinstance(item, Description)
+
 
 def extend(s, var, val):
   """Copy the substitution s and extend it by setting var to val; return copy.
@@ -1213,6 +1251,7 @@ def extend(s, var, val):
   s2 = s.copy()
   s2[var] = val
   return s2
+
 
 def subst(s, x):
   """Substitute the substitution s into the expression x.

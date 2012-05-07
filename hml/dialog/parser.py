@@ -32,13 +32,13 @@ import getopt
 CONSTRAINT_EXPR = logic.expr("$constraint")
 
 
-def tokenize(string):
+def tokenize(text):
   """Tokenizes a string.  Tokens consist of characters that are
   letters, digits or underscores.  This function is primarily intended
   for text typed directly by users or from a speech recognizer.
   """
   regex = re.compile(r'\W+')
-  tokens = regex.split(string.lower())
+  tokens = regex.split(text.lower())
   tokens = filter(lambda token: len(token) > 0, tokens)
   return tokens
 
@@ -51,9 +51,9 @@ class ParserBase:
   def __init__(self):
     self.debug = 0
 
-  def tokenize(self, string):
+  def tokenize(self, text):
     """Tokenizes a string."""
-    tokens = tokenize(string.lower())
+    tokens = tokenize(text.lower())
     if self.debug > 0:
       print "Tokens: %s" % (tokens,)
     return tokens
@@ -61,16 +61,16 @@ class ParserBase:
   def parse_tokens(self, s, debug):
     raise NotImplementedError
 
-  def parse(self, string, debug=0):
+  def parse(self, text, debug=0):
     """Parses a string.  Returns the list of valid parses."""
-    logging.info('Parser %s parsing %r', self, string)
-    if not isinstance(string, basestring):
-      raise TypeError('%s is not a string.' % (string,))
-    results = self.parse_tokens(self.tokenize(string), debug)
+    logging.info('Parser %s parsing %r', self, text)
+    if not isinstance(text, basestring):
+      raise TypeError('%s is not a string.' % (text,))
+    results = self.parse_tokens(self.tokenize(text), debug)
     if len(results) > 1:
       results = utils.remove_duplicates(results)
     for result in results:
-      result.text = string
+      result.text = text
     return results
 
 Cardinals = {
@@ -262,10 +262,10 @@ class ConceptualParser(ParserBase):
     """
     parses = []
     for [item, start, end, unused_value] in self.references:
-        if (start == 0 and end == pos - 1 and
-            isinstance(item, logic.Description)):
-          parses.append(item)
-#          print "PARSE: %s %s" % (item, value)
+      if (start == 0 and end == pos - 1 and
+          isinstance(item, logic.Description)):
+        parses.append(item)
+        #          print "PARSE: %s %s" % (item, value)
     return parses
 
   def reference(self, item, start, end, value):
@@ -1293,22 +1293,21 @@ class IndexSetPatternParser:
       raise SyntaxError, \
             "Unexpected character '%s' in slot reference in indexset %s." % (input[position], repr(input))
     return [symbol, position + 1]
-    
+
   def skip_whitespace(self, input, position):
-    while position < len(input) and (input[position] == ' ' or input[position] == '\n'):
+    while (position < len(input) and
+           (input[position] == ' ' or input[position] == '\n')):
       position += 1
     return position
 
   def is_symbol_char(self, char):
     return char in string.digits or char in string.letters or char in "-'?:"
-      
+
   def slot_constraint(self, item, slot):
     item = logic.expr(item)
     slot = logic.expr(slot)
     return self.kb.slot_value(item, CONSTRAINT_EXPR, slot)
 
-
-  
 
 if __name__ == "__main__":
   p = InteractiveParserApp(sys.argv)
