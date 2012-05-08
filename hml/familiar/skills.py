@@ -1,6 +1,10 @@
 # Copyright 2012 John Wiseman
 # jjwiseman@gmail.com
 
+"""
+Low-level interface to a drone via MAVLink.
+"""
+
 import hml
 
 import logging
@@ -13,8 +17,17 @@ import mavutil
 
 
 class Agent(object):
-  def __init__(self):
-    pass
+  def __init__(self, mavlink_port=None):
+    self.agent_comm_thread = AgentCommThread(
+      mavlink_port=mavlink_port, message_delegate=self)
+    self.agent_comm_thread.daemon = True
+
+  def connect(self):
+    self.agent_comm_thread.start()
+    self.agent_comm_thread.wait_until_connected()
+
+  def handle_agent_message(self, message):
+    logging.info('Got message %s', message)
 
   def become_safe(self):
     pass
@@ -55,9 +68,11 @@ class Timer(object):
 
 
 class AgentCommThread(threading.Thread):
-  def __init__(self, mavlink_port=None):
-    assert(mavlink_port)
+  def __init__(self, mavlink_port=None, message_delegate=None):
     self.mavlink_port = mavlink_port
+    self.message_delegate = message_delegate
+    self.connection_condvar = threading.Condition()
+    self.is_connected = False
     threading.Thread.__init__(self)
 
   def run(self):
@@ -74,6 +89,8 @@ class AgentCommThread(threading.Thread):
 
   def handle_message(self, message):
     logging.info('Handling message %s', message)
+    if self.message_delegate:
+      self.message_delegate.handle_message(message)
 
   def connect(self):
     # Wait to get a couple heartbeats
@@ -83,15 +100,23 @@ class AgentCommThread(threading.Thread):
     self.mavlink_port.wait_heartbeat()
     logging.debug('Got 1st heartbeat, Waiting for 2nd heartbeat')
     self.mavlink_port.wait_heartbeat()
-    logging.info('Connected in %.3f seconds.', timer.elapsed_time())
+    logging.info('Connected in %.3f seconds', timer.elapsed_time())
+    with self.connection_condvar:
+      self.is_connected = True
+      self.connection_condvar.notify_all()
+
+  def wait_until_connected(self):
+    with self.connection_condvar:
+      while not self.is_connected:
+        self.connection_condvar.wait()
 
   def initialize(self):
     mavlink_port = self.mavlink_port
     self.connect()
-    # Tell the drone to send us telemetry at 1 Hz.
+    # Tell the drone to send us telemetry at 3 Hz.
     mavlink_port.mav.request_data_stream_send(
       mavlink_port.target_system, mavlink_port.target_component,
-      mavlink.MAV_DATA_STREAM_ALL, 1, 1)
+      mavlink.MAV_DATA_STREAM_ALL, 3, 1)
 
 
 def main():
