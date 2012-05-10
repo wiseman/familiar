@@ -1,12 +1,13 @@
-from energid import logic
-from energid import dialogmanager
-from energid import iomanager
-from energid import utils
+from hml.dialog import dialogmanager
+from hml.dialog import iomanager
+from hml.dialog import logic
+from hml.dialog import utils
 
 import pprint
 import time
 import math
 import random
+
 
 def position_frame_to_vector(kb, position):
   # Make sure we're working with floats as opposed to, say, ints.
@@ -14,7 +15,8 @@ def position_frame_to_vector(kb, position):
   y = float(kb.slot_value(position, logic.expr("y")).op)
   z = float(kb.slot_value(position, logic.expr("z")).op)
   return [x, y, z]
-  
+
+
 def do_look_at(dm, parse):
   # FIXME: add ability to say "look at the south edge of the lake",
   # and then use this code in do_call_contact_location_obj (?)
@@ -24,13 +26,14 @@ def do_look_at(dm, parse):
     objdesc = parse.slot_value("object")
     objects = objdesc.find_instances(dm.kb)
     if len(objects) == 1:
-      object = objects[0]
-      dm.say("I am going to look at %s", object)
-      position = dm.kb.slot_value(object, logic.expr("position"))
+      obj = objects[0]
+      dm.say("I am going to look at %s", obj)
+      position = dm.kb.slot_value(obj, logic.expr("position"))
       dm.pilot_model.look_at(position_frame_to_vector(dm.kb, position))
     else:
       dm.debug("No instances matching %s" % (objdesc,))
       say_disamb_failure(dm, objects)
+
 
 def do_fly_to(dm, parse):
   if not parse.has_slot("object"):
@@ -39,39 +42,40 @@ def do_fly_to(dm, parse):
     objdesc = parse.slot_value("object")
     objects = objdesc.find_instances(dm.kb)
     if len(objects) == 1:
-      object = objects[0]
-      dm.say("I am going to fly to %s", object)
-      position = dm.kb.slot_value(object, logic.expr("position"))
+      obj = objects[0]
+      dm.say("I am going to fly to %s", obj)
+      position = dm.kb.slot_value(obj, logic.expr("position"))
       dm.pilot_model.fly_to(position_frame_to_vector(dm.kb, position))
     else:
       dm.debug("No instances matching %s" % (objdesc,))
       say_disamb_failure(dm, objects)
 
-    
-def do_detail_query(dm, parse):
+
+def do_detail_query(dm, unused_parse):
   print dm.pilot_model.get_details()
 
 
-def do_all_query(dm, parse):
+def do_all_query(dm, unused_parse):
   print dm.pilot_model.getAll()
+
 
 def do_tell_observe(dm, parse):
   if not parse.has_slot("object"):
     dm.say("You need to tell me what I'm supposed to see.")
   else:
     objdesc = parse.slot_value("object")
-    type = dm.kb.slot_value(logic.expr(objdesc), logic.expr("type"))
-    if type == None:
+    objtype = dm.kb.slot_value(logic.expr(objdesc), logic.expr("type"))
+    if objtype == None:
       dm.debug("No type slot on %s" % (objdesc,))
       dm.say("I don't really know what that is.")
     else:
-      if dm.pilot_model.can_see_object_type(type.op):
+      if dm.pilot_model.can_see_object_type(objtype.op):
         dm.say("roger")
       else:
         dm.say("negative")
 
 
-def do_authentication_request(dm, parse):
+def do_authentication_request(dm, unused_parse):
   if dm.jtac_is_authenticated:
     dm.say("you have already authenticated")
   elif dm.jtac_authentication_requested:
@@ -80,7 +84,7 @@ def do_authentication_request(dm, parse):
   else:
     dm.say("hog authenticates bravo")
     dm.jtac_is_authenticated = True
-  
+
 
 def letter_to_phonetic_word(dm, letter):
   desc = logic.Description("c-nato-phonetic-word", {"letter": letter})
@@ -89,23 +93,28 @@ def letter_to_phonetic_word(dm, letter):
     return "unknown"
   else:
     return dm.generate("%s", words[0])
-  
-  
-def do_abort_code_request(dm, parse):
-  abort_code_words = map(lambda letter: letter_to_phonetic_word(dm, letter), dm.abort_code)
+
+
+def do_abort_code_request(dm, unused_parse):
+  abort_code_words = map(lambda letter: letter_to_phonetic_word(dm, letter),
+                         dm.abort_code)
   abort_code_string = " ".join(abort_code_words)
   dm.say("abort code is %s" % (abort_code_string,))
+
 
 def do_abort_code_ack(dm, parse):
   for i in range(0, 2):
     response_word = parse.slot_value("letter%s" % (i + 1,))
     response_letter = dm.kb.slot_value(response_word, "letter")
     if response_letter.op != dm.abort_code[i]:
-      dm.say("negative %s %s", parse.slot_value("letter1"), parse.slot_value("letter2"))
+      dm.say("negative %s %s",
+             parse.slot_value("letter1"),
+             parse.slot_value("letter2"))
       do_abort_code_request(dm, None)
       return
 
-def do_nine_line_readiness_prompt(dm, parse):
+
+def do_nine_line_readiness_prompt(dm, unused_parse):
   if dm.nine_line.is_complete():
     dm.say("you already gave me the nine-line")
   else:
@@ -125,7 +134,7 @@ def accept_nine_lines(dm):
   lines = []
   for line in range(0, 9):
     dm.debug(dm.nine_line.debug_line(line))
-    parses = dm.parse_with_prompt(all_parses = True)
+    parses = dm.parse_with_prompt(all_parses=True)
     if dm.nine_line.any_object_is_valid_for_line(parses, line):
       dm.debug("Parse is valid for line %s" % (line + 1,))
     else:
@@ -139,7 +148,7 @@ def accept_nine_lines(dm):
   for line, parses in enumerate(lines):
     parse_matched = False
     if apply_parses_to_line(parses, dm.nine_line, line):
-        num_matching_lines = num_matching_lines + 1
+      num_matching_lines += 1
     else:
       if first_non_matching_line == None:
         first_non_matching_line = line
@@ -153,26 +162,30 @@ def accept_nine_lines(dm):
     dm.debug("need line %s" % (first_non_matching_line + 1,))
     dm.say("Say again line %s" % (first_non_matching_line + 1,))
     dm.debug(dm.nine_line.debug_line(first_non_matching_line))
-    parses = dm.parse_with_prompt(all_parses = True)
-    if dm.nine_line.any_object_is_valid_for_line(parses, first_non_matching_line):
+    parses = dm.parse_with_prompt(all_parses=True)
+    if dm.nine_line.any_object_is_valid_for_line(
+      parses, first_non_matching_line):
       dm.debug("Parse is valid for line %s" % (first_non_matching_line + 1,))
     else:
-      dm.debug("Parse is NOT valid for line %s" % (first_non_matching_line + 1,))
+      dm.debug("Parse is NOT valid for line %s" % (
+        first_non_matching_line + 1,))
 
     if apply_parses_to_line(parses, dm.nine_line, first_non_matching_line):
       dm.debug("Got remaining line")
       return
-    
+
   dm.say("I didn't get that, say again all nine lines")
   dm.nine_line.reset()
   accept_nine_lines(dm)
 
+
 def fake_apply_nine_line_data(nine_line, line, raw_text):
   # lamely accept text as nine-line data
-  nine_line.set_line(raw_text, line, force_accept = True)
+  nine_line.set_line(raw_text, line, force_accept=True)
   nine_line.set_raw_text(raw_text, line)
   return True
-  
+
+
 def apply_parses_to_line(parses, nine_line, line, raw_text=""):
   for parse in parses:
     if nine_line.object_is_valid_for_line(parse, line):
@@ -180,15 +193,17 @@ def apply_parses_to_line(parses, nine_line, line, raw_text=""):
       nine_line.set_raw_text(raw_text, line)
       return True
   return False
-  
+
+
 def accept_one_line(dm):
-  parses = dm.parse_with_prompt(all_parses = True)
-  
-  
-def do_copy_req(dm, parse):
+  parses = dm.parse_with_prompt(all_parses=True)
+
+
+def do_copy_req(dm, unused_parse):
   if dm.nine_line.is_complete():
     dm.say("%s copies all.", dm.pilot_callsign)
-    has_remarks = accept_roger_or_negative(dm, dm.generate("Do you have remarks for %s flight?", dm.pilot_callsign))
+    has_remarks = accept_roger_or_negative(
+      dm, dm.generate("Do you have remarks for %s flight?", dm.pilot_callsign))
     if has_remarks:
       accept_remarks(dm)
   else:
@@ -210,20 +225,23 @@ def accept_roger_or_negative(dm, prompt):
 def accept_remarks(dm):
   dm.debug("Accepting remarks")
   while True:
-    # MRH 3/27/07: we don't need to save these, right?  reading back remarks just
-    # data sent from jtac for now.
+    # MRH 3/27/07: we don't need to save these, right?  reading back
+    # remarks just data sent from jtac for now.
     parse = dm.parse_with_prompt()
     if dm.kb.isa(logic.expr(parse), logic.expr("c-say-when-ready-for-talkon")):
-        dm.debug("Remarks appear to be complete")
-        dm.say("go with talk on")
-        # dm.conv_state.set_state("talk-on")
-        dm.state_machine.set_state(TALK_ON)
-        return
+      dm.debug("Remarks appear to be complete")
+      dm.say("go with talk on")
+      # dm.conv_state.set_state("talk-on")
+      dm.state_machine.set_state(TALK_ON)
+      return
 
-def do_endex(dm, parse):
+
+def do_endex(dm, unused_parse):
   dm.say("copy endex")
-  dm.debug("Resetting exercise.  Should reset sim to initial state.  Resetting dialog.")
+  dm.debug('Resetting exercise.  Should reset sim to initial state. '
+           'Resetting dialog.')
   raise dialogmanager.EndExercise
+
 
 def custom_resolver(dm, desc):
   resolver_name = dm.kb.slot_value(desc, "custom-resolver")
@@ -232,11 +250,13 @@ def custom_resolver(dm, desc):
   else:
     return None
 
+
 def say_disamb_failure(dm, objects):
   if len(objects) > 1:
     dm.say("sorry, I don't know which one you mean.")
   elif len(objects) == 0:
     dm.say("sorry, I don't know that.")
+
 
 def do_call_contact(dm, parse):
   objdesc = parse.slot_value("object")
@@ -251,39 +271,43 @@ def do_call_contact(dm, parse):
     # FIXME: Think about merging do_call_contact and do_implied_call_contact.
     do_implied_call_contact(dm, parse)
 
-def call_contact_with_resolved_object(dm, object):
-  position = dm.kb.slot_value(object, logic.expr("position"))
-  objectID = dm.kb.slot_value(object, logic.expr("objid"))
+
+def call_contact_with_resolved_object(dm, obj):
+  position = dm.kb.slot_value(obj, logic.expr("position"))
+  objectID = dm.kb.slot_value(obj, logic.expr("objid"))
   if position == None:
     if objectID == None:
-      dm.debug("Object %s has position slot, but no objid" % (object,))
+      dm.debug("Object %s has position slot, but no objid" % (obj,))
     dm.debug("No position")
-    say_negative_contact(dm, object)
+    say_negative_contact(dm, obj)
   else:
     pos = position_frame_to_vector(dm.kb, position)
-    dm.debug("Pilot is looking at %s" % (pos,)) 
+    dm.debug("Pilot is looking at %s" % (pos,))
     dm.pilot_model.look_at(pos)
     if dm.pilot_model.can_see_object_id(objectID.op):
-      dm.set_focus_of_attention(object)
-      say_positive_contact(dm, object)
+      dm.set_focus_of_attention(obj)
+      say_positive_contact(dm, obj)
     else:
-      say_negative_contact(dm, object)
-  
+      say_negative_contact(dm, obj)
 
-def say_positive_contact(dm, object):
+
+def say_positive_contact(dm, obj):
   dm.say_random([5, ["contact"]],
-                [3, ["contact %s", object]],
-                [2, ["visual %s", object]])
+                [3, ["contact %s", obj]],
+                [2, ["visual %s", obj]])
 
-def say_negative_contact(dm, object):
+
+def say_negative_contact(dm, obj):
   dm.say_random([5, ["negative contact"]],
-                [3, ["negative contact %s", object]])
+                [3, ["negative contact %s", obj]])
+
 
 def disambiguate_object(dm, description):
   kb_instances = description.find_instances(dm.kb)
   if len(kb_instances) == 1:
     # There's only one in the world, which is pretty unambiguous.
-    dm.debug("%s is unambiguous; there's only one in the world." % (description,))
+    dm.debug("%s is unambiguous; there's only one in the world." % (
+      description,))
     return kb_instances[0]
   elif len(kb_instances) == 0:
     # There are none in the world, which is also unambiguous.
@@ -294,40 +318,47 @@ def disambiguate_object(dm, description):
     dm.debug("this path through disambiguate_object is not yet implemented")
     assert False
 
+
 def do_establish_unit_of_measurement(dm, parse):
   # disambiguate object
   objdesc = parse.slot_value("object")
-  object = disambiguate_object(dm, objdesc)
-  if object == None:
+  obj = disambiguate_object(dm, objdesc)
+  if obj == None:
     dm.say("negative, do not see %s", objdesc)
   else:
     extentdesc = parse.slot_value("extent")
-    extent = get_object_extent(dm, object, extentdesc)
+    extent = get_object_extent(dm, obj, extentdesc)
     if extent == None:
-      dm.debug("Extent %s of %s is not known." % (extentdesc, object))
+      dm.debug("Extent %s of %s is not known." % (extentdesc, obj))
       dm.say("I can't tell what the %s is.", extentdesc)
     else:
       dm.set_unit_of_measure(extent)
       dm.say("copy")
-      
-def do_reuse_unit_of_measure(dm, parse):
-  """If a unit of measure was previously established, re-use it; otherwise, complain."""
+
+
+def do_reuse_unit_of_measure(dm, unused_parse):
+  """If a unit of measure was previously established, re-use it;
+  otherwise, complain."""
   if dm.previous_unit_of_measure == None:
     dm.say("negative, no previous unit of measure established.")
   else:
     dm.set_unit_of_measure(dm.previous_unit_of_measure)
     dm.say("copy")
 
-def do_reuse_anchor_point(dm, parse):
-  """If an anchor point was previously established, re-use it; otherwise, complain."""
+
+def do_reuse_anchor_point(dm, unused_parse):
+  """If an anchor point was previously established, re-use it;
+  otherwise, complain."""
   if dm.previous_anchor_point == None:
     dm.say("negative, no previous anchor point established.")
   else:
     dm.set_anchor_point(dm.previous_anchor_point)
     dm.say("copy")
 
-def do_reuse_anchor_point_and_uom(dm, parse):
-  """If a unit of measure and anchor point were both previously established, re-use; otherwise, complain."""
+
+def do_reuse_anchor_point_and_uom(dm, unused_parse):
+  """If a unit of measure and anchor point were both previously
+  established, re-use; otherwise, complain."""
   if dm.previous_unit_of_measure == None:
     dm.say("negative, no previous unit of measure established.")
   elif dm.previous_anchor_point == None:
@@ -337,8 +368,10 @@ def do_reuse_anchor_point_and_uom(dm, parse):
     dm.set_anchor_point(dm.previous_anchor_point)
     dm.say("copy")
 
-def do_disregard_unit_of_measure(self, parse):
-  # Choosing not to save disregarded unit of measure in previous state, at least for now
+
+def do_disregard_unit_of_measure(dm, unused_parse):
+  # Choosing not to save disregarded unit of measure in previous
+  # state, at least for now
   if dm.unit_of_measure == None:
     dm.say("no previous unit of measure established.")
   else:
@@ -346,7 +379,7 @@ def do_disregard_unit_of_measure(self, parse):
     dm.say("copy")
 
 
-def get_object_extent(dm, object, extentdesc):
+def get_object_extent(dm, unused_obj, extentdesc):
   def axis_name(axis):
     name = dm.kb.slot_value(axis, logic.expr("extent-slot-name"))
     if name != None:
@@ -358,7 +391,8 @@ def get_object_extent(dm, object, extentdesc):
     name1 = axis_name(dm.kb.slot_value(extent, "axis-origin"))
     name2 = axis_name(dm.kb.slot_value(extent, "axis-destination"))
     if name1 == None or name2 == None:
-      dm.debug("axis-origin of %s is %s, axis-destination is %s" % (extent, name1, name2))
+      dm.debug("axis-origin of %s is %s, axis-destination is %s" % (
+        extent, name1, name2))
       return None
     else:
       names = [name1, name2]
@@ -366,7 +400,7 @@ def get_object_extent(dm, object, extentdesc):
       name = "%s%sExtent" % (names[0].lower(), names[1].capitalize())
       dm.debug("extent slot is %s" % (name,))
       return name
-    
+
   extent_slot_name = extent_name(extentdesc)
   if extent_slot_name == None:
     return None
@@ -377,63 +411,69 @@ def get_object_extent(dm, object, extentdesc):
     else:
       return None
 
-def get_object_sim_property(dm, object, property):
-  objid = dm.kb.slot_value(object, "objid")
+
+def get_object_sim_property(dm, obj, property_name):
+  objid = dm.kb.slot_value(obj, "objid")
   if objid == None:
-    dm.debug("Unknown objid for %s" % (object,))
+    dm.debug("Unknown objid for %s" % (obj,))
     return None
   properties = dm.pilot_model.get_object_details({"name": objid.op})
   if properties == False or len(properties) != 1:
-    dm.debug("Got %s back for objid %s; wanted a sequence with 1 element." % (properties, objid.op))
+    dm.debug("Got %s back for objid %s; wanted a sequence with 1 element." % (
+      properties, objid.op))
     return None
   properties = properties[0]
-  value = properties[property]
-  dm.debug("%s of %s is %s" % (property, objid.op, value))
+  value = properties[property_name]
+  dm.debug("%s of %s is %s" % (property_name, objid.op, value))
   return value
-  
+
+
 def do_establish_anchor_point1(dm, parse):
   # disambiguate_object
   objdesc = parse.slot_value("object")
-  object = disambiguate_object(dm, objdesc)
-  if object == None:
+  obj = disambiguate_object(dm, objdesc)
+  if obj == None:
     dm.say("I don't know where %s is", objdesc)
   else:
     pointdesc = parse.slot_value("point")
-    point = get_object_point(dm, object, pointdesc)
+    point = get_object_point(dm, obj, pointdesc)
     if point == None:
-      dm.debug("Point %s of %s is not known" % (pointdesc, object))
+      dm.debug("Point %s of %s is not known" % (pointdesc, obj))
       dm.say("I don't know where the %s is", pointdesc)
     else:
       dm.set_anchor_point(point)
       dm.say("copy")
+
 
 def do_establish_anchor_point2(dm, parse):
   # disambiguate_object
   objdesc = parse.slot_value("object")
-  object = disambiguate_object(dm, objdesc)
-  if object == None:
+  obj = disambiguate_object(dm, objdesc)
+  if obj == None:
     dm.say("I don't know where %s is", objdesc)
   else:
     pointdesc = parse.slot_value("point")
-    point = get_object_point(dm, object, pointdesc)
+    point = get_object_point(dm, obj, pointdesc)
     if point == None:
-      dm.debug("Point %s of %s is not known" % (pointdesc, object))
+      dm.debug("Point %s of %s is not known" % (pointdesc, obj))
       dm.say("I don't know where the %s is", pointdesc)
     else:
       dm.set_anchor_point(point)
       dm.say("copy")
 
-def get_object_point(dm, object, pointdesc):
+
+def get_object_point(dm, obj, pointdesc):
   get_method = dm.kb.slot_value(pointdesc, "get-method")
   if get_method == None:
     dm.debug("%s has no get-method to determine the point" % (pointdesc,))
     return None
   else:
     function = dm.lookup_action_function(get_method.op)
-    point = function(dm, pointdesc, object)
+    point = function(dm, pointdesc, obj)
     return point
 
-def get_edge_point(dm, pointdesc, object):
+
+def get_edge_point(dm, pointdesc, obj):
   direction = dm.kb.slot_value(pointdesc, "direction").op
   direction_slot_part = dm.kb.slot_value(direction, "extent-slot-name")
   if direction_slot_part == None:
@@ -441,7 +481,7 @@ def get_edge_point(dm, pointdesc, object):
     return None
   else:
     limit_slot_name = "%sLimit" % (direction_slot_part.op.lower(),)
-    limit_coords = get_object_sim_property(dm, object, limit_slot_name)
+    limit_coords = get_object_sim_property(dm, obj, limit_slot_name)
     if limit_coords != None:
       limit_coords = eval(limit_coords)
       if len(limit_coords) == 2:
@@ -449,12 +489,12 @@ def get_edge_point(dm, pointdesc, object):
       return limit_coords
     else:
       return None
-  
+
 
 def do_look_based_on_unit_of_measure_from_anchor(dm, parse):
-  # Historically, the default has been to look from the currently specified anchor
-  # in the direction of the vector.
-  # Save memory of where we looked, so we can look based upon that later.
+  # Historically, the default has been to look from the currently
+  # specified anchor in the direction of the vector.  Save memory of
+  # where we looked, so we can look based upon that later.
   if dm.unit_of_measure == None:
     dm.say("you didn't give me a unit of measure")
     return
@@ -463,6 +503,7 @@ def do_look_based_on_unit_of_measure_from_anchor(dm, parse):
     return
 
   __look_based_on_unit_of_measure_helper(dm, parse, dm.anchor_point)
+
 
 def do_look_based_on_unit_of_measure_no_anchor(dm, parse):
   # New option:  look from wherever you're looking now, in the direction.
@@ -483,7 +524,9 @@ def do_look_based_on_unit_of_measure_no_anchor(dm, parse):
 
   __look_based_on_unit_of_measure_helper(dm, parse, start_point, is_anchor)
 
-def __look_based_on_unit_of_measure_helper(dm, parse, start_point, is_anchor = True):
+
+def __look_based_on_unit_of_measure_helper(dm, parse, start_point,
+                                           is_anchor=True):
   # helper function for the above two methods
   vector = unit_vector_sum_frame_to_vector(dm.kb, parse.slot_value("vector"))
   if vector is None:
@@ -500,19 +543,20 @@ def __look_based_on_unit_of_measure_helper(dm, parse, start_point, is_anchor = T
     dm.pilot_model.look_at(target)
     dm.state_machine.data.last_look_loc = target
     dm.say("roger")
-  
+
 
 def unit_vector_sum_frame_to_vector(kb, vectordesc):
   if vectordesc == None:
     return [0, 0, 0]
-  
+
   first = kb.slot_value(vectordesc, "first-vector")
   rest = kb.slot_value(vectordesc, "rest-vector")
 
   if rest == None:
     return vector_frame_to_vector(kb, first)
   else:
-    return vector_add(vector_frame_to_vector(kb, first), unit_vector_sum_frame_to_vector(kb, rest))
+    return vector_add(vector_frame_to_vector(kb, first),
+                      unit_vector_sum_frame_to_vector(kb, rest))
 
 
 def number_frame_to_value(kb, frame):
@@ -524,9 +568,10 @@ def number_frame_to_value(kb, frame):
   elif kb.isa(frame, logic.expr("c-rational")):
     int_frame = kb.slot_value(frame, "integer")
     fra_frame = kb.slot_value(frame, "fraction")
-    result = number_frame_to_value(kb, int_frame) + number_frame_to_value(kb, fra_frame)
+    result = (number_frame_to_value(kb, int_frame) +
+              number_frame_to_value(kb, fra_frame))
     print "rational: %s" % (result,)
-    return result      # FIXME: ugly returning from middle of function, clean up
+    return result  # FIXME: ugly returning from middle of function, clean up
   else:
     digit = kb.slot_value(frame, "first")
     digit_value = kb.slot_value(digit, "value")
@@ -540,12 +585,13 @@ def number_frame_to_value(kb, frame):
     print "number: %s" % (v,)
     return v
 
+
 def integer_frame_to_value(kb, frame):
   def frame_to_digits(f):
     first = kb.slot_path_value(f, "first", "value").op
     rest = kb.slot_value(f, "rest")
     if rest:
-      return [first,] + frame_to_digits(rest)
+      return [first] + frame_to_digits(rest)
     else:
       return [first]
   digits = frame_to_digits(frame)
@@ -554,8 +600,8 @@ def integer_frame_to_value(kb, frame):
     value = value * 10
     value = value + digit
   return value
-    
-  
+
+
 def number_frame_to_value(kb, frame):
   frame = logic.expr(frame)
   # Adding rational numbers; need to add integer portion to fractional portion
@@ -566,12 +612,13 @@ def number_frame_to_value(kb, frame):
   elif kb.isa(frame, logic.expr("c-rational")):
     int_frame = kb.slot_value(frame, "integer")
     fra_frame = kb.slot_value(frame, "fraction")
-    result = number_frame_to_value(kb, int_frame) + number_frame_to_value(kb, fra_frame)
+    result = (number_frame_to_value(kb, int_frame) +
+              number_frame_to_value(kb, fra_frame))
     print "rational: %s" % (result,)
-    return result      # FIXME: ugly returning from middle of function, clean up
+    return result  # FIXME: ugly returning from middle of function, clean up
   else:
     return integer_frame_to_value(kb, frame)
-  
+
 #    digit = kb.slot_value(frame, "first")
 #    digit_value = kb.slot_value(digit, "value")
 #    rest = kb.slot_value(frame, "rest")
@@ -588,35 +635,39 @@ def number_frame_to_value(kb, frame):
 def vector_frame_to_vector(kb, frame):
   measurement = kb.slot_value(frame, "magnitude")
   direction = kb.slot_value(frame, "direction")
-  
+
   magnitude = kb.slot_value(measurement, "magnitude")
   value = number_frame_to_value(kb, magnitude)
-  direction_vector = raw_vector_frame_to_vector(kb, kb.slot_value(direction, "rawvector"))
+  direction_vector = raw_vector_frame_to_vector(
+    kb, kb.slot_value(direction, "rawvector"))
   return vector_mult(direction_vector, value)
+
 
 def numberify(value):
   if isinstance(value, str):
     return float(eval(value))
   else:
     return float(value)
-  
+
+
 def raw_vector_frame_to_vector(kb, vector):
   # Make sure we're working with floats as opposed to, say, ints.
   x = numberify(kb.slot_value(vector, logic.expr("x")).op)
   y = numberify(kb.slot_value(vector, logic.expr("y")).op)
   z = numberify(kb.slot_value(vector, logic.expr("z")).op)
   return [x, y, z]
-  
 
 
 def vector_add(v1, v2):
-  sum = []
+  vsum = []
   for i in range(0, len(v1)):
-    sum.append(v1[i] + v2[i])
-  return sum
+    vsum.append(v1[i] + v2[i])
+  return vsum
+
 
 def vector_subtract(v1, v2):
   return vector_add(v1, vector_mult(v2, -1))
+
 
 def vector_mult(vector, scalar):
   product = []
@@ -624,36 +675,40 @@ def vector_mult(vector, scalar):
     product.append(vector[i] * scalar)
   return product
 
+
 def dot_product(v1, v2):
-  sum = 0.0
+  vsum = 0.0
   for i in range(0, len(v1)):
-    sum = sum + v1[i] * v2[i]
-  return sum
+    vsum += v1[i] * v2[i]
+  return vsum
+
 
 def vector_length(vector):
-  sum = 0.0
+  vsum = 0.0
   for e in vector:
-    sum = sum + e*e
-  return math.sqrt(sum)
-  
+    vsum += e * e
+  return math.sqrt(vsum)
+
 
 def normalize(vector):
   return vector_mult(vector, 1.0 / vector_length(vector))
 
 
 def do_implied_call_contact(dm, parse):
-  # 2/26/07 mrh: Adding use of "can_see_object" method in case where object has no type/subtype.
+  # 2/26/07 mrh: Adding use of "can_see_object" method in case where
+  # object has no type/subtype.
   found_object = False
-  object = parse.slot_value("object")
-  type = dm.kb.slot_value(object, "type")
-  subtype = dm.kb.slot_value(object, "subtype")
+  obj = parse.slot_value("object")
+  objtype = dm.kb.slot_value(obj, "type")
+  subtype = dm.kb.slot_value(obj, "subtype")
   if type != None:
     # if we have a type available, use it for looking up info
-    type = type.op
+    objtype = objtype.op
     if subtype != None:
       subtype = subtype.op
-    # dm.debug("** implied call contact looking by type: (%s,%s)" % (type, subtype))
-    found_object = dm.pilot_model.can_see_object_type(type, subtype)
+    # dm.debug("** implied call contact looking by type: (%s,%s)" %
+    # (type, subtype))
+    found_object = dm.pilot_model.can_see_object_type(objtype, subtype)
   else:
     # Otherwise, just take what properties we're given and look for
     # matching objects.
@@ -662,13 +717,14 @@ def do_implied_call_contact(dm, parse):
     found_object = dm.pilot_model.can_see_object(props)
   # did we see it?
   if found_object:
-    if dm.nine_line.is_complete() and dm.nine_line.get_line("target description").base == object.base:
-      tally_and_fly_to_target(dm, object)
+    if (dm.nine_line.is_complete() and
+        dm.nine_line.get_line("target description").base == obj.base):
+      tally_and_fly_to_target(dm, obj)
     else:
-      say_positive_contact(dm, object)
+      say_positive_contact(dm, obj)
   else:
+    dm.say("negative, I do not see %s", object)
 
-    dm.say("negative, I do not see %s", object)    
 
 def do_call_contact_location_obj(dm, parse):
   """Experimenting with a new call contact method in which the
@@ -676,16 +732,14 @@ def do_call_contact_location_obj(dm, parse):
   look at the location, and then see if the object is there.  This is
   more similar to do_implied_call_contact than do_call_contact.
   The location itself is the relative to some known object in memory.
-  
+
   Also borrows some from do_establish_anchor_point1, which combines
   locations with objects in the right way.
   """
-  
-  # expect parse to have location & object slots.
-  
-  # first, get the location.  take it apart, look at it.
-  # then, find the proper extent, look at that.  (is that necessary? you'll be looking nearby...)
-  # cribbed from do_establish_anchor_point1.
+  # expect parse to have location & object slots.  first, get the
+  # location.  take it apart, look at it.  then, find the proper
+  # extent, look at that.  (is that necessary? you'll be looking
+  # nearby...)  cribbed from do_establish_anchor_point1.
   compound_location = parse.slot_value("location")
   location_obj_desc = compound_location.slot_value("object")
   location_obj = disambiguate_object(dm, location_obj_desc)
@@ -707,7 +761,7 @@ def do_call_contact_location_obj(dm, parse):
         say_negative_contact(dm, location_obj_desc)
         # early escape
         return
-      
+
     location_point_desc = compound_location.slot_value("point")
     location_point = get_object_point(dm, location_obj, location_point_desc)
     if location_point == None:

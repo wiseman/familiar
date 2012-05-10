@@ -3,22 +3,21 @@ import os.path
 import pprint
 import random
 import re
+from xml.sax import saxutils
 import sys
 import threading
 import time
 import traceback
-from xml.sax import saxutils
-
-from hml.dialog import logic
-from hml.dialog import parser
-from hml.dialog import fdl
-from hml.dialog import pilotmodel
-from hml.dialog import generation
-from hml.dialog import iomanager
-from hml.dialog import utils
-from hml.dialog import audiofilter
 
 from hml.dialog import actions
+from hml.dialog import audiofilter
+from hml.dialog import fdl
+from hml.dialog import generation
+from hml.dialog import iomanager
+from hml.dialog import logic
+from hml.dialog import parser
+from hml.dialog import pilotmodel
+from hml.dialog import utils
 
 if sys.platform == 'win32':
   from hml.dialog import speech
@@ -28,19 +27,20 @@ class Attention:
   def __init__(self):
     self.focus = None
 
-  def set_focus(self, object):
-    self.focus = object
+  def set_focus(self, object_of_focus):
+    self.focus = object_of_focus
 
 
-
-class LineNotValid(Exception):
-  def __init__(self, line, constraint, object):
+class LineNotValidError(Exception):
+  def __init__(self, line, constraint, value):
+    Exception.__init__(self)
     self.line = line
     self.constraint = constraint
-    self.object = object
+    self.value = value
 
   def __str__(self):
-    return "%s is not acceptable for a %s on line %s" % (self.object, self.constraint, self.line)
+    return '%s is not acceptable for a %s on line %s' % (
+      self.object, self.constraint, self.line)
 
 
 class NineLine:
@@ -60,7 +60,7 @@ class NineLine:
   def __init__(self, kb):
     self.kb = kb
     self.reset()
-    
+
   def reset(self):
     self.values = [None] * 9
     self.raw_text = [None] * 9
@@ -74,7 +74,7 @@ class NineLine:
 
   def mark_as_acknowledged(self):
     self.acknowledged = True
-    
+
   def object_satisfies_constraints(self, object, constraints):
     if constraints is None:
       return True
@@ -91,7 +91,7 @@ class NineLine:
     if self.next_line > 8:
       return False
     return self.object_satisfies_constraints(object, self.current_constraint())
-    
+
   def object_is_valid_for_line(self, object, line):
     assert line >= 0 and line <= 8
     return self.object_satisfies_constraints(object, self.constraint(line))
@@ -103,14 +103,14 @@ class NineLine:
         return True
     return False
 
-  def set_line(self, object, line, force_accept = False):
+  def set_line(self, object, line, force_accept=False):
     if line > 8:
       raise TooManyLines
 
     if force_accept == False:
       constraint = self.constraint(line)
       if not self.object_satisfies_constraints(object, constraint):
-        raise LineNotValid(line + 1, constraint, object)
+        raise LineNotValidError(line + 1, constraint, object)
       self.values[line] = object
     else:
       # hack to put some data in here
@@ -123,41 +123,45 @@ class NineLine:
           return self.values[index]
     else:
       return self.values[line + 1]
-  
+
   def set_raw_text(self, text, line):
-    # 4/25 mrh: special purpose hack!  I wasn't able to make a good parser 
-    #           pattern for "NV 299 942", because there were major ambiguity
-    #           issues given the way we do numbers (is that 2 + 99942, or 29 + ...)
-    #           so, one big number comes from the nine line.  what's the hack?
-    #           munging them apart here in the "raw text".
-    
+    # 4/25 mrh: special purpose hack!  I wasn't able to make a good
+    #           parser pattern for "NV 299 942", because there were
+    #           major ambiguity issues given the way we do numbers (is
+    #           that 2 + 99942, or 29 + ...)  so, one big number comes
+    #           from the nine line.  what's the hack?  munging them
+    #           apart here in the "raw text".
+
     if line == 5:
       # only munge lines we think look like ours; exact match necessary
       pattern = "^[A-Z]{2} [0-9]{6}$"
       if re.match(pattern, text):
-	text =  text[:6] + " " + text[6:]
+        text = text[:6] + ' ' + text[6:]
     self.raw_text[line] = text
-    
+
   def get_raw_text(self, line):
     return self.raw_text[line]
-  
+
   def set_remarks(self, remarks):
     self.remarks = remarks
-  
+
   def get_remarks(self):
     return self.remarks
 
   def is_complete(self):
-    return ((not self.needs_acknowledgement) or self.acknowledged) and self.has_data()
-  
+    return (((not self.needs_acknowledgement) or self.acknowledged) and
+            self.has_data())
+
   def has_data(self):
-    for object in self.values:
-      if object is None:
+    for value in self.values:
+      if value is None:
         return False
     return True
-  
+
   def is_pending_acknowledge(self):
-    return self.has_data() and self.needs_acknowledgement and (not self.acknowledged)
+    return (self.has_data() and
+            self.needs_acknowledgement and
+            (not self.acknowledged))
 
   def current_line(self):
     return self.next_line + 1
@@ -179,16 +183,16 @@ class NineLine:
            (self.constraint(line), line + 1, self.description(line))
 
 
-
 class EndExercise(Exception):
   pass
+
 
 class DialogManager:
 
   CONCEPTUAL_PARSER = 'conceptual parser'
   INDEXED_CONCEPT_PARSER = 'indexed concept parser'
-  
-  def __init__(self, sim_host, action_module, run_tests = False):
+
+  def __init__(self, sim_host, action_module, run_tests=False):
     self.kb = logic.PropKB()
     self.cp_parser = parser.ConceptualParser(self.kb)
     self.icp_parser = parser.IndexedConceptParser(self.kb)
@@ -213,12 +217,11 @@ class DialogManager:
     self.authentication_challenge_code = "Bravo Hotel November"
     self.authentication_response_code = "w"
     self.abort_code = ["b", "f"]
-    
+
     self.unit_of_measure = self.previous_unit_of_measure = None
     self.anchor_point = self.previous_anchor_point = None
-    
+
     self.idler = ConversationIdleThread(self)
-    
 #    self.reset()
 
   def set_parser_mode(self, mode):
@@ -230,24 +233,23 @@ class DialogManager:
       self.parser_mode = DialogManager.INDEXED_CONCEPT_PARSER
       self.io_manager.set_dictation_mode()
     else:
-      raise "%s is not a valid parser mode." % (mode,)
+      raise Exception('%s is not a valid parser mode.' % (mode,))
 
   def set_io_manager(self, io_manager):
     self.io_manager = io_manager
     self.io_manager.set_lexicon(self.lexemes)
 
-
-  def set_focus_of_attention(self, object):
-    self.attention.set_focus(object)
+  def set_focus_of_attention(self, focus):
+    self.attention.set_focus(focus)
 
   def check_authenticated(self):
     if not self.jtac_is_authenticated:
-      raise AuthenticationRequired
+      raise AuthenticationRequired()
 
   def set_unit_of_measure(self, measure):
     self.debug("Set unit of measure to %s meters" % (measure,))
     self.unit_of_measure = measure
-  
+
   def reset_unit_of_measure(self):
     """Store current unit of measure for later re-use, then reset current."""
     self.previous_unit_of_measure = self.unit_of_measure
@@ -256,14 +258,15 @@ class DialogManager:
   def set_anchor_point(self, point):
     self.debug("Set anchor point to %s" % (point,))
     self.anchor_point = point
-  
+
   def reset_anchor_point(self):
     """Store current anchor point for later re-use, then reset current."""
     self.previous_anchor_point = self.anchor_point
     self.anchor_point = None
 
   def load_fdl(self, path):
-    fdl_handler = fdl.BaseFrameHandler(self.kb, self.cp_parser, self.icp_parser)
+    fdl_handler = fdl.BaseFrameHandler(
+      self.kb, self.cp_parser, self.icp_parser)
     fdl_parser = fdl.FDLParser(fdl_handler)
     fdl_parser.parse_fdl_file(path)
     self.lexemes = fdl_handler.lexemes
@@ -276,12 +279,13 @@ class DialogManager:
     assert isinstance(line, iomanager.IORecord)
     self.idler.update_time()
     self.log_input(line)
-    # 4/6/07 mrh: when user says anything, even garbage, reset continuous idle count
+    # 4/6/07 mrh: when user says anything, even garbage, reset
+    # continuous idle count
     self.state_machine.data.reset_idle_count()
     return line
 
   def handle_false_recognition(self, iorecord):
-    self.log_input(iorecord, false_recognition=True)    
+    self.log_input(iorecord, false_recognition=True)
 
   def log_output(self, utterance):
     self.log("==> OUTPUT", utterance)
@@ -292,23 +296,24 @@ class DialogManager:
     try:
       tag = "input"
       if false_recognition:
-	tag = 'false-recognition'
+        tag = 'false-recognition'
 
       if iorecord.audio == None:
-	utils.log("<%s>%s</%s>" % (tag, saxutils.escape(iorecord.text), tag))
+        utils.log("<%s>%s</%s>" % (tag, saxutils.escape(iorecord.text), tag))
       else:
-	# Save audio in a wav file
-	wav_file = "input-%03d.wav" % (self.input_count,)
-	wav_path = os.path.join(utils.GLOBAL_LOGGER.subdir, wav_file)
-	self.input_count += 1
-	filter.writefile(iorecord.audio, wav_path)
-	utils.log("<%s audio='%s'>%s</%s>" % (tag, wav_file, saxutils.escape(iorecord.text), tag))
+        # Save audio in a wav file
+        wav_file = "input-%03d.wav" % (self.input_count,)
+        wav_path = os.path.join(utils.GLOBAL_LOGGER.subdir, wav_file)
+        self.input_count += 1
+        audiofilter.writefile(iorecord.audio, wav_path)
+        utils.log("<%s audio='%s'>%s</%s>" % (
+          tag, wav_file, saxutils.escape(iorecord.text), tag))
       self.log("<== %s" % tag.upper(), iorecord.text)
     finally:
       self.log_lock.release()
 
-  def log(self, type, message):
-    utils.slog("comms.log", type, message)
+  def log(self, message_type, message):
+    utils.slog("comms.log", message_type, message)
 
   def parse(self, input):
 #    print "*** Parsing mode is %s" % (self.parser_mode,)
