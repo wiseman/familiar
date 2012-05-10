@@ -80,7 +80,7 @@ class ListenApp(App):
       print 'Requesting extended data stream'
       mav_link.mav.request_data_stream_send(
         mav_link.target_system, mav_link.target_component,
-        mavlink.MAV_DATA_STREAM_ALL, 10, 1)
+        mavlink.MAV_DATA_STREAM_ALL, 5, 1)
     if options.no_curses:
       self.message_loop(mav_link)
     else:
