@@ -327,13 +327,12 @@ class FDLParser:
       if class_name != last_class:
         sys.stdout.write("Class: %s\n" % class_name)
       last_class = class_name
-      class_expr = logic.expr(str(class_name))
       sys.stdout.write("  %-70s ==> " % (phrase,))
       test_count = test_count + 1
       parses = parser.parse(str(phrase))
       if not test.succeeded(parses):
-        sys.stdout.write("FAIL\n")
-        print "ICP parse test failure, '%s' should have parsed to a Description of type %s:" % (phrase, class_name)
+        logging.error('ICP parse test failure, %r should have parsed to a '
+                      'Description of type %s', phrase, class_name)
         if len(parses) > 0:
           for parse in parses:
             sys.stdout.write("  score: %s " % (parse.score,))
@@ -346,7 +345,8 @@ class FDLParser:
         if len(parses) == 1:
           sys.stdout.write(" [%f]\n" % (parses[0].score,))
         else:
-          sys.stdout.write(" [delta %f]\n" % (parses[0].score - parses[1].score,))
+          sys.stdout.write(
+            ' [delta %f]\n' % (parses[0].score - parses[1].score,))
     return [test_count, fail_count]
 
   def run_test_cp_phrases(self, parents, parser):
@@ -362,17 +362,15 @@ class FDLParser:
                                                        parents):
         continue
       phrase = test.phrase
-      match_type = test.match_type
       if class_name != last_class:
         sys.stdout.write("Class: %s\n" % class_name)
       last_class = class_name
-      class_expr = logic.expr(str(class_name))
       sys.stdout.write("  %-70s ==> " % (phrase,))
       test_count = test_count + 1
       parses = parser.parse(str(phrase))
       if not test.succeeded(parses):
-        sys.stdout.write("FAIL\n")
-        print "CP parse test failure, '%s' should have parsed to a Description of type %s:" % (phrase, class_name)
+        logging.error('CP parse test failure, %r should have parsed to a '
+                      'Description of type %s', phrase, class_name)
         if len(parses) > 0:
           for parse in parses:
             parse.pprint()
@@ -425,8 +423,9 @@ class BaseFrameHandler:
     class_name = frame['class_name']
     self.kb.define_fluent(logic.expr("$generate"), inherited=True)
     for template in generates:
-      self.kb.tell(logic.expr("$generate")(logic.expr(class_name), logic.Expr(str(template))))
-
+      self.kb.tell(
+        logic.expr("$generate")(
+          logic.expr(class_name), logic.Expr(str(template))))
 
   def handle_phrases(self, frame, phrases):
     class_name = frame['class_name']
@@ -442,9 +441,11 @@ class BaseFrameHandler:
 
     if parent != None:
       if frame['is_instance']:
-        self.kb.tell(logic.expr("INSTANCEOF")(logic.expr(class_name), logic.expr(parent)))
+        self.kb.tell(
+          logic.expr("INSTANCEOF")(logic.expr(class_name), logic.expr(parent)))
       else:
-        self.kb.tell(logic.expr("ISA")(logic.expr(class_name), logic.expr(parent)))
+        self.kb.tell(
+          logic.expr("ISA")(logic.expr(class_name), logic.expr(parent)))
 
     self.handle_slots(frame, slots)
     self.handle_constraints(frame, constraints)
@@ -456,12 +457,13 @@ class BaseFrameHandler:
     self.lexemes = self.lexemes + lexemes
 
 
-literal_counter = 0
+g_literal_counter = 0
+
 
 def parse_frame_literal(frame_spec):
-  global literal_counter
+  global g_literal_counter
   frame = eval(frame_spec)
   if not 'class_name' in frame:
-    frame['class_name'] = "literal-%s" % (literal_counter,)
-  literal_counter += 1
+    frame['class_name'] = "literal-%s" % (g_literal_counter,)
+  g_literal_counter += 1
   return frame
