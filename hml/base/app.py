@@ -33,9 +33,8 @@ class App(object):
     if not argv:
       argv = sys.argv
 
-    args, unknown_args = arg_parser.parse_known_args(args=argv)
+    args, unknown_args = arg_parser.parse_known_args(args=argv[1:])
     logging.basicConfig(
       level=get_logging_level_by_name(args.logging_level),
       format='%(asctime)s:%(levelname)s:%(module)s:%(lineno)d: %(message)s')
-
     self.main(unknown_args)
