@@ -9,7 +9,7 @@ import threading
 import time
 import traceback
 
-from hml.dialog import actions
+#from hml.dialog import actions
 from hml.dialog import audiofilter
 from hml.dialog import fdl
 from hml.dialog import generation
@@ -755,7 +755,7 @@ class StateMachine:
 
 class DialogManagerApp:
   def __init__(self, fdl_path, remote_host):
-    self.dialog_manager = DialogManager(remote_host, energid.actions)
+    self.dialog_manager = DialogManager(remote_host, actions)
     self.dialog_manager.load_fdl(fdl_path)
     self.io_manager = ConsoleIOManager(self.dialog_manager)
     
@@ -857,7 +857,7 @@ if __name__ == "__main__":
     else:
       host = args[0]
 
-  dmm = DialogManager(host, energid.actions, run_tests = runTests)
+  dmm = DialogManager(host, actions, run_tests = runTests)
 
   if html:
     io_manager = iomanager.HTMLIOManager(dmm)
