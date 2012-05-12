@@ -1,20 +1,18 @@
+import socket
+import string
+import struct
+import threading
+import time
+import xml.dom.minidom
+from xml.sax import saxutils
+
 from hml.dialog import utils
 from hml.dialog import logic
-
-import socket
-import struct
-import xml.dom.minidom
-import string
-import math
-import time
-import threading
-import pprint
-from xml.sax import saxutils
 
 
 MN_NAMESPACE = "http://www.energid.com/namespace/mn"
 PQR_NAMESPACE = "http://www.energid.com/namespace/pqr"
-  
+
 EVENT_PORT = 5592
 
 
@@ -25,12 +23,12 @@ def get_node_text(node):
       rc = rc + child.data
   return rc
 
-  
+
 class PilotModel:
   """A model of a pilot.  A local interface to a remote pilot model
   connected via TCP; Sends commands and queries and processes replies.
   """
-  
+
   COMMAND_PORT = 5590
   QUERY_PORT = 5591
 
@@ -39,7 +37,7 @@ class PilotModel:
   <queryId>0</queryId>
 </pilotPoseQuery>
 """
-  
+
   STATUS_QUERY = """
 <statusQuery>
   <queryId>0</queryId>
@@ -101,9 +99,10 @@ class PilotModel:
  <commandId>0</commandId>
  <zoom>$zoom</zoom>
 </zoomCommand>
-"""  
+"""
 
-  # 4/20/07 mrh: changing "pointType" to "status", in line with status query changes
+  # 4/20/07 mrh: changing "pointType" to "status", in line with status
+  # query changes
   PILOT_GUIDANCE_COMMAND = """
  <guidanceCommand mode="pursuit" status="$type">
   <commandId>0</commandId>
@@ -137,13 +136,13 @@ class PilotModel:
   <queryId>5</queryId>
  </detailEqualityObservationQuery>
 """
-  
+
   TESTING_NINE_LINE_COMMAND = """
 <nineLineCommand>
-  <commandId>0</commandId> 
+  <commandId>0</commandId>
 </nineLineCommand>
 """
-  
+
   def __init__(self, host, event_client=None, log_file="comms.log"):
     self.host = host
     self.log_file = log_file
@@ -154,6 +153,7 @@ class PilotModel:
     self.default_retry_delay = 0.5   # 5/5/07 mrh: making shorter
     self.default_retry_count = 5
     self.last_look = None
+    self.event_listener = None
 
   def connect(self):
     """Connects to the remote pilot model."""
@@ -167,7 +167,7 @@ class PilotModel:
 
   def is_connected(self):
     return self.query_connection != None
-  
+
   def disconnect(self):
     if self.query_connection != None:
       self.query_connection.disconnect()
@@ -179,21 +179,24 @@ class PilotModel:
 
   def send_command(self, command):
     self.log("==> COMMAND", command)
-    utils.log("<pilotmodel-command>%s</pilotmodel-command>" % (saxutils.escape(log_summary(command)),))
+    utils.log('<pilotmodel-command>%s</pilotmodel-command>' % (
+      saxutils.escape(log_summary(command)),))
     self.command_connection.send_message(command)
 
   def send_query(self, query):
     self.log("==> QUERY", query)
-    utils.log("<pilotmodel-query>%s</pilotmodel-query>" % (saxutils.escape(log_summary(query)),))
+    utils.log('<pilotmodel-query>%s</pilotmodel-query>' % (
+      saxutils.escape(log_summary(query)),))
     self.query_connection.send_message(query)
-    (type, reply) = self.query_connection.read_message()
+    (unused_msg_type, reply) = self.query_connection.read_message()
     self.log("<== REPLY", reply)
-    utils.log("<pilotmodel-reply>%s</pilotmodel-reply>" % (saxutils.escape(log_summary(reply))))
+    utils.log('<pilotmodel-reply>%s</pilotmodel-reply>' % (
+      saxutils.escape(log_summary(reply))))
     return reply
 
-  def log(self, type, message):
+  def log(self, msg_type, message):
     if self.log_file != None:
-      utils.slog(self.log_file, type, message)
+      utils.slog(self.log_file, msg_type, message)
 
   def wrap_query(self, query):
     return """<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -217,14 +220,14 @@ class PilotModel:
       if result:
         return result
     return False
-  
+
   def query_with_auto_retry(self, query, retry_delay=None, retry_count=None):
     if retry_delay == None:
       retry_delay = self.default_retry_delay
     if retry_count == None:
       retry_count = self.default_retry_count
-      
-    for i in range(0, retry_count + 1):
+
+    for unused_i in range(0, retry_count + 1):
       result = query()
       if result:
         return result
@@ -248,7 +251,6 @@ class PilotModel:
       print "Error retrieving ammo; old version of jtacStrike?"
       return 100 # default
 
-  
   def get_status(self):
     """Returns information about status (inbound to IP, egressing, &c.)"""
     try:
@@ -258,7 +260,7 @@ class PilotModel:
       return "inbound to ip"
 
   def get_playtime(self):
-    """Returns playtime from the simulator (instead of making it up in the 
+    """Returns playtime from the simulator (instead of making it up in the
     DialogManager).  Value is a float on return.
     """
     try:
@@ -268,9 +270,10 @@ class PilotModel:
       return 30  # default value
 
   def get_fuel(self):
-    """Return fuel from the sim, which is probably just calculating based on playtime."""
+    """Return fuel from the sim, which is probably just calculating
+    based on playtime."""
     return float(self.__do_simple_query(self.FUEL_QUERY, "fuelPounds"))
-  
+
   def __do_simple_query(self, query_xml, pqr_element):
     """This method factors out even more commonalities to the simpler
     simulator queries.  Post-processing can happen in the calling function.
@@ -285,7 +288,8 @@ class PilotModel:
     def do_query():
       response = self.get_detail_equality_observation({}, {}, string_props)
       dom = xml.dom.minidom.parseString(response)
-      descriptor_vector = dom.getElementsByTagNameNS(PQR_NAMESPACE, "entityDescriptorVector")[0]
+      descriptor_vector = dom.getElementsByTagNameNS(
+        PQR_NAMESPACE, "entityDescriptorVector")[0]
       result = self.parse_descriptor_vector(descriptor_vector)
       if len(result) == 0:
         return False
@@ -297,7 +301,8 @@ class PilotModel:
     def do_query():
       response = self.get_detail_equality_observation({}, {}, string_props)
       dom = xml.dom.minidom.parseString(response)
-      location_vector = dom.getElementsByTagNameNS(PQR_NAMESPACE, "entityLocationVector")[0]
+      location_vector = dom.getElementsByTagNameNS(
+        PQR_NAMESPACE, "entityLocationVector")[0]
       result = self.parse_location_vector(location_vector)
       if len(result) == 0:
         return False
@@ -317,13 +322,16 @@ class PilotModel:
       z = float(element.getAttribute("z"))
       return [x, y, z]
 
-    return map(parse_element, node.getElementsByTagNameNS(PQR_NAMESPACE, "element"))
-    
+    return map(parse_element, node.getElementsByTagNameNS(
+      PQR_NAMESPACE, "element"))
+
   def parse_descriptor_vector(self, node):
     def parse_descriptor_element(element):
       def parse_mn_element(elementDict, element):
-        key = str(get_node_text(element.getElementsByTagNameNS(MN_NAMESPACE, "key")[0]))
-        value = str(get_node_text(element.getElementsByTagNameNS(MN_NAMESPACE, "value")[0]))
+        key = str(get_node_text(element.getElementsByTagNameNS(
+          MN_NAMESPACE, "key")[0]))
+        value = str(get_node_text(element.getElementsByTagNameNS(
+          MN_NAMESPACE, "value")[0]))
         elementDict[key] = value
 
       string_map = element.getElementsByTagNameNS(MN_NAMESPACE, "stringMap")[0]
@@ -332,7 +340,8 @@ class PilotModel:
       for mn_element in mn_elements:
         parse_mn_element(string_props, mn_element)
       return string_props
-    return map(parse_descriptor_element, node.getElementsByTagNameNS(PQR_NAMESPACE, "element"))
+    return map(parse_descriptor_element,
+               node.getElementsByTagNameNS(PQR_NAMESPACE, "element"))
 
   def parse_blob_vector(self, node):
     def parse_blob_element(element):
@@ -346,32 +355,35 @@ class PilotModel:
           else:
             blob[name] = float(value)
       return blob
-    return map(parse_blob_element, node.getElementsByTagNameNS(PQR_NAMESPACE, "element"))
-
+    return map(parse_blob_element,
+               node.getElementsByTagNameNS(PQR_NAMESPACE, "element"))
 
   def can_see_object_id(self, object_id):
-    """Checks whether the pilot can see the object with the specified ID (name)."""
+    """Checks whether the pilot can see the object with the specified
+    ID (name)."""
     # 2/26/07 mrh: splitting do_query out into private helper fn.
     querier = VisionQueryRetryer(self, {"name": object_id})
     return self.query_with_auto_retry2(querier)
 
-  def can_see_object_type(self, category, type):
+  def can_see_object_type(self, category, obj_type):
     # 2/26/07 mrh: splitting do_query out into private helper fn.
-    if type != None:
+    if obj_type:
       prop_name = "type"
-      prop_value = type
+      prop_value = obj_type
     else:
       prop_name = "category"
       prop_value = category
     #if do_query(prop_name, prop_value):
     querier = VisionQueryRetryer(self, {prop_name: prop_value})
     return self.query_with_auto_retry2(querier)
-    
+
   def can_see_object(self, props):
     """Given a set of property descriptions, returns whether or not
-    the pilot can see a matching object.  Similar to other can_see_* methods."""
-    return self.query_with_auto_retry(lambda: self.__can_see_query_helper(props))
-  
+    the pilot can see a matching object.  Similar to other can_see_*
+    methods."""
+    return self.query_with_auto_retry(
+      lambda: self.__can_see_query_helper(props))
+
   def __can_see_query_helper(self, string_properties):
     # was do_query inside can_see_* methods
     response = self.get_equality_observation({}, {}, string_properties)
@@ -395,13 +407,16 @@ class PilotModel:
     query = self.wrap_query(self.ALL_QUERY)
     reply = self.send_query(query)
     dom = xml.dom.minidom.parseString(reply)
-    descriptor_vector = dom.getElementsByTagNameNS(PQR_NAMESPACE, "entityDescriptorVector")[0]
-    blob_vector = dom.getElementsByTagNameNS(PQR_NAMESPACE, "entityBlobVector")[0]
-    location_vector = dom.getElementsByTagNameNS(PQR_NAMESPACE, "entityLocationVector")[0]
+    descriptor_vector = dom.getElementsByTagNameNS(
+      PQR_NAMESPACE, "entityDescriptorVector")[0]
+    blob_vector = dom.getElementsByTagNameNS(
+      PQR_NAMESPACE, "entityBlobVector")[0]
+    location_vector = dom.getElementsByTagNameNS(
+      PQR_NAMESPACE, "entityLocationVector")[0]
     descriptors = self.parse_descriptor_vector(descriptor_vector)
     blobs = self.parse_blob_vector(blob_vector)
     locations = self.parse_location_vector(location_vector)
-    for i,e in enumerate(descriptors):
+    for i, e in enumerate(descriptors):
       descriptors[i]["blob"] = blobs[i]
       descriptors[i]["location"] = locations[i]
     descriptors.sort(key=lambda d: d['blob']['size'], reverse=True)
@@ -410,13 +425,13 @@ class PilotModel:
   def look_direction(self, vector):
     [x, y, z] = vector
     c = string.Template(self.PILOT_LOOK_COMMAND)
-    command = self.wrap_command(c.substitute(mode = "relative", x = x, y = y, z = z))
+    command = self.wrap_command(c.substitute(mode="relative", x=x, y=y, z=z))
     self.send_command(command)
     self.last_look = lambda: self.look_direction(vector)
 
   def zoom_view(self, zoom_factor):
     c = string.Template(self.PILOT_ZOOM_COMMAND)
-    command = self.wrap_command(c.substitute(zoom = zoom_factor))
+    command = self.wrap_command(c.substitute(zoom=zoom_factor))
     self.send_command(command)
     if self.last_look:
       self.last_look()
@@ -424,22 +439,23 @@ class PilotModel:
   def look_at(self, target):
     [x, y, z] = target
     c = string.Template(self.PILOT_LOOK_COMMAND)
-    command = self.wrap_command(c.substitute(mode = "absolute", x = x, y = y, z = z))
+    command = self.wrap_command(c.substitute(mode="absolute", x=x, y=y, z=z))
     self.send_command(command)
     self.last_look = lambda: self.look_at(target)
 
   def fly_to(self, coords, type="inbound to ip"):
-    # 4/20/07 mrh: changing to adjust to sim changes to status/guidance commands
-    # FIXEME: change assertion here!  more types possible.
+    # 4/20/07 mrh: changing to adjust to sim changes to
+    # status/guidance commands
+    # FIXME: change assertion here!  more types possible.
     assert type in ["inbound to ip", "inbound to target",
                     "egressing", "rtb"]
     [x, y, z] = coords
     if type == "inbound to target":
       c = string.Template(self.ATTACK_RUN_COMMAND)
-      command = self.wrap_command(c.substitute(x = x, y = y, z = z))
+      command = self.wrap_command(c.substitute(x=x, y=y, z=z))
     else:
       c = string.Template(self.PILOT_GUIDANCE_COMMAND)
-      command = self.wrap_command(c.substitute(x = x, y = y, z = z, type = type))
+      command = self.wrap_command(c.substitute(x=x, y=y, z=z, type=type))
     self.send_command(command)
 
   def make_element(self, key, value):
@@ -455,18 +471,22 @@ class PilotModel:
       elements = elements + self.make_element(prop, properties[prop])
     return elements
 
-  def get_equality_observation(self, integerProperties, realProperties, stringProperties):
-    query = self.EQUALITY_OBSERVATION_QUERY % (self.make_elements(integerProperties),
-                                               self.make_elements(realProperties),
-                                               self.make_elements(stringProperties))
+  def get_equality_observation(self, integerProperties, realProperties,
+                               stringProperties):
+    query = self.EQUALITY_OBSERVATION_QUERY % (
+      self.make_elements(integerProperties),
+      self.make_elements(realProperties),
+      self.make_elements(stringProperties))
     query = self.wrap_query(query)
     response = self.send_query(query)
     return response
 
-  def get_detail_equality_observation(self, integerProperties, realProperties, stringProperties):
-    query = self.DETAIL_EQUALITY_OBSERVATION_QUERY % (self.make_elements(integerProperties),
-                                               self.make_elements(realProperties),
-                                               self.make_elements(stringProperties))
+  def get_detail_equality_observation(self, integerProperties, realProperties,
+                                      stringProperties):
+    query = self.DETAIL_EQUALITY_OBSERVATION_QUERY % (
+      self.make_elements(integerProperties),
+      self.make_elements(realProperties),
+      self.make_elements(stringProperties))
     query = self.wrap_query(query)
     response = self.send_query(query)
     return response
@@ -477,30 +497,33 @@ class PilotModel:
       self.event_client.handle_event(event)
     else:
       print "Got event: %s" % (event,)
-  
-  def trigger_nine_line(self, target=None):
+
+  def trigger_nine_line(self, unused_target=None):
     self.log("==> COMMAND: triggering nine line event", "")
     self.send_command(self.wrap_command(self.TESTING_NINE_LINE_COMMAND))
 
+
 def parse_pilot_pose(pose_node):
-    orientation = pose_node.getElementsByTagNameNS(MN_NAMESPACE, "orientation")[0]
-    q0 = float(orientation.getAttribute("q0"))
-    q1 = float(orientation.getAttribute("q1"))
-    q2 = float(orientation.getAttribute("q2"))
-    q3 = float(orientation.getAttribute("q3"))
-    position = pose_node.getElementsByTagNameNS(MN_NAMESPACE, "translation")[0]
-    x = float(position.getAttribute("x"))
-    y = float(position.getAttribute("y"))
-    z = float(position.getAttribute("z"))
-    heading_node = pose_node.getElementsByTagName("headingDeg")
-    heading = 0  # default
-    if heading_node is None or len(heading_node) == 0:
-      # this is acceptable for ETA event
-      pass
-    else:
-      # why the int(float(...))? because python doesn't seem to go from string-float to int in one step
-      heading = int(float(get_node_text(heading_node[0])))
-    return [[q0, q1, q2, q3], [x, y, z], heading]
+  orientation = pose_node.getElementsByTagNameNS(
+    MN_NAMESPACE, "orientation")[0]
+  q0 = float(orientation.getAttribute("q0"))
+  q1 = float(orientation.getAttribute("q1"))
+  q2 = float(orientation.getAttribute("q2"))
+  q3 = float(orientation.getAttribute("q3"))
+  position = pose_node.getElementsByTagNameNS(MN_NAMESPACE, "translation")[0]
+  x = float(position.getAttribute("x"))
+  y = float(position.getAttribute("y"))
+  z = float(position.getAttribute("z"))
+  heading_node = pose_node.getElementsByTagName("headingDeg")
+  heading = 0  # default
+  if heading_node is None or len(heading_node) == 0:
+    # this is acceptable for ETA event
+    pass
+  else:
+    # why the int(float(...))? because python doesn't seem to go from
+    # string-float to int in one step
+    heading = int(float(get_node_text(heading_node[0])))
+  return [[q0, q1, q2, q3], [x, y, z], heading]
 
 
 class VisionQueryRetryer:
@@ -511,7 +534,6 @@ class VisionQueryRetryer:
     self.zoom = None
     self.max_tries = 6
     self.retry_delay = 2
-    
 
   def next_zoom(self):
     retval = self.zoom
@@ -520,10 +542,10 @@ class VisionQueryRetryer:
     else:
       self.zoom = self.zoom * 2
     return retval
-  
+
   def query_again(self):
     return self.try_count < self.max_tries
-  
+
   def query(self):
     if not self.query_again():
       return False
@@ -535,7 +557,8 @@ class VisionQueryRetryer:
       self.pilotmodel.zoom_view(zoom)
     if self.try_count > 1:
       time.sleep(self.retry_delay)
-    response = self.pilotmodel.get_equality_observation({}, {}, self.string_properties)
+    response = self.pilotmodel.get_equality_observation(
+      {}, {}, self.string_properties)
     dom = xml.dom.minidom.parseString(response)
     boolean_node = dom.getElementsByTagNameNS(PQR_NAMESPACE, "booleanValue")[0]
     value = get_node_text(boolean_node)
@@ -546,8 +569,7 @@ class VisionQueryRetryer:
     else:
       print "Unexpected value returned by query: %s" % (repr(value),)
       assert False
-    
-    
+
 
 class EcConnection:
   """A TCP connection with length-prefixed messages."""
@@ -565,15 +587,15 @@ class EcConnection:
 
   def disconnect(self):
     if self.socket != None:
-      close(self.socket)
+      self.socket.close()
       self.socket = None
       self.rawsocket = None
 
   def send_message(self, message):
     """Sends a message."""
-    id = struct.pack("!L", 0)
+    id_buf = struct.pack("!L", 0)
     length = struct.pack("!L", len(message))
-    self.rawsocket.send(id + length)
+    self.rawsocket.send(id_buf + length)
     self.socket.write(message)
     self.socket.flush()
 
@@ -585,22 +607,24 @@ class EcConnection:
     if len(header) == 0:
       raise Exception("Remote pilot model disconnected.")
     if len(header) != 8:
-      raise ValueError, "Expecting 8 byte header, got %s bytes." % (len(header),)
-    id = struct.unpack("!L", header[0:4])[0]
+      raise ValueError('Expecting 8 byte header, got %s bytes.' % (
+        len(header),))
+    msg_id = struct.unpack("!L", header[0:4])[0]
     length = struct.unpack("!L", header[4:])[0]
     message = ""
     num_bytes_to_read = length
     while num_bytes_to_read > 0:
       data = self.rawsocket.recv(min(1024, num_bytes_to_read))
-      if not data: break
+      if not data:
+        break
       message = message + data
       num_bytes_to_read = num_bytes_to_read - len(data)
-    return (id, message)
+    return (msg_id, message)
 
   def disconnect(self):
     """Closes the connection."""
     self.rawsocket.close()
-      
+
 
 class DisconnectedPilotModel:
   """A PilotModel that doesn't need to connect to a remote pilot model
@@ -617,12 +641,12 @@ class DisconnectedPilotModel:
       {"name": "kampton-city",
        "type":"Kampton",
        "category":"City",
-       "limitUnits":"meters", 
+       "limitUnits":"meters",
        "extentUnits":"meters",
        "locationUnits":"meters",
        "northLimit":"1616,-3652",
        "southLimit":"-383,-3652",
-       "eastLimit":"616,-2652", 
+       "eastLimit":"616,-2652",
        "westLimit":"616,-4652",
        "northSouthExtent":"2000",
        "eastWestExtent":"2000",
@@ -631,12 +655,12 @@ class DisconnectedPilotModel:
       {"name": "drinkwater-lake",
        "type":"Dry Lake",
        "category":"Minor Geographic Details",
-       "limitUnits":"meters", 
+       "limitUnits":"meters",
        "extentUnits":"meters",
        "locationUnits":"meters",
        "northLimit":"3703,1908",
        "southLimit":"2667,3657",
-       "eastLimit":"2770,3793", 
+       "eastLimit":"2770,3793",
        "westLimit":"3412,1086",
        "northSouthExtent":"1036.7",
        "eastWestExtent":"2707.4",
@@ -644,40 +668,47 @@ class DisconnectedPilotModel:
       # Tank 1
       {"category":"tank",
        "location":"2579,-8561",
-       "locationUnits":"meters", 
+       "locationUnits":"meters",
        "name":"target",
        "type":"T-55"},
       # Tank 2
       {"category":"tank",
        "location":"5000,5000",
-       "locationUnits":"meters", 
+       "locationUnits":"meters",
        "name":"target",
        "type":"BMP-1"}]
-  
+
   # MRH: changing (temporarily?) so that it sees everything
-  
+
   def connect(self):
     print "Using disconnected pilot model!"
-    
+
   def disconnect(self):
     for timer in self.timers:
-      timer.cancel
+      timer.cancel()
     self.timers = []
+
   def is_connected(self):
     return False
+
   def get_pilot_pose(self):
     return [[0, 0, 0, 0], [0, 0, 0], 0]
-  def can_see_object_id(self, object_id):
+
+  def can_see_object_id(self, unused_object_id):
     # print "Faking, saying pilot can see object ID %s" % (object_id, )
     return True                # False
-  def can_see_object_type(self, category, object_type):
-    # print "Faking, saying pilot can see object type: (%s, %s)" % (category, object_type)
+
+  def can_see_object_type(self, unused_category, unused_object_type):
+    #print "Faking, saying pilot can see object type: (%s, %s)" % (
+    #  category, object_type)
     return True                # False
+
   def can_see_object(self, props_or_desc):
     # if we get a description object, turn the slots into a nice dictionary
     string_props = None
     if type(props_or_desc) == logic.Description:
-      # dictify, and then flatten to a one-level property list?  guessing.  -- on second thought, no guessing.  skip for now.
+      # dictify, and then flatten to a one-level property list?
+      # guessing.  -- on second thought, no guessing.  skip for now.
       tmp_dict = logic.Description.dictify(props_or_desc)
       # walk through, flatten out
       #for item in tmp_dict.items():
@@ -688,34 +719,45 @@ class DisconnectedPilotModel:
     else:
       # just take what we were given
       string_props = props_or_desc
-    # print "Faking, saying pilot can see object w/ props: %s" % (string_props,)
+    # print "Faking, saying pilot can see object w/ props: %s" %
+    # (string_props,)
     return True                # False
+
   def get_details(self):
     # print "Can't fake get_details yet."
     return "<!-- You are connected to a fake pilot model, sorry -->"
+
   def get_object_details(self, string_props):
     result = self.fake_get_props(string_props)
     # print "Faking get_object_details for (props = %s), returning %s properties" % (string_props, len(result))
     return [result]
+
   def get_all(self):
     # print "Can't fake get_all yet."
     return "<!-- You are connected to a fake pilot model, sorry -->"
+
   def look_direction(self, vector):
     # print "Faking, not looking towards %s" % (vector,)
     pass
+
   def look_at(self, target):
     # print "Faking, not looking at %s" % (target,)
     pass
+
   def fly_to(self, coords, type="inbound to ip"):
     self.status = type
     if type == 'inbound to target':
       self.install_attack_events()
+
   def get_status(self):
     return self.status
+
   def get_playtime(self):
     return 30.0
+
   def get_fuel(self):
     return 1.0
+
   def get_object_location(self, string_props):
     obj_props = self.fake_get_props(string_props)
     results = [[0, 0, 0]]    # default
@@ -725,9 +767,10 @@ class DisconnectedPilotModel:
       pass
     # print "Faking, returning obj. location %s. (props = %s)" % (results, string_props)
     return results
-  
+
   def fake_get_props(self, string_props):
-    """In our props collection, find items with matching key/values in their lists."""
+    """In our props collection, find items with matching key/values in
+    their lists."""
     result = {}
     for prop_dict in self.all_props:
       try:
@@ -785,6 +828,7 @@ class DisconnectedPilotModel:
   def handle_event(self, event):
     self.fire_event(event)
 
+
 def parse_target_coordinates(coords_node):
   x = float(coords_node.getAttribute("x"))
   y = float(coords_node.getAttribute("y"))
@@ -796,6 +840,7 @@ def parse_target_coordinates(coords_node):
 # actual result.  If success is false, a message describing the failure is the
 # expected second value.
 
+
 def parse_eta_event(event_node):
   eta_node = event_node.getElementsByTagName("eta")[0]
   eta = float(get_node_text(eta_node))
@@ -804,7 +849,11 @@ def parse_eta_event(event_node):
   target_node = event_node.getElementsByTagName("targetCoordinates")[0]
   target_coords = parse_target_coordinates(target_node)
   return [True,
-          {"type": "eta", "eta": eta, "pilot-pose": pose, "target-coords": target_coords}]
+          {"type": "eta",
+           "eta": eta,
+           "pilot-pose": pose,
+           "target-coords": target_coords}]
+
 
 def parse_attack_run_complete_event(event_node):
   status_node = event_node.getElementsByTagName("attackRunCompleteFlag")[0]
@@ -812,28 +861,30 @@ def parse_attack_run_complete_event(event_node):
   return [True,
           {"type": "attack-run-complete", "status": status}]
 
+
 def parse_nine_line_event(event_node):
   """Returns a dictionary of nine-line information."""
   def parse_mn_element(elementDict, element):
     key = str(get_node_text(element.getElementsByTagName("key")[0]))
     value = str(get_node_text(element.getElementsByTagName("value")[0]))
-    # special consideration for target coordinates: massage two numbers into one
+    # special consideration for target coordinates: massage two
+    # numbers into one
     if key == "6":
       pieces = value.split()
       if len(pieces) == 3:
         value = pieces[0] + " " + pieces[1] + pieces[2]
     # clean up strings in general
-    if isinstance(value, basestring): 
+    if isinstance(value, basestring):
       value = value.strip()
     elementDict[key] = value
-  
+
   try:
     nine_line = event_node.getElementsByTagName("nineLine")[0]
     mn_elements = nine_line.getElementsByTagName("element")
     string_props = {}
     for mn_element in mn_elements:
       parse_mn_element(string_props, mn_element)
-    
+
     string_props["type"] = "nine-line"
     return [True, string_props]
   except:
@@ -846,12 +897,13 @@ EventParsers = {
   "attackRunCompleteEvent": parse_attack_run_complete_event,
   "nineLineEvent": parse_nine_line_event
   }
-  
+
 
 def parse_event_string(event_container_string):
   doc = xml.dom.minidom.parseString(event_container_string).documentElement
   assert(isinstance(doc, xml.dom.minidom.Element))
   return parse_event(doc)
+
 
 def parse_event(event_container_node):
   examined_nodes = []
@@ -863,7 +915,8 @@ def parse_event(event_container_node):
       else:
         examined_nodes.append(tag_name)
   # return None
-  return [False, "No event handlers found for these events: %s" % examined_nodes]
+  return [False,
+          "No event handlers found for these events: %s" % examined_nodes]
 
 
 class EventListener(threading.Thread):
@@ -873,6 +926,7 @@ class EventListener(threading.Thread):
     self.connection = None
     self.client = client
     self.setDaemon(True)
+    self.keep_running = True
 
   def connect(self):
     self.connection = EcConnection(self.host, EVENT_PORT)
@@ -882,7 +936,7 @@ class EventListener(threading.Thread):
     if self.connection != None:
       self.connection.disconnect()
       self.connection = None
-    
+
   def stop(self):
     self.keep_running = False
     time.sleep(1)
@@ -891,11 +945,11 @@ class EventListener(threading.Thread):
     self.keep_running = True
     self.connect()
     self.process_events()
-    
+
   def process_events(self):
     while self.keep_running:
-      (type, message) = self.connection.read_message()
-      if type == 0 and len(message) > 0:
+      (msg_type, message) = self.connection.read_message()
+      if msg_type == 0 and len(message) > 0:
         self.client.log("<== EVENT XML", message)
         event = self.parse_message(message)
         if event != None and event[0] == True:
@@ -913,16 +967,14 @@ class EventListener(threading.Thread):
 
   def dispatch_event(self, event):
     print "Got event: %s" % (event,)
-        
 
 
-def log_summary(xml):
+def log_summary(xml_string):
   # Find the second >
-  start = xml.find(">", xml.find(">") + 1)
-  xml = xml[start+1:]
-  xml = xml.replace("<", " ")
-  xml = xml.replace(">", " ")
-  xml = xml.replace("\n", " ")
-  xml = xml.strip()
-  return xml[0:80]
-
+  start = xml_string.find(">", xml_string.find(">") + 1)
+  xml_string = xml_string[start + 1:]
+  xml_string = xml_string.replace("<", " ")
+  xml_string = xml_string.replace(">", " ")
+  xml_string = xml_string.replace("\n", " ")
+  xml_string = xml_string.strip()
+  return xml_string[0:80]
