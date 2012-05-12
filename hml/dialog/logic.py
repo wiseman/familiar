@@ -241,15 +241,14 @@ class PropKB(KB):
                                                      active_bindings):
           yield bindings
 
-  def retrieve_description_form(self, relation, object, value,
-                                active_bindings):
+  def retrieve_description_form(self, relation, obj, value, active_bindings):
     # Handles queries on Descriptions.  We first check to see if the
     # Description has a slot satisfying the query, and if it does not
     # then we do the same query on the base class of the description.
     def generator(bindings):
       yield bindings
 
-    description = object.op
+    description = obj.op
     if is_variable(value):
       variable = value
       if description.has_slot(relation):
@@ -310,32 +309,32 @@ class PropKB(KB):
       else:
         return
 
-  def slot_value(self, object, *relations):
+  def slot_value(self, obj, *relations):
     """Returns the value of the specified relations."""
-    return self.slot_value2(object, relations)
+    return self.slot_value2(obj, relations)
 
-  def slot_value2(self, object, relations):
+  def slot_value2(self, obj, relations):
     """Returns the value of the specified relations."""
-    if (not (isinstance(object, str) or
-             isinstance(object, Expr) or
-             isinstance(object, Description))):
-      raise ValueError('%s is neither a string, a Description nor an Expr.' % (
-        repr(object),))
+    if (not (isinstance(obj, str) or
+             isinstance(obj, Expr) or
+             isinstance(obj, Description))):
+      raise ValueError('%r is neither a string, a Description nor an Expr.' % (
+        obj,))
     for relation in relations:
       if not (isinstance(relation, str) or isinstance(relation, Expr)):
         raise ValueError('%s is neither a string nor an Expr.' % (
           repr(relation),))
 
-    object = expr(object)
+    obj = expr(obj)
     relations = map(expr, relations)
-    if not isinstance(object, Expr):
-      raise ValueError('Object %s must be an Expr.' % (object,))
+    if not isinstance(obj, Expr):
+      raise ValueError('Object %s must be an Expr.' % (obj,))
     for relation in relations:
       if not isinstance(relation, Expr):
         raise ValueError('Slots argument %s contains a non-Expr: %s.' % (
           relations, relation))
     var = expr("?v")
-    query = apply(relations[0], (object,) + tuple(relations[1:]) + (var,))
+    query = apply(relations[0], (obj,) + tuple(relations[1:]) + (var,))
     bindings = self.ask(query)
     if bindings != False and var in bindings:
       value = bindings[var]
@@ -343,10 +342,10 @@ class PropKB(KB):
       value = None
     return value
 
-  def slot_path_value(self, object, *relations):
+  def slot_path_value(self, obj, *relations):
     for relation in relations:
-      object = self.slot_value(object, relation)
-    return object
+      obj = self.slot_value(obj, relation)
+    return obj
 
   # Cache for memoizing all_parents.
   parent_cache = {}
@@ -381,14 +380,14 @@ class PropKB(KB):
       return self.child_cache[x]
 
     if not isinstance(x, Expr):
-      raise ValueError, "%s must be an Expr." % (x,)
+      raise ValueError('%s must be an Expr.' % (x,))
     children = list(self.all_children_generator(x))
     self.child_cache[x] = children
     return children
 
   def all_children_generator(self, x):
     if not isinstance(x, Expr):
-      raise ValueError, "%s must be an Expr." % (x,)
+      raise ValueError('%s must be an Expr.' % (x,))
     for binding in self.ask_generator(expr("ISA(?x, %s)" % (x.op,))):
       yield binding[expr("?x")]
 
@@ -406,9 +405,9 @@ class PropKB(KB):
   def isa(self, a, b):
     """Checks that a is a child of b."""
     if not isinstance(b, Expr):
-      raise ValueError, "%s must be an Expr." % (b,)
+      raise ValueError('%s must be an Expr.' % (b,))
     if not isinstance(a, Expr):
-      raise ValueError, "%s must be an Expr." % (a,)
+      raise ValueError('%s must be an Expr.' % (a,))
     # We do this normalization stuff because of the scenario where a
     # is a description, and we're checking whether it's isa its base
     # class.  Then the first element in the list of parents is the
@@ -468,7 +467,7 @@ class PropKB(KB):
   def define_fluent(self, relation, inherited=False):
     """Defines a relation as a fluent."""
     if not isinstance(relation, Expr):
-      raise ValueError, "%s must be an Expr." % (relation,)
+      raise ValueError('%s must be an Expr.' % (relation,))
     self.fluents.append(relation.op)
     if inherited:
       self.heritable.append(relation.op)
@@ -584,17 +583,21 @@ class ISAFunction(MemoryFunction):
     if is_var_symbol(subst_child.op) and not is_var_symbol(subst_parent.op):
       for child in self.all_children(kb, subst_parent):
         yield extend(s, subst_child, child)
-    elif (not is_var_symbol(subst_child.op)) and is_var_symbol(subst_parent.op):
+    elif ((not is_var_symbol(subst_child.op)) and
+          is_var_symbol(subst_parent.op)):
       for parent in self.all_parents(kb, subst_child):
         yield extend(s, subst_parent, parent)
-    elif (not is_var_symbol(subst_child.op)) and (not is_var_symbol(subst_parent.op)):
-      if normalize_description(subst_child) in self.all_children(kb, subst_parent):
+    elif ((not is_var_symbol(subst_child.op)) and
+          (not is_var_symbol(subst_parent.op))):
+      if normalize_description(subst_child) in self.all_children(
+        kb, subst_parent):
         yield s
       else:
         pass
     else:
-      raise ValueError, \
-            "Have two unbound variables in ISA query: %s." % (query,)
+      raise ValueError('Have two unbound variables in ISA query: %s.' % (
+        query,))
+
 
 class INSTANCEOFFunction(MemoryFunction):
   """Memory function INSTANCEOF."""
@@ -605,15 +608,18 @@ class INSTANCEOFFunction(MemoryFunction):
     subst_query = subst(s, query)
     subst_child = subst_query.args[0]
     subst_parent = subst_query.args[1]
-    newquery = expr("$ISA")(subst_child, subst_parent) & expr("ISINSTANCE")(subst_child)
+    newquery = (expr("$ISA")(subst_child, subst_parent) &
+                expr("ISINSTANCE")(subst_child))
     for bindings in kb.ask_generator(newquery, s):
       yield bindings
+
 
 class ISINSTANCEFunction(MemoryFunction):
   """Memory function ISINSTANCE."""
   def ask(self, kb, query, s):
     if len(query.args) > 1:
-      raise ValueError, "ISINSTANCE has arity 1 but was used with %s arguments: %s" % (len(query.args), query)
+      raise ValueError('ISINSTANCE has arity 1 but was used with %s '
+                       'arguments: %s' % (len(query.args), query))
     return kb.ask_generator(expr("$INSTANCE")(query.args[0]), s)
 
 
@@ -625,6 +631,7 @@ def newuniquevar(sentence, bindings, count=1):
   else:
     return var
 
+
 def newuniquevar2(usedvars, count=1):
   # Returns a new variable that isn't in usedvars.
   var = expr("?x%s" % (count,))
@@ -633,15 +640,17 @@ def newuniquevar2(usedvars, count=1):
   else:
     return var
 
-def removevars(s, vars):
+
+def removevars(s, variables):
   # Removes a set of variables from a substitution.
   for su in s:
-    for var in vars:
+    for var in variables:
       if var in su:
         del su[var]
     yield su
 
 #______________________________________________________________________________
+
 
 class Description:
   """Descriptions are sort of like "frame literals".  They consist of
@@ -653,7 +662,9 @@ class Description:
   ISA the Description class and must have at least the same slot
   values that the Description has.
   """
-  def __init__(self, base, slots = {}):
+  def __init__(self, base, slots=None):
+    if not slots:
+      slots = {}
     self.base = expr(base)
     self.slots = {}
     for s in slots:
@@ -661,9 +672,10 @@ class Description:
 
   def __repr__(self):
     if len(self.slots) > 0:
-      return "<%s base: %s slots: %s>" % (self.__class__.__name__, self.base, self.slots)
+      return '<%s base: %s slots: %s>' % (
+        self.__class__.__name__, self.base, self.slots)
     else:
-      return "<%s base: %s>" % (self.__class__.__name__, self.base)
+      return '<%s base: %s>' % (self.__class__.__name__, self.base)
 
   def __hash__(self):
     # Need a hash method so Exprs can live in dicts.
@@ -679,7 +691,6 @@ class Description:
       return -1
 
   def dictify(self):
-    dict = {"base": self.base}
     newslots = {}
     for slot in self.slots:
       slotval = self.slots[slot].op
@@ -695,11 +706,9 @@ class Description:
   def pprint(self):
     pprint.pprint(self.dictify(), width=80)
 
-
   # --------------------
   # The more public part of the Description API
   # --------------------
-
   def slot_value(self, slot_name):
     """Returns the value of a slot."""
     slot_name = expr(slot_name)
@@ -710,7 +719,7 @@ class Description:
     slot_name = expr(slot_name)
     return slot_name in self.slots
 
-  def find_all (self, kb):
+  def find_all(self, kb):
     """Finds all objects matching this description."""
     return list(self.find_generator(kb))
 
@@ -721,8 +730,7 @@ class Description:
   # --------------------
   # The less public part of the Description API.
   # --------------------
-
-  def find_generator (self, kb, instances_only = False):
+  def find_generator(self, kb, instances_only=False):
     objvar = expr("?x")
     query = self.query(objvar)
     if instances_only:
@@ -736,7 +744,7 @@ class Description:
     """
     return self.make_query(objvar, [])[0]
 
-  def make_query (self, objvar, usedvars):
+  def make_query(self, objvar, usedvars):
     # Returns a query to find objects matching the description.
     [slot_query, usedvars] = self.slots_query(objvar, usedvars)
     isa_query = expr("ISA")(objvar, self.base)
@@ -745,7 +753,7 @@ class Description:
     else:
       return [isa_query & slot_query, usedvars]
 
-  def slots_query (self, objvar, usedvars):
+  def slots_query(self, objvar, usedvars):
     # Returns a query for the slots of the description.
     if len(self.slots) > 0:
       slot_queries = []
@@ -805,7 +813,7 @@ class Expr:
 
     (1) Expr('<=>', x, y) and Expr('^', x, y)
       Note that ^ is bitwose XOR in Python (and Java and C++)
-    (2) expr('x <=> y') and expr('x =/= y').  
+    (2) expr('x <=> y') and expr('x =/= y').
       See the doc string for the function expr.
     (3) (x % y) and (x ^ y).
       It is very ugly to have (x % y) mean (x <=> y), but we need
@@ -827,7 +835,7 @@ class Expr:
       self.op = op
     else:
       self.op = utils.num_or_str(op)
-    self.args = map(expr, args) ## Coerce args to Exprs
+    self.args = map(expr, args)  # Coerce args to Exprs
 
   def __call__(self, *args):
     """Self must be a symbol with no args, such as Expr('F').  Create
@@ -841,19 +849,20 @@ class Expr:
 
   def __str__(self):
     "Show something like 'P' or 'P(x, y)', or '~P' or '(P | Q | R)'"
-    if len(self.args) == 0: # Constant or proposition with arity 0
+    if len(self.args) == 0:  # Constant or proposition with arity 0
       return repr(self.op)
-    elif is_symbol(self.op): # Functional or Propositional operator
+    elif is_symbol(self.op):  # Functional or Propositional operator
       return '%s(%s)' % (self.op, ', '.join(map(str, self.args)))
-    elif len(self.args) == 1: # Prefix operator
+    elif len(self.args) == 1:  # Prefix operator
       return self.op + repr(self.args[0])
-    else: # Infix operator
-      return '(%s)' % (' '+self.op+' ').join(map(str, self.args))
+    else:  # Infix operator
+      return '(%s)' % (' ' + self.op + ' ').join(map(str, self.args))
 
   def __cmp__(self, other):
     """x and y are equal iff their ops and args are equal."""
-    if (other is self) or (isinstance(other, Expr) 
-                           and self.op == other.op and self.args == other.args):
+    if ((other is self) or
+        (isinstance(other, Expr) and
+         self.op == other.op and self.args == other.args)):
       return 0
     else:
       return -1
@@ -889,6 +898,7 @@ class Expr:
 
 EXPR_TABLE = {}
 
+
 def expr(s):
   # This little memoization cuts our calls to eval by about 99%.
   if s in EXPR_TABLE:
@@ -896,6 +906,7 @@ def expr(s):
   e = expr2(s)
   EXPR_TABLE[s] = e
   return e
+
 
 def expr2(s):
   """Create an Expr representing a logic expression by parsing the
@@ -1025,15 +1036,19 @@ def pl_true(exp, model=None):
     result = False
     for arg in args:
       p = pl_true(arg, model)
-      if p == True: return True
-      if p == None: result = None
+      if p == True:
+        return True
+      if p == None:
+        result = None
     return result
   elif op == '&':
     result = True
     for arg in args:
       p = pl_true(arg, model)
-      if p == False: return False
-      if p == None: result = None
+      if p == False:
+        return False
+      if p == None:
+        result = None
     return result
   p, q = args
   if op == '>>':
@@ -1041,19 +1056,22 @@ def pl_true(exp, model=None):
   elif op == '<<':
     return pl_true(p | ~q, model)
   pt = pl_true(p, model)
-  if pt == None: return None
+  if pt == None:
+    return None
   qt = pl_true(q, model)
-  if qt == None: return None
+  if qt == None:
+    return None
   if op == '<=>':
     return pt == qt
   elif op == '^':
     return pt != qt
   else:
-    raise ValueError, "illegal operator in logic expression" + str(exp)
+    raise ValueError('illegal operator in logic expression' + str(exp))
 
 #______________________________________________________________________________
 
 ## Convert to Conjunctive Normal Form (CNF)
+
 
 def to_cnf(s):
   """Convert a propositional logical sentence s to conjunctive normal form.
@@ -1067,10 +1085,12 @@ def to_cnf(s):
   >>> to_cnf("A & (B | (D & E))")
   (A & (D | B) & (E | B))
   """
-  if isinstance(s, str): s = expr(s)
-  s = eliminate_implications(s) # Steps 1, 2 from p. 215
-  s = move_not_inwards(s) # Step 3
-  return distribute_and_over_or(s) # Step 4
+  if isinstance(s, str):
+    s = expr(s)
+  s = eliminate_implications(s)  # Steps 1, 2 from p. 215
+  s = move_not_inwards(s)  # Step 3
+  return distribute_and_over_or(s)  # Step 4
+
 
 def eliminate_implications(s):
   """Change >>, <<, and <=> into &, |, and ~. That is, return an Expr
@@ -1078,7 +1098,8 @@ def eliminate_implications(s):
   >>> eliminate_implications(A >> (~B << C))
   ((~B | ~C) | ~A)
   """
-  if not s.args or is_symbol(s.op): return s     ## (Atoms are unchanged.)
+  if not s.args or is_symbol(s.op):
+    return s  # (Atoms are unchanged.)
   args = map(eliminate_implications, s.args)
   a, b = args[0], args[-1]
   if s.op == '>>':
@@ -1089,6 +1110,7 @@ def eliminate_implications(s):
     return (a | ~b) & (b | ~a)
   else:
     return Expr(s.op, *args)
+
 
 def move_not_inwards(s):
   """Rewrite sentence s by moving negation sign inward.
@@ -1102,9 +1124,12 @@ def move_not_inwards(s):
   if s.op == '~':
     NOT = lambda b: move_not_inwards(~b)
     a = s.args[0]
-    if a.op == '~': return move_not_inwards(a.args[0]) # ~~A ==> A
-    if a.op =='&': return NaryExpr('|', *map(NOT, a.args))
-    if a.op =='|': return NaryExpr('&', *map(NOT, a.args))
+    if a.op == '~':
+      return move_not_inwards(a.args[0])  # ~~A ==> A
+    if a.op == '&':
+      return NaryExpr('|', *map(NOT, a.args))
+    if a.op == '|':
+      return NaryExpr('&', *map(NOT, a.args))
     return s
   elif is_symbol(s.op) or not s.args:
     return s
@@ -1133,14 +1158,19 @@ def distribute_and_over_or(s):
     else:
       rest = NaryExpr('|', *others)
     return NaryExpr('&', *map(distribute_and_over_or,
-                              [(c|rest) for c in conj.args]))
+                              [(c | rest) for c in conj.args]))
   elif s.op == '&':
     return NaryExpr('&', *map(distribute_and_over_or, s.args))
   else:
     return s
 
 
-_NaryExprTable = {'&':TRUE, '|':FALSE, '+':ZERO, '*':ONE}
+_NaryExprTable = {
+  '&': TRUE,
+  '|': FALSE,
+  '+': ZERO,
+  '*': ONE
+  }
 
 
 def NaryExpr(op, *args):
@@ -1151,14 +1181,17 @@ def NaryExpr(op, *args):
   """
   arglist = []
   for arg in args:
-    if arg.op == op: arglist.extend(arg.args)
-    else: arglist.append(arg)
+    if arg.op == op:
+      arglist.extend(arg.args)
+    else:
+      arglist.append(arg)
   if len(args) == 1:
     return args[0]
   elif len(args) == 0:
     return _NaryExprTable[op]
   else:
     return Expr(op, *arglist)
+
 
 def conjuncts(s):
   """Return a list of the conjuncts in the sentence s.
@@ -1167,10 +1200,11 @@ def conjuncts(s):
   >>> conjuncts(A | B)
   [(A | B)]
   """
-  if isinstance(s, Expr) and s.op == '&': 
+  if isinstance(s, Expr) and s.op == '&':
     return s.args
   else:
     return [s]
+
 
 def disjuncts(s):
   """Return a list of the disjuncts in the sentence s.
@@ -1179,7 +1213,7 @@ def disjuncts(s):
   >>> disjuncts(A & B)
   [(A & B)]
   """
-  if isinstance(s, Expr) and s.op == '|': 
+  if isinstance(s, Expr) and s.op == '|':
     return s.args
   else:
     return [s]
@@ -1234,7 +1268,8 @@ def occur_check(var, x):
     return var.op == x.op or occur_check(var, x.args)
   elif not isterm(x) and utils.issequence(x):
     for xi in x:
-      if occur_check(var, xi): return True
+      if occur_check(var, xi):
+        return True
   return False
 
 
@@ -1249,9 +1284,9 @@ def extend(s, var, val):
   """
 
   if not isinstance(var, Expr):
-    raise ValueError, "%s must be an Expr." % (var,)
+    raise ValueError('%s must be an Expr.' % (var,))
   if not isinstance(val, Expr):
-    raise ValueError, "%s must be an Expr." % (val,)
+    raise ValueError('%s must be an Expr.' % (val,))
   s2 = s.copy()
   s2[var] = val
   return s2
@@ -1262,20 +1297,21 @@ def subst(s, x):
   >>> subst({x: 42, y:0}, F(x) + y)
   (F(42) + 0)
   """
-  if isinstance(x, list): 
+  if isinstance(x, list):
     return [subst(s, xi) for xi in x]
-  elif isinstance(x, tuple): 
+  elif isinstance(x, tuple):
     return tuple([subst(s, xi) for xi in x])
-  elif not isinstance(x, Expr): 
+  elif not isinstance(x, Expr):
     return x
-  elif is_var_symbol(x.op): 
+  elif is_var_symbol(x.op):
     return s.get(x, x)
-  else: 
+  else:
     return Expr(x.op, *[subst(s, arg) for arg in x.args])
+
 
 def normalize_description(expr):
   if not isinstance(expr, Expr):
-    raise ValueError, "%s is not an Expr" % (expr,)
+    raise ValueError('%s is not an Expr' % (expr,))
   if isinstance(expr.op, Description):
     newexpr = subst({}, expr)
     newexpr.op = expr.op.base.op
@@ -1283,7 +1319,6 @@ def normalize_description(expr):
   else:
     return expr
 
-def deconstruct_query(query):
-  form = query.form()
-  return ([query.op] + query.args[1:-1], query.args[0], query.args[-1])
 
+def deconstruct_query(query):
+  return ([query.op] + query.args[1:-1], query.args[0], query.args[-1])
