@@ -11,6 +11,10 @@ from hml.dialog import logic
 from hml.dialog import iomanager
 
 
+class Error(Exception):
+  pass
+
+
 class CPTest:
   "A test for the ConceptualParser."
   EXACT = "exact"
@@ -42,8 +46,6 @@ class ICPTest:
 
 
 class FDLParser:
-  # 2/12/07 mrh: Adding ability for FDL files to include other FDL files.
-
   def __init__(self, frame_handler):
     self.frame_handler = frame_handler
     self.cp_tests = []
@@ -101,12 +103,11 @@ class FDLParser:
       try:
         new_doc = minidom.parse(include_file).documentElement
       except expat.ExpatError, e:
-        raise str("Error while parsing '%s': %s" % (include_file, e))
+        raise Error('Error while parsing %r: %s' % (include_file, e))
       self.__parse_fdl_doc_helper(new_doc, merge_file)
 
   def handle_lexicon(self, lexicon):
     logging.info('Processing lexicon')
-
     lexemes = []
     for lexeme_node in lexicon.getElementsByTagName("lexeme"):
       # Get spelling
@@ -380,7 +381,7 @@ class FDLParser:
       else:
         sys.stdout.write("ok\n")
 
-    return [test_count, fail_count]
+    return (test_count, fail_count)
 
 
 class BaseFrameHandler:
