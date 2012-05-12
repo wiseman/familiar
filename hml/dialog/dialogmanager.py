@@ -59,6 +59,12 @@ class NineLine:
 
   def __init__(self, kb):
     self.kb = kb
+    self.values = [None] * 9
+    self.raw_text = [None] * 9
+    self.remarks = ''
+    self.next_line = 0
+    self.needs_acknowledgement = False
+    self.acknowledged = False
     self.reset()
 
   def reset(self):
@@ -75,46 +81,46 @@ class NineLine:
   def mark_as_acknowledged(self):
     self.acknowledged = True
 
-  def object_satisfies_constraints(self, object, constraints):
+  def object_satisfies_constraints(self, obj, constraints):
     if constraints is None:
       return True
-    object = logic.expr(object)
+    obj = logic.expr(obj)
     if not isinstance(constraints, list):
-      return self.kb.isa(object, logic.expr(constraints))
+      return self.kb.isa(obj, logic.expr(constraints))
     else:
       for constraint in constraints:
-        if self.kb.isa(object, logic.expr(constraint)):
+        if self.kb.isa(obj, logic.expr(constraint)):
           return True
       return False
 
-  def object_is_valid_for_next_line(self, object):
+  def object_is_valid_for_next_line(self, obj):
     if self.next_line > 8:
       return False
-    return self.object_satisfies_constraints(object, self.current_constraint())
+    return self.object_satisfies_constraints(obj, self.current_constraint())
 
-  def object_is_valid_for_line(self, object, line):
+  def object_is_valid_for_line(self, obj, line):
     assert line >= 0 and line <= 8
-    return self.object_satisfies_constraints(object, self.constraint(line))
+    return self.object_satisfies_constraints(obj, self.constraint(line))
 
   def any_object_is_valid_for_line(self, objects, line):
     assert line >= 0 and line <= 8
-    for object in objects:
-      if self.object_is_valid_for_line(object, line):
+    for obj in objects:
+      if self.object_is_valid_for_line(obj, line):
         return True
     return False
 
-  def set_line(self, object, line, force_accept=False):
+  def set_line(self, obj, line, force_accept=False):
     if line > 8:
       raise TooManyLines
 
     if force_accept == False:
       constraint = self.constraint(line)
-      if not self.object_satisfies_constraints(object, constraint):
-        raise LineNotValidError(line + 1, constraint, object)
-      self.values[line] = object
+      if not self.object_satisfies_constraints(obj, constraint):
+        raise LineNotValidError(line + 1, constraint, obj)
+      self.values[line] = obj
     else:
       # hack to put some data in here
-      self.values[line] = object
+      self.values[line] = obj
 
   def get_line(self, line):
     if isinstance(line, basestring):
@@ -196,6 +202,8 @@ class DialogManager:
     self.kb = logic.PropKB()
     self.cp_parser = parser.ConceptualParser(self.kb)
     self.icp_parser = parser.IndexedConceptParser(self.kb)
+    self.io_manager = None
+    self.parser_mode = DialogManager.CONCEPTUAL_PARSER
     self.run_tests = run_tests
     self.lexemes = []
     self.generator = generation.Generator(self.kb)
@@ -235,8 +243,8 @@ class DialogManager:
     else:
       raise Exception('%s is not a valid parser mode.' % (mode,))
 
-  def set_io_manager(self, io_manager):
-    self.io_manager = io_manager
+  def set_io_manager(self, manager):
+    self.io_manager = manager
     self.io_manager.set_lexicon(self.lexemes)
 
   def set_focus_of_attention(self, focus):
@@ -315,26 +323,30 @@ class DialogManager:
   def log(self, message_type, message):
     utils.slog("comms.log", message_type, message)
 
-  def parse(self, input):
+  def parse(self, input_record):
 #    print "*** Parsing mode is %s" % (self.parser_mode,)
-    assert isinstance(input, iomanager.IORecord)
+    assert isinstance(input_record, iomanager.IORecord)
     if self.parser_mode == DialogManager.INDEXED_CONCEPT_PARSER:
-      results = self.icp_parser.parse(input.text)
-      result_strs = map(lambda r: "<ICPResult %s %s %s>" % (r.score, r.target_concept, r.slots), results)
+      results = self.icp_parser.parse(input_record.text)
+      result_strs = map(
+        lambda r: "<ICPResult %s %s %s>" % (
+          r.score, r.target_concept, r.slots),
+        results)
       self.debug("[%s]" % (", ".join(result_strs),))
       return results
     else:
-      return self.cp_parser.parse(input.text)
+      return self.cp_parser.parse(input_record.text)
 
-  def parse_with_prompt(self, all_parses = False, invalid_parse_message = None):
+  def parse_with_prompt(self, all_parses=False, invalid_parse_message=None):
     if invalid_parse_message is None:
       invalid_parse_message = "%s did not copy" % (self.pilot_callsign,)
 
     while True:
-      input = self.getline()
-      if input is None or len(input.text.strip()) == 0:
-	# if input is empty string, just don't bother parsing, go back to top of loop
-	continue
+      input_record = self.getline()
+      if input_record is None or len(input_record.text.strip()) == 0:
+        # if input is empty string, just don't bother parsing, go back
+        # to top of loop
+        continue
       parses = self.parse(input)
       self.debug("Raw parses: %s" % (parses,))
       if len(parses) == 0:
@@ -375,9 +387,12 @@ class DialogManager:
             else:
               # Filter out unactionable parses?
               def is_actionable(concept):
-                return self.kb.isa(logic.expr(concept), logic.expr('c-magic-command')) or \
-                       (self.kb.slot_value(concept, logic.expr('execute-method')) != None)
-              result = [parse for parse in parses if is_actionable(parse.target_concept)]
+                return (self.kb.isa(logic.expr(concept),
+                                    logic.expr('c-magic-command')) or
+                        (self.kb.slot_value(
+                          concept, logic.expr('execute-method')) != None))
+              result = [
+                parse for parse in parses if is_actionable(parse.target_concept)]
               break
 
     if self.parser_mode == DialogManager.CONCEPTUAL_PARSER:
@@ -397,17 +412,17 @@ class DialogManager:
         return self.parse_with_prompt(all_parses, invalid_parse_message)
       else:
         return parses[0]
-  
+
   def filter_actionable_parses(self, parses):
-    """Filter the specified list of parses by looking at the ones that are 
+    """Filter the specified list of parses by looking at the ones that are
     immediately actionable, i.e. are magic commands or have an execute-method.
-    """    
+    """
     def is_actionable(parse):
       return self.kb.isa(logic.expr(parse), logic.expr("c-magic-command")) or \
              self.kb.slot_value(parse, logic.expr("execute-method")) != None
-    
+
     return [parse for parse in parses if is_actionable(parse)]
-    
+
   def reset(self):
     self.nine_line = NineLine(self.kb)
     self.jtac_is_authenticated = False
@@ -421,24 +436,24 @@ class DialogManager:
     if self.pilot_model.is_connected():
       self.fly_to_ip()
       self.pilot_model.zoom_view(4.0)
-    
+
     # blow away all state objs, create new
     self.state_machine.reset()
 
-  def fly_to_ip(self, type="inbound to ip"):
-    self.pilot_model.fly_to([-5383, -747, -1126], type)    
-    
+  def fly_to_ip(self, ip_type='inbound to ip'):
+    self.pilot_model.fly_to([-5383, -747, -1126], ip_type)
+
   def run(self):
     self.io_manager.startup()
     self.pilot_model.connect()
     self.reset()
     self.action_module.init_module(self)
     self.idler.start()
-    
+
     try:
       self.run_input_loop()
     finally:
-      try :
+      try:
         # time.sleep(5)
         print "* DialogManager shutting down"
         self.shutdown()
@@ -447,7 +462,7 @@ class DialogManager:
         # keyboard interrupt (^c) first returns '' to readline(), causing our
         # code to raise EOFError,and then KeyboardInterrupt is raised later.
         self.shutdown()
-  
+
   def shutdown(self):
     if self.state_machine is not None:
       self.state_machine.shutdown()
@@ -469,14 +484,16 @@ class DialogManager:
           if self.jtac_is_authenticated:
             invalid_parse_message = "%s did not copy" % (self.pilot_callsign,)
           else:
-            invalid_parse_message = "authenticate %s" % (self.authentication_challenge_code,)
-          parse = self.parse_with_prompt(invalid_parse_message = invalid_parse_message)
+            invalid_parse_message = "authenticate %s" % (
+              self.authentication_challenge_code,)
+          parse = self.parse_with_prompt(
+            invalid_parse_message=invalid_parse_message)
           # FIXME: this should be handled through conv. state?
-          if self.jtac_is_authenticated or \
-                 self.kb.isa(logic.expr(parse),
-                             logic.expr("c-authentication-response")) or \
-                             self.kb.isa(logic.expr(parse),
-                                         logic.expr("c-authentication-request")):
+          if (self.jtac_is_authenticated or
+              self.kb.isa(logic.expr(parse),
+                          logic.expr("c-authentication-response")) or
+              self.kb.isa(logic.expr(parse),
+                          logic.expr("c-authentication-request"))):
             self.handle_parse(parse)
           else:
             self.say("authenticate %s" % (self.authentication_challenge_code,))
@@ -489,21 +506,25 @@ class DialogManager:
         # allow control-c to quit
         return
       except:
-        # MRH: probably don't want this to just crash on exception, right?  but, keep going? 3/15/07
+        # MRH: probably don't want this to just crash on exception,
+        # right?  but, keep going? 3/15/07
         unhandled_exception = True
         err_info = sys.exc_info()
         trace = traceback.format_tb(err_info[2])
-        self.say("sorry, processing error.  Please send following error info to John or Mike.")
+        self.say('sorry, processing error.  Please send following error info '
+                 'to John or Mike.')
         self.debug("Unexpected error: (%s, %s)" % (err_info[0], err_info[1]))
-        for i in range(0,len(trace)):
+        for i in range(0, len(trace)):
           self.debug("%s" % (trace[i],))
-        sys.stderr.write("Unexpected error: (%s, %s)\n" % (err_info[1], err_info[1]))
-        for i in range(0,len(trace)):
+        sys.stderr.write(
+          'Unexpected error: (%s, %s)\n' % (err_info[1], err_info[1]))
+        for i in range(0, len(trace)):
           sys.stderr.write("%s" % (trace[i],))
         unhandled_exception = True
 
   def handle_parse(self, parse):
-    # 4/16/07 mrh: adding concept_key as way for dialog to be handled by state system
+    # 4/16/07 mrh: adding concept_key as way for dialog to be handled
+    # by state system
     concept_key = self.kb.slot_value(parse, logic.expr("concept-key"))
     if concept_key is not None:
       # pass it on for the state machine to handle directly
@@ -522,13 +543,18 @@ class DialogManager:
   def handle_event(self, event):
     # 4/18/07 mrh: using state model for events
     event_type = event["type"]
-    handler_desc = logic.Description("c-event-handler", {"event-type": event_type})
+    handler_desc = logic.Description(
+      'c-event-handler', {'event-type': event_type})
     handlers = handler_desc.find_all(self.kb)
     if len(handlers) == 0:
-      self.debug("Got event of type '%s', but there is no handler defined." % (event_type,))
+      self.debug(
+        'Got event of type %r, but there is no handler defined.' % (
+          event_type,))
     else:
       if len(handlers) > 1:
-        self.debug("Found %s handlers for %s event (calling first one)." % (len(handlers), event_type))
+        self.debug(
+          'Found %s handlers for %s event (calling first one).' % (
+            len(handlers), event_type))
 
     self.state_machine.handle_event(event_type, event)
 
@@ -540,42 +566,43 @@ class DialogManager:
     else:
       self.debug("No function in action module named '%s'." % (name,))
       return lambda a, b: a.say("Sorry, I don't know how to respond to that.")
-  
-  
-  def generate(self, string, *args):
+
+  def generate(self, msg, *args):
     generated_args = map(self.generator.generate, args)
-    text = string % tuple(generated_args)
+    text = msg % tuple(generated_args)
     return text
 
-  def say(self, string, *args):
-    utterance = self.jtac_callsign + ", " + apply(self.generate, (string,) + args)
+  def say(self, msg, *args):
+    utterance = self.jtac_callsign + ", " + apply(self.generate, (msg,) + args)
     self.__say_helper(utterance)
-  
-  def say_without_callsign(self, string, *args):
-    utterance = apply(self.generate, (string,) + args)
+
+  def say_without_callsign(self, msg, *args):
+    utterance = apply(self.generate, (msg,) + args)
     self.__say_helper(utterance)
 
   def __say_helper(self, utterance):
     utterance = utterance.strip()
-    if len(utterance)>0 and not utterance[-1] in ".!?":
+    if len(utterance) > 0 and not utterance[-1] in ".!?":
       utterance += "."
     self.idler.update_time()
     self.last_utterance = utterance
     self.io_manager.say(self.pilot_callsign, utterance)
     self.log_output(utterance)
 
-  def say_unrecorded(self, string, *args):
-    """This is like the normal say() function, except that the utterance isn't recorded for the future."""
-    # could implement this by having both functions point to private helper function, and have say() record
-    # the utterance outside.  worth it?
+  def say_unrecorded(self, msg, *args):
+    """This is like the normal say() function, except that the
+    utterance isn't recorded for the future."""
+    # could implement this by having both functions point to private
+    # helper function, and have say() record the utterance outside.
+    # worth it?
     self.idler.update_time()
-    utterance = self.jtac_callsign + ", " + apply(self.generate, (string,) + args)
+    utterance = self.jtac_callsign + ", " + apply(self.generate, (msg,) + args)
     utterance = utterance.strip()
     if len(utterance) > 0 and not utterance[-1] in ".!?":
       utterance += "."
     self.io_manager.say(self.pilot_callsign, utterance)
     self.log_output(utterance)
-    
+
   def say_random(self, *options):
     weight_total = 0
     for option in options:
@@ -596,7 +623,8 @@ class DialogManager:
     utils.log("<debug>%s</debug>" % (saxutils.escape(string),))
 
   def say_with_full_callsign(self, string, *args):
-    utterance = self.jtac_full_callsign + ", " + apply(self.generate, (string,) + args)
+    utterance = (self.jtac_full_callsign + ", " +
+                 apply(self.generate, (string,) + args))
     self.idler.update_time()
     self.last_utterance = utterance
     self.io_manager.say(self.pilot_callsign, utterance)
@@ -621,21 +649,21 @@ class ConversationIdleThread(threading.Thread):
     self.check_interval = 0.2  # seconds
     self.idle_time = idle    # seconds
     self.setDaemon(True)
-    
+
   def update_time(self):
     """Update time of last interaction to 'now'."""
-    # do I really need a lock for this?  seems pretty darned atomic... 
+    # do I really need a lock for this?  seems pretty darned atomic...
     # what's the worst that can happen, thread gets notified late?
     self.status_cv.acquire()
     self.last_time = time.time()
     self.status_cv.release()
-    
+
   def shutdown(self):
     """Signal that the thread should stop running.  Make take up
     to self.check_interval seconds.
     """
     self.keep_running = False
-    
+
   def run(self):
     """Run in a loop, waking up periodically to see if the system has been idle
     for 'long enough'.  If so, send an event to the dialog manager.
@@ -658,72 +686,76 @@ class ConversationIdleThread(threading.Thread):
       # otherwise, loop around and go back to sleep.
 
 
-
 class StateMachine:
   """This class holds state data, the current state object, and more."""
-  # 4/25/07 mrh: Adding queued events (at startup), enter() and exit() methods
-  #              for state transitions.  Enter() helps new states process queued
-  #              events, and is commonly cited in literature as being useful.
-  #              *Not* adding locking for state transitions *yet*, even though now
-  #              they're non-atomic; I worry about deadlock w/ the iomanager.
-
+  # 4/25/07 mrh: Adding queued events (at startup), enter() and exit()
+  # methods for state transitions.  Enter() helps new states process
+  # queued events, and is commonly cited in literature as being
+  # useful. *Not* adding locking for state transitions *yet*, even
+  # though now they're non-atomic; I worry about deadlock w/ the
+  # iomanager.
   def __init__(self, dm):
-    """Initialize the State Machine.  Includes pointer to parent DialogManager instance."""
+    """Initialize the State Machine.  Includes pointer to parent
+    DialogManager instance."""
     self.dm = dm
     self.current_state = None
     self.previous_state = None
-    
+
     # in case the State Machine is sent data before we're ready for it:
     self.queued_events = []
     self.queued_parses = []
-  
+
   def reset(self):
     """Reset all state, except for the link to the dialog manager."""
     self.current_state = None
     self.previous_state = None
     self.data = self.dm.action_module.StateData()
-    
+
     self.queued_events = []
     self.queued_parses = []
-    
+
     # populate states by asking action module for custom definitions
     self.dm.action_module.populate_states(self)
-  
-  def set_state(self, new_state): 
+
+  def set_state(self, new_state):
     """Change the current state to be the new state; save the previous state
     in case it's needed for something.
     """
-    
+
     if new_state != self.current_state:
       self.previous_state = self.current_state
       self.current_state = new_state
-      
+
       if self.previous_state is None:
         self.dm.debug("Initializing to state {%s}" % self.current_state.name())
       else:
-        self.dm.debug("Moving from state {%s} to {%s}" % (self.previous_state.name(), 
-                                                     self.current_state.name()))
-	# first, call exit on old state
-	self.previous_state.exit()
-      
+        self.dm.debug(
+          'Moving from state {%s} to {%s}' % (
+            self.previous_state.name(),
+            self.current_state.name()))
+        # first, call exit on old state
+        self.previous_state.exit()
+
       # whether or not old state existed, call enter on new state
       self.current_state.enter()
-	
+
     else:
-      self.dm.debug("Asked to move to state {%s} when already in that state?" % self.current_state.name())
+      self.dm.debug(
+        'Asked to move to state {%s} when already in that state?' % (
+          self.current_state.name()))
 
   def get_queued_events(self):
     """Return queued events to caller.  Reset queue."""
     qe = self.queued_events
-    self.qeueued_events = [] 
+    self.qeueued_events = []
     return qe
-  
+
   def get_queued_parses(self):
     """Return queued language to caller.  Reset queue."""
     qp = self.queued_parses
     self.queued_parses = []
     return qp
-  
+
   def handle_event(self, event_type, event_obj):
     """Hand off to current state object.  If no current state, store event up
     for later processing.
@@ -732,9 +764,10 @@ class StateMachine:
     if self.current_state is not None:
       self.current_state.handle_event(event_type, event_obj)
     else:
-      self.dm.debug("StateMachine queueing up event for later: %s" % event_type)
+      self.dm.debug(
+        'StateMachine queueing up event for later: %s' % (event_type,))
       self.queued_events.append((event_type, event_obj))
-  
+
   def handle_parse(self, concept_key, parse):
     """Hand off to current state object.  If no current state, store parse up
     for later processing.
@@ -743,42 +776,40 @@ class StateMachine:
       self.current_state.handle_parse(concept_key, parse)
     else:
       self.queued_parses.append((concept_key, parse))
-  
+
   def shutdown(self):
     self.dm.action_module.cleanup_states()
-  
+
   def get_previous_state(self):
     return self.previous_state
 
-
-  
 
 class DialogManagerApp:
   def __init__(self, fdl_path, remote_host):
     self.dialog_manager = DialogManager(remote_host, actions)
     self.dialog_manager.load_fdl(fdl_path)
     self.io_manager = ConsoleIOManager(self.dialog_manager)
-    
+
   def set_sr_grammar(self, grammar_path):
     self.io_manager = speech.SpeechRecognition(self.dialog_manager, grammar_path)
     self.dialog_manager.set_io_manager(self.io_manager)
-    
+
   def set_input_file(self, input_path, use_html_output = False):
     if use_html_output:
       self.io_manager = HTMLIOManager(self.dialog_manager)
     else:
       self.io_manager = ConsoleIOManager(self.dialog_manager)
-    
+
     self.io_manager.set_input_file(input_path)
     self.dialog_manager.set_io_manager(self.io_manager)
-    
+
   def run(self):
     self.io_manager.run()
 
 
-
 def show_usage():
-  """Display usage arguments for dialogmanager when invoked from command line."""
+  """Display usage arguments for dialogmanager when invoked from
+  command line."""
   print "Dialog Manager:"
   print "   -h: HTML mode."
   print "   -d: Display debug messages."
@@ -802,7 +833,7 @@ def create_dm_for_bridge(host, action_module, grammar_path, fdl_path):
   return dm
 
 
-if __name__ == "__main__":
+def main():
   transcript = None
   connect = True
   html = False
@@ -810,11 +841,11 @@ if __name__ == "__main__":
   runTests = False
   runXmlTests = False
   debug = False
-  
+
   if len(sys.argv) == 1:
     show_usage()
-    sys.exit(1) 
-  
+    sys.exit(1)
+
   try:
     optlist, args = getopt.getopt(sys.argv[1:], 'dhnxtf:s:')
     for o, v in optlist:
@@ -836,18 +867,18 @@ if __name__ == "__main__":
     sys.stderr.write("%s: %s\n" % (sys.argv[0], e.msg))
     show_usage()
     sys.exit(1)
-    
+
   # sanity check -- after processing args, do we have a host to connect to?
   if len(args) == 0 and connect == True:
     print "\nError: Invalid arguments, missing remote host for connection.\n"
     show_usage()
     sys.exit(1)
-  
+
   if runXmlTests and transcript is None:
     print "\nError: Cannot run XML tests without a specified transcript file.\n"
     show_usage()
     sys.exit(1)
-      
+
   if connect == False:
     host = None
   else:
@@ -868,7 +899,7 @@ if __name__ == "__main__":
     io_manager = iomanager.TestIOManager(dmm)
   else:
     io_manager = iomanager.ConsoleIOManager(dmm)
-  
+
   if transcript is not None:
     io_manager.set_input_file(transcript)
 
@@ -881,5 +912,9 @@ if __name__ == "__main__":
 
   #    gen = speechutil.MicrosoftSRGrammarGenerator(dm.parser)
   #    print gen.generate_grammar()
-  
+
   dmm.run()
+
+
+if __name__ == '__main__':
+  main()
