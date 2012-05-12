@@ -5,14 +5,15 @@ from hml.dialog import test_utils
 
 
 def add_template(kb, concept, template):
-  kb.tell(logic.expr(generation.GENERATION_PROPOSITION)(logic.expr(concept), logic.Expr(template)))
-  
+  kb.tell(logic.expr(generation.GENERATION_PROPOSITION)(
+    logic.expr(concept), logic.Expr(template)))
+
 
 class TestCase(test_utils.DMTestCase):
 
   def testGeneration(self):
     """Tests natural language generation"""
-    
+
     kb = logic.PropKB()
     generator = generation.Generator(kb)
 
@@ -23,8 +24,10 @@ class TestCase(test_utils.DMTestCase):
 
     add_template(kb, "i-petunia", "the prettiest cat")
     self.assertEqual(generator.generate("i-petunia"), "the prettiest cat")
-    self.assertEqual(generator.generate(logic.expr("i-petunia")), "the prettiest cat")
-    self.assertEqual(generator.generate(logic.Description("i-petunia")), "the prettiest cat")
+    self.assertEqual(
+      generator.generate(logic.expr("i-petunia")), "the prettiest cat")
+    self.assertEqual(
+      generator.generate(logic.Description("i-petunia")), "the prettiest cat")
 
     add_template(kb, "c-dog-1", "{color} dog")
     add_template(kb, "c-dog-2", "the {color} dog")
@@ -59,11 +62,8 @@ class TestCase(test_utils.DMTestCase):
     self.assertEqual(generator.generate("c-dog-13"), "the dog which is , yo")
     self.assertRaises(SyntaxError, lambda: generator.generate("c-dog-14"))
     self.assertRaises(SyntaxError, lambda: generator.generate("c-dog-15"))
-    
 
-    
 
-  
 if __name__ == "__main__":
   print "Generation tests:"
   unittest.main()

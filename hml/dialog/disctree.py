@@ -5,7 +5,7 @@ import sys
 
 class DiscTree:
   """A node of a discrimination tree."""
-  
+
   def __init__(self, index, parent, var_test=None):
     self.index = index
     self.parent = parent
@@ -20,7 +20,7 @@ class DiscTree:
 
   def __repr__(self):
     return "<DiscTree %s>" % (self.index,)
-  
+
   def child_matching_index(self, index):
     """Returns the child node with the specified index, or None."""
     return self.ints.get(index, None)
@@ -33,7 +33,7 @@ class DiscTree:
 
   def is_variable(self, sym):
     return self.var_test(sym)
-    
+
   def retrieve(self, path):
     """Yields all propositions in this tree matching the specified
     path.
@@ -43,12 +43,7 @@ class DiscTree:
         yield leaf
     else:
       next_index = path[0]
-      # The use of is_variable is the only thing preventing this from
-      # being a completely generic container.  It turns out to be
-      # about 10% faster to keep this specific and avoid an indirect
-      # funcall.
       if self.is_variable(next_index):
-      #if logic.logic.is_variable(next_index):
         for leaf in self.retrieve_variable(path[1:]):
           yield leaf
       else:
@@ -103,7 +98,7 @@ class DiscTree:
   def erase_at(self):
     """Deletes an entire tree from the parent."""
     for child in self.interiors:
-        child.erase_at()
+      child.erase_at()
     if self.parent != None:
       self.parent.interiors.remove(self)
       del self.parent.ints[self.index]
@@ -111,16 +106,13 @@ class DiscTree:
 
   def dump(self, stream=sys.stdout, indent=0):
     """Dumps a printed representation of a complete tree."""
-    stream.write("\n" + " "*indent + str(self))
+    stream.write('\n' + ' ' * indent + str(self))
     for child in self.leaves:
-      stream.write("\n" + " "*(indent + 3) + str(child))
+      stream.write('\n' + ' ' * (indent + 3) + str(child))
     for child in self.interiors:
       child.dump(stream=stream, indent=indent + 3)
-      
-    
-    
+
 
 def make_root_disc_tree(var_test=None):
   """Creates and returns a brand new root node."""
   return DiscTree("ROOT", None, var_test=var_test)
-

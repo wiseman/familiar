@@ -64,7 +64,9 @@ class DMTestCase(unittest.TestCase):
 
     bindingsa = cookBindings(a)
     bindingsb = cookBindings(b)
-    #    self.failUnless(bindingsEqual(bindingsa, bindingsb), "%s != %s" % (bindingsa, bindingsb))
+    # self.failUnless(
+    #   bindingsEqual(bindingsa, bindingsb),
+    #   "%s != %s" % (bindingsa, bindingsb))
     self.assertEqual(bindingsa, bindingsb)
 
   def assertAllBindingsEqual(self, a, b):
@@ -97,5 +99,3 @@ class DMTestCase(unittest.TestCase):
   def assertApproxEqual(self, a, b, epsilon):
     if abs(a - b) > epsilon:
       self.fail("%s is not within %s of %s" % (a, epsilon, b))
-
-
