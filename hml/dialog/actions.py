@@ -146,7 +146,6 @@ def accept_nine_lines(dm):
   num_matching_lines = 0
   first_non_matching_line = None
   for line, parses in enumerate(lines):
-    parse_matched = False
     if apply_parses_to_line(parses, dm.nine_line, line):
       num_matching_lines += 1
     else:
@@ -765,18 +764,21 @@ def do_call_contact_location_obj(dm, parse):
     location_point_desc = compound_location.slot_value("point")
     location_point = get_object_point(dm, location_obj, location_point_desc)
     if location_point == None:
-      dm.debug("Point %s of %s is not known" % (location_point_desc, location_obj))
+      dm.debug("Point %s of %s is not known" % (
+        location_point_desc, location_obj))
       dm.say("I don't know where the %s is", location_point_desc)
     else:
-      # step 2: we have a point!  make the pilot look at it.  do they see the object?
-      # if so, call contact with it.
+      # step 2: we have a point!  make the pilot look at it.  do they
+      # see the object?  if so, call contact with it.
       dm.debug("Pilot is looking at %s" % (location_point,))
       dm.pilot_model.look_at(location_point)
       # looking seems to be pretty fast...
-      
-      # okay, now piggy-back on do-implied-call-contact.  dicc expects an object slot, we've got one naturally.
+
+      # okay, now piggy-back on do-implied-call-contact.  dicc expects
+      # an object slot, we've got one naturally.
       dm.debug("Pilot was able to look at location portion of object")
       do_implied_call_contact(dm, parse)
+
 
 def tally_and_fly_to_target(dm, target):
   dm.say("tally %s, departing IP at this time", target)
@@ -797,26 +799,28 @@ def tally_and_fly_to_target(dm, target):
     # dm.conv_state.set_state("run-in-begin")
     dm.state_machine.set_state(RUN_IN)
   else:
-    dm.debug("bad target locations for target %s of type '%s': %s; Cannot begin attack run" % (target, type, target_locations))
+    dm.debug('bad target locations for target %s of type %s: %s; Cannot begin'
+             'attack run' % (target, type, target_locations))
 
-def do_nop(dm, parse):
+
+def do_nop(unused_dm, unused_parse):
   pass
 
 
-def do_target_status_assertion(dm, parse):
+def do_target_status_assertion(dm, unused_parse):
   dm.say("copy")
 
 
 def handle_nine_line_post_event(dm, event):
-  """Handle the nine-line data sent from the GUI.  
-  Data should be a dictionary with keys 1-9 holding 9-line values, and 
+  """Handle the nine-line data sent from the GUI.
+  Data should be a dictionary with keys 1-9 holding 9-line values, and
   optionally a "remarks" section.
   """
-  # mrh 4/18/07: now, can only get to this function if nine-line is sent while in 
-  #              accepting state (mostly NINE_LINE, but also CHECK_IN if sent when
-  #              python connects)
-
-  # 5/4 mrh: Update! Only parsing target right now.  Just accept the rest. (FIXME)
+  # mrh 4/18/07: now, can only get to this function if nine-line is
+  #              sent while in accepting state (mostly NINE_LINE, but
+  #              also CHECK_IN if sent when python connects)
+  # 5/4 mrh: Update! Only parsing target right now.  Just accept the
+  # rest. (FIXME)
 
   # any reason not to immediately acknowledge nine-line data?
   def handle_nine_line(line_input, line_no):
@@ -832,17 +836,19 @@ def handle_nine_line_post_event(dm, event):
       return fake_apply_nine_line_data(dm.nine_line, line_no, line_input)
 
   # set parser to ICP mode, so it can parse the 9-line
-  # 5/4 mrh: changing to use ICP for parsing instead of CP, so it handles "t-55 dug in"
+  # 5/4 mrh: changing to use ICP for parsing instead of CP, so it
+  # handles "t-55 dug in"
   init_parser_mode = dm.parser_mode
   # dm.set_parser_mode(dialogmanager.DialogManager.CONCEPTUAL_PARSER)
   dm.set_parser_mode(dialogmanager.DialogManager.INDEXED_CONCEPT_PARSER)
   result = True
   for i in range(9):
-    line_text = event[str(i+1)]
+    line_text = event[str(i + 1)]
     if handle_nine_line(line_text, i) == False:
-      dm.debug("Failed to post nine-line data on line %d, text {%s}" % (i, line_text))
+      dm.debug('Failed to post nine-line data on line %d, text {%s}' % (
+        i, line_text))
       result = False
-  if event.has_key("remarks"):
+  if 'remarks' in event:
     dm.nine_line.set_remarks(event["remarks"])
   if result:
     # print "** Nine line handled successfully"
@@ -862,31 +868,35 @@ def handle_nine_line_post_event(dm, event):
       dm.set_parser_mode(init_parser_mode)
   return result
 
-def magic_trigger_nine_line(dm, parse=None, target=None):
+
+def magic_trigger_nine_line(dm, unused_parse=None, target=None):
   dm.pilot_model.trigger_nine_line(target=target)
 
-def magic_fake_nine_line(dm, parse):
+
+def magic_fake_nine_line(dm, unused_parse):
   # FIXME: this is really just a convenience hack; remove this later?
   def handle_nine_line(line_input, line_no):
     parses = dm.parse(iomanager.IORecord('pilot', line_input))
     # check return value of apply?
     return apply_parses_to_line(parses, dm.nine_line, line_no, line_input)
-  
+
   data = ("bravo", "346 degrees, offset 30 degrees right", "5 nautical miles",
           "3300 feet", "t-55", "nv 399282", "none", "2 clicks south", "I.P.")
-  
+
   dm.set_parser_mode(dialogmanager.DialogManager.CONCEPTUAL_PARSER)
   result = True
   for (line_no, line_input) in enumerate(data):
     if handle_nine_line(line_input, line_no) == False:
-      dm.debug("Failed to fake nine-line data on line %d, text {%s}?" % (line_no, line_input))
+      dm.debug('Failed to fake nine-line data on line %d, text {%s}?' % (
+        line_no, line_input))
       result = False
   if result:
     # dm.conv_state.set_state("nine-line-pending-ack")
     dm.state_machine.set_state(NINE_LINE)
     event_offer_nine_line(dm)
 
-def do_nine_line_readback(dm, parse):
+
+def do_nine_line_readback(dm, unused_parse):
   """Read back the nine-line data we've got."""
   if dm.nine_line.has_data():
     dm.say("affirm.  standby one")
@@ -909,18 +919,20 @@ def do_nine_line_readback(dm, parse):
 
 CARDINAL_DIRECTION_VECTORS = None
 
+
 def compute_cardinal_direction_vectors(dm):
   global CARDINAL_DIRECTION_VECTORS
   CARDINAL_DIRECTION_VECTORS = {}
-  for direction in dm.kb.all_proper_children(logic.expr("c-cardinal-direction")):
+  for direction in dm.kb.all_proper_children(
+    logic.expr("c-cardinal-direction")):
     vector_frame = dm.kb.slot_value(direction, logic.expr("rawvector"))
     if vector_frame != None:
       direction_name = dm.generate("%s", direction)
       vector = raw_vector_frame_to_vector(dm.kb, vector_frame)
       CARDINAL_DIRECTION_VECTORS[direction_name] = vector
-  
-  
-def classify_vector_as_cardinal_direction(dm, vector):
+
+
+def classify_vector_as_cardinal_direction(unused_dm, vector):
   vector = normalize(vector)
   largest_dot_product = None
   closest_direction = None
@@ -933,12 +945,14 @@ def classify_vector_as_cardinal_direction(dm, vector):
   return closest_direction
 
 
-def do_say_again(dm, parse):
+def do_say_again(dm, unused_parse):
   dm.say_again()
 
-def do_standby(dm, parse):
+
+def do_standby(dm, unused_parse):
   time.sleep(10)
   dm.say_again()
+
 
 def do_push_frequency(dm, parse):
   # For now, not really doing anything with this, just acknowledging.
@@ -946,33 +960,39 @@ def do_push_frequency(dm, parse):
   freq = parse.slot_value("frequency")
   # Construct an utterance and use it.
   desc = None
-  if random.randint(0,1) == 0:
+  if random.randint(0, 1) == 0:
     desc = logic.Description("c-frequency-change-ok",
-                             {"from-agent":dm.pilot_callsign,
-                              "frequency":freq})
+                             {"from-agent": dm.pilot_callsign,
+                              "frequency": freq})
   else:
     desc = logic.Description("c-frequency-change-deny",
-                             {"from-agent":dm.pilot_callsign,
-                              "frequency":freq})
+                             {"from-agent": dm.pilot_callsign,
+                              "frequency": freq})
   dm.say(dm.generate("%s", desc))
 
 
-def do_what_do_you_see(dm, parse):
+def do_what_do_you_see(dm, unused_parse):
   entities = dm.pilot_model.get_all()
   # Determine classes
   for e in entities:
     e['class'] = descriptor_class(dm, e)
   # Sort
+
   def is_target(desc):
-    return 'class' in desc and desc['class'] and dm.kb.isa(logic.expr(desc['class']), logic.expr('c-tank'))
+    return ('class' in desc and
+            desc['class'] and
+            dm.kb.isa(logic.expr(desc['class']), logic.expr('c-tank')))
+
   def desc_key(desc):
     score = desc['blob']['size']
     if is_target(desc):
       score += 1000000
     return score
+
   def find_closest_desc(desc, descriptors):
     descriptors = descriptors[:]
     loc = desc['location']
+
     def dist(d):
       return utils.distance(loc[0:2], d['location'][0:2])
     descriptors.sort(key=dist)
@@ -992,14 +1012,18 @@ def do_what_do_you_see(dm, parse):
       dm.say("I see a %s and a %s", e0['class'], e1['class'])
     elif is_target(e0):
       e1 = find_closest_desc(e0, entities[1:])
+      cardinal_direction = classify_vector_as_cardinal_direction(
+        dm, vector_subtract(e0['location'], e1['location']))
       dm.say("I see a %s %s of the %s",
              e0['class'],
-             classify_vector_as_cardinal_direction(dm, vector_subtract(e0['location'], e1['location'])),
+             cardinal_direction,
              e1['class'])
     else:
+      cardinal_direction = classify_vector_as_cardinal_direction(
+        dm, vector_subtract(e1['location'], e0['location']))
       dm.say("I see the %s and to the %s of that I see the %s",
              e0['class'],
-             classify_vector_as_cardinal_direction(dm, vector_subtract(e1['location'], e0['location'])),
+             cardinal_direction,
              e1['class'])
 
 
@@ -1009,7 +1033,8 @@ def generate_descriptor(dm, descriptor):
     return dm.generate("%s", cls)
   if 'alias' in descriptor:
     return descriptor['alias'].split(',')[0].strip()
-    
+
+
 def descriptor_class(dm, descriptor):
   def gen_ids(s):
     s = s.replace(" ", "-").replace(",", "-")
@@ -1017,11 +1042,13 @@ def descriptor_class(dm, descriptor):
            "i-" + s, ("i-" + s).lower(),
            "c-" + s, ("c-" + s).lower()]
     return [logic.expr(id) for id in ids]
+
   def gen_ids_for_prop(prop):
     if prop in descriptor:
       return gen_ids(descriptor[prop])
     else:
       return []
+
   def classp(id):
     return len(dm.kb.all_proper_parents(id)) > 0
 
@@ -1037,18 +1064,19 @@ def descriptor_class(dm, descriptor):
   dm.debug("Unknown class for descriptor %s" % (descriptor,))
   return None
 
-  
-  
+
 def init_module(dm):
   print "Initializing actions module"
   compute_cardinal_direction_vectors(dm)
 
 
 def testing_skip_to_talkon(dm, target_type="t-55"):
-  """Skip past nine-line, set up current state so that we're ready for talk-on."""
-  # HACK: this is just for doing XML-based testing.
-  # Circumventing the DM.NineLine class to do this manually breaks OO rules pretty
-  # badly, but let's just see if the rest of the mechanism will work for now.
+  """Skip past nine-line, set up current state so that we're ready for
+  talk-on."""
+  # HACK: this is just for doing XML-based testing.  Circumventing the
+  # DM.NineLine class to do this manually breaks OO rules pretty
+  # badly, but let's just see if the rest of the mechanism will work
+  # for now.
   def skip_helper(line_num, phrase):
     inputrecord = iomanager.IORecord('pilot', phrase)
     apply_parses_to_line(dm.parse(inputrecord), dm.nine_line, line_num, phrase)
@@ -1058,61 +1086,66 @@ def testing_skip_to_talkon(dm, target_type="t-55"):
     dm.jtac_is_authenticated = True
     # dm.conv_state.set_state("nine-line-no-data")
     dm.state_machine.set_state(NINE_LINE)
-    
+
   dm.nine_line.reset()
   dm.set_parser_mode(dialogmanager.DialogManager.CONCEPTUAL_PARSER)
-  
+
   # parameterize target type
   lines = ["Denver", "three three zero degrees", "five nauticals",
            "two zero zero zero feet",
            target_type,
-           "hotel kilo four zero four six six", 
+           "hotel kilo four zero four six six",
            "none", "one kilometer south", "IP"]
-  
+
   for line_num, phrase in enumerate(lines):
     skip_helper(line_num, phrase)
 
 
-def do_respond_to_nine_line_query(dm, parse):
+def do_respond_to_nine_line_query(dm, unused_parse):
   if dm.nine_line.is_complete():
     dm.say("roger, I have your nine-line")
   else:
     dm.say("negative, I do not have your nine-line")
-  
+
 
 def do_status_query_position_helper(dm):
-  # function for use both by do_status_query_position, and do_authentication_response
-  # returns (distance, direction) to IP Bravo
+  # function for use both by do_status_query_position, and
+  # do_authentication_response returns (distance, direction) to IP
+  # Bravo
   pilot_pose = dm.pilot_model.get_pilot_pose()
   if pilot_pose is None:
     dm.debug("failed to retrieve pilot pose")
     return None
   else:
-    heading = pilot_pose[0]
     position = pilot_pose[1]
     # get the IP Bravo position from the kb
     bravo_pos_desc = logic.Description("i-ip-bravo-position")
     bravo_pos = position_frame_to_vector(dm.kb, bravo_pos_desc)
     relative_vector = vector_subtract(position, bravo_pos)
-    relative_direction = classify_vector_as_cardinal_direction(dm, relative_vector)
+    relative_direction = classify_vector_as_cardinal_direction(
+      dm, relative_vector)
     # now, assuming that the coordinates are in meters...
-    dist = utils.distance((bravo_pos[0], bravo_pos[1]), (position[0], position[1]))
+    dist = utils.distance((bravo_pos[0], bravo_pos[1]),
+                          (position[0], position[1]))
     # if that's in meters, let's round to half a kilometer?
-    dist2 = int(dist/500.0)/2.0
+    dist2 = int(dist / 500.0) / 2.0
     return (dist2, relative_direction)
-  
-def magic_switch_to_concept_parser(dm, parse):
+
+
+def magic_switch_to_concept_parser(dm, unused_parse):
   """Switch to the CP."""
   dm.set_parser_mode(dialogmanager.DialogManager.CONCEPTUAL_PARSER)
-  
-def magic_switch_to_indexed_parser(dm, parse):
+
+
+def magic_switch_to_indexed_parser(dm, unused_parse):
   """Switch to the ICP."""
   dm.set_parser_mode(dialogmanager.DialogManager.INDEXED_CONCEPT_PARSER)
 
 # ---------------------------------------------------------------------------
 # Code called from state functions handling events
 
-def event_request_auth(dm, event):
+
+def event_request_auth(dm, unused_event):
   dm.say("authenticate %s" % (dm.authentication_challenge_code,))
 
 
@@ -1121,7 +1154,7 @@ def event_offer_nine_line(dm, from_go_ahead=False):
   the user for a nine-line, or ask if they want to read back
   the data that's been sent, or perhaps do nothing.
   """
-  
+
   if dm.nine_line.has_data():
     # should probably keep track of whether not we've said this?
     dm.say("I have the nine-line you sent, say when ready for read-back")
@@ -1129,7 +1162,6 @@ def event_offer_nine_line(dm, from_go_ahead=False):
           from_go_ahead == True:
     dm.say("do you have a nine-line for me?")
     dm.state_machine.data.requested_nine_line = True
-
 
 
 # ---------------------------------------------------------------------------
@@ -1145,13 +1177,15 @@ RADIO_CHECK = None
 BOGEY_ID = None
 BULLSEYE_RUN_IN = None
 
+
 def populate_states(machine):
-  """Create the state objects we'll use, tying them to the 
+  """Create the state objects we'll use, tying them to the
   specified State Machine."""
 
   # create state objects up front, making it more direct for them to share data
   # (is it bad to use caps for emphasis when they're not constants?)
-  global CHECK_IN, NINE_LINE, TALK_ON, RUN_IN, RADIO_CHECK, BOGEY_ID, BULLSEYE_RUN_IN
+  global CHECK_IN, NINE_LINE, TALK_ON, RUN_IN, RADIO_CHECK, BOGEY_ID
+  global BULLSEYE_RUN_IN
   CHECK_IN = CheckInState(machine)
   NINE_LINE = NineLineState(machine)
   TALK_ON = TalkOnState(machine)
@@ -1159,53 +1193,56 @@ def populate_states(machine):
   RADIO_CHECK = RadioCheckState(machine)
   BOGEY_ID = BogeyIDState(machine)
   BULLSEYE_RUN_IN = BullseyeRunInState(machine)
-  
+
   # set initial state, too
   machine.set_state(CHECK_IN)
 
+
 def cleanup_states():
   # at all necessary?  don't know.  -mrh
-  global CHECK_IN, NINE_LINE, TALK_ON, RUN_IN
+  global CHECK_IN, NINE_LINE, RADIO_CHECK, TALK_ON, RUN_IN
   CHECK_IN = None
   NINE_LINE = None
   TALK_ON = None
   RUN_IN = None
   RADIO_CHECK = None
 
+
 class StateData:
   """Holds data in a repository separate from the StateMachine or DialogManager
   classes."""
-  
+
   def __init__(self):
     self.reset()
-  
+
   def reset(self):
-    self.idle_count = 0               # no. of times idle in a row
-    self.requested_nine_line = False  # have not asked the user for a nine-line yet
-    self.eta_given = False            # has the ETA been given?
-    self.run_in_hot = False           # is the run-in hot?
-    self.saved_nine_line = None       # nine-line event data sent prior to checkin?
-    self.last_look_loc = None         # last location we looked at; None or (x,y,z)
-  
+    self.idle_count = 0          # no. of times idle in a row
+    self.requested_nine_line = False  # have not asked the user for a nine-line
+    self.eta_given = False       # has the ETA been given?
+    self.run_in_hot = False      # is the run-in hot?
+    self.saved_nine_line = None  # nine-line event data sent prior to checkin?
+    self.last_look_loc = None    # last location we looked at; None or (x,y,z)
+
   def reset_idle_count(self):
     self.idle_count = 0
-  
+
   def increment_idle_count(self):
     self.idle_count += 1
     # print "** New idle count: %d" % self.idle_count
-  
-  
+
+
 class BaseState(object):
-  """This state is meant to be the inherited ("abstract") parent of the states
-  that actually get used in the system.  This provides methods and actions for
-  dealing with the standard/anytime language like "get playtime".  Child classes
-  will pass the buck up to this class when they don't want to handle something.
-  
+  """This state is meant to be the inherited ("abstract") parent of
+  the states that actually get used in the system.  This provides
+  methods and actions for dealing with the standard/anytime language
+  like "get playtime".  Child classes will pass the buck up to this
+  class when they don't want to handle something.
+
   Reference to the StateMachine object is held here for all child classes.
   """
-  
+
   CONST_IDLE_MAX = 10   # 5 minutes of idle for the "radio check"
-  
+
   def __init__(self, machine):
     self.machine = machine
     self.data = machine.data    # direct reference
@@ -1213,27 +1250,27 @@ class BaseState(object):
 
   def name(self):
     return "Base State"
-  
+
   def enter(self):
     """This method allows states to have custom behavior on state entry."""
     pass
-  
+
   def exit(self):
     """This method allows states to have custom behavior on state exit."""
     pass
-  
+
   # called from outside
-  def handle_event(self, event_type, event_obj):
+  def handle_event(self, event_type, unused_event_obj):
     # print "** BaseState: event %s" % event_type
     if event_type == "conversation-idle":
       self.base_idle_behavior()
-    
+
     elif event_type == "nine-line":
       self.dm.say("I already have a nine-line for this mission.")
-      
+
     else:
       self.dm.debug("BaseState received event %s, ignoring." % event_type)
-  
+
   # called from outside
   def handle_parse(self, concept_key, parse):
     # standard queries
@@ -1254,21 +1291,22 @@ class BaseState(object):
 
     elif concept_key == "do-greeting":
       self.do_standard_greeting(self.dm, parse)
-    
+
     elif concept_key == "abort-code-request":
       # call out into action module code
       do_abort_code_request(self.dm, parse)
-    
+
     elif concept_key == "loud-and-clear":
       self.dm.say("roger")  # was "I have you loud and clear too"
     elif concept_key == "weak-but-readable":
       self.dm.say("roger")  # was "I have you loud and clear"
-    
+
     elif concept_key == "cleared-hot":
-      self.dm.debug("if they say 'you are cleared hot' in a bad context, what should we do?")
+      self.dm.debug('if they say "you are cleared hot" in a bad context, what '
+                    'should we do?')
       # self.dm.say("you are coming in weak and unreadable, say again")
       self.dm.say("negative, I am not engaging a target at this time")
-    
+
     elif concept_key == "do-roger" or concept_key == "do-copy-ack":
       pass
 
@@ -1281,20 +1319,20 @@ class BaseState(object):
         do_nine_line_readback(self.dm, parse)
       else:
         self.dm.say_again()
-    
+
     else:
       # unknown concept
       self.dm.debug("Concept key %s unknown, failing to handle" % concept_key)
       self.dm.say("you are coming in weak and unreadable, say again")
-  
+
   # called from inside by children
   def base_idle_behavior(self):
-    """This is called in response to a conversation-idle event.  Update the 
-    idle count, and if it's been idle too long, do the "radio check" behavior.
-    If the radio check is done, return True; otherwise, return False, indicating
-    the state object should go forward with any custom behavior.
-    """
-    
+    """This is called in response to a conversation-idle event.
+    Update the idle count, and if it's been idle too long, do the
+    "radio check" behavior.  If the radio check is done, return True;
+    otherwise, return False, indicating the state object should go
+    forward with any custom behavior.  """
+
     self.dm.debug("Conversation gone idle.")
     self.data.increment_idle_count()
     if self.data.idle_count >= BaseState.CONST_IDLE_MAX:
@@ -1304,11 +1342,11 @@ class BaseState(object):
       return True
     else:
       return False
-  
+
   def do_idle_radio_check(self, dm):
     dm.say("%s, radio check" % dm.pilot_full_callsign)
-  
-  def do_status_query_position(self, dm, parse):
+
+  def do_status_query_position(self, dm, unused_parse):
     """Speak the pilot's current position relative to IP Bravo."""
     pos_tuple = do_status_query_position_helper(dm)
     if pos_tuple is None:
@@ -1318,10 +1356,11 @@ class BaseState(object):
       if distance <= 0.5:
         dm.say("%s is currently established at IP Bravo" % dm.pilot_callsign)
       else:
-        dm.say("%s is currently %s clicks %s of IP Bravo" % (dm.pilot_callsign, distance, direction))
-      # FIXME: we have heading information, could also say that 
-  
-  def do_status_query_status(self, dm, parse):
+        dm.say('%s is currently %s clicks %s of IP Bravo' % (
+          dm.pilot_callsign, distance, direction))
+      # FIXME: we have heading information, could also say that
+
+  def do_status_query_status(self, dm, unused_parse):
     """Speak the pilot's status (inbound to target, egressing, &c.)"""
     status = dm.pilot_model.get_status()
     if status is None:
@@ -1336,23 +1375,24 @@ class BaseState(object):
       else:
         dm.say("I am %s" % status)
 
-  def do_status_query_playtime(self, dm, parse):
+  def do_status_query_playtime(self, dm, unused_parse):
     playtime = self.get_playtime()
     dm.say_random([1, ["about %s mikes", playtime]],
                   [1, ["%s mikes", playtime]],
                   [1, ["playtime is %s mikes", playtime]],
                   [1, ["playtime is about %s mikes", playtime]])
-  
-  def do_status_query_fuel(self, dm, parse):
+
+  def do_status_query_fuel(self, dm, unused_parse):
     fuel = self.dm.pilot_model.get_fuel()
     if fuel is None:
       dm.say("sorry, cannot retrieve fuel status.")
     else:
-      # round fuel to 100's, since the speech system will say that like a normal human being
-      fuel = max(int(fuel/100)*100, 0)   # don't speak negative numbers...
+      # round fuel to 100's, since the speech system will say that
+      # like a normal human being
+      fuel = max(int(fuel / 100) * 100, 0)   # don't speak negative numbers...
       dm.say("fuel is %d pounds" % fuel)
 
-  def do_status_query_altitude(self, dm, parse):
+  def do_status_query_altitude(self, dm, unused_parse):
     pose = self.dm.pilot_model.get_pilot_pose()
     if pose is None:
       dm.say("sorry, cannot retrieve altitude")
@@ -1362,10 +1402,10 @@ class BaseState(object):
       altitude = abs(altitude)
       # this is in meters, so convert to feet
       alt_feet = altitude * 3.2808399
-      alt_feet = int(alt_feet/1000)
+      alt_feet = int(alt_feet / 1000)
       dm.say("altitude is %d thousand" % alt_feet)
 
-  def do_status_query_heading(self, dm, parse):
+  def do_status_query_heading(self, dm, unused_parse):
     pose = self.dm.pilot_model.get_pilot_pose()
     if pose is None:
       dm.say("sorry, cannot retrieve heading")
@@ -1377,7 +1417,7 @@ class BaseState(object):
         heading += 360
       dm.say("heading is %d degrees" % heading)
 
-  def do_status_query_ammo(self, dm, parse):
+  def do_status_query_ammo(self, dm, unused_parse):
     # FIXME: instead of asking sim, just say something verbatim for now
     # currently, ammo would just send back "100".  presumably percentage.
     # ammo = dm.pilot_model.get_ammo()
@@ -1385,12 +1425,13 @@ class BaseState(object):
     #   dm.say("sorry, cannot retrieve ammo status.")
     # else:
     #   dm.say("ammo is %s" % ammo)
-    
+
     # dm.say("I have two by maverick, two by mark 82s, and gun")
-    # FIXME: "eighty twos" the only way to pronounce 82s?  this is a double-fixme!  attempted lexicon fix failed for now.
+    # FIXME: "eighty twos" the only way to pronounce 82s?  this is a
+    # double-fixme!  attempted lexicon fix failed for now.
     dm.say("I have two by maverick, two by mark eighty twos, and gun")
-  
-  def do_authentication_response(self, dm, parse):
+
+  def do_authentication_response(self, dm, unused_parse):
     # this is the uniform catch all for all states apart from the
     # check-in state.  if they've gotten past check-in, they should
     # absolutely be authenticated.
@@ -1398,7 +1439,7 @@ class BaseState(object):
       dm.say("you have already authenticated")
     else:
       dm.debug("BaseState authentication: should be impossible?")
-  
+
   def get_playtime(self):
     playtime = self.dm.pilot_model.get_playtime()
     # Then round off to nearest 5 minutes.
@@ -1411,47 +1452,46 @@ class BaseState(object):
     # FIXME: we don't do anything when low yet, but don't go negative!
     return max(fuel, 0)
 
-  def do_standard_greeting(self, dm, parse):
-    # 5/3: Adding to attempt to handle a phrase Yuri revers to in times of stress.
-    # Not completely sure this is a good idea.
+  def do_standard_greeting(self, dm, unused_parse):
+    # 5/3: Adding to attempt to handle a phrase Yuri revers to in
+    # times of stress.  Not completely sure this is a good idea.
     dm.say("copy")
-    
+
 
 class CheckInState(BaseState):
   """This state controls the behavior when in the check-in mode."""
-  
+
   def __init__(self, machine):
     BaseState.__init__(self, machine)
-  
-  
+
   def name(self):
     return "Check-In State"
-  
+
   def enter(self):
-    """Overrides base enter() method to do custom event handling on startup.
-    The nine-line event may be sent immediately when the Dialog Manager connects
-    to jtacStrike, and if so, we want to pay attention to it.  No other events
-    or language actions are important at this time.
-    """
-    
+    """Overrides base enter() method to do custom event handling on
+    startup.  The nine-line event may be sent immediately when the
+    Dialog Manager connects to jtacStrike, and if so, we want to pay
+    attention to it.  No other events or language actions are
+    important at this time."""
+
     # check DM for queued events, parses
     qp = self.machine.get_queued_parses()
     if len(qp) > 0:
-      self.dm.debug("CheckInState: sees %d queued parses on entry, how did that happen?" % len(qp))
-    
+      self.dm.debug('CheckInState: sees %d queued parses on entry, how did '
+                    'that happen?' % len(qp))
+
     qe = self.machine.get_queued_events()
     if len(qe) > 0:
-      # the only one we care about is the nine line
-      # items in event list are (event_type, event_obj) tuples
-      # go *backwards* through list?  just in case they sent the nine line twice?
+      # the only one we care about is the nine line items in event
+      # list are (event_type, event_obj) tuples go *backwards* through
+      # list?  just in case they sent the nine line twice?
       qe.reverse()
       handled_nine_line = False
       for (event_type, event_obj) in qe:
         if event_type == "nine-line" and handled_nine_line == False:
           self.dm.debug("CheckIn handling queued nine line event")
           handled_nine_line = True
-          self.handle_event(event_type, event_obj) 
-
+          self.handle_event(event_type, event_obj)
 
   def handle_event(self, event_type, event_obj):
     if event_type == "conversation-idle":
@@ -1462,54 +1502,55 @@ class CheckInState(BaseState):
         # see if base state handles it specially; otherwise, tackle here
         if BaseState.base_idle_behavior(self) == False:
           event_offer_nine_line(self.dm)
-    
+
     elif event_type == "nine-line":
       if self.dm.jtac_is_authenticated:
         # call function out in action module
         handle_nine_line_post_event(self.dm, event_obj)
       else:
-        # if not authenticated, save event data for later, and process once we're able
-        # more interesting would be following BOF's lead and incorporating nine-line in check-in greeting.
+        # if not authenticated, save event data for later, and process
+        # once we're able more interesting would be following BOF's
+        # lead and incorporating nine-line in check-in greeting.
         self.data.saved_nine_line = event_obj
 
     else:
       # print "** CheckInState, passing on event: %s" % event_type
       BaseState.handle_event(self, event_type, event_obj)
-  
+
   def handle_parse(self, concept_key, parse):
     # current DM makes sure that any language is created with the auth
     # request.  shouldn't need to worry about *that* here.
     #
-    # FIXME: is abort code acknowledgement required?  no, but it's good practice. what does that mean for us?
-    
+    # FIXME: is abort code acknowledgement required?  no, but it's
+    # good practice. what does that mean for us?
+
     if concept_key == "go-ahead":
       event_offer_nine_line(self.dm)
-    
+
     elif concept_key == "go-talk-on":
       self.dm.say("negative, give me the nine line first")
 
     elif concept_key == 'do_id_bogey_call':
       do_bogey_id(self.dm, parse)
-    
+
     elif concept_key == "do-authentication-response":
       self.do_authentication_response(self.dm, parse)
       # did authentication work?  if so, and we've got saved nine-line, use it.
-      if self.data.saved_nine_line is not None and self.dm.jtac_is_authenticated:
+      if (self.data.saved_nine_line and self.dm.jtac_is_authenticated):
         handle_nine_line_post_event(self.dm, self.data.saved_nine_line)
         self.data.saved_nine_line = None
-        
+
     else:
       # print "** CheckInState, passing on language: %s" % concept_key
       BaseState.handle_parse(self, concept_key, parse)
 
-  
   def do_authentication_response(self, dm, parse):
     if dm.jtac_is_authenticated:
       dm.say("you have already authenticated")
     else:
       codeword = parse.slot_value("codeword")
       codeletter = dm.kb.slot_value(codeword, "letter")
-      
+
       if codeletter.op == dm.authentication_response_code:
         dm.jtac_is_authenticated = True
         self.dm.set_parser_mode(dialogmanager.DialogManager.CONCEPTUAL_PARSER)
@@ -1517,12 +1558,12 @@ class CheckInState(BaseState):
         # get position from pilot model
         pos_tuple = do_status_query_position_helper(dm)
         if pos_tuple is None or pos_tuple[0] <= 0.5:
-          dm.say("%s is checking in as-fragged, currently established at IP Bravo",
-                 dm.pilot_callsign)
+          dm.say('%s is checking in as-fragged, currently established at IP '
+                 'Bravo', dm.pilot_callsign)
         else:
           (distance, direction) = pos_tuple
-          dm.say("%s is checking in as-fragged, current position %s clicks %s of IP Bravo.",
-                 dm.pilot_callsign, distance, direction)
+          dm.say('%s is checking in as-fragged, current position %s clicks %s '
+                 'of IP Bravo.', dm.pilot_callsign, distance, direction)
         # query pilot model for playtime
         playtime = self.get_playtime()
         dm.say("playtime is %s mikes", playtime)
@@ -1532,7 +1573,7 @@ class CheckInState(BaseState):
 
 class NineLineState(BaseState):
   """This state controls the behavior when in the nine-line phase."""
-  
+
   def __init_(self, machine):
     BaseState.__init__(self, machine)
 
@@ -1547,11 +1588,11 @@ class NineLineState(BaseState):
       if BaseState.base_idle_behavior(self) == False:
         # not handled by base class, so what's the custom behavior for idling?
         event_offer_nine_line(self.dm)
-    
+
     elif event_type == "nine-line":
       # call function out in action module
       handle_nine_line_post_event(self.dm, event_obj)
-      
+
     else:
       # print "** NineLineState, passing on event: %s" % event_type
       BaseState.handle_event(self, event_type, event_obj)
@@ -1559,16 +1600,17 @@ class NineLineState(BaseState):
   def handle_parse(self, concept_key, parse):
     if concept_key == "go-ahead":
       self.__maybe_goto_talkon(True)
-    
+
     elif concept_key == "go-talk-on":
       self.__maybe_goto_talkon(False)
-    
+
     else:
       # print "** NineLineState, passing on language: %s" % concept_key
       BaseState.handle_parse(self, concept_key, parse)
-  
-  def __maybe_goto_talkon(self, from_go_ahead = False):
-    """This is called both by "go ahead", and "say when ready for talk-on" language."""
+
+  def __maybe_goto_talkon(self, from_go_ahead=False):
+    """This is called both by "go ahead", and "say when ready for
+    talk-on" language."""
     if self.dm.nine_line.is_complete():
       if from_go_ahead == True:
         self.dm.say("copy, let's continue with the talk-on")
@@ -1586,10 +1628,10 @@ class NineLineState(BaseState):
 
 class TalkOnState(BaseState):
   """State for managing talk-on behavior."""
-  
+
   def __init__(self, machine):
     BaseState.__init__(self, machine)
-  
+
   def name(self):
     return "Talk-On State"
 
@@ -1600,17 +1642,19 @@ class TalkOnState(BaseState):
   def handle_event(self, event_type, event_obj):
     # print "** TalkOnState, passing on event: %s" % event_type
     BaseState.handle_event(self, event_type, event_obj)
-  
+
   def handle_parse(self, concept_key, parse):
     if concept_key == "go-ahead":
       # FIXME:
-      self.dm.debug("TalkOn: if in talk on, target is not known, so what to do?")
-    
+      self.dm.debug(
+        'TalkOn: if in talk on, target is not known, so what to do?')
+
     elif concept_key == "go-talk-on":
-      # already in talk-on, but this is OK, can happen through valid paths.  accept.
+      # already in talk-on, but this is OK, can happen through valid
+      # paths.  accept.
       # FIXME: make same language instance/method as used in nine-line
       self.dm.say("go with talk-on")
-    
+
     else:
       # print "** TalkOnState, passing on language: %s" % concept_key
       BaseState.handle_parse(self, concept_key, parse)
@@ -1630,7 +1674,8 @@ class BogeyIDState(BaseState):
 
   def handle_event(self, event_type, event_obj):
     print "BogeyIDState event %s" % (event_obj,)
-    if event_type == "bogey-declare" and event_obj['number'] == self.target_num:
+    if (event_type == "bogey-declare" and
+        event_obj['number'] == self.target_num):
       do_bogey_declare(self.dm, event_obj['target'])
     else:
       # print "** RunInState, passing on event: %s" % event_type
@@ -1647,7 +1692,7 @@ class BogeyIDState(BaseState):
 
 class BullseyeRunInState(BaseState):
   """State for managing run-in behavior."""
-  
+
   def __init__(self, machine):
     BaseState.__init__(self, machine)
 
@@ -1657,25 +1702,26 @@ class BullseyeRunInState(BaseState):
   def enter(self):
     self.last_eta = None
     self.already_got_continue = False
-  
+
   def handle_event(self, event_type, event_obj):
     if event_type == "attack-run-complete":
       self.handle_attack_run_complete_event(self.dm, event_obj)
-    
+
     elif event_type == "eta":
       self.handle_eta_event(self.dm, event_obj)
-      
+
     else:
       # print "** RunInState, passing on event: %s" % event_type
       BaseState.handle_event(self, event_type, event_obj)
-  
+
   def handle_parse(self, concept_key, parse):
     if concept_key == "go-ahead":
       # FIXME:
       self.dm.debug("RunIn: should say 'confirm target is still good'")
-    
+
     elif concept_key == "cleared-hot":
-      # FIXME: require this before engaging target!  this is mandatory in our simulation.
+      # FIXME: require this before engaging target!  this is mandatory
+      # in our simulation.
       self.dm.say("copy, cleared hot.")
 
     elif concept_key == "continue":
@@ -1688,12 +1734,12 @@ class BullseyeRunInState(BaseState):
       # print "** RunInState, passing on language: %s" % concept_key
       BaseState.handle_parse(self, concept_key, parse)
 
-  def handle_attack_run_complete_event(self, dm, event):
-    # FIXME: possible to be in radio check state and have attack run complete?
-    #        not with current timing setup, but...
-    
-    # 2/22 mrh: decided (based on limited samples) that unit of measure & anchor point should
-    #           reset between runs, although the jtac can explicitly reuse the old ones.
+  def handle_attack_run_complete_event(self, dm, unused_event):
+    # FIXME: possible to be in radio check state and have attack run
+    #        complete?  not with current timing setup, but...
+    # 2/22 mrh: decided (based on limited samples) that unit of
+    #           measure & anchor point should reset between runs,
+    #           although the jtac can explicitly reuse the old ones.
     if dm.on_attack_run:
       dm.on_attack_run = False
       dm.nine_line.reset()
@@ -1711,7 +1757,7 @@ class BullseyeRunInState(BaseState):
   def handle_eta_event(self, dm, event):
     # FIXME: wonder what to do if in radio check state and ETA comes in?
     # automatically abort?
-    
+
     eta_time = event["eta"]
     self.last_eta = eta_time
     if eta_time < 11:
@@ -1720,8 +1766,10 @@ class BullseyeRunInState(BaseState):
       target_coords = event['target-coords']
       target_coords = target_coords[0:2] + [0]
       approach_vector = vector_subtract(pilot_coords, target_coords)
-      approach_direction = classify_vector_as_cardinal_direction(dm, approach_vector)
-      dm.say("%s is in hot from the %s" % (dm.pilot_full_callsign, approach_direction))
+      approach_direction = classify_vector_as_cardinal_direction(
+        dm, approach_vector)
+      dm.say('%s is in hot from the %s' % (
+        dm.pilot_full_callsign, approach_direction))
       # dm.conv_state.set_state("run-in-eta-given")
       dm.state_machine.data.eta_given = True
     else:
@@ -1731,12 +1779,9 @@ class BullseyeRunInState(BaseState):
       dm.state_machine.data.run_in_hot = True
 
 
-
-
-
 class RunInState(BaseState):
   """State for managing run-in behavior."""
-  
+
   def __init__(self, machine):
     BaseState.__init__(self, machine)
 
@@ -1746,43 +1791,45 @@ class RunInState(BaseState):
   def enter(self):
     self.last_eta = None
     self.already_got_continue = False
-  
+
   def handle_event(self, event_type, event_obj):
     if event_type == "attack-run-complete":
       self.handle_attack_run_complete_event(self.dm, event_obj)
-    
+
     elif event_type == "eta":
       self.handle_eta_event(self.dm, event_obj)
-      
+
     else:
       # print "** RunInState, passing on event: %s" % event_type
       BaseState.handle_event(self, event_type, event_obj)
-  
+
   def handle_parse(self, concept_key, parse):
     if concept_key == "go-ahead":
       # FIXME:
       self.dm.debug("RunIn: should say 'confirm target is still good'")
-    
+
     elif concept_key == "cleared-hot":
-      # FIXME: require this before engaging target!  this is mandatory in our simulation.
+      # FIXME: require this before engaging target!  this is mandatory
+      # in our simulation.
       self.dm.say("copy, cleared hot.")
 
     elif concept_key == "continue":
       if self.already_got_continue:
         return
       if not self.last_eta or self.last_eta > 20:
-        self.dm.say("say status of %s", self.dm.nine_line.get_line("target description"))
+        self.dm.say('say status of %s',
+                    self.dm.nine_line.get_line("target description"))
         self.already_got_continue = True
     else:
       # print "** RunInState, passing on language: %s" % concept_key
       BaseState.handle_parse(self, concept_key, parse)
 
-  def handle_attack_run_complete_event(self, dm, event):
-    # FIXME: possible to be in radio check state and have attack run complete?
-    #        not with current timing setup, but...
-    
-    # 2/22 mrh: decided (based on limited samples) that unit of measure & anchor point should
-    #           reset between runs, although the jtac can explicitly reuse the old ones.
+  def handle_attack_run_complete_event(self, dm, unused_event):
+    # FIXME: possible to be in radio check state and have attack run
+    #        complete?  not with current timing setup, but...
+    # 2/22 mrh: decided (based on limited samples) that unit of
+    #           measure & anchor point should reset between runs,
+    #           although the jtac can explicitly reuse the old ones.
     if dm.on_attack_run:
       dm.on_attack_run = False
       dm.nine_line.reset()
@@ -1800,7 +1847,7 @@ class RunInState(BaseState):
   def handle_eta_event(self, dm, event):
     # FIXME: wonder what to do if in radio check state and ETA comes in?
     # automatically abort?
-    
+
     eta_time = event["eta"]
     self.last_eta = eta_time
     if eta_time < 11:
@@ -1809,8 +1856,10 @@ class RunInState(BaseState):
       target_coords = event['target-coords']
       target_coords = target_coords[0:2] + [0]
       approach_vector = vector_subtract(pilot_coords, target_coords)
-      approach_direction = classify_vector_as_cardinal_direction(dm, approach_vector)
-      dm.say("%s is in hot from the %s" % (dm.pilot_full_callsign, approach_direction))
+      approach_direction = classify_vector_as_cardinal_direction(
+        dm, approach_vector)
+      dm.say("%s is in hot from the %s" % (
+        dm.pilot_full_callsign, approach_direction))
       # dm.conv_state.set_state("run-in-eta-given")
       dm.state_machine.data.eta_given = True
     else:
@@ -1825,45 +1874,45 @@ class RadioCheckState(BaseState):
   check.  JTAC must acknowledge radio check before further dialog can progress.
   Return to previous state when successfully exiting state.
   """
-  
+
   def __init__(self, machine):
     BaseState.__init__(self, machine)
-  
+
   def name(self):
     return "Radio Check State"
-  
+
   def handle_event(self, event_type, event_obj):
     if event_type == "conversation-idle":
       self.dm.debug("Repeating radio check request.")
       self.do_idle_radio_check(self.dm)
-    
+
     else:
       # not sure what to do with other events, passing them on
       BaseState.handle_event(self, event_type, event_obj)
-  
+
   def handle_parse(self, concept_key, parse):
-    """ Only two utterances are acceptable: loud-and-clear, or 
-    weak-but-readable.  Everything else needs a nag response from 
+    """ Only two utterances are acceptable: loud-and-clear, or
+    weak-but-readable.  Everything else needs a nag response from
     the pilot.
     """
-    
+
     if concept_key == "loud-and-clear":
       self.dm.say("I have you loud and clear, too.")
       self.machine.set_state(self.machine.get_previous_state())
-    
+
     elif concept_key == "weak-but-readable":
-      self.dm.say("roger.  Consider changing frequencies.") # FIXME: better language?
+      # FIXME: better language?
+      self.dm.say("roger. Consider changing frequencies.")
       self.machine.set_state(self.machine.get_previous_state())
-    
+
     else:
       # instead of custom language, for now just repeat basic request
-      self.dm.debug("Ignoring user until radio check answered (%s)" % concept_key)
+      self.dm.debug('Ignoring user until radio check answered (%s)' % (
+        concept_key,))
       self.do_idle_radio_check(self.dm)
 
-
-
-
 # Urban ops
+
 
 def do_assert_urban_layout(dm, parse):
   layout = parse.slot_value("codeword")
@@ -1871,13 +1920,16 @@ def do_assert_urban_layout(dm, parse):
     dm.say("copy, I have the %s layout", layout)
   else:
     dm.say("negative, I do not have that layout.")
-    
+
 
 def building_designator_string(dm, building):
-  letter = dm.generate("%s", dm.kb.slot_path_value(building, "designator", "letter", "letter"))
-  number = dm.generate("%s", dm.kb.slot_path_value(building, "designator", "number"))
+  letter = dm.generate(
+    '%s', dm.kb.slot_path_value(building, "designator", "letter", "letter"))
+  number = dm.generate(
+    '%s', dm.kb.slot_path_value(building, "designator", "number"))
   s = "%s%s" % (letter, number)
   return s.upper()
+
 
 def resolve_building_reference(dm, objdesc):
   building_designator = building_designator_string(dm, objdesc)
@@ -1889,6 +1941,7 @@ def resolve_building_reference(dm, objdesc):
 def all_subclasses(x):
   all_subclasses2([x])
 
+
 def all_subclasses2(classes):
   if len(classes) > 0:
     c = classes[0]
@@ -1897,14 +1950,12 @@ def all_subclasses2(classes):
     all_subclasses2(c.__subclasses__() + rest)
 
 
-
-
 def bullseye_vector_position(dm, bullseye_pos_f, bearing, range, fraction=1.0):
   origin = position_frame_to_vector(dm.kb, bullseye_pos_f)
 
   angle_deg = 90 - bearing
   angle_rads = angle_deg * math.pi / 180.0
-  
+
   range_m = range * 1800.0
   range_m = range_m * fraction
 
@@ -1912,18 +1963,20 @@ def bullseye_vector_position(dm, bullseye_pos_f, bearing, range, fraction=1.0):
               range_m * math.cos(angle_rads)]
   pos = [vx + origin[0], vy + origin[1], origin[2]]
   return pos
-  
-  
+
+
 def fly_to_bullseye(dm, parse, fraction=1.0):
   # Slew vision, fly to bullseye.
   bullseye_pos = dm.kb.slot_value('i-Radio-Tower', 'position')
-  bearing = number_frame_to_value(dm.kb, parse.slot_value('bearing').slot_value('angle'))
+  bearing = number_frame_to_value(
+    dm.kb, parse.slot_value('bearing').slot_value('angle'))
   distance = number_frame_to_value(dm.kb, parse.slot_value('distance'))
   pos = bullseye_vector_position(dm, bullseye_pos, bearing, distance, fraction)
   dm.pilot_model.fly_to(pos, type="inbound to ip")
   pos = bullseye_vector_position(dm, bullseye_pos, bearing, distance)
   dm.pilot_model.look_at(pos)
   return pos
+
 
 def do_bogey_id(dm, parse):
   dm.say("wilco")
@@ -1950,13 +2003,15 @@ def do_bogey_id(dm, parse):
     print dist
     if dist > 4000:
       dm.say("tally %s, unable I.D., maneuvering for a closer look", target)
-      utils.Timer(10, dm.pilot_model.handle_event, args=[{"type": "bogey-declare",
-                                                          "target": target,
-                                                          "number": BOGEY_ID.target_num}]).start()
+      utils.Timer(10, dm.pilot_model.handle_event,
+                  args=[{"type": "bogey-declare",
+                         "target": target,
+                         "number": BOGEY_ID.target_num}]).start()
     else:
       do_bogey_declare(dm, target)
   else:
     say_negative_contact(dm, target)
+
 
 def do_bogey_declare(dm, target):
   target = logic.expr(target)
@@ -1968,8 +2023,8 @@ def do_bogey_declare(dm, target):
       found_target = e
   if found_target:
     dm.say("bogey is %s, declare.", found_target['class'])
-  
-    
+
+
 def do_kill_target(dm, parse):
   target = parse.slot_value('target')
   dm.say("copy kill")
@@ -1991,4 +2046,5 @@ def do_kill_target(dm, parse):
     dm.state_machine.set_state(BULLSEYE_RUN_IN)
     BULLSEYE_RUN_IN.target = target
   else:
-    dm.debug("bad target locations for target %s of type '%s': %s; Cannot begin attack run" % (target, type, target_locations))
+    dm.debug('bad target locations for target %s of type %s: %s; Cannot begin '
+             'attack run' % (target, type, target_locations))

@@ -1,13 +1,14 @@
 import getopt
+import logging
 import os.path
 import pprint
 import random
 import re
-from xml.sax import saxutils
 import sys
 import threading
 import time
 import traceback
+from xml.sax import saxutils
 
 #from hml.dialog import actions
 from hml.dialog import audiofilter
@@ -325,6 +326,7 @@ class DialogManager:
 
   def parse(self, input_record):
 #    print "*** Parsing mode is %s" % (self.parser_mode,)
+    logging.info('Parsing %s', input_record)
     assert isinstance(input_record, iomanager.IORecord)
     if self.parser_mode == DialogManager.INDEXED_CONCEPT_PARSER:
       results = self.icp_parser.parse(input_record.text)
@@ -347,7 +349,7 @@ class DialogManager:
         # if input is empty string, just don't bother parsing, go back
         # to top of loop
         continue
-      parses = self.parse(input)
+      parses = self.parse(input_record)
       self.debug("Raw parses: %s" % (parses,))
       if len(parses) == 0:
         self.say_unrecorded(invalid_parse_message)
@@ -537,8 +539,7 @@ class DialogManager:
         self.say("you are coming in weak and unreadable, say again")
       else:
         function_name = functionexpr.op
-        function = self.lookup_action_function(function_name)
-        function(self, parse)
+        self.run_action_function(function_name, parse)
 
   def handle_event(self, event):
     # 4/18/07 mrh: using state model for events
@@ -558,14 +559,21 @@ class DialogManager:
 
     self.state_machine.handle_event(event_type, event)
 
+  def run_action_function(self, function_name, parse):
+    function = self.lookup_action_function(function_name)
+    if function:
+      utils.log("<action>%s</action>" % (saxutils.escape(function_name),))
+      self.log("==> ACTION", function_name)
+      function(self, parse)
+    else:
+      self.debug("No function in action module named '%s'." % (function_name,))
+      self.say("Sorry, I don't know how to respond to that.")
+
   def lookup_action_function(self, name):
     if name in self.action_module.__dict__:
-      utils.log("<action>%s</action>" % (saxutils.escape(name),))
-      self.log("==> ACTION", name)
       return self.action_module.__dict__[name]
     else:
-      self.debug("No function in action module named '%s'." % (name,))
-      return lambda a, b: a.say("Sorry, I don't know how to respond to that.")
+      return None
 
   def generate(self, msg, *args):
     generated_args = map(self.generator.generate, args)
@@ -632,6 +640,16 @@ class DialogManager:
   def say_again(self):
     self.idler.update_time()
     self.io_manager.say(self.pilot_callsign, self.last_utterance)
+
+  def check(self):
+    query = logic.expr('execute-method(?concept, ?method_name)')
+    for bindings in self.kb.unify_with_propositions(query, {}):
+      function_name = bindings[logic.expr('?method_name')]
+      if not self.lookup_action_function(function_name):
+        logging.warn('Undefined function %s is execute-method for %s',
+                     function_name, bindings[logic.expr('?method_name')])
+      else:
+        logging.info('Function %s found.', function_name)
 
 
 class ConversationIdleThread(threading.Thread):
