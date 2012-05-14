@@ -2,7 +2,7 @@
 
 case `uname` in
     Darwin)
-	FG_DIR=/Volumes/Data/Applications/FlightGear.app/Contents/Resources
+	FG_DIR=/Applications/FlightGear.app/Contents/Resources
 	export DYLD_LIBRARY_PATH=${FG_DIR}/plugins
 	export LD_LIBRARY_PATH=${FG_DIR}/plugins
 	export FG_ROOT=${FG_DIR}/data
