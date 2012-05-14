@@ -1,5 +1,9 @@
 #!/bin/sh
 
+set -x
+
+BASEDIR=`dirname $0`
+
 case `uname` in
     Darwin)
 	FG_DIR=/Applications/FlightGear.app/Contents/Resources
@@ -15,6 +19,16 @@ case `uname` in
 	;;
 esac
 
+if [ ! -z "${FG_DIR}" ]; then
+    if [ -d ${FG_DIR}/data/Protocol ]; then
+	    cp -v ${BASEDIR}/MAVLink.xml ${FG_DIR}/data/Protocol/
+    else
+	echo "FlightGear protocol definition directory ${FG_DIR}/data/Protocol doesn't exist."
+	exit 1
+    fi
+    cp -r ${BASEDIR}/aircraft/* ${FG_DIR}/data/Aircraft
+fi
+
 if [ $# != 1 ]
 then
 	echo usage: $0 aircraft
@@ -25,19 +39,10 @@ else
 	aircraft=$1
 fi
 
-if [ ! -z "${FG_DIR}" ]; then
-    if [ -d ${FG_DIR}/data/Protocol ]; then
-	    cp -v MAVLink.xml ${FG_DIR}/data/Protocol/
-    else
-	echo "FlightGear protocol definition directory ${FG_DIR}/data/Protocol doesn't exist."
-	exit 1
-    fi
-fi
-
 ${FGFS} \
     ${FGFSOPTIONS} \
     --aircraft=$aircraft \
-    --geometry=400x300 \
+    --geometry=800x600 \
     --generic=socket,out,20,,5501,udp,MAVLink \
     --generic=socket,in,50,,5500,udp,MAVLink \
     --vc=30 \
