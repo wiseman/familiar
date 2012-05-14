@@ -670,16 +670,12 @@ class ConversationIdleThread(threading.Thread):
 
   def update_time(self):
     """Update time of last interaction to 'now'."""
-    # do I really need a lock for this?  seems pretty darned atomic...
-    # what's the worst that can happen, thread gets notified late?
-    self.status_cv.acquire()
-    self.last_time = time.time()
-    self.status_cv.release()
+    with self.status_cv:
+      self.last_time = time.time()
 
   def shutdown(self):
-    """Signal that the thread should stop running.  Make take up
-    to self.check_interval seconds.
-    """
+    """Signal that the thread should stop running.  May take up to
+    self.check_interval seconds.  """
     self.keep_running = False
 
   def run(self):
