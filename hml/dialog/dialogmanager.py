@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import getopt
 import logging
 import os.path
@@ -407,8 +409,8 @@ class DialogManager:
         return result
     else:
       # FIXME: I don't know.  Do we want to do more than this?
-      if len(parses) > 0 and self.kb.isa(logic.expr(parses[0].target_concept),
-                                         logic.expr('c-magic-command')):
+      if parses and self.kb.isa(logic.expr(parses[0].target_concept),
+                                logic.expr('c-magic-command')):
         self.debug("Magic command %s takes priority." % (parses[0],))
         self.handle_parse(parses[0])
         return self.parse_with_prompt(all_parses, invalid_parse_message)
@@ -420,10 +422,9 @@ class DialogManager:
     immediately actionable, i.e. are magic commands or have an execute-method.
     """
     def is_actionable(parse):
-      return self.kb.isa(logic.expr(parse), logic.expr("c-magic-command")) or \
-             self.kb.slot_value(parse, logic.expr("execute-method")) != None
-
-    return [parse for parse in parses if is_actionable(parse)]
+      return (self.kb.isa(logic.expr(parse), logic.expr("c-magic-command")) or
+              self.kb.slot_value(parse, logic.expr("execute-method")))
+    return filter(parses, is_actionable)
 
   def reset(self):
     self.nine_line = NineLine(self.kb)
@@ -642,14 +643,13 @@ class DialogManager:
     self.io_manager.say(self.pilot_callsign, self.last_utterance)
 
   def check(self):
+    logging.info('Action module=%s', self.action_module)
     query = logic.expr('execute-method(?concept, ?method_name)')
     for bindings in self.kb.unify_with_propositions(query, {}):
-      function_name = bindings[logic.expr('?method_name')]
+      function_name = bindings[logic.expr('?method_name')].op
       if not self.lookup_action_function(function_name):
         logging.warn('Undefined function %s is execute-method for %s',
                      function_name, bindings[logic.expr('?method_name')])
-      else:
-        logging.info('Function %s found.', function_name)
 
 
 class ConversationIdleThread(threading.Thread):

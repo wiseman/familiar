@@ -237,21 +237,21 @@ class ConceptualParser(ParserBase):
     """Parses a sequence of tokens. Returns the list of valid parses."""
     self.reset()
     self.debug = debug
+
+    if self.stem:
+      new_tokens = [self.stemmer.stem(t) for t in tokens]
+      logging.info('Stemmed %s into %s', tokens, new_tokens)
+      tokens = new_tokens
     for position, token in enumerate(tokens):
-      if self.stem:
-        new_token = self.stemmer.stem(token)
-        logging.info('Stemmed %s into %s', token, new_token)
-        token = new_token
       if not isinstance(token, types.StringTypes):
         raise TypeError(
           'Only string tokens are allowed; %s is not a string.' % (token,))
       self.reference(token, self.position, self.position, 0.0)
       preparse = self.check_preparsers(token)
-      logging.info('Preparse: %s', preparse)
       if preparse != None:
+        logging.info('Preparse: %s', preparse)
         self.reference(preparse, self.position, self.position, 0.0)
       self.position = position + 1
-      logging.info('Position: %s', self.position)
     parses = self.complete_parses(len(tokens))
     logging.info('Complete parses: %s', parses)
     return parses
@@ -270,8 +270,12 @@ class ConceptualParser(ParserBase):
 
   def reference(self, item, start, end, value):
     # References an item (a token string or a class).
-    logging.debug('Referencing item:%s start:%s end:%s value:%s',
-                 item, start, end, value)
+    if isinstance(item, types.StringTypes):
+      logging.info('===> Referencing token:%s start:%s end:%s value:%s',
+                   item, start, end, value)
+    else:
+      logging.info('       Referencing item:%s start:%s end:%s value:%s',
+                   item, start, end, value)
     utils.check_type(item, types.StringTypes + (logic.Description,))
     self.references.append([item, start, end, value])
     for abst in self.all_abstractions(item):
