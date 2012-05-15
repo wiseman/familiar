@@ -66,7 +66,7 @@ def main(argv):
 
   io_manager.set_debug(args.debug_mode)
   dialog_manager.set_io_manager(io_manager)
-  dialog_manager.load_fdl('hml/familiar//dialogdata/world.fdl')
+  dialog_manager.load_fdl('hml/familiar/dialogdata/world.fdl')
   dialog_manager.check()
   dialog_manager.run()
 

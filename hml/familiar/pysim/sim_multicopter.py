@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import hml
 
+import logging
 
 from multicopter import MultiCopter
 import util, time, os, sys, math
@@ -84,6 +85,7 @@ def interpret_address(addrstr):
 
 ##################
 # main program
+logging.basicConfig(level=logging.INFO)
 from optparse import OptionParser
 parser = OptionParser("sim_multicopter.py [options]")
 parser.add_option("--fgout", dest="fgout",  help="flightgear output (IP:port)", default="127.0.0.1:5503")
@@ -110,16 +112,19 @@ sim_out_address = interpret_address(opts.simout)
 sim_in_address  = interpret_address(opts.simin)
 
 # setup output to flightgear
+logging.info('Will connect to FlightGear at %s', fg_out_address)
 fg_out = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 fg_out.connect(fg_out_address)
 fg_out.setblocking(0)
 
 # setup input from SITL
+logging.info('Will get input from SITL at %s', sim_in_address)
 sim_in = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sim_in.bind(sim_in_address)
 sim_in.setblocking(0)
 
 # setup output to SITL
+logging.info('Will send output to SITL at %s', sim_out_address)
 sim_out = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sim_out.connect(sim_out_address)
 sim_out.setblocking(0)
