@@ -16,13 +16,13 @@ class DiscTree:
     self.ints = {}
 
   def __str__(self):
-    return "<DiscTree %s>" % (self.index,)
+    return '<DiscTree %s>' % (self.index,)
 
   def __repr__(self):
-    return "<DiscTree %s>" % (self.index,)
+    return '<DiscTree %s>' % (self.index,)
 
   def child_matching_index(self, index):
-    """Returns the child node with the specified index, or None."""
+    "Returns the child node with the specified index, or None."
     return self.ints.get(index, None)
 
   def printt(self, depth=0):

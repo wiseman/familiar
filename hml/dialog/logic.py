@@ -43,9 +43,6 @@ class KB:
     raise NotImplementedError
 
 
-#______________________________________________________________________________
-
-
 class Proposition:
   # A logical proposition.  Stored in PropKBs.  Users never see
   # these.
@@ -178,10 +175,10 @@ class PropKB(KB):
     is_fluent = query.op in self.fluents
     is_heritable = query.op in self.heritable
 
-    (inner_relations, object, value) = deconstruct_query(query)
-    if len(inner_relations) == 1 and isinstance(object.op, Description):
+    (inner_relations, obj, value) = deconstruct_query(query)
+    if len(inner_relations) == 1 and isinstance(obj.op, Description):
       # Querying a slot value on a description.
-      return self.retrieve_description_form(inner_relations[0], object,
+      return self.retrieve_description_form(inner_relations[0], obj,
                                             value, active_bindings)
     generator = self.retrieve_bindings_generator(query, active_bindings)
     if generator == None:
