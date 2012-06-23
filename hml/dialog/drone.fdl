@@ -1,0 +1,36 @@
+<!-- -*- Mode: XML; -*- -->
+<fdl>
+
+<!--
+Alternate syntax:
+
+(defframe c-go-safe (c-addressed-utterance)
+  (phrases
+   ("?:{standard-begin} ?:go safe safe safe"))
+  (testphrases
+   ("go safe safe safe"
+    "safe safe safe"))
+  (slots
+   (concept-key do-rtb)))
+-->
+  
+
+<frame id="c-go-safe">
+  <parent id="c-magic-command"/>
+  
+  <phrase>?:go safe safe safe</phrase>
+  <testphrase>safe safe safe</testphrase>
+  <testphrase>go safe safe safe</testphrase>
+
+  <slot name="execute-method" value="magic_go_safe"/>
+</frame>
+
+<frame id="c-go-to-location">
+  <parent id="c-addressed-utterance"/>
+  
+  <phrase>[fly|go ?:to] {target-location}</phrase>
+  
+  <constraint slot="target-location" type="c-location"/>
+</frame>
+
+</fdl>
