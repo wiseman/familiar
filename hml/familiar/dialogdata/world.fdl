@@ -2244,6 +2244,7 @@ simulation.
 
 <include file="jstars.fdl"/>
 
+<include file="drone.fdl"/>
 
 <!--
 <frame id="i-west-end-of-valley">
